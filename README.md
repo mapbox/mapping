@@ -1,6 +1,6 @@
-# Mapping
+# OSM Mapping
 
-Use this repository to manage all tracing tasks
+Public issue tracker for OpenStreetMap contribution work by MapBox. You're invited to join us :)
 
 ## Contributing to OSM
 
