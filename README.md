@@ -2,6 +2,9 @@
 
 Public issue tracker for OpenStreetMap contribution work by MapBox. You're invited to join us :)
 
+- [Mapping party is in the issue queue](https://github.com/mapbox/mapping/issues)
+- [Wiki](https://github.com/mapbox/mapping/wiki)
+
 ## Contributing to OSM
 
 - Use [JOSM](http://josm.openstreetmap.de/)
