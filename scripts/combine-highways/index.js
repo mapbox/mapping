@@ -42,7 +42,7 @@ function skip_ways(way) {
     check.push(way.tags.bridge || true);
     check.push(way.tags.tunel || true);
     check.push((way.tags.layer || true) ? true : false);
-    check.push((way.version <= 3) ? true : false); //version of way <=3 ,the most important
+    check.push((way.version = 1) ? true : false);
     return (check.every(function(a) {
         return a == true
     }));
