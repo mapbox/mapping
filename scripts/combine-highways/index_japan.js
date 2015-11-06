@@ -94,52 +94,27 @@ function find_angle(Nlast, Nfirst) {
     return Math.acos((BC * BC + AB * AB - AC * AC) / (2 * BC * AB)) * (180 / pi);
 }
 
-var rm_element = function(arr, elm) {
-    var i = arr.length;
-    while (i--)
-        if (arr[i] === elm) arr.splice(i, 1);
-}
-
-
 function equal(x, y) {
+    var x_keys = [];
+    var y_keys = [];
     if (x && y && typeof x === 'object' && typeof y === 'object') {
-        var x_keys = Object.keys(x);
-        var y_keys = Object.keys(y);
+        x_keys = Object.keys(x);
+        y_keys = Object.keys(y);
         x_keys = Object.keys(x).filter(function(k, i) {
             if (avoid_tags.indexOf(k) < 0) {
                 return Object.keys(x)[i]
             }
         });
-
         y_keys = Object.keys(y).filter(function(k, i) {
             if (avoid_tags.indexOf(k) < 0) {
                 return Object.keys(y)[i]
             }
         });
-
-
-        //===============================================
-        var result = [];
-        if (x_keys.length >= y_keys.length) {
-            result = x_keys.filter(function(n) {
-                return y_keys.indexOf(n) > -1;
-            });
-        } else {
-            result = Object.keys(y).filter(function(n) {
-                return x_keys.indexOf(n) > -1;
-            });
-        }
-        con.println("==== X" + x_keys.length + "==== Y" + y_keys.length);
-        con.println(result)
     }
-
-
-    return (x && y && typeof x === 'object' && typeof y === 'object') ?
-        (x_keys.length === y_keys.length) &&
+    return (x_keys.length === y_keys.length) && (x_keys.length !== 0) && (y_keys.length !== 0) ?
         x_keys.reduce(function(isequal, key) {
             return isequal && equal(x[key], y[key]);
         }, true) : (x === y);
-
 }
 
 function merge() {
