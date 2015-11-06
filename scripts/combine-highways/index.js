@@ -1,6 +1,5 @@
 var util = require("josm/util");
 var cmd = require("josm/command");
-var con = require("josm/scriptingconsole");
 
 var relation_ways = [];
 var relation_nodes = [];

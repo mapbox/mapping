@@ -2,7 +2,7 @@
 
 The script allows us to combine highways which are:
 
-- Highways with version = 1
+- Highways with version <=3
 - Highways which use tags (motorway,trunk,primary,secondary,tertiary)
 - Highways with the same direction
 - Highways with the same tags
