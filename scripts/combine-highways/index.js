@@ -1,5 +1,6 @@
 var util = require("josm/util");
 var cmd = require("josm/command");
+var con = require("josm/scriptingconsole");
 
 var relation_ways = [];
 var relation_nodes = [];
@@ -14,6 +15,16 @@ var preserve_type = {
     "secondary": true,
     "tertiary": true
 };
+
+var avoid_tags = [
+    "yh:LINE_NAME",
+    "yh:LINE_NUM",
+    "yh:STRUCTURE",
+    "yh:TOTYUMONO",
+    "yh:TYPE",
+    "yh:WIDTH",
+    "yh:WIDTH_RANK",
+];
 
 function relations() {
     var layer = josm.layers.activeLayer;
@@ -42,7 +53,7 @@ function skip_ways(way) {
     check.push(way.tags.bridge || true);
     check.push(way.tags.tunel || true);
     check.push((way.tags.layer || true) ? true : false);
-    check.push((way.version = 1) ? true : false);
+    check.push((way.version <= 3) ? true : false); 
     return (check.every(function(a) {
         return a == true
     }));
@@ -84,9 +95,24 @@ function find_angle(Nlast, Nfirst) {
 }
 
 function equal(x, y) {
-    return (x && y && typeof x === 'object' && typeof y === 'object') ?
-        (Object.keys(x).length === Object.keys(y).length) &&
-        Object.keys(x).reduce(function(isequal, key) {
+    var x_keys = [];
+    var y_keys = [];
+    if (x && y && typeof x === 'object' && typeof y === 'object') {
+        x_keys = Object.keys(x);
+        y_keys = Object.keys(y);
+        x_keys = Object.keys(x).filter(function(k, i) {
+            if (avoid_tags.indexOf(k) < 0) {
+                return Object.keys(x)[i]
+            }
+        });
+        y_keys = Object.keys(y).filter(function(k, i) {
+            if (avoid_tags.indexOf(k) < 0) {
+                return Object.keys(y)[i]
+            }
+        });
+    }
+    return (x_keys.length === y_keys.length) && (x_keys.length !== 0) && (y_keys.length !== 0) ?
+        x_keys.reduce(function(isequal, key) {
             return isequal && equal(x[key], y[key]);
         }, true) : (x === y);
 }
