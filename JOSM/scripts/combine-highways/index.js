@@ -1,6 +1,9 @@
 var util = require("josm/util");
 var cmd = require("josm/command");
 
+var num_ways_actual = 0;
+var num_ways_combined = 0;
+var is_counting_ways = true;
 var relation_ways = [];
 var relation_nodes = [];
 var endnodes = [];
@@ -52,7 +55,7 @@ function skip_ways(way) {
     check.push(way.tags.bridge || true);
     check.push(way.tags.tunel || true);
     check.push((way.tags.layer || true) ? true : false);
-    check.push((way.version <= 3) ? true : false); 
+    check.push((way.version <= 3) ? true : false);
     return (check.every(function(a) {
         return a == true
     }));
@@ -136,6 +139,10 @@ function merge() {
         }
     }
 
+    if (is_counting_ways) {
+        num_ways = interways.length;
+        is_counting_ways = false;
+    }
     var z = interways.length;
     while (z--) {
         for (var key in interways_id) {
@@ -150,6 +157,7 @@ function merge() {
             }
         }
     }
+
     for (var key in interways_id) {
         var ways = [];
         for (var i = 0; i < interways_id[key].length; i++) {
@@ -171,6 +179,7 @@ while (exe) {
         interways_id = {};
         endnodes = [];
     } else {
+        josm.alert(num_ways + " highways were combined into " + josm.layers.activeLayer.data.query("modified  type:way").length);
         exe = false;
     }
 }
