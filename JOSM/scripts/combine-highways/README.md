@@ -3,16 +3,16 @@
 The script allows us to combine highways which are:
 
 - Highways with version <=3
-- Highways which use tags (motorway,trunk,primary,secondary,tertiary)
-- Highways with the same direction
-- Highways with the same tags
-- Highways which are not in relation.
-- Highways which form angles > 150 && angles < 210 with the next highway
+- Highways tagged as `motorway,trunk,primary,secondary,tertiary`
+- Highways with similar direction
+- Highways with similar tags
+- Highways which are not part of any relations
+- Highway intersections with an angle of > 150 && < 210 degrees
 
 
 ##### How to set up
 
-Use JOSM > 8945, install [scripting  plugin](http://wiki.openstreetmap.org/wiki/JOSM/Plugins/Scripting).
+Use JOSM > v8945, install [Scripting  plugin](http://wiki.openstreetmap.org/wiki/JOSM/Plugins/Scripting).
 
 Activate JOSM support engine for *ECMAScript*
 
@@ -20,10 +20,10 @@ Activate JOSM support engine for *ECMAScript*
 
 ##### How to use the script
 
-Load the [index.js](https://gist.github.com/Rub21/372728dd70153e1fef2d) from **menu/Scripting/run**
+Load the [index.js](https://gist.github.com/Rub21/372728dd70153e1fef2d) from **Scripting > Run**
 
-![scrpting](https://cloud.githubusercontent.com/assets/1152236/10769850/230f577a-7cb6-11e5-8043-c07fe9fc027b.gif)
+![scripting](https://cloud.githubusercontent.com/assets/1152236/11653643/88bb9bee-9dc5-11e5-9e96-5df06fe697ca.gif)
 
-For next , don't need to load again the script, just run from **Scripting/index.js**
+Once loaded, you can use the script again from the list of loaded scripts, in the  **Scripting** menu.
 
 ![scrpting2](https://cloud.githubusercontent.com/assets/1152236/10769851/23146d82-7cb6-11e5-83a3-230051669cba.gif)
