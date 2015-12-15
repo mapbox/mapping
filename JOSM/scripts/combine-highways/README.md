@@ -20,7 +20,7 @@ Activate JOSM support engine for *ECMAScript*
 
 ##### How to use the script
 
-Load the [index.js](https://gist.github.com/Rub21/372728dd70153e1fef2d) from **Scripting > Run**
+Load the [index.js](https://github.com/mapbox/mapping/blob/master/JOSM/scripts/combine-highways/index.js) from **Scripting > Run**
 
 ![scripting](https://cloud.githubusercontent.com/assets/1152236/11653643/88bb9bee-9dc5-11e5-9e96-5df06fe697ca.gif)
 
