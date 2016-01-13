@@ -1,7 +1,8 @@
+
 meta {
   title: "Created in 2015 year";
   description: "Highlights features that were created/modified in 2015 year";
-  author: "Andygol";
+  author: "Mapbox";
   watch-modified: true;
   version: "0.1";
 }
@@ -15,26 +16,29 @@ meta[lang=ru] {
   description: "Подсвечивает объекты, созданные/изменённые в 2015 году";
 }
 
+
+
 *|z-12[eval(JOSM_search("timestamp:2015/today"))] {
   casing-width: 4;
   casing-color: lime;
-  casing-opacity: 0.2
+  casing-opacity: 0.2;
 }
 
 *|z13-18[eval(JOSM_search("timestamp:2015/today"))] {
   casing-width: 5;
   casing-color: lime;
-  casing-opacity: 0.2
+  casing-opacity: 0.2;
 }
 
 *|z19-[eval(JOSM_search("timestamp:2015/today"))] {
   casing-width: 10;
   casing-color: lime;
-  casing-opacity: 0.2
+  casing-opacity: 0.2;
 }
 
-*|z10-[eval(JOSM_search("name=\"\" highway=* -ref=*"))] {
+
+*|z10-15[eval(JOSM_search("modified"))] {
   casing-width: 10;
-  casing-color: red;
-  casing-opacity: 0.2
+  casing-color: lime;
+  casing-opacity: 0.1;
 }
