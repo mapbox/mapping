@@ -1,0 +1,70 @@
+{
+  "project": {
+    "type": "task",
+    "name": "Turn Lanes",
+    "description": "Mapping turn lanes from satellite imagery",
+    "doc_url": "https://github.com/mapbox/mapping/issues/153",
+    "changeset": {
+      "comment": "Add missing turn lanes from satellite imagery https://github.com/mapbox/mapping/issues/153",
+      "source":""
+    },
+    "imagery": [
+      {
+        "name": "USGS High Quality",
+        "url": "http://{switch:a,b,c}.tile.openstreetmap.us/usgs_large_scale/{zoom}/{x}/{y}.jpg"
+      },
+      {
+        "name": "Mapbox Satellite",
+        "url": "http://{switch:a,b,c}.tiles.mapbox.com/v4/openstreetmap.map-inh7ifmo/{zoom}/{x}/{y}.png?access_token=pk.eyJ1Ijoib3BlbnN0cmVldG1hcCIsImEiOiJncjlmd0t3In0.DmZsIeOW-3x-C5eX-wAqTw"
+
+      }
+
+    ],
+    "filters": [
+      {
+        "name": "Surface transport",
+        "filter": "boundary: | leisure: | landuse: | waterway: | amenity: | natural: | building:"
+      },
+      {
+        "name": "Surface transport",
+        "filter": "highway=motorway | motorway_link | trunk| trunk_link | primary | secondary | tertiary"
+      }
+    ],
+    "mapcss": [
+      {
+        "name": "Recent changes (2015)",
+        "description": "Highlights features that were created/modified in 2015 year",
+        "url": "https://github.com/Andygol/josm-styles/raw/master/recent%20changes_2015.mapcss"
+      },
+      {
+        "name": "Recent changes (2016)",
+        "description": "Highlights features that were created/modified in 2016 year",
+        "url": "https://github.com/Andygol/josm-styles/raw/master/recent%20changes_2016.mapcss"
+      },
+      {
+        "name": "Lane attributes",
+        "description": "Lane and Road attributes",
+        "url": "https://josm.openstreetmap.de/josmfile?page=Styles/Lane_and_Road_Attributes&zip=1"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Lane attributes",
+        "description": "Lane and Road attributes",
+        "url": "https://josm.openstreetmap.de/josmfile?page=Presets/LaneAttributes&zip=1"
+      }
+    ],
+    "plugins": [
+      {
+        "name": "turnlanes"
+      }
+    ],
+    "contact_name": "Arun",
+    "contact_email": "arun@mapbox.com"
+  },
+  "tags": [
+    {
+      "key": "turn:lanes"
+    }
+  ]
+}
