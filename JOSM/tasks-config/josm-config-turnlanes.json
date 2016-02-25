@@ -27,7 +27,7 @@
       },
       {
         "name": "Surface transport",
-        "filter": "highway=motorway | motorway_link | trunk| trunk_link | primary | secondary | tertiary"
+        "filter": "motorway | trunk | primary | secondary | tertiary | _link | new"
       }
     ],
     "mapcss": [
