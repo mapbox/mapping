@@ -3,25 +3,23 @@ var fs = require('fs');
 var path =  require('path');
 var jsyaml = require('js-yaml');
 
-// paths to crawl
-var paths = [
-  'becoming-a-power-mapper',
-  'getting-started',
-  'mapping-common-features',
-  'mapping-with-josm',
-  'osm-data-model',
-  'sources'
-];
-
+var paths = [];
+// crawl the root and create an array of all the folders that
+// contain a _posts folder
+var root = getDir('./');
+root.forEach(function(folder){
+  var path = getDir(folder)
+  if (path == '_posts'){
+    paths.push(folder);
+  }
+});
 // get all spanish dirs
 // refactor this
 var getES = getDir('es');
 var es = [];
-
 getES.forEach(function(e) {
   es.push('es/' + e);
 });
-
 // combine paths + spanish paths
 var paths = paths.concat(es);
 
@@ -111,7 +109,6 @@ function readData(dir, filename) {
   
 }
 
-
 ////////////////////////////////////////////////
 ////////////////////////////////////////////////
 // CATEGORIES
@@ -135,6 +132,10 @@ categories.forEach(function(post){
     t.equal(post.toLowerCase(),post,'file name must be lowercase');
     if (!post.match('index.md')) {
       t.fail('file name must be index.md');
+    }
+    
+    if (metadata.section) {
+      t.equal(typeof metadata, 'array', 'section must be formatted as a list');
     }
     
     t.end();
@@ -166,4 +167,3 @@ posts.forEach(function(post){
     t.end();
   });
 });
-
