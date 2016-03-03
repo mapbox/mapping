@@ -40,7 +40,7 @@ var store = [{% for post in site.posts %}{% if post.title != null and post.title
       "link": "{{ site.baseurl }}{{ page.url | replace:'index.html','' }}",
       "tags": {{page.tags | jsonify}},
       "lang": {{page.lang | jsonify}},
-      "color": {{ currentCategoryColor | jsonify }},
+      "color": {{ page.color | jsonify }},
       "excerpt": {{ page.description | strip_html | escape | truncatewords: 30 | jsonify }}
     }{% unless forloop.last %},{% endunless %}{% endif %}{% endfor %}
 ];
