@@ -14,6 +14,7 @@ var paths = [
 ];
 
 // get all spanish dirs
+// refactor this
 var getES = getDir('es');
 var es = [];
 
@@ -34,12 +35,29 @@ paths.forEach(function(dir) {
       categories.push(dir +'/' + file);
     } else if (file == '_posts') { // get _posts/
       var post_path = dir + '/' + file;
+      
+      // get any subdirs and then files
+      var foundSubDirs = getDir(post_path);
+      if (foundSubDirs) {
+        foundSubDirs.forEach(function(dir){
+          this_path = post_path + '/' + dir;
+          this_path = fs.readdirSync(this_path).filter(function(file) {
+            var isFile = fs.statSync(path.join(this_path, file)).isFile();
+            if (file[0] != '.' && isFile) {
+              posts.push(this_path +'/' + file);
+            }
+          });
+        });  
+      }
+      
+      // get the files
       post_path = fs.readdirSync(post_path).filter(function(file) {
         var isFile = fs.statSync(path.join(post_path, file)).isFile();
         if (file[0] != '.' && isFile) {
           posts.push(post_path +'/' + file);
         }
       });
+      
     } else if (file[0] != '.' && !isFile) { // get folder/_posts/
       var post_path = dir + '/' + file + '/_posts';
       post_path = fs.readdirSync(post_path).filter(function(file) {
@@ -51,7 +69,6 @@ paths.forEach(function(dir) {
     }
   });
 });
-
 
 
 function getDir(srcpath) {
@@ -113,7 +130,13 @@ categories.forEach(function(post){
     t.equal(metadata.layout,'category','layout must equal "category"');
     t.ok(metadata.color,'must have a color');
     t.ok(metadata.order,'must have an order');
-        
+    
+    t.equal(post.indexOf(' '),-1,'file name must not contain spaces');
+    t.equal(post.toLowerCase(),post,'file name must be lowercase');
+    if (!post.match('index.md')) {
+      t.fail('file name must be index.md');
+    }
+    
     t.end();
   });
 });
@@ -135,7 +158,6 @@ posts.forEach(function(post){
     
     t.ok(metadata.title,'must have a title');
     t.equal(post.indexOf(' '),-1,'file name must not contain spaces');
-    t.equal(post.indexOf(' '),-1,'file name must not contain spaces');
     t.equal(post.toLowerCase(),post,'file name must be lowercase');
     if (!post.match('0000-01-')) {
       t.fail('file name must start with 0000-01-');
@@ -144,3 +166,4 @@ posts.forEach(function(post){
     t.end();
   });
 });
+
