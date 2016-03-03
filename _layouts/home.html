@@ -11,6 +11,9 @@ options: full
 
 <div class="fill-purple-light">
 <div id='guide-categories' class='guides pad4y clearfix'>
+  
+  {% include search.html %}
+  
   {% assign pages = (site.pages | where: "layout", "category" | where: "lang", lang | sort: "order") %}
   {% for page in pages %}
   <!-- build guideCount-->

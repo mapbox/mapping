@@ -63,6 +63,7 @@
   {% endunless %}
 
   {% if site.test %}<script src='{{site.url}}/test/tape.js'></script>{% endif %}
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.js'></script>
   {% if page.head %}{{page.head}}{% endif %}
 </head>
 <body class='{{page.class}} {{page.options}}{% if page.blog_featured == true %} bleed{% endif %}'>
