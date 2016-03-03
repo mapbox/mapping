@@ -25,7 +25,7 @@ options: full
     <div class="image-card image-{{page.title | downcase | replace:' ','-' | replace: ',',''}} round-top  contain">
 
     <!-- Just adding this here for now, because I get errors on non existing svgs  -->
-     {% if page.title == "Getting started"%}
+     {% if page.title == "Getting started" or page.title == "Sources"%}
      {% assign illustration = page.title | downcase | replace: ',','' | replace: ' ','-' | prepend: 'svgs/' | append: '.svg' %}
      {% include {{illustration}} %}
      {% endif %}
@@ -34,13 +34,13 @@ options: full
       </div>
     </div>
     <div class="round-bottom card-content">
-        <div class="col12 pad2y pad4x center"><!--
+        <div class="col12 pad2y pad2x center"><!--
           <span class="icon dot fill-{{page.color}} inline"></span> -->
           <h3 class="space-bottom1 space-top1 inline human center">{{page.title}}</h3>
-       <!--    <p class="guide-description clip prose quiet">{{page.description}}</p>  -->
-          <p class="guide-description clip prose quiet small">Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p class="guide-description clip prose quiet small pad1x">{{page.description}}</p>
+          {% if guideCount > 0 or topicCount > 0 %}
 
-          {% if guideCount > 0 or topicCount > 0 %}<div class="caption icon book quiet small strong"> {{guideCount}} {{'guide' | swap: page.lang }}{% if guideCount > 1 %}s{% endif %}</div>{% endif %}
+          <div class="guide-count fill-purple-light caption icon book quiet small strong"> {{guideCount}} {{'guide' | swap: page.lang }}{% if guideCount > 1 %}s{% endif %}</div>{% endif %}
         </div>
     </div>
     </div>
