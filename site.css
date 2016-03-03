@@ -69,6 +69,23 @@ h3.human {
 /* Search and toggle
 ------------------------------------------------------- */
 
+#search .with-icon input[type=text]  {
+    padding-left: 40px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 0px 5px rgba(75, 94, 127, 0.06);
+    color: #A1ABD0;
+}
+
+#search input[type=text].clean:focus{
+    background-color: #fdfdfd;
+    box-shadow: 0px 0px 0px 5px rgba(75, 94, 127, 0.32);
+}
+
+#search .icon.search:before {
+    content: "\e66f";
+    color: #A1ABD0;
+}
+
 #guide-search .on {
   padding-bottom: 20px;
   border-bottom: 1px solid #ddd;

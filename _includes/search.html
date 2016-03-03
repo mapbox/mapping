@@ -1,14 +1,14 @@
 <!-- Search form -->
 <div id="guide-search" class="limiter">
   <div class="clearfix contain">
-    <div id="search" class="contain col8">
-      
+    <div id="search" class="contain col8 margin2">
+
       <fieldset class="quiet with-icon space-bottom2">
         <span class="icon search"></span>
-        <input type="text" id="search" class="col12 round search-input" placeholder="Search">
+        <input type="text" id="search" class="col12 round clean search-input" placeholder="Search">
       </fieldset>
     </div>
-    
+
     <!--<div class="pin-right">
     <div class="guide-toggle rounded-toggle inline fill-gray">
     <input class="view-toggle" id="categories" type="radio" name="viewToggle" value="guide-categories" checked="checked">
@@ -38,10 +38,10 @@
 $(document).ready(function () {
   // this is where you put the results
   var resultdiv = $('#search-results');
-  
+
   // hide search on load
   $('#search-results-status').hide();
-  
+
   // clear results when clicked/toggled
   $('.view-toggle, #btn-clear').click(function(){
     $('#search-results-status').hide();
@@ -49,10 +49,10 @@ $(document).ready(function () {
     $('input#search').val('');
     var query = null;
   });
-  
+
   // Let's search some thangs
   $('input#search').on('keyup', function () {
-    
+
     // Get query
     var query = $(this).val();
     // Search for it
@@ -63,7 +63,7 @@ $(document).ready(function () {
     $('#search-term').text(query);
     // Output results
     $('#search-results-status').show();
-    
+
     // Show results
     resultdiv.empty();
     for (var item in result) {
@@ -72,7 +72,7 @@ $(document).ready(function () {
         var searchitem = '<div class="fill-white pad4 pad4x space-bottom2 round post contain clearfix"><div class="post-side fill-'+store[ref].color+' clearfix"></div><div class="col8 pad4x keyline-right"><h3 class="pad0y"><a href="'+store[ref].link+'">'+store[ref].title+'</a></h3><em class="quiet small">'+store[ref].category+'</em><p class="prose quiet">'+store[ref].excerpt+'</p></div><div class="col4 pad4x"><a class="round pad1y small strong pad2x fill-'+store[ref].color+' rcon next space-bottom2" href="'+store[ref].link+'">Read this guide</a><div class="col12"></div></div></div>';
         resultdiv.append(searchitem);
       }
-      
+
     }
     resultdiv.show();
   });
