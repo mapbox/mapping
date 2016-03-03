@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "mapping",
+  "version": "0.0.1",
+  "main": "package.json",
+  "author": "Mapbox (https://www.mapbox.com)",
+  "license": "Copyright © Mapbox",
+  "devDependencies": {
+    "js-yaml": "^2.1.3",
+    "mapbox-content-test": "https://mapbox-npm.s3.amazonaws.com/package/mapbox-content-test-0.0.8-1fd7a84a33ff932ed118f44c28b0abeb8a66c5eb.tgz",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.2.2"
+  },
+  "scripts": {
+    "test": "mct-noreferrer && mct-openstreetmap _posts && tape test/*.js | tap-spec"
+  }
+}
