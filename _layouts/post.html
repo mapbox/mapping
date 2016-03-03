@@ -1,0 +1,29 @@
+---
+layout: default
+head: <link rel="stylesheet" href="/mapping/site.css">
+---
+
+<div class="pad4y clearfix">
+  
+  {% include pager.html %}
+  
+  <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+  <!-- this code must be replicated in part [3] of category.html -->
+  <div class="col8 prose doc">
+    <h1>{{page.title}}</h1>
+    {{content}}
+  </div>
+  <div class="col4 toc-wrapper">
+    <div class="toc" data-spy='affix' data-offset-top="150">
+      {{ content | toc }}&nbsp;
+    </div>
+  </div>
+  <!-- / -->
+</div>
+
+<script type="text/javascript" src="{{site.baseurl}}/js/affix.js"></script>
+<script type="text/javascript" src="{{site.baseurl}}/js/scrollspy.js"></script>
+
+<script>
+$('body').scrollspy({ target: '.toc' });
+</script>
