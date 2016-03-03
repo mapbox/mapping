@@ -373,6 +373,16 @@ a.sub-guide:hover {
   opacity: .8;
 }
 
+.guide-count {
+    display: inline-block;
+    color: #4B5E7F;
+    border-radius: 40px;
+    padding-left: 10px;
+    padding-right: 16px;
+    padding-top: 4px;
+    padding-bottom: 5px;
+}
+
 ul.category-list li a {
   margin-right: 10px;
   display: inline;
@@ -475,11 +485,11 @@ h2.icon:after {
   .inline.show-mobile { display: inline-block; }
 }
 
-
-
 .shadow {
     box-shadow: 0 0 40px 0 rgba(64, 47, 103, 0.10);
 }
+
+
 
 /* Prose
 ------------------------------------------------------- */
