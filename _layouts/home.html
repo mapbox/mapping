@@ -18,8 +18,8 @@ options: full
   {% assign title = page.dir | downcase | replace: langDir,'' | replace: '/','' %}
   {% assign guideCount = 0 %}{% for post in site.categories[title] %}{% assign guideCount = guideCount | plus: 1 %}{% endfor %}
   <a href="{{site.baseurl}}{{page.url | replace:'index.html',''}}" class="guide pad2y clearfix contain" id="{{page.title | downcase}}">
-  <div class="shadow">
-    <div class="fill-white image-card image-{{page.title | downcase | replace:' ','-' | replace: ',',''}} round-top  contain">
+  <div class="shadow fill-white round-big">
+    <div class="image-card image-{{page.title | downcase | replace:' ','-' | replace: ',',''}} round-top  contain">
 
     <!-- Just adding this here for now, because I get errors on non existing svgs  -->
      {% if page.title == "Getting started"%}
@@ -30,7 +30,7 @@ options: full
       <div class="clearfix contain guide-details">
       </div>
     </div>
-    <div class="fill-white round-bottom card-content">
+    <div class="round-bottom card-content">
         <div class="col12 pad2y pad4x center"><!--
           <span class="icon dot fill-{{page.color}} inline"></span> -->
           <h3 class="space-bottom1 space-top1 inline human center">{{page.title}}</h3>

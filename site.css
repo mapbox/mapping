@@ -158,11 +158,6 @@ h3.human {
 /* Category overview page
 ------------------------------------------------------- */
 
-#guide-categories {
-  margin-bottom: 60px;
-
-}
-
 .side {
   position: absolute;
   display: block;
@@ -483,7 +478,7 @@ h2.icon:after {
 
 
 .shadow {
-    box-shadow: 0 0 31px 0 rgba(64, 47, 103, 0.17);
+    box-shadow: 0 0 40px 0 rgba(64, 47, 103, 0.10);
 }
 
 /* Prose
@@ -936,6 +931,10 @@ pre .cm {
   font-style: normal;
 }
 
+.round-big {
+  border-radius: 5px;
+}
+
 .guide span.dot {
     width: 10px;
     height: 10px;
@@ -946,7 +945,6 @@ pre .cm {
 
  .image-card {
     background-size: cover;
-    background: white;
     height: 260px;
     padding: 30px;
 }
