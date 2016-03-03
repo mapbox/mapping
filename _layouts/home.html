@@ -1,20 +1,15 @@
 ---
 layout: default
 head: <link rel="stylesheet" href="/mapping/site.css">
-class: fill-light 
+class: fill-light
 options: full
 ---
 
 <!-- set lang variable -->
 {% if page.lang %}{% assign lang = page.lang %}{% endif %}
 
-<div class='limiter space-top4 prose'>
-  <h1>{{page.title}}</h1>
-  {% if lang == 'en' %}<a href="{{site.baseurl}}/es/">versión español</a>{% else %}<a href="{{site.baseurl}}/">English version</a>{% endif %}
-</div>
 
-
-
+<div class="fill-purple-light">
 <div id='guide-categories' class='guides pad4y clearfix'>
   {% assign pages = (site.pages | where: "layout", "category" | where: "lang", lang | sort: "order") %}
   {% for page in pages %}
@@ -23,18 +18,30 @@ options: full
   {% assign title = page.dir | downcase | replace: langDir,'' | replace: '/','' %}
   {% assign guideCount = 0 %}{% for post in site.categories[title] %}{% assign guideCount = guideCount | plus: 1 %}{% endfor %}
   <a href="{{site.baseurl}}{{page.url | replace:'index.html',''}}" class="guide pad2y clearfix contain" id="{{page.title | downcase}}">
+  <div class="shadow">
     <div class="fill-white image-card image-{{page.title | downcase | replace:' ','-' | replace: ',',''}} round-top  contain">
+
+    <!-- Just adding this here for now, because I get errors on non existing svgs  -->
+     {% if page.title == "Getting started"%}
+     {% assign illustration = page.title | downcase | replace: ',','' | replace: ' ','-' | prepend: 'svgs/' | append: '.svg' %}
+     {% include {{illustration}} %}
+     {% endif %}
+
       <div class="clearfix contain guide-details">
       </div>
     </div>
     <div class="fill-white round-bottom card-content">
-        <div class="col12 pad2y pad4x">
-          <span class="icon dot fill-{{page.color}} inline"></span>
-          <h3 class="space-bottom1 space-top1 inline">{{page.title}}</h3>
-          <p class="guide-description clip prose quiet">{{page.description}}</p>
+        <div class="col12 pad2y pad4x center"><!--
+          <span class="icon dot fill-{{page.color}} inline"></span> -->
+          <h3 class="space-bottom1 space-top1 inline human center">{{page.title}}</h3>
+       <!--    <p class="guide-description clip prose quiet">{{page.description}}</p>  -->
+          <p class="guide-description clip prose quiet small">Cras mattis consectetur purus sit amet fermentum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
           {% if guideCount > 0 or topicCount > 0 %}<div class="caption icon book quiet small strong"> {{guideCount}} {{'guide' | swap: page.lang }}{% if guideCount > 1 %}s{% endif %}</div>{% endif %}
         </div>
     </div>
+    </div>
   </a>
   {% endfor %}
+</div>
 </div>

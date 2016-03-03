@@ -1,20 +1,68 @@
+/* Fonts
+------------------------------------------------------- */
+@font-face {
+    font-family: 'CoreHumanistSans'; /* A font by Alex Scholing, www.fontsbyalex.com */
+    src: url('fonts/CoreHumanistSans-Regular-webfont.eot');
+    src: url('fonts/CoreHumanistSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/CoreHumanistSans-Regular-webfont.woff2') format('woff2'),
+         url('fonts/CoreHumanistSans-Regular-webfont.woff') format('woff'),
+         url('fonts/CoreHumanistSans-Regular-webfont.ttf') format('truetype'),
+         url('fonts/CoreHumanistSans-Regular-webfont.svg#corehumanistsansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.human {
+  font-family: CoreHumanistSans, 'Open Sans', sans-serif;
+  font-weight: 800;
+  -webkit-font-smoothing: antialiased;
+  color: #4b5e7f;
+}
+
+h1.human {
+  font-size: 35px;
+  color: #4b5e7f;
+}
+
+.dark h1.human {
+  font-size: 35px;
+  color: white;
+}
+
+h2.human {
+  font-size: 26px;
+  opacity: .9;
+}
+
+h3.human {
+    font-size: 21px;
+    line-height: 25px;
+}
+
+
+.language {
+    clear: both;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
 /* Colors
 ------------------------------------------------------- */
 
-.fill-darkblue  { background-color: #223b53;}
-.color-darkblue  { color: #223b53;}
-.fill-orange    { background-color: #F9886C; }
-.color-orange    { color: #F9886C; }
-.fill-red       { background-color: #e55e5e; }
-.color-red       { color: #e55e5e; }
+.fill-darkblue  { background-color: #4b5e7f;}
+.color-darkblue  { color: #4b5e7f;}
+.fill-pink       { background-color: #ffb8c7; }
+.color-pink       { color: #ffb8c7; }
 .fill-teal      { background-color: #41afa5; }
 .color-teal      { color: #41afa5; }
 .fill-denim     { background-color: #50667f; }
 .color-denim     { color: #50667f; }
-.fill-pink      { background-color: #ed6498; }
-.color-pink      { color: #ed6498; }
-.fill-mustard   { background-color: #fbb03b; }
-.color-mustard   { color: #fbb03b; }
+.fill-orange   { background-color: #ff7676; }
+.color-orange   { color: #ff7676; }
+.fill-purple-light { background-color: #f2f3fc; }
+.color-purple-light   { color: #f2f3fc; }
 
 .fill-notice    { background-color: #f0f8fc; }
 
@@ -170,6 +218,7 @@
 
 .guide-description {
   min-height: 75px;
+  color: #8f98b9;
 }
 
 
@@ -432,6 +481,10 @@ h2.icon:after {
 }
 
 
+
+.shadow {
+    box-shadow: 0 0 31px 0 rgba(64, 47, 103, 0.17);
+}
 
 /* Prose
 ------------------------------------------------------- */
@@ -891,11 +944,11 @@ pre .cm {
     margin-right: 10px;
 }
 
- .image-card, .image-benefits, .image-events, .image-mapbox, .image-offices {
-  background: url(../img/placeholder.jpg) no-repeat;
-  background-size: cover;
-  background: #ddd;
-  height: 200px;
+ .image-card {
+    background-size: cover;
+    background: white;
+    height: 260px;
+    padding: 30px;
 }
 
 
@@ -1003,7 +1056,7 @@ pre.pre-guides:before {
 }
 
 .card-content {
-    min-height: 215px;
+    min-height: 225px;
   }
 
 
