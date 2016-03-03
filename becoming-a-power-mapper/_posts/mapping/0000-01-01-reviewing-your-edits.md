@@ -14,7 +14,7 @@ The easiest way to [fix common mapping issues](https://github.com/mapbox/mapping
 * A *Validation errors* layer will be added to your *Layers* to highlight features with errors.
 * The *Validation Results* panel will display all the detected errors.  Select any of the detected errors to fix. You can right click an entry and zoom to the location if needed.
 
-![using validator](images/validator_using.gif)
+![using validator]({{site.baseurl}}/images/validator_using.gif)
 
 The **Validation Results** have several buttons activated to navigate and fix errors:
 * **Select** – Select the objects of the selected error.
@@ -27,7 +27,7 @@ The **Validation Results** have several buttons activated to navigate and fix er
 
 By default the validator checks against a wide range of [data issues](https://josm.openstreetmap.de/wiki/Help/Preferences/Validator), many of which may not be important or may contain false positives. You can customize the settings from *Preferences > Data Validator*
 
-![validator settings](images/validator_settings.gif)
+![validator settings]({{site.baseurl}}/images/validator_settings.gif)
 
 
 For more details check the [OSM Wiki](http://wiki.openstreetmap.org/wiki/JOSM/Validator) and the [LearnOSM Guide](http://learnosm.org/en/coordination/review/#data-validation)

@@ -21,8 +21,10 @@ It is useful to include:
 *(format in [Markdown]( http://en.wikipedia.org/wiki/Markdown))*
 
 Here is a good example:
-![osm-profile-description-example](images/osm-profile-description-example.png)
-‍
+
+![osm-profile-description-example]({{site.baseurl}}/images/osm-profile-description-example.png)
+
+
 ## Installing JOSM
 
 We are using the Java OpenStreetMap Editor (JOSM) for most tasks. Here's how to get set up.
@@ -47,31 +49,31 @@ If you want JOSM to use more memory and you're using [Linux](http://wiki.openstr
     ~$ java -Xmx1024M -DproxyHost=$PROXY -DproxyPort=8080 -jar josm-tested.jar
 
 Once JOSM is up and running it looks like this. Go find the **Preferences** dialog, you'll need it for the next couple of steps. You can access it from under the light switch icon.
-‍
-![josm-preferences](images/josm-preferences.png)
+
+![josm-preferences]({{site.baseurl}}/images/josm-preferences.png)
 
 ### 4. Enable expert mode
 
 Open the **Preferences** dialog and enable **Expert mode**.
 
-![check-expert-mode](images/check-expert-mode.png)
+![check-expert-mode]({{site.baseurl}}/images/check-expert-mode.png)
 
-### 5. Add user and password‍
+### 5. Add user and password
 
 Now it's time to connect to OpenStreetMap. Add the user name and password of the account you just created on OpenStreetMap to JOSM.
 
-![set-osm-username-and-password](images/set-osm-username-and-password.png)
+![set-osm-username-and-password]({{site.baseurl}}/images/set-osm-username-and-password.png)
 
 Now you should be able to retrieve data from OpenStreetMap by clicking on the button with the green down error in the top left:
 
-![download-data](images/download-data.gif)
+![download-data]({{site.baseurl}}/images/download-data.gif)
 
-### 6. Enable Remote Control‍
+### 6. Enable Remote Control
 
 Remote control allows you to launch JOSM directly from the map on OpenStreetMap.org. To enable Remote Control, check this box in the settings:
-‍‍‍
-![enable-remote-control](images/enable-remote-control.png)
 
-Also check the **‍** option. Now you should be able to retrieve data directly starting on OpenStreetMap.org like this:
+![enable-remote-control]({{site.baseurl}}/images/enable-remote-control.png)
 
-![retrieve-data](images/retrieve-data.gif)
+Also check the **** option. Now you should be able to retrieve data directly starting on OpenStreetMap.org like this:
+
+![retrieve-data]({{site.baseurl}}/images/retrieve-data.gif)

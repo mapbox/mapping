@@ -13,14 +13,14 @@ Load any of your preferred layers in JOSM.
 Save the JOSM session file clicking, **File > Session > Save session as ...**
 Select any layers you want loaded when you start a new JOSM session.
 
-![josm_session_save2](images/saving-a-josm-session.gif)
+![josm_session_save2]({{site.baseurl}}/images/saving-a-josm-session.gif)
 
 ## Loading a JOSM session
 
 To load a previously saved JOSM session, click **File > Session > Load session**.
 Select the `.jos` you saved.
 
-![josm_session_load2](images/loading-a-josm-session.gif)
+![josm_session_load2]({{site.baseurl}}/images/loading-a-josm-session.gif)
 
 NOTE: Do not save any OSM data within your `.jos` file.  Always load new data to avoid data conflicts. 
 
