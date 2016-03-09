@@ -68,18 +68,7 @@ head: <link rel="stylesheet" href="/mapping/site.css">
 
   {% for post in site.posts reversed %}{% assign thisCategory = post.categories | join: '' %}{% if thisCategory == category %}
   
-  <!-- this code should match post.html -->
-  <!-- the different is {{post.content}} here vs {{content}} in post.html -->
-  <div class="col8 prose doc">
-    <h1>{{page.title}}</h1>
-    {{post.content}}
-  </div>
-  <div class="col4 toc-wrapper">
-    <div class="toc" data-spy='affix' data-offset-top="150">
-      {{ post.content | toc }}&nbsp;
-    </div>
-  </div>
-  <!-- / -->
+  {% include content.html title=page.title text=post.content %}
   
   {% endif %}{% endfor %}
 
