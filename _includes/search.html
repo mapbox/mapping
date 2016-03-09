@@ -69,7 +69,11 @@ $(document).ready(function () {
     for (var item in result) {
       var ref = result[item].ref;
       if (store[ref].lang == '{{lang}}') {
-        var searchitem = '<div class="fill-white pad4 pad4x space-bottom2 round post contain clearfix"><div class="post-side fill-'+store[ref].color+' clearfix"></div><div class="col8 pad4x keyline-right"><h3 class="pad0y"><a href="'+store[ref].link+'">'+store[ref].title+'</a></h3><em class="quiet small">'+store[ref].category+'</em><p class="prose quiet">'+store[ref].excerpt+'</p></div><div class="col4 pad4x"><a class="round pad1y small strong pad2x fill-'+store[ref].color+' rcon next space-bottom2" href="'+store[ref].link+'">{% include swap.html swap='Read this guide' lang=page.lang %}</a><div class="col12"></div></div></div>';
+        var searchitem = '<div class="fill-white pad4 pad4x space-bottom2 round post contain clearfix"><div class="post-side fill-'+store[ref].color+' clearfix"></div><div class="col8 pad4x keyline-right"><h3 class="pad0y"><a href="'+store[ref].link+'">'+store[ref].title+'</a></h3>';
+        if (store[ref].category) {
+          searchitem +='<em class="quiet small">'+store[ref].category+'</em>';  
+        }
+        searchitem += '<p class="prose quiet">'+store[ref].excerpt+'</p></div><div class="col4 pad4x"><a class="round pad1y small strong pad2x fill-'+store[ref].color+' rcon next space-bottom2" href="'+store[ref].link+'">{% include swap.html swap='Read this guide' lang=page.lang %}</a><div class="col12"></div></div></div>';
         resultdiv.append(searchitem);
       }
 
