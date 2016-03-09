@@ -1,9 +1,10 @@
 <div class="col8 prose doc">
   <h1>{{include.title}}</h1>
   {{include.text}}
+  {% include next-guide.html %}
 </div>
 <div class="col4 toc-wrapper">
-  <div class="toc" data-spy='affix' data-offset-top="150">
+  <div class="toc" data-spy='affix' data-offset-top="275">
     {{ include.text | toc }}&nbsp;
   </div>
 </div>

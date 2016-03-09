@@ -68,7 +68,7 @@ head: <link rel="stylesheet" href="/mapping/site.css">
 
   {% for post in site.posts reversed %}{% assign thisCategory = post.categories | join: '' %}{% if thisCategory == category %}
   
-  {% include content.html title=page.title text=post.content %}
+  {% include content.html title=page.title text=post.content categories=post.categories %}
   
   {% endif %}{% endfor %}
 
