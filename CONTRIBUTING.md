@@ -78,4 +78,10 @@ Once you do both steps, Jekyll will automatically group the list of blog posts f
 
 The guides are also offered in Spanish. All files are found under the `es/` folder. Think of the folder as a clone of the English version. Inside the `es/` folder are the category folders that follow the same patterns as the files and folders of the English version.
 
-Down the road, we should be able to add more languages.
+### Adding another language
+
+1. Create a folder with the language abbreviation. For example, `fr/` for French `de/` for German.
+2. Update `_config.yml` to add the new language to the `default scopes`. Follow the pattern of the English and Spanish scopes.
+3. Update `swap.yml` and add a `fr:` to each dataset with the translation. If you don't add a translation, it will appear in English.
+
+Follow the patterns mentioned above to start adding categories and posts.
