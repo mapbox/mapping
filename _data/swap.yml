@@ -1,0 +1,23 @@
+# {% include swap.html swap='guide' lang=page.lang %}
+- en: guide
+  es: guía
+- en: Mapping
+  es: Mapeando
+- en: Mapping with
+  es: Mapeando con
+- en: back to
+  es: de regreso
+- en: Next
+  es: Siguiente
+- en: This is the last guide in this category.
+  es: Esta es la última guía en esta categoría.
+- en: Mapping guides
+  es: Guías de mapeo
+- en: Search
+  es: Buscar
+- en: results found for
+  es: resultados encontrados para
+- en: Clear search
+  es: Quite la búsqueda
+- en: Read this guide
+  es: Lea esta guía

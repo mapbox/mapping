@@ -1,0 +1,1 @@
+{% assign set = (site.data.swap | where: 'en',include.swap) %}{% for swap in set %}{% if include.lang != 'en' %}{{swap.[include.lang]}}{% else %}{{include.swap}}{% endif %}{% endfor %}
