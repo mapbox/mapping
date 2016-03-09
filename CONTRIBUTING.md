@@ -82,6 +82,6 @@ The guides are also offered in Spanish. All files are found under the `es/` fold
 
 1. Create a folder with the language abbreviation. For example, `fr/` for French `de/` for German.
 2. Update `_config.yml` to add the new language to the `default scopes`. Follow the pattern of the English and Spanish scopes.
-3. Update `swap.yml` and add a `fr:` to each dataset with the translation. If you don't add a translation, it will appear in English.
+3. Update `swap.yml` and add to each set of words the new translation using the language abbreviation from step 1. If you don't add a translation, it will appear in English.
 
-Follow the patterns mentioned above to start adding categories and posts.
+Follow the patterns mentioned above in creating categories and posts.
