@@ -8,7 +8,7 @@ The easiest way to [fix common mapping issues](https://github.com/mapbox/mapping
 
 ![screenshot 2015-12-11 14 30 37](https://cloud.githubusercontent.com/assets/126868/11739757/c77832c0-a013-11e5-8568-c6dd6624e127.png)
 
-#### Usage
+### Usage
 
 * Select the data you want validated and press `Shift+V` or hit `Validate` from the Validator panel. If no data is selected, the Validator will run on all the data in the active layer.
 * A *Validation errors* layer will be added to your *Layers* to highlight features with errors.
@@ -23,7 +23,7 @@ The **Validation Results** have several buttons activated to navigate and fix er
 * **Fix** – Fix an error (only when automatically fixable).
 * **Ignore** – Ignore an error or a group of errors in future tests.
 
-#### Customizing error detection
+### Customizing error detection
 
 By default the validator checks against a wide range of [data issues](https://josm.openstreetmap.de/wiki/Help/Preferences/Validator), many of which may not be important or may contain false positives. You can customize the settings from *Preferences > Data Validator*
 
@@ -33,11 +33,13 @@ By default the validator checks against a wide range of [data issues](https://jo
 For more details check the [OSM Wiki](http://wiki.openstreetmap.org/wiki/JOSM/Validator) and the [LearnOSM Guide](http://learnosm.org/en/coordination/review/#data-validation)
 
 ## Overpass Turbo
+
 You can quickly query and visualize OSM data live using **[Overpass Turbo](http://overpass-turbo.eu/s/ddp)**.
 
 ![screenshot 2015-12-11 16 14 31](https://cloud.githubusercontent.com/assets/126868/11741952/4795d602-a022-11e5-8043-0e7014baebbc.png)
 
-#### Usage
+### Usage
+
 - [Browse the map](http://overpass-turbo.eu) to the area of interest or alternatively set a bounding box using the map tool on the left.
 - Write an [Overpass Query](http://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL) in the query editor or use the *Wizard* for simple tag queries like `highway=motorway or highway=trunk`
 - Optionally add a [MapCSS](http://wiki.openstreetmap.org/wiki/Overpass_turbo/MapCSS) style to visualize the results

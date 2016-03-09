@@ -46,7 +46,7 @@ The OSM ecosystem has an array of tools that you can use to extract, modify, vis
 
 For full list check the [OSM Wiki](http://wiki.openstreetmap.org/wiki/Quality_assurance)
 
--
+
 ## Community
 - Use the [history tab on the map](http://www.openstreetmap.org/history#map=14/51.5150/-0.0972) to find and message active mappers nearby
 - Write on your [OSM Diaries](http://www.openstreetmap.org/diary) to bring up issues for community discussion

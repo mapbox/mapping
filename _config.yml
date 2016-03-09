@@ -3,7 +3,7 @@ api: https://122e4e-mapbox.global.ssl.fastly.net/core
 tileApi: https://api-maps-staging.tilestream.net
 permalink: /:categories/:title/
 baseurl: /mapping
-title: Mapping
+title: Mapping with OpenStreetMap
 markdown: kramdown
 exclude:
 - package.json

@@ -20,7 +20,7 @@ The default shortcuts on JOSM are a great way to get started, but once you are f
 
 Action | Keyboard Shortcut
 ---- | ----
-Uploading the edit | <kbd>`</kbd>
+Uploading the edit | <kbd>`</kbd><!--`-->
 Downloading data | <kbd>Q</kbd>
 Deleting data | <kbd>D</kbd>
 
@@ -31,9 +31,9 @@ To access the Shortcuts Menu, go to **Preferences** on the JOSM menu bar. Within
 
 Here is a comprehensive categorized list of shortcuts everyone should be familiar with. 
 
-###JOSM Shortcuts
+### JOSM Shortcuts
 
-####DATA
+#### DATA
 
 ACTION | DESCRIPTION | Mac | Win/Linux
 ---- | ---- | ---- | ----
@@ -44,7 +44,7 @@ DATA UPLOAD | upload all changes in the active data layer to the OSM server | `C
 
 -----
 
-###BASIC MAP EDITING
+### Basic map editing
 
 ACTION | DESCRIPTION | Mac | Win/Linux
 ---- | ---- | ---- | ----
@@ -75,7 +75,7 @@ UPDATE MULTIPOLYGON | update a multipolygon | `Cmd+Shift+B` |
 
 ----
 
-## ACCURACY & PRECISION
+## Accuracy & precision
 
 ACTION | DESCRIPTION | SHORTCUT
 ---- | ---- | ----
@@ -88,14 +88,14 @@ BUILDING SIZE | set building size | `Cmd+Alt+B`
 
 ----
 
-## PRESETS
+## Presets
 
 ACTION | DESCRIPTION | SHORTCUT
 ---- | ---- | ----
 SEARCH PRESETS | show preset search dialogue | `F3`
 
 
-## USER INTERFACE
+## User interface
 
 ACTION | DESCRIPTION | SHORTCUT
 ---- | ---- | ----
@@ -108,7 +108,7 @@ WIREFRAME VIEW | enable/disable rendering the map as wireframe only | `Cmd+W`
 
 ----
 
-## IMAGERY
+## Imagery
 
 ACTION | DESCRIPTION | SHORTCUT
 ---- | ---- | ----
@@ -116,7 +116,7 @@ IMAGERY OFFSET | download offset for current imagery from a server | `Cmd+Alt+I`
 
 ----
 
-## CONFLICTS RESOLUTION
+## Conflicts resolution
 
 ACTION | DESCRIPTION | SHORTCUT
 ---- | ---- | ----
@@ -125,7 +125,7 @@ RESOLVE CONFLICT | resolve a conflict | `Alt+Shift+C`
 
 ----
 
-## REVIEW/VALIDATION
+## Review/validation
 
 ACTION | DESCRIPTION | SHORTCUT
 ---- | ---- | ----

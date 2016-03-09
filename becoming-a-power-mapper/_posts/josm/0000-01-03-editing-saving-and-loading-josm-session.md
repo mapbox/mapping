@@ -25,3 +25,4 @@ Select the `.jos` you saved.
 NOTE: Do not save any OSM data within your `.jos` file.  Always load new data to avoid data conflicts. 
 
 Examples of session files we use in the [/mapping repo](https://github.com/mapbox/mapping/tree/master/JOSM/sessions).
+
