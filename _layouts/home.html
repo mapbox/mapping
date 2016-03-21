@@ -25,7 +25,7 @@ options: full
     <div class="image-card image-{{page.title | downcase | replace:' ','-' | replace: ',',''}} round-top  contain">
 
     <!-- Just adding this here for now, because I get errors on non existing svgs  -->
-     {% if page.title == "Getting started" or page.title == "Sources" or page.title == "The OpenStreetMap data model" or page.title == "Mapping with JOSM" or page.title == "Mapping common features"  %}
+     {% if page.title == "Getting started" or page.title == "Sources" or page.title == "The OpenStreetMap data model" or page.title == "Mapping with JOSM" or page.title == "Mapping common features" or page.title == "Becoming a power mapper"  %}
      {% assign illustration = page.title | downcase | replace: ',','' | replace: ' ','-' | prepend: 'svgs/' | append: '.svg' %}
      {% include {{illustration}} %}
      {% endif %}
