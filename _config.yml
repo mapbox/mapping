@@ -8,6 +8,13 @@ markdown: kramdown
 exclude:
 - package.json
 - node_modules
+- Gemfile
+- Gemfile.lock
+- README.MD
+- CONTRIBUTING.md
+- test
+- JOSM
+- Studio
 
 kramdown:
   auto_ids: true
