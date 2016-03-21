@@ -127,6 +127,7 @@ categories.forEach(function(post){
     t.equal(metadata.layout,'category','layout must equal "category"');
     t.ok(metadata.color,'must have a color');
     t.ok(metadata.order,'must have an order');
+    t.ok(metadata.description,'must have a description');
     
     t.equal(post.indexOf(' '),-1,'file name must not contain spaces');
     t.equal(post.toLowerCase(),post,'file name must be lowercase');
