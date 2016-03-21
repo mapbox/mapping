@@ -2,5 +2,7 @@
 title: Configuración
 layout: category
 order: 1
-color: mustard
+color: purple
+description:
+image: getting-started.svg
 ---
