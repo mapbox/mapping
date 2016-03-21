@@ -2,7 +2,7 @@
 title: Becoming a power mapper
 layout: category
 order: 6
-color: orange
+color: purple
 # these section refer to the subfolders in _posts/
 # the subfolder names and the section list names must match exactly
 # these are not case sensitive
