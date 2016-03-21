@@ -10,6 +10,7 @@ sections:
 - Mapping
 - JOSM
 - Reference
+description: These advanced topics will allow you to take your mapping skills to the next level.
 ---
 
 These advanced topics will allow you to take your mapping skills to the next level.
