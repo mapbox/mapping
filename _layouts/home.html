@@ -23,12 +23,11 @@ options: full
   <a href="{{site.baseurl}}{{page.url | replace:'index.html',''}}" class="guide pad2y clearfix contain" id="{{page.title | downcase}}">
   <div class="shadow fill-white round-big">
     <div class="image-card image-{{page.title | downcase | replace:' ','-' | replace: ',',''}} round-top  contain">
-
-    <!-- Just adding this here for now, because I get errors on non existing svgs  -->
-     {% if page.title == "Getting started" or page.title == "Sources" or page.title == "The OpenStreetMap data model" or page.title == "Mapping with JOSM" or page.title == "Mapping common features" or page.title == "Becoming a power mapper"  %}
-     {% assign illustration = page.title | downcase | replace: ',','' | replace: ' ','-' | prepend: 'svgs/' | append: '.svg' %}
-     {% include {{illustration}} %}
-     {% endif %}
+      
+      {% if page.image %}
+      {% assign illo = page.image | prepend: 'svgs/' %}
+      {% include {{illo}} %}
+      {% endif %}
 
       <div class="clearfix contain guide-details">
       </div>

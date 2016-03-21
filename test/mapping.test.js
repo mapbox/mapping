@@ -129,6 +129,7 @@ categories.forEach(function(post){
     t.ok(metadata.order,'must have an order');
     t.equal(typeof metadata.order,'number','order must be a number');
     t.ok(metadata.description,'must have a description');
+    t.ok(metadata.image,'must have an image');
     
     t.equal(post.indexOf(' '),-1,'file name must not contain spaces');
     t.equal(post.toLowerCase(),post,'file name must be lowercase');

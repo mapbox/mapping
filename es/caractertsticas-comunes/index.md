@@ -2,5 +2,7 @@
 title: Características comunes
 layout: category
 order: 5
-color: red
+color: orange
+description: 
+image: mapping-common-features.svg
 ---

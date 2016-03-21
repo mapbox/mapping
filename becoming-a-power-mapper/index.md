@@ -11,6 +11,7 @@ sections:
 - JOSM
 - Reference
 description: These advanced topics will allow you to take your mapping skills to the next level.
+image: becoming-a-power-mapper.svg
 ---
 
 These advanced topics will allow you to take your mapping skills to the next level.
