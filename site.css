@@ -48,6 +48,12 @@ h3.human {
     top: 0;
 }
 
+h1, h2 {
+  font-family: CoreHumanistSans, 'Open Sans', sans-serif;
+  font-weight: 800;
+  -webkit-font-smoothing: antialiased;
+}
+
 /* Colors
 ------------------------------------------------------- */
 
@@ -473,9 +479,35 @@ ul.category-list li a:hover {
   width: 100%;
 }
 .toc .active a {
-  border-left-color: #ddd;
+    border-left-color: #7689D2;
 }
 .toc a { border-left: 2px solid transparent;}
+
+.toc ul li {
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.toc ul li a {
+    color: #3E3E4E !important;
+}
+.toc ul li.h2 a {
+  font-family: CoreHumanistSans, 'Open Sans', sans-serif;
+  font-weight: 800;
+  -webkit-font-smoothing: antialiased;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.toc ul li.h3 a {
+    color: #848490 !important;
+}
+
+
+.toc ul li.active a {
+    color: #7689D2
+     !important;
+}
+
 
 /* Base candidates
 ------------------------------------------------------- */

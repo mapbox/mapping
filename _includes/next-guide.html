@@ -4,7 +4,7 @@
 {% if catSize > 1 %}<!-- es posts have two categories, only evaluate the second -->
 {% assign thisCat = include.categories[1] %}
 {% else %}
-{% assign thisCat = include.categories | join:'' %} 
+{% assign thisCat = include.categories | join:'' %}
 {% endif %}
 
 <!-- next post in category -->
@@ -19,8 +19,8 @@
 {% unless forloop.first == false %}
 
 <!-- back to category -->
-<div class='prose quiet'>
-  <div class='space-bottom0'>{% include swap.html swap='This is the last guide in this category.' lang=page.lang %}</div>
+<div class='prose quiet pad2y space-bottom2'>
+  <div class='space-bottom1 fill-light pad2 round {{currentCategory.color}}'>{% include swap.html swap='This is the last guide in this category.' lang=page.lang %}</div>
   {% if currentCategory %}<a href='{{site.baseurl}}{{currentCategoryLink}}/' class='icon quiet prev block space-bottom1'>{% include swap.html swap='back to' lang=page.lang %} {{currentCategory}}</a>{% endif %}
   <a href='{{site.baseurl}}/{% if page.lang != 'en' %}{{page.lang}}/{% endif %}' class='icon quiet prev block'>{% include swap.html swap='back to' lang=page.lang %} {% include swap.html swap='Mapping with' lang=page.lang %} OpenStreetMap</a>
 </div>
