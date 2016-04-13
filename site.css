@@ -461,6 +461,10 @@ ul.category-list li a:hover {
     padding-right: 17px;
 }
 
+.last-guide  {
+  border-radius: 30px;
+}
+
 .breadcrumb a:hover,
 .breadcrumb .active {
   color: rgba(255, 255, 255, .6);
