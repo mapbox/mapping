@@ -187,12 +187,14 @@ h1, h2 {
 .about {
   height: 0;
   overflow: hidden;
-  transition: height 0.5s;
+  -webkit-transition: height 0.25s;
+          transition: height 0.25s;
 }
 
 .about.open {
   height: 350px;
-  transition: .25s;
+  -webkit-transition: height 0.25s;
+          transition: height 0.25s;
 }
 
 @media (max-width: 400px) {
