@@ -54,6 +54,14 @@ h1, h2 {
   -webkit-font-smoothing: antialiased;
 }
 
+.icon.heart:before {
+    content: "\e63e";
+    margin-top: -1px;
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+}
+
 /* Colors
 ------------------------------------------------------- */
 
@@ -199,13 +207,13 @@ h1, h2 {
 
 @media (max-width: 400px) {
   .about.open {
-    height: 500px;
+    height: 580px;
   }
 }
 
 @media (min-width: 650px) {
   .about.open {
-    height: 250px;
+    height: 320px;
   }
 }
 
