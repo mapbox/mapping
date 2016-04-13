@@ -76,7 +76,7 @@
 <div class="fill-darkblue dark pad4y">
 <div class='limiter clearfix contain'>
   <div class="pad2y clearfix">
-    <a href="{{baseurl}}" class="fl" style="width: 60px; margin-right: 20px;">
+    <a href="{{site.baseurl}}/{% if page.lang != 'en' %}{{page.lang}}/{% endif %}" class="fl" style="width: 60px; margin-right: 20px;">
       {% include svgs/logo.svg %}
     </a>
     <div class="fl">

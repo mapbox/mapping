@@ -4,7 +4,7 @@ title: Reviewing your edits
 
 ## JOSM Validator
 
-The easiest way to [fix common mapping issues](https://github.com/mapbox/mapping/wiki/Fixing-Common-Mapping-issues) is to use the inbuilt validator in JOSM. All edits made in a session are automatically validated and a warning will be displayed before upload if any suspicious data is found.
+The easiest way to [fix common mapping issues]({{site.baseurl}}/becoming-a-power-mapper/fixing-common-mapping-issues/) is to use the inbuilt validator in JOSM. All edits made in a session are automatically validated and a warning will be displayed before upload if any suspicious data is found.
 
 ![screenshot 2015-12-11 14 30 37](https://cloud.githubusercontent.com/assets/126868/11739757/c77832c0-a013-11e5-8568-c6dd6624e127.png)
 
