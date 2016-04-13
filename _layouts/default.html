@@ -76,7 +76,7 @@
 
 <div class="about fill-purple dark">
   <div class="limiter pad4 prose">
-  <h2>Mapbox <span class="icon heart"></span>OpenStreetMap</h2>
+  <h2>Mapbox <span class="icon heart"></span> OpenStreetMap</h2>
   {% assign intro = "intro/" | append: lang | append: ".html" %}{% include {{intro}} %}
   </div>
 </div>
@@ -113,7 +113,9 @@
 
 <script type="text/javascript">
   $('#about').on('click', function(){
+    event.preventDefault();
     $('.about').toggleClass('open');
+    $(this).find('span').toggleClass('info close');
   })
 
 </script>
