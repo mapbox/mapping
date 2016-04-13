@@ -449,6 +449,20 @@ ul.category-list li a:hover {
 .breadcrumb,
 .breadcrumb a {
   color: #fff;
+  border-radius: 30px;
+}
+
+.breadcrumb a {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.breadcrumb a:first-of-type {
+    padding-left: 10px;
+    padding-right: 17px;
+}
+
+.last-guide  {
+  border-radius: 30px;
 }
 
 .breadcrumb a:hover,
@@ -527,23 +541,6 @@ ul.category-list li a:hover {
 .orange .toc ul li.active a {  color: #ff7676 !important; }
 .orange .toc .active a {   border-left-color: #ff7676; }
 
-
-/*.fill-darkblue  { background-color: #14152d !important; }
-.color-darkblue  { color: #14152d !important;}
-.fill-blue-light  { background-color: #9acfe2 !important;}
-.color-blue-light  { color: #9acfe2 !important;}
-.fill-pink       { background-color: #ffb8c7 !important; }
-.color-pink       { color: #ffb8c7 !important; }
-.fill-teal      { background-color: #41afa5 !important; }
-.color-teal      { color: #41afa5 !important; }
-.fill-denim     { background-color: #50667f !important; }
-.color-denim     { color: #50667f !important; }
-.fill-orange   { background-color: #ff7676 !important; }
-.color-orange   { color: #ff7676 !important; }
-.fill-purple-light { background-color: #f2f3fc !important; }
-.color-purple-light   { color: #f2f3fc !important; }
-.fill-purple   { background-color: #7588bc !important; }
-*/
 
 /* Base candidates
 ------------------------------------------------------- */

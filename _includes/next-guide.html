@@ -20,7 +20,7 @@
 
 <!-- back to category -->
 <div class='prose quiet pad2y space-bottom2'>
-  <div class='space-bottom1 fill-light pad2 round {{currentCategory.color}}'>{% include translate.html swap='This is the last guide in this category.' lang=page.lang %}</div>
+  <div class='space-bottom1 fill-light pad2x pad1y round last-guide {{currentCategory.color}}'>{% include translate.html swap='This is the last guide in this category.' lang=page.lang %}</div>
   {% if currentCategory %}<a href='{{site.baseurl}}{{currentCategoryLink}}/' class='icon quiet prev block space-bottom1'>{% include translate.html swap='back to' lang=page.lang %} {{currentCategory}}</a>{% endif %}
   <a href='{{site.baseurl}}/{% if page.lang != 'en' %}{{page.lang}}/{% endif %}' class='icon quiet prev block'>{% include translate.html swap='back to' lang=page.lang %} {% include translate.html swap='Mapping with' lang=page.lang %} OpenStreetMap</a>
 </div>
