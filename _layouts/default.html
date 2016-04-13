@@ -74,7 +74,7 @@
 <!-- set lang variable -->
 {% if page.lang %}{% assign lang = page.lang %}{% endif %}
 
-<div class="about fill-purple dark">
+<div class="about fill-purple dark" id="about-container">
   <div class="limiter pad4 prose">
   <h2>Mapbox <span class="icon heart"></span> OpenStreetMap</h2>
   {% assign intro = "intro/" | append: lang | append: ".html" %}{% include {{intro}} %}
@@ -83,7 +83,7 @@
 
 <div class="fill-darkblue dark pad4y">
 <div class='limiter clearfix contain'>
-<a href="#" class="pin-topright" id="about"><span class="icon info"></span></a>
+<a href="#" class="pin-topright" id="about"><span class="icon info" id="about-icon"></span></a>
   <div class="pad2y clearfix">
     <a href="{{site.baseurl}}/{% if page.lang != 'en' %}{{page.lang}}/{% endif %}" class="fl" style="width: 60px; margin-right: 20px;">
       {% include svgs/logo.svg %}
@@ -110,13 +110,34 @@
 </div>
 </div>
 
+<script src="{{site.baseurl}}/js/classie.js"></script>
 
 <script type="text/javascript">
-  $('#about').on('click', function(){
-    event.preventDefault();
-    $('.about').toggleClass('open');
-    $(this).find('span').toggleClass('info close');
-  })
+
+var aboutContainer = document.getElementById( 'about-container' ),
+about = document.getElementById( 'about' ),
+aboutIcon = document.getElementById( 'about-icon' ),
+body = document.body;
+
+about.onclick = function(e) {
+  e.stopPropagation();
+  e.preventDefault();
+  classie.toggle( aboutContainer, 'open' );
+  classie.toggle( aboutIcon, 'close' );
+  classie.toggle( aboutIcon, 'info' );
+};
+
+body.addEventListener("click", function () {
+  if (aboutContainer.classList.contains('open')) {
+    classie.toggle( aboutContainer, 'open' );
+    classie.toggle( aboutIcon, 'close' );
+    classie.toggle( aboutIcon, 'info' );
+  }
+}, false);
+
+aboutContainer.addEventListener("click", function (ev) {
+    ev.stopPropagation();
+}, false);
 
 </script>
 
