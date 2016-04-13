@@ -77,3 +77,11 @@ Remote control allows you to launch JOSM directly from the map on OpenStreetMap.
 Also check the **** option. Now you should be able to retrieve data directly starting on OpenStreetMap.org like this:
 
 ![retrieve-data]({{site.baseurl}}/images/retrieve-data.gif)
+
+### 7. Increasing the allocated memory for JOSM
+
+By default JOSM is allocated with 247-1024 MB of memory depending on the operating system. When JOSM reaches its maximum handling limit it pops up an error highlighting `JOSM is out of memory`
+
+![increasing memory]({{site.baseurl}}/images/increasing-memory.png)
+
+To get rid of this error increase the default allocated memory for JOSM by following [these steps](https://gist.github.com/jothirnadh/00352fff58ce2628cc4f#supply-parameters). If you are not sure of fixing this, do contact someone from the data team.
