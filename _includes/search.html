@@ -5,7 +5,7 @@
 
       <fieldset class="quiet with-icon space-bottom2">
         <span class="icon search"></span>
-        <input type="text" id="search" class="col12 round clean search-input" placeholder="{% include swap.html swap='Search' lang=page.lang %}&hellip;">
+        <input type="text" id="search" class="col12 round clean search-input" placeholder="{% include translate.html swap='Search' lang=page.lang %}&hellip;">
       </fieldset>
     </div>
 
@@ -24,8 +24,8 @@
 <!-- Search results placeholder -->
 <div id="search-results-status">
   <p>
-    <span id="search-result-count"></span> {% include swap.html swap='results for' lang=page.lang %} &ldquo;<span id="search-term"></span>&rdquo;
-    <button id="btn-clear" class="button short quiet stroke margin0">{% include swap.html swap='Clear search' lang=page.lang %}</button>
+    <span id="search-result-count"></span> {% include translate.html swap='results for' lang=page.lang %} &ldquo;<span id="search-term"></span>&rdquo;
+    <button id="btn-clear" class="button short quiet stroke margin0">{% include translate.html swap='Clear search' lang=page.lang %}</button>
   </p>
   <div id="search-results"></div>
 </div>
@@ -73,7 +73,7 @@ $(document).ready(function () {
         if (store[ref].category) {
           searchitem +='<em class="quiet small">'+store[ref].category+'</em>';  
         }
-        searchitem += '<p class="prose quiet">'+store[ref].excerpt+'</p></div><div class="col4 pad4x"><a class="round pad1y small strong pad2x fill-'+store[ref].color+' rcon next space-bottom2" href="'+store[ref].link+'">{% include swap.html swap='Read this guide' lang=page.lang %}</a><div class="col12"></div></div></div>';
+        searchitem += '<p class="prose quiet">'+store[ref].excerpt+'</p></div><div class="col4 pad4x"><a class="round pad1y small strong pad2x fill-'+store[ref].color+' rcon next space-bottom2" href="'+store[ref].link+'">{% include translate.html swap='Read this guide' lang=page.lang %}</a><div class="col12"></div></div></div>';
         resultdiv.append(searchitem);
       }
 

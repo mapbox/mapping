@@ -13,7 +13,7 @@
 
 <div class="pager round pad1y quiet space-bottom4 fill-{% if page.color %}{{page.color}}{% else %}{{currentCategoryColor}}{% endif %} breadcrumb small dark">
 	<div class="pad2x clearfix contain">
-		<a href="{{site.baseurl}}{% if page.lang != 'en' %}/{{page.lang}}{% endif %}/" class="strong fill-darken0 pad0y pad1x round icon prev">{% include swap.html swap='Mapping' lang=page.lang %}</a>
+		<a href="{{site.baseurl}}{% if page.lang != 'en' %}/{{page.lang}}{% endif %}/" class="strong fill-darken0 pad0y pad1x round icon prev">{% include translate.html swap='Mapping' lang=page.lang %}</a>
 
 		{% if currentCategory %}
     <a href="{{site.baseurl}}{{currentCategoryLink}}" class="fill-darken0 pad0y pad1x round">{{ currentCategory }}</a>

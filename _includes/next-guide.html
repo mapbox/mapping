@@ -11,7 +11,7 @@
 
 {% for category in site.categories %}{% assign catg_name = category.first %}{% assign cur_cat = thisCat | downcase %}{% if catg_name == cur_cat %}{% assign catg_posts = category.last %}{% endif %}{% endfor %}{% for post in catg_posts %}{% if post.title == page.title %}{% unless forloop.last %}{% assign prev = catg_posts[forloop.index] %}<!--<a href="{{site.baseurl}}{{ prev.url }}">{{ prev.title }}</a>-->{% endunless %}{% endif %}{% assign next = post %}{% endfor %}{% for post in catg_posts %}{% if post.title == page.title %}{% unless forloop.first %}
 <div class='prose prose-big space-bottom2'>
-  <small class=' strong block'>{% include swap.html swap='Next' lang=page.lang %}:</small>
+  <small class=' strong block'>{% include translate.html swap='Next' lang=page.lang %}:</small>
   <a href='{{site.baseurl}}{{ next.url }}' class='quiet block space-bottom1'>{{ next.title }} <span class='icon next inline'></span></a>
   <p class='small '>{{next.summary}}</p>
 </div>
@@ -20,9 +20,9 @@
 
 <!-- back to category -->
 <div class='prose quiet pad2y space-bottom2'>
-  <div class='space-bottom1 fill-light pad2 round {{currentCategory.color}}'>{% include swap.html swap='This is the last guide in this category.' lang=page.lang %}</div>
-  {% if currentCategory %}<a href='{{site.baseurl}}{{currentCategoryLink}}/' class='icon quiet prev block space-bottom1'>{% include swap.html swap='back to' lang=page.lang %} {{currentCategory}}</a>{% endif %}
-  <a href='{{site.baseurl}}/{% if page.lang != 'en' %}{{page.lang}}/{% endif %}' class='icon quiet prev block'>{% include swap.html swap='back to' lang=page.lang %} {% include swap.html swap='Mapping with' lang=page.lang %} OpenStreetMap</a>
+  <div class='space-bottom1 fill-light pad2 round {{currentCategory.color}}'>{% include translate.html swap='This is the last guide in this category.' lang=page.lang %}</div>
+  {% if currentCategory %}<a href='{{site.baseurl}}{{currentCategoryLink}}/' class='icon quiet prev block space-bottom1'>{% include translate.html swap='back to' lang=page.lang %} {{currentCategory}}</a>{% endif %}
+  <a href='{{site.baseurl}}/{% if page.lang != 'en' %}{{page.lang}}/{% endif %}' class='icon quiet prev block'>{% include translate.html swap='back to' lang=page.lang %} {% include translate.html swap='Mapping with' lang=page.lang %} OpenStreetMap</a>
 </div>
 <!-- /back to category -->
 

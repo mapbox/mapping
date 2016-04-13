@@ -1,6 +1,6 @@
 # Interface translations
 # Use this code:
-# {% include swap.html swap='guide' lang=page.lang %}
+# {% include translate.html swap='guide' lang=page.lang %}
 # Replace the value of swap with the English value listed below
 
 - en: guide
