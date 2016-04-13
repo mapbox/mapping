@@ -35,10 +35,9 @@ becoming-a-power-mapper/
 
 Posts are files that live in a category's `_post/` folder. Posts must have:
 
-* a file name following: `0000-01-01-title.md` pattern
-* the following front matter key:
+* a lowecase file name following: `0000-01-01-title.md` pattern.
+* the following front matter:
   - title:
-* posts are written in markdown
 
 You can change the date in the file name to specify order.
 
@@ -49,6 +48,14 @@ becoming-a-power-mapper/
     0000-01-02-another-title.md
   index.md
 ```
+
+To keep us consistent please follow these guidelines:
+
+* Use headlines for hierarchy. Always start at h2 (`##`) and use headlines in order. h2 and h3 will automatically appear in the table of contents on the right of the page.
+* All images should have alternative text to describe the image.
+* Link text should be descriptive. Avoid: Click [here](#) for more information.
+* Optimize images to keep our pages fast: [ImageOptim](https://imageoptim.com/mac), https://compressor.io/
+
 
 ### Category layout
 
