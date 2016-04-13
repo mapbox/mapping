@@ -184,6 +184,29 @@ h1, h2 {
 /* Category overview page
 ------------------------------------------------------- */
 
+.about {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.5s;
+}
+
+.about.open {
+  height: 350px;
+  transition: .25s;
+}
+
+@media (max-width: 400px) {
+  .about.open {
+    height: 500px;
+  }
+}
+
+@media (min-width: 650px) {
+  .about.open {
+    height: 250px;
+  }
+}
+
 .side {
   position: absolute;
   display: block;
