@@ -16,31 +16,31 @@ Routing is used to **find an optimum path in a map**. There are some key OpenStr
 
 The most important attributes required to provide the optimum route using OpenStreetMap data are:
 
-**1. Road types**
+### 1. Road types
 
 The way types are considered according to their order of importance. They are tagged with `highway=*` tag. The general order of importance for way types are:
 
     major highways > main roads > streets > footpaths
 
-**2. Maxspeed limits**
+### 2. Maxspeed limits
 
 The `maxspeed=*` tag is used to define the maximum legal speed limit for general traffic on a particular road, railway or waterway. The max speed values will be interpreted as kilometers per hour by default. The `maxspeed=*` is an important part of routing as it is used in determining the shortest time taken by a specific route to reach a destination. In case of two routes, the one with the shortest time take(higher maxspeed) and shortest distance will be the optimum route.
 
-**3. Turn-Restrictions**
+### 3. Turn-Restrictions
 
 `type=restriction` is the relation in OSM which is used to describe turn restrictions at junctions. The relation has a set of tags, e.g. `no_left_turn`, `no_right_turn`, `no_u_turn`, etc which describes the type of turn restriction. These are traffic signage at junctions and this information must be present on the map to find the best route by the routing engine while planning the journey.
 
 ![screen shot 2016-03-08 at 8 05 36 pm](https://cloud.githubusercontent.com/assets/8401827/13604633/ad8bff4a-e569-11e5-9198-3ac9c88e5619.png)
 
-**4. Access-Restrictions**
+### 4. Access-Restrictions
 
 Apart from turn restrictions, there are access restrictions for different parts of highways. Some of these tags are `access=no`, `access=private` etc which will end up altering the route to be taken during the journey. For more information on the various king of `access=*` tags take a look at [Key:access](http://wiki.openstreetmap.org/wiki/Key:access) and [Conditional restrictions](http://wiki.openstreetmap.org/wiki/Conditional_restrictions).
 
-**5. Traffic signals**
+### 5. Traffic signals
 
 Traffic signals such as: `highway=traffic_signals`, `highway=stop` or `barrier=toll_booth` as well as `traffic_calming=*` are considered during routing. The `type=restriction` more commonly referred to as **turn restrictions** are traffic signage which prohibits certain turns in intersections are also a crucial component of a great `routing` engine. 
 
-**6. Other attributes**
+### 6. Other attributes
 
 Everything that modifies the expected travel time along a road influences the navigation. Considering this, there are some other tags apart from the above mentioned tags which play a significant role in routing. They are:
 

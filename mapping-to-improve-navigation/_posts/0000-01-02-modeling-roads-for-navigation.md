@@ -96,7 +96,8 @@ Trace ways for dual carriageways road for each direction as close as possible to
   - We are able to adjust position of the lanes on the road using `placement=right_of:3` tagging if needed.
 
 Place nodes of the lines in each direction, opposite to each other, which will get a good view of the road on the map
-  ![motorway](https://cloud.githubusercontent.com/assets/369696/13231932/5b417e00-d9b5-11e5-854e-dbed2d209d7c.png)
+
+![motorway](https://cloud.githubusercontent.com/assets/369696/13231932/5b417e00-d9b5-11e5-854e-dbed2d209d7c.png)
   
 ## Further reading
 

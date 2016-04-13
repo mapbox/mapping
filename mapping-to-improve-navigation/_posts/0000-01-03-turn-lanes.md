@@ -9,7 +9,7 @@ Turn lanes serve two purposes:
  * Provide directional information to the ongoing vehicles and
  * Provide the lane information to be chosen for the vehicles changing their direction
 
-### Types of turn lanes
+## Types of turn lanes
 
 There are a total of 12 different turn lanes demarcated on the roads. They are:
 
@@ -32,9 +32,9 @@ bothways | ![turn lanes both ways](https://cloud.githubusercontent.com/assets/84
   _road markings on the ground_ - © [pdd.ua](http://pdd.ua/ua/34/1.18/)
   
   
-### Other Markings apart from turn:lanes
+## Other Markings apart from turn:lanes
   
-#### HOV
+### HOV
 
 [HOV](http://wiki.openstreetmap.org/wiki/Key:hov) is a symbol demarcated on major roads generally used to indicate vehicle occupancy requirements.
 
@@ -42,7 +42,7 @@ bothways | ![turn lanes both ways](https://cloud.githubusercontent.com/assets/84
 
 In the above cases tag given to the road are `hov:lanes=designated|yes|yes|yes`
 
-### Pre-requirements for mapping a turn lane in JOSM
+## Pre-requirements for mapping a turn lane in JOSM
 
 Before mapping turn lanes activate the following preferences in JOSM to visualize the mapped turn lanes: `preferences > Map Settings`
 * *`Map Paint Styles > Lane and road attributes`*
@@ -55,7 +55,7 @@ Before mapping turn lanes activate the following preferences in JOSM to visualiz
 
 * Filter out non road features with inverse filter: `boundary: | leisure: | landuse: | waterway: | amenity: | natural: | building:`
 
-### Mapping a turn lane
+## Mapping a turn lane
 
 * Check all roads in the imagery for turn lanes at junction points
 
@@ -77,13 +77,13 @@ Before mapping turn lanes activate the following preferences in JOSM to visualiz
 
   ![lane_attributes](https://cloud.githubusercontent.com/assets/8401827/13251884/ddcbdd54-da58-11e5-86ae-c4a2918c9577.gif)
 
-### `turn:lanes` and relations
+## turn:lanes and relations
 
 We use [relations](http://wiki.openstreetmap.org/wiki/Relation) for different purpose – for indicating [turn restriction](http://wiki.openstreetmap.org/wiki/Relation:restriction) or collect separate ways into solid [route](http://wiki.openstreetmap.org/wiki/Relation:route).
 ​
 JOSM help us to handle them. But sometimes we are faced with not properly denoted relations. JOSM will inform about it while uploading our changes. You may [ignore messages of level "Warnings"](https://github.com/mapbox/mapping/issues/153#issuecomment-185679507) (if you only split ways and didn't edit relations manually) but you have to fix all "Errors".
 
-### Further reading
+## Further reading
 
 * [Mapping turn lanes: OSM wiki](http://wiki.openstreetmap.org/wiki/Key:turn)
 * [Mapping turn lanes in OpenStreetMap by Andrey Golovin](https://www.mapbox.com/blog/turn-lanes-mapping/)
