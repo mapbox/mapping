@@ -1152,12 +1152,12 @@ pre.pre-guides:before {
   }
 
    .image-card {
-    height: 415px;
+    height: 325px;
    }
 
 }
 
-@media only screen and  (max-width: 640px) {
+@media only screen and  (max-width: 700px) {
   .guide,
   .guide-wide {
     width: 100%;
@@ -1170,7 +1170,7 @@ pre.pre-guides:before {
 
 
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 700px) {
   .image-card {
       width: 30%;
       border-radius: 5px 0px 0px 5px;
@@ -1185,9 +1185,18 @@ pre.pre-guides:before {
       border-radius: 0px 5px 5px 0px;
       min-height: 175px;
     }
+    .card-content .center {
+      text-align: left;
+    }
+
     .guide {
       padding-top: 0;
       padding-bottom: 0;
       margin-bottom: 10px;
+    }
+    .guide-description {
+      padding-left: 0px;
+      padding-right: 0px;
+      min-height: 0px;
     }
 }
