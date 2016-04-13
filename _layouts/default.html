@@ -74,8 +74,11 @@
 <!-- set lang variable -->
 {% if page.lang %}{% assign lang = page.lang %}{% endif %}
 
-<div class="about">
-  <div class="limiter pad4 prose">{% assign intro = "intro/" | append: lang | append: ".html" %}{% include {{intro}} %}</div>
+<div class="about fill-purple dark">
+  <div class="limiter pad4 prose">
+  <h2>Mapbox <span class="icon heart"></span>OpenStreetMap</h2>
+  {% assign intro = "intro/" | append: lang | append: ".html" %}{% include {{intro}} %}
+  </div>
 </div>
 
 <div class="fill-darkblue dark pad4y">
