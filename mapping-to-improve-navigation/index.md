@@ -1,5 +1,5 @@
 ---
-title: Mapping to improve navigation data in OpenStreetMap
+title: Mapping to improve navigation
 layout: category
 order: 6
 color: 
