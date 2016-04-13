@@ -3,6 +3,6 @@ title: Características comunes
 layout: category
 order: 5
 color: orange
-description: Este es un tutorial de las características más importantes que querrás mapear en OpenStreetMap.
+description: Una guía para crear y editar los elementos más comunes en OpenStreetMap.
 image: mapping-common-features.svg
 ---

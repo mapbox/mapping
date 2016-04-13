@@ -3,8 +3,8 @@ title: Convertirse en un mapeador poderoso
 layout: category
 order: 6
 color: purple
-description: Estas páginas te permitirán sacar el máximo partido de JOSM y convertirte en un poderoso mapeador en OpenStreetMap.
+description: Aquí encontrarás temas avanzados para llevar tus habilidades de mapeo al siguiente nivel.
 image: becoming-a-power-mapper.svg
 ---
 
-Estas páginas te permitirán sacar el máximo partido de JOSM y convertirte en un poderoso mapeador en OpenStreetMap.
+Aquí encontrarás temas avanzados para llevar tus habilidades de mapeo al siguiente nivel.

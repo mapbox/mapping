@@ -3,6 +3,6 @@ title: Fuentes
 layout: category
 order: 2
 color: pink
-description: La mayoría de los datos de OpenStreetMap o bien es encuestada, trazada a partir de imágenes de satélite o importados de fuentes de terceros.
+description: Un elemento de gran importancia para hacer un excelente mapeo es seleccionar la fuente apropiada y traducirla correctamente a OpenStreetMap.
 image: sources.svg
 ---
