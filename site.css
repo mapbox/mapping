@@ -509,6 +509,42 @@ ul.category-list li a:hover {
 }
 
 
+.purple .toc ul li.active a {  color: #7689D2 !important; }
+.purple .toc .active a {   border-left-color: #7689D2; }
+
+.darkblue .toc ul li.active a {  color: #14152d !important; }
+.darkblue .toc .active a {   border-left-color: #14152d; }
+
+.blue-light .toc ul li.active a {  color: #9acfe2 !important; }
+.blue-light .toc .active a {   border-left-color: #9acfe2; }
+
+.pink .toc ul li.active a {  color: #E29AAA !important; }
+.pink .toc .active a {   border-left-color: #E29AAA; }
+
+.denim .toc ul li.active a {  color: #50667f !important; }
+.denim .toc .active a {   border-left-color: #50667f; }
+
+.orange .toc ul li.active a {  color: #ff7676 !important; }
+.orange .toc .active a {   border-left-color: #ff7676; }
+
+
+/*.fill-darkblue  { background-color: #14152d !important; }
+.color-darkblue  { color: #14152d !important;}
+.fill-blue-light  { background-color: #9acfe2 !important;}
+.color-blue-light  { color: #9acfe2 !important;}
+.fill-pink       { background-color: #ffb8c7 !important; }
+.color-pink       { color: #ffb8c7 !important; }
+.fill-teal      { background-color: #41afa5 !important; }
+.color-teal      { color: #41afa5 !important; }
+.fill-denim     { background-color: #50667f !important; }
+.color-denim     { color: #50667f !important; }
+.fill-orange   { background-color: #ff7676 !important; }
+.color-orange   { color: #ff7676 !important; }
+.fill-purple-light { background-color: #f2f3fc !important; }
+.color-purple-light   { color: #f2f3fc !important; }
+.fill-purple   { background-color: #7588bc !important; }
+*/
+
 /* Base candidates
 ------------------------------------------------------- */
 
@@ -1120,14 +1156,19 @@ pre.pre-guides:before {
   }
 
 
-@media  only screen and (min-width: 1200px) {
+@media  only screen and (max-width: 1500px) {
   .guide {
-    width: 25%;
+    width: 33%;
     float: left;
   }
   .guide-wide {
-    width: 25%;
+    width: 33%;
     float: left;
+  }
+  .image-card {
+    background-size: cover;
+    height: 290px;
+    padding: 30px;
   }
 }
 
