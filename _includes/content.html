@@ -1,9 +1,16 @@
+
+{% assign categories = site.pages | where: 'layout', 'category' | sort: 'order' %}
+{% for category in categories %}
+{% assign currentCategoryColor = category.color %}
+{% endfor %}
+
+
 <div class="col8 prose doc">
   <h1>{{include.title}}</h1>
   {{include.text}}
   {% include next-guide.html %}
 </div>
-<div class="col4 toc-wrapper">
+<div class="col4 toc-wrapper test {% if page.color %}{{page.color}}{% else %}{{currentCategoryColor}}{% endif %}">
   <div class="toc" data-spy='affix' data-offset-top="275">
     {{ include.text | toc }}&nbsp;
   </div>
