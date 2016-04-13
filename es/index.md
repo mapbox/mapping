@@ -3,6 +3,6 @@ layout: home
 title: Mapeando con OpenStreetMap
 ---
 
-OpenStreetMap is the free and editable map of the world, created and maintained by a huge international community. Mapbox Streets, our customizable map layer of streets, buildings, and places from all around the world, is powered by open data from OpenStreetMap. Anybody can create an account and start editing on [OpenStreetMap.org](http://www.openstreetmap.org) within minutes.
+OpenStreetMap es el mapa libre y editable del mundo, creado y mantenido por una gran comunidad internacional. 'Mapbox Streets', la capa base de nuestro mapa que contiene calles, edificios, y lugares de todo el mundo, se alimenta de los datos abiertos de OpenStreetMap. Cualquiera puede crear una cuenta en [OpenStreetMap.org](http://www.openstreetmap.org) y empezar a editar en cuestión de minutos.
 
-Our data team updates OpenStreetMap based on quality analysis and customer feedback. Our principle is *[work in the open](https://www.mapbox.com/blog/osm-mapping-guide/)*. You are welcome to join [one of our open mapping projects over on the issue queue](https://github.com/mapbox/mapping/issues) and use these best practice mapping guides.
+Nuestro equipo de datos actualiza OpenStreetMap con base en un análisis de calidad y la retroalimentación de clientes. Nuestro principio es *[trabajar de manera abierta](https://www.mapbox.com/blog/osm-mapping-guide/)*. Te invitamos a que te sumes [a uno de nuestros proyectos de mapeo abierto disponibles en nuestra lista de _tickets_](https://github.com/mapbox/mapping/issues) y utilices estas guías con las mejores prácticas de mapeo.
