@@ -1,0 +1,1 @@
+{% assign set = (site.data.translations | where: 'en',include.swap) %}{% if set %}{% for swap in set %}{% if include.lang != 'en' and swap.[include.lang] %}{{swap.[include.lang]}}{% else %}{{include.swap}}{% endif %}{% endfor %}{% else %}nah{% endif %}

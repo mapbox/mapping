@@ -1,0 +1,85 @@
+---
+layout: default
+head: <link rel="stylesheet" href="/mapping/site.css">
+---
+
+<!-- get page category -->
+{% assign category = page.dir | downcase | replace:'/','' %}
+<!-- count number of posts for this category-->
+{% assign numPosts = 0 %}
+{% for post in site.posts %}
+{% assign thisCategory = post.categories | join: '' %}
+{% if thisCategory == category %}{% assign numPosts = numPosts | plus: 1 %}{% endif %}{% endfor %}
+
+<div class="clearfix pad4y">
+
+{% include pager.html %}
+
+<!-- there are three different options for printing out-->
+<!-- [1] sort a list of posts by section -->
+<!-- [2] list all posts -->
+<!-- [3] if there is only one post in a category, show the contents -->
+<!-- Jekyll will evaluate which one to do, so the layout is flexible-->
+
+
+{% if page.sections %}
+
+<!-- //////////////////////////////////////////// -->
+<!-- [1] if the page has sections, sort by section-->
+<!-- //////////////////////////////////////////// -->
+<div class="prose col8 doc">
+<h1>{{page.title}}</h1>
+
+{{content}}
+  <!-- get the number of sections -->
+  {% assign numSections = page.sections | size | minus: 1 %}
+  <!-- sort posts by section and category-->
+  {% for i in (0..numSections) %}
+  <!-- section heading -->
+  <h2>{{page.sections[i]}}</h2>
+  {% assign section = page.sections[i] | downcase | append: '/' | prepend: '/' %}
+  {% for post in site.posts reversed %}{% assign thisCategory = post.categories | join: '' %}{% if thisCategory == category and post.path contains section %}
+  <li><a href="{{site.baseurl}}{{post.url | replace:'index.html',''}}">{{post.title}}</a></li>
+  {% endif %}{% endfor %}
+  {% endfor %}
+</div>
+{% elsif numPosts > 1 %} 
+
+<!-- ////////////////////////////////////////////////// -->
+<!-- [2] if there is more than on post, list all posts -->
+<!-- ////////////////////////////////////////////////// -->
+
+<div class="prose col8 doc">
+<h1>{{page.title}}</h1>
+
+{{content}}
+  
+  <ul>
+  {% for post in site.posts reversed %}{% assign thisCategory = post.categories | join: '' %}{% if thisCategory == category %}
+  <li><a href="{{site.baseurl}}{{post.url | replace:'index.html',''}}">{{post.title}}</a></li>
+  {% endif %}{% endfor %}
+  </ul>
+</div>
+{% else %}
+
+<!-- //////////////////////////////////////////////// -->
+<!-- [3] if there is only one post, dump the contents -->
+<!-- ///////////////////////////////////////////////// -->
+
+  {% for post in site.posts reversed %}{% assign thisCategory = post.categories | join: '' %}{% if thisCategory == category %}
+  
+  {% include content.html title=page.title text=post.content categories=post.categories %}
+  
+  {% endif %}{% endfor %}
+
+{% endif %}
+
+</div>
+
+
+<script type="text/javascript" src="{{site.baseurl}}/js/affix.js"></script>
+<script type="text/javascript" src="{{site.baseurl}}/js/scrollspy.js"></script>
+
+<script>
+$('body').scrollspy({ target: '.toc' });
+</script>
