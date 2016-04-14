@@ -8,7 +8,7 @@ Public issue tracker for OpenStreetMap contribution work by Mapbox. You're invit
 
 ## Contributing
 
-Read the [contributing guide](https://github.com/mapbox/maping/blob/mb-pages/CONTRIBUTING.md) to learn how to add or edit any content.
+Read the [contributing guide](https://github.com/mapbox/mapping/blob/mb-pages/CONTRIBUTING.md) to learn how to add or edit any content.
 
 ## Build 
 
