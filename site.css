@@ -1227,8 +1227,10 @@ pre.pre-guides:before {
     float: left;
   }
    .image-card {
-    /*height: 400px;*/
-   }
+      background-size: cover;
+      height: 230px;
+      padding: 30px;
+  }
 }
 
 @media  only screen and (max-width: 1024px) {
@@ -1241,6 +1243,12 @@ pre.pre-guides:before {
     height: 325px;
    }
 
+}
+
+@media only screen and  (max-width: 790px) {
+  .image-card {
+    height: 255px;
+  }
 }
 
 @media only screen and  (max-width: 700px) {
