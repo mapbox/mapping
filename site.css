@@ -1245,6 +1245,12 @@ pre.pre-guides:before {
 
 }
 
+@media  only screen and (max-width: 900px) {
+  .language, #about {
+      right: 20px;
+  }
+}
+
 @media only screen and  (max-width: 790px) {
   .image-card {
     height: 255px;
@@ -1260,6 +1266,7 @@ pre.pre-guides:before {
   .guide > div {
     /*height: 455px;*/
   }
+
 }
 
 
