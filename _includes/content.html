@@ -1,9 +1,12 @@
 
 {% assign categories = site.pages | where: 'layout', 'category' | sort: 'order' %}
 {% for category in categories %}
+{% assign thisCategory = page.categories | join: '' %}
+{% assign stripCategory = category.dir | downcase | replace:'/','' %}
+{% if stripCategory == thisCategory %}
 {% assign currentCategoryColor = category.color %}
+{% endif %}
 {% endfor %}
-
 
 <div class="col8 prose doc">
   <h1>{{include.title}}</h1>
