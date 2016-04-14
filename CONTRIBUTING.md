@@ -1,4 +1,6 @@
 
+The mapping guides are hosted on the `mb-pages` branch of this repo only. Please make pull requests from `mb-pages`.
+
 Please read through this contributing guide to learn how /mapping is built.
 
 ## Structure
