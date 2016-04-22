@@ -18,19 +18,19 @@ meta[lang=ru] {
 
 
 
-*|z-12[eval(JOSM_search("timestamp:2015/today"))] {
+*|z-12[eval(JOSM_search("timestamp:2015/"))] {
   casing-width: 4;
   casing-color: lime;
   casing-opacity: 0.2;
 }
 
-*|z13-18[eval(JOSM_search("timestamp:2015/today"))] {
+*|z13-18[eval(JOSM_search("timestamp:2015/"))] {
   casing-width: 5;
   casing-color: lime;
   casing-opacity: 0.2;
 }
 
-*|z19-[eval(JOSM_search("timestamp:2015/today"))] {
+*|z19-[eval(JOSM_search("timestamp:2015/"))] {
   casing-width: 10;
   casing-color: lime;
   casing-opacity: 0.2;
