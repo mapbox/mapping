@@ -170,7 +170,7 @@ Try different drawing styles yourself and figure out which ones help you do your
 
 #### Highlight data freshness
 
-You can use [this style](https://raw.githubusercontent.com/Andygol/josm-styles/master/created_in_2015.mapcss) to highlight features that are created or modified in 2015. To configure this:
+You can use [this style](https://raw.githubusercontent.com/Andygol/josm-styles/master/recent%20changes_2016.mapcss) to highlight features that are created or modified in 2016. To configure this:
 
 ![](https://cloud.githubusercontent.com/assets/369696/9634340/e596f890-5199-11e5-8335-55d63a9b11d2.gif)
 
