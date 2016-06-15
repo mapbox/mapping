@@ -30,10 +30,10 @@ bothways | ![turn lanes both ways](https://cloud.githubusercontent.com/assets/84
 
   ![](http://pdd.ua/r/r/EEB7A996-D8DC-40FC-87EA-01F3E115BC7C/m_1.18_4.jpg)
   _road markings on the ground_ - © [pdd.ua](http://pdd.ua/ua/34/1.18/)
-  
-  
+
+
 ## Other Markings apart from turn:lanes
-  
+
 ### HOV
 
 [HOV](http://wiki.openstreetmap.org/wiki/Key:hov) is a symbol demarcated on major roads generally used to indicate vehicle occupancy requirements.
@@ -45,6 +45,7 @@ In the above cases tag given to the road are `hov:lanes=designated|yes|yes|yes`
 ## Pre-requirements for mapping a turn lane in JOSM
 
 Before mapping turn lanes activate the following preferences in JOSM to visualize the mapped turn lanes: `preferences > Map Settings`
+
 * *`Map Paint Styles > Lane and road attributes`*
 
   ![lane_and_road_attributes](https://cloud.githubusercontent.com/assets/13744156/13218788/c55fab96-d991-11e5-89b2-b281986d704e.gif)

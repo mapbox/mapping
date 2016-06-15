@@ -36,18 +36,18 @@ Turn lanes should terminate at the first highway junction after the start of the
 
 ### 5. Turn lane forward
 
-In case of bi-directional ways, the key [turn:lanes:forward=*](http://wiki.openstreetmap.org/wiki/Forward_%26_backward,_left_%26_right) describes only the turning indications on the lanes in the same direction as the osm-way; while adding this we must view the road in the direction to the osm-way(**on the direction where the osm-way arrow is pointing**).
+In case of bi-directional ways, the key [turn:lanes:forward=*](http://wiki.openstreetmap.org/wiki/Forward_%26_backward,_left_%26_right) describes only the turning indications on the lanes in the same direction as the osm-way; while adding this we must view the road in the direction to the osm-way (**on the direction where the osm-way arrow is pointing**).
 
   ![turn:lanes:forward](https://cloud.githubusercontent.com/assets/8401827/13175904/c5c922fc-d733-11e5-91b1-c0f9e5181fda.gif)
 
 ### 6. Turn lane backward
 
-In case of bi-directional ways, the key [turn:lanes:backward=*](http://wiki.openstreetmap.org/wiki/Forward_%26_backward,_left_%26_right) describes only the turning indications on the lanes in the opposite direction as the osm-way; while adding this we must view the road in the oppoiste direction to the osm-way(**opposite to direction where the osm-way arrow is pointing**).
+In case of bi-directional ways, the key [turn:lanes:backward=*](http://wiki.openstreetmap.org/wiki/Forward_%26_backward,_left_%26_right) describes only the turning indications on the lanes in the opposite direction as the osm-way; while adding this we must view the road in the opposite direction to the osm-way (**opposite to direction where the osm-way arrow is pointing**).
 
   ![turn:lanes:backward](https://cloud.githubusercontent.com/assets/13744156/13172709/859957c4-d71f-11e5-8cd9-ea154ad5d2e8.gif)
 
   *Adding a `turn:lanes:backward` tag*
-  
+
 ### 7. Adding dual carriageways:
 
 When finding roads mapped as single carriageway while the imagery shows clear separation between roads, split the road where the physical separation starts and add dual carriageways.
@@ -56,9 +56,9 @@ When finding roads mapped as single carriageway while the imagery shows clear se
 
 
 **When to add dual carriageway?**
-- Add Dual-carriage when 
- - you see physical separation betweens roads
- - **no relation is attached to the way.**
+- Add Dual-carriage when
+  - you see physical separation betweens roads
+  - **no relation is attached to the way.**
 - Add `turn:lanes` tag to both the ways.
 
 
