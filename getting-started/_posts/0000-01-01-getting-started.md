@@ -74,7 +74,7 @@ Remote control allows you to launch JOSM directly from the map on OpenStreetMap.
 
 ![enable-remote-control]({{site.baseurl}}/images/enable-remote-control.png)
 
-Also check the **** option. Now you should be able to retrieve data directly starting on OpenStreetMap.org like this:
+Also check the **Download objects to a new layer** option. Now you should be able to retrieve data directly starting on OpenStreetMap.org like this:
 
 ![retrieve-data]({{site.baseurl}}/images/retrieve-data.gif)
 
