@@ -19,10 +19,10 @@ options: full
   {% assign langDir = page.lang | append: '/' %}
   {% assign title = page.dir | downcase | replace: langDir,'' | replace: '/','' %}
   {% assign guideCount = 0 %}{% for post in site.categories[title] %}{% assign guideCount = guideCount | plus: 1 %}{% endfor %}
-  <a href="{{site.baseurl}}{{page.url | replace:'index.html',''}}" class="guide pad2y clearfix contain" id="{{page.title | downcase}}">
+  <a href="{{site.baseurl}}{{page.url | replace:'index.html',''}}" class="guide pad2y clearfix contain" id="{{page.title | downcase | replace: ' ', '-' }}">
   <div class="shadow fill-white round-big">
     <div class="image-card image-{{page.title | downcase | replace:' ','-' | replace: ',',''}} round-top  contain">
-      
+
       {% if page.image %}
       {% assign illo = page.image | prepend: 'svgs/' %}
       {% include {{illo}} %}
