@@ -24,6 +24,7 @@ Use the `lanes=*` key to tag how many full-width traffic lanes there are on a hi
 ### Roads with more than two lanes
 
 There are two cases:
+
 - Roads which carry traffic in both directions and
 
   ![bidirectional_road](https://cloud.githubusercontent.com/assets/369696/13230341/9f9db6c0-d9ad-11e5-9f5d-53dd80b40f67.png)
@@ -97,8 +98,8 @@ Trace ways for dual carriageways road for each direction as close as possible to
 
 Place nodes of the lines in each direction, opposite to each other, which will get a good view of the road on the map
 
-![motorway](https://cloud.githubusercontent.com/assets/369696/13231932/5b417e00-d9b5-11e5-854e-dbed2d209d7c.png)
-  
+  ![motorway](https://cloud.githubusercontent.com/assets/369696/13231932/5b417e00-d9b5-11e5-854e-dbed2d209d7c.png)
+
 ## Further reading
 
 * Adding lanes in OSM: [OSM wiki](http://wiki.openstreetmap.org/wiki/Key:lanes)

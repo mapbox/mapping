@@ -12,8 +12,8 @@
   {% if page.card %}
   <meta name='twitter:site' content='@Mapbox' />
   <meta property='og:site_name' content='Mapbox' />
-  <meta name='twitter:url' content='{% if page.permalink %}{{page.permalink}}{% else %}{{page.url | replace:"index.html",""}}{% endif %}' />
-  <meta property='og:url' content='{% if page.permalink %}{{page.permalink}}{% else %}{{page.url | replace:"index.html",""}}{% endif %}' />
+  <meta name='twitter:url' content='{{site.url}}{{site.baseurl}}{% if page.permalink %}{{page.permalink}}{% else %}{{page.url | replace:"index.html",""}}{% endif %}' />
+  <meta property='og:url' content='{{site.url}}{{site.baseurl}}{% if page.permalink %}{{page.permalink}}{% else %}{{page.url | replace:"index.html",""}}{% endif %}' />
   <meta name='twitter:title' content='{{page.title | replace:"'","&rsquo;" | replace:"'","&rsquo;"}}' />
   <meta property='og:title' content='{{page.title | replace:"'","&rsquo;" | replace:"'","&rsquo;"}}' />
   <meta name='twitter:description' content='{% if page.description %}{{ page.description | truncatewords: 30 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | replace:"'","&rsquo;" | replace:"'","&rsquo;" | truncatewords: 30 }}{% else %}{{content | strip_html | truncatewords: 30 }}{% endif %}' />
@@ -64,9 +64,9 @@
 
   {% if site.test %}<script src='{{site.url}}/test/tape.js'></script>{% endif %}
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.js'></script>
-  {% if page.head %}{{page.head}}{% endif %}
+  {% if page.head %}{{page.head}}{% endif %}{% if layout.head %}{{layout.head}}{% endif %}
 </head>
-<body class='{{page.class}} {{page.options}}{% if page.blog_featured == true %} bleed{% endif %}'>
+<body class='{{page.class}} {{page.options}} {{layout.class}} {{layout.options}}'>
 <!-- Google Tag Manager -->
 <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PQR37Z" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript> <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-PQR37Z');</script>
 <!-- End Google Tag Manager -->
@@ -101,7 +101,7 @@
 
 <div class='page-content'>
 
-<div class='{% unless page.options contains 'full' %} limiter clearfix{% endunless %}'>{{content}}</div>
+<div class='{% unless page.options contains 'full' or layout.options contains 'full' %} limiter clearfix{% endunless %}'>{{content}}</div>
 
 <div class='fill-darkblue dark footer-in-docs terms-in-docs col12 center footer-copyright small pad4 noprint contain' data-swiftype-index='false'>
   <a href='{{site.url}}/tos'>Terms</a> +
