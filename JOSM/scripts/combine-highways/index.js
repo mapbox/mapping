@@ -174,7 +174,6 @@ while (exe) {
     ways();
     merge();
     if (interways.length > 0) {
-        exe = true;
         interways = [];
         interways_id = {};
         endnodes = [];
