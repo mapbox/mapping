@@ -14,6 +14,7 @@ Datasources that use open data or OSM for your Studio project.
 |World Railways|
 |Mapping project cities|Boundaries of cities selected for Mapbox mapping projects|Bing|[maning.worldcities](https://www.mapbox.com/studio/tilesets/maning.worldcities/)
 |LA Census Blocks|Census blocks of Los Angeles|LA|[maning.la_censusblock](https://www.mapbox.com/studio/tilesets/maning.la_censusblock)|
+|Land Polygons|Low zoom unsplit land polygons for the world|[OSM](http://openstreetmapdata.com/data/land-polygons)|[planemad.8cl26ixq](https://www.mapbox.com/studio/tilesets/planemad.8cl26ixq/)|
 
 
 **Tips**
