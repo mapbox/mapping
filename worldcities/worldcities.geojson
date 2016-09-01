@@ -77811,7 +77811,8 @@
   "type": "Feature",
   "properties": {
     "area": "yes",
-    "id": "way/-113381"
+    "id": "way/-113381",
+    "label":"Stuttgart_GE"
   },
   "geometry": {
     "coordinates": [
@@ -77901,7 +77902,8 @@
   "type": "Feature",
   "properties": {
     "area": "yes",
-    "id": "way/-20118"
+    "id": "way/-20118",
+    "label":"Wolfsburg_GE"
   },
   "geometry": {
     "coordinates": [
@@ -78027,7 +78029,8 @@
   "type": "Feature",
   "properties": {
     "area": "yes",
-    "id": "way/-72124"
+    "id": "way/-72124",
+    "label":"Berlin_GE"
   },
   "geometry": {
     "coordinates": [
