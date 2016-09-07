@@ -102,6 +102,21 @@
     },
     {
       "type": "Feature",
+      "id": "node/-15139",
+      "properties": {
+        "area": "yes",
+        "id": "node/-15139"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          11.59089133382,
+          48.23077549283
+        ]
+      }
+    },
+    {
+      "type": "Feature",
       "id": "way/-22015",
       "properties": {
         "area": "yes",
