@@ -6,7 +6,8 @@
   "id": "way/-22015",
   "properties": {
     "area": "yes",
-    "id": "way/-22015"
+    "id": "way/-22015",
+    "label": "Frankfurt_GE"
   },
   "geometry": {
     "type": "Polygon",
