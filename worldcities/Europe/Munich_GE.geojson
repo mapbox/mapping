@@ -6,7 +6,8 @@
   "id": "way/-15141",
   "properties": {
     "area": "yes",
-    "id": "way/-15141"
+    "id": "way/-15141",
+    "label": "Munich_GE"
   },
   "geometry": {
     "type": "Polygon",
@@ -97,21 +98,6 @@
           48.23077549283
         ]
       ]
-    ]
-  }
-},
-{
-  "type": "Feature",
-  "id": "node/-15139",
-  "properties": {
-    "area": "yes",
-    "id": "node/-15139"
-  },
-  "geometry": {
-    "type": "Point",
-    "coordinates": [
-      11.59089133382,
-      48.23077549283
     ]
   }
 }
