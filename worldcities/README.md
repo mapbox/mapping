@@ -12,7 +12,7 @@ A metropolitan has two mapping boundaries
 - `Core` area that carries mostly non residential business traffic of a city
 - `Exterior` area that includes the urbanized zone around the core area
 
-<img width="445" alt="openstreetmap_navigation_data_map" src="https://cloud.githubusercontent.com/assets/126868/18376698/f5b03470-767e-11e6-995a-f4131384ba86.png">
+<img width="445" alt="openstreetmap_navigation_data_map" src="https://cloud.githubusercontent.com/assets/126868/18376698/f5b03470-767e-11e6-995a-f4131384ba86.png"><br>
 _Illustration of mapping boundaries for a city_
 
 **Core area**
