@@ -1,6 +1,7 @@
 A repository of world city boundaries to be used for mapping projects.
 
 - **Dataset:** [`autochethan/cistweviu000a2tptqasdxpmo`](https://www.mapbox.com/studio/datasets/autochethan/cistweviu000a2tptqasdxpmo)
+- **Tileset**: [`autochethan.cistweviu000a2tptqasdxpmo-2ft28`](https://www.mapbox.com/studio/tilesets/autochethan.cistweviu000a2tptqasdxpmo-2ft28/)
 - Draw new and modify existing boundaries directly in the dataset with appropriate properties
 - To update all the maps with the new data `Export to WorldCities tileset`
 - To get a geojson of any particular boundary, open the dataset editor and click the feature for the raw geojson
