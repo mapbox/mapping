@@ -1,4 +1,4 @@
-# Get length (km) of lines for a geojson 
+# Get length (km) of roads 
 
 Quickly get length (for example, roads) of lines of a geojson file.
 
