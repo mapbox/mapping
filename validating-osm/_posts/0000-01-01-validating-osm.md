@@ -4,7 +4,7 @@ title: Validating OpenStreetMap Data
 
 At Mapbox, we map as well as inspect the data that is coming into OpenStreetMap for quality. This is the definitive guide that we follow - from detecting potentially harmful changes to inspecting them and eventually fixing the map.
 
-## 1. What is a problematic edit?
+## What is a problematic edit?
 
 Every change to OpenStreetMap is contained in a [changeset](http://wiki.openstreetmap.org/wiki/Changeset). They consist of either additions (new feature), modifications (change existing tags, feature location, or location of a referred feature) or deletions by a mapper.
 
@@ -20,14 +20,14 @@ There are several kinds of potentially problematic changes. For example:
 
 Creation and deletion of features, modification to tags and modification to a node's location, result in a `version` increment. Every change by every user is retained as a separate version of the object in the OpenStreetMap database. Changes to nodes within a way, or to members of a relation, result in displayed changes to the way/relation but do *not* increment `version`.
 
-## 2. Identifying problematic edits.
+## Identifying problematic edits.
 
  * **OSMCha**: Changeset level notification, giving an overview of how many objects were affected in a changeset. A set of suspects words automatically flag some suspicious changes. Custom filters can be used with changeset comment, source, and other combinations to look for suspicious edits. Read more about [using OSMCha to identify and inspect OpenStreetMap data.](https://github.com/mapbox/mapping/wiki/Using-OSMCha-for-inspecting-changes-in-OpenStreetMap)
  * **Linting**
  * **Map Feedback from Mapbox users**: Sometimes we receive notice through [Map feedback](https://www.mapbox.com/map-feedback/) where the Mapbox users report the changes.
  * **OSM communication channels.**
 
-## 3. Investigation
+## Investigation
 
 After identifying potentially problematic data on the map, you will want to determine few things to start:
 
@@ -84,7 +84,7 @@ This is where [Changeset Map](http://osmlab.github.io/changeset-map/) comes in h
 
 ![vali](https://cloud.githubusercontent.com/assets/3423533/14984377/f28d4942-115f-11e6-9c28-956faab784a3.gif)
 
-## 4. Response
+## Response
 
 At this point, you know who, when, and which changeset are associated with the problematic change.
 
@@ -137,7 +137,7 @@ The level of response depends on how severe the change is to OpenStreetMap. Urge
 
 3. If the mapper is using the proprietary data sources like Google, Bing Maps, Here Maps or other sources which are not open licensed then comment on the user changeset and mention [Copyright guidance for OpenStreetMap](http://www.openstreetmap.org/copyright). Encourage them to revert the changes and follow local knowledge, or stick to Bing and Mapbox Satellite Imagery.
 
-# 5. Common Scenarios
+## Common Scenarios
 
 Here are a few common scenarios of bad edits in OpenStreetMap.
 
