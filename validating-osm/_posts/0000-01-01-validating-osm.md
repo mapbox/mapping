@@ -4,25 +4,7 @@ title: Validating OpenStreetMap Data
 
 At Mapbox, we map as well as inspect the data that is coming into OpenStreetMap for quality. This is the definitive guide that we follow - from detecting potentially harmful changes to inspecting them and eventually fixing the map.
 
-# Contents
-
-1. [What is a problematic edit?](https://github.com/mapbox/mapping/wiki/Validating-OpenStreetMap#1-what-is-a-problematic-edit)
-2. [Identifying problematic edits.](https://github.com/mapbox/mapping/wiki/Validating-OpenStreetMap#2-identifying-problematic-edits
-)
- * OSMCha
- * OSM Lint
- * OSM Communication Channels
-3. [Investigation.](https://github.com/mapbox/mapping/wiki/Validating-OpenStreetMap#3-investigation
-)
- * Inspecting the change.
- * Understanding the user.
- * Inspecting the changeset.
-4. [Response](https://github.com/mapbox/mapping/wiki/Validating-OpenStreetMap#4-response
-)
-5. [Common Scenarios](https://github.com/mapbox/mapping/wiki/Validating-OpenStreetMap#5-common-scenarios)
-
-
-# 1. What is a problematic edit?
+## What is a problematic edit?
 
 Every change to OpenStreetMap is contained in a [changeset](http://wiki.openstreetmap.org/wiki/Changeset). They consist of either additions (new feature), modifications (change existing tags, feature location, or location of a referred feature) or deletions by a mapper.
 
@@ -38,13 +20,13 @@ There are several kinds of potentially problematic changes. For example:
 
 Creation and deletion of features, modification to tags and modification to a node's location, result in a `version` increment. Every change by every user is retained as a separate version of the object in the OpenStreetMap database. Changes to nodes within a way, or to members of a relation, result in displayed changes to the way/relation but do *not* increment `version`.
 
-# 2. Identifying problematic edits.
+## Identifying problematic edits.
  * **OSMCha**: Changeset level notification, giving an overview of how many objects were affected in a changeset. A set of suspects words automatically flag some suspicious changes. Custom filters can be used with chaneset comment, source, and other combinations to look for suspicious edits. Read more about [using OSMCha to identify and inspect OpenStreetMap data.](https://github.com/mapbox/mapping/wiki/Using-OSMCha-for-inspecting-changes-in-OpenStreetMap)
  * **Linting** 
  * **Map Feedback from Mapbox users**: Sometimes we receive notice through [Map feedback](https://www.mapbox.com/map-feedback/) where the Mapbox users report the changes.
  * **OSM communication channels.**
 
-# 3. Investigation
+## Investigation
 
 After identifying potentially problematic data on the map, we want to determine few things to start - the *user* responsible, when - the *time* they made the edit and what made the changes -- the *changeset id*, and the *features edited*.
 
@@ -52,7 +34,7 @@ These information help you to investigate the change and identify the root cause
 
 ![screenshot 2016-04-14 12 56 09](https://cloud.githubusercontent.com/assets/3423533/14520241/0c277554-0241-11e6-8695-7a76c9cd0683.png)
 
-## Inspecting the Change
+### Inspecting the Change
 
 - Open the area in `JOSM`.
 - Select the problematic feature, and check the modified object's history using `Ctrl+H`.
@@ -67,7 +49,7 @@ These information help you to investigate the change and identify the root cause
 
 In this example, a node was moved a significant distance. From the JOSM history window, we can see the change was made by user `osm_user_name`, in changeset `38544431`, dated `04/14/2016`.
 
-## Understand the mapper
+### Understand the mapper
 
 The mapper's OSM user profile and [HDYC](hdyc.neis-one.org) profile give an overview of the user's activity and reputation. New mappers are more likely to make unintentional changes; though sometimes a new user account is used for intentional edits that break the map. Experienced mappers might have more detailed, trustworthy knowledge of an area, or sometimes a history of bad edits.
 
@@ -77,7 +59,7 @@ A mapper's experience can also be gauged by looking at the number of project day
 
 ![hdyc](https://cloud.githubusercontent.com/assets/3423533/15170921/ee9fbe6a-1767-11e6-8601-e74f7891a88f.png)
 
-## Investigate the changeset
+### Investigate the changeset
 
 Click on the changeset ID in the JOSM History window to open the OpenStreetMap changeset page, and load details on how many objects were added/modified/deleted. You'll also see the changeset comment, which may contain more self reported details from the user, as well as information on the editor and sources used.
 
@@ -96,7 +78,7 @@ This is where [Changeset Map](http://osmlab.github.io/changeset-map/) comes in h
 
 ![vali](https://cloud.githubusercontent.com/assets/3423533/14984377/f28d4942-115f-11e6-9c28-956faab784a3.gif)
 
-# 4. Response
+## Response
 
 At this point we know who, when and which changeset associated with the problematic change.
 
@@ -104,19 +86,19 @@ Most bad edits are accidental and the general strategy to respond to such change
 
 In cases where it is determined that the intent of the mapper was to damage the map, an urgent response may be required by reverting the change and reporting the issue to an OSM administrator or DWG.
 
-## Communicate
+### Communicate
 
 * Drop a comment on the changeset with a description of what was wrong and how it can be fixed. Link to OpenStreetMap wiki or help material that is relevant.
 * If the user does not respond or fix non-urgent issues within a week, alert a nearby active mapper of the issue.
 * Also look for help on IRC or the local forums or mailing list of the area.
 
-## Repair
+### Repair
 
 * For specific malicious changes, consider fixing the specific issue (and reporting it immediately).
 * For a changeset that is wholly bad, revert it. Send a message to the mapper responsible and ask for a description of what happened.
 * For simple issues, communicate with the mapper to discuss on how it should be fixed.
 
-### Revert using the JOSM Plugin
+#### Revert using the JOSM Plugin
 
 The JOSM [Reverter Plugin](http://wiki.openstreetmap.org/wiki/JOSM/Plugins/Reverter) is a convenient way to revert changes in OpenStreetMap. After every revert, make sure you upload the changes by sharing a changeset comment on why this changeset was reverted.
 
@@ -126,11 +108,11 @@ Reverting changesets can be tricky, and you can unintentionally break things you
 
 *Using the revert plugin*
 
-## Report
+### Report
 
 * For urgent issues that requires an experienced response, contact the [Data Working Group](http://wiki.openstreetmap.org/wiki/Data_working_group).
 
-## How to assess urgency to respond
+### How to assess urgency to respond
 
 The level of response depends on how severe the change is to OpenStreetMap. Urgency is somewhat subjective, but here is some guidance.
 
@@ -149,7 +131,7 @@ The level of response depends on how severe the change is to OpenStreetMap. Urge
 
 3. If the mapper is using the proprietary data sources like Google, Bing Maps, Here Maps or other sources which are not open licensed then comment on the user changeset and mention [Copyright guidance for OpenStreetMap](http://www.openstreetmap.org/copyright). Encourage them to revert the changes and follow local knowledge, or stick to Bing and Mapbox Satellite Imagery.
 
-# 5. Common Scenarios
+## Common Scenarios
 
 Here are a few common scenarios of bad edits in OpenStreetMap.
 
