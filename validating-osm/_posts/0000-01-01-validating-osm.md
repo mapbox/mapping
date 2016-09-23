@@ -90,7 +90,7 @@ At this point, you know who, when, and which changeset are associated with the p
 
 Most bad edits are accidental, and the general strategy to respond to such changes is education. Work to share knowledge with the mapper about the mistake and how they can avoid the mistake in the future. Communicate feedback through public changeset comments, visible to all, or sometimes direct messages if more direct contact is helpful. This helps build our community and improve the quality of future contributions to the map.
 
-In cases where it is determined that the intent of the mapper was to damage the map, an urgent response may be required by reverting the change and reporting the issue to an OSM administrator or DWG.
+In cases where it is determined that the intent of the mapper was to damage the map, an urgent response may be required by reverting the change and reporting the issue to an OSM administrator or Data Working Group.
 
 ### Communicate
 
@@ -224,24 +224,24 @@ Strategy for filters:
 There are [certain keywords we have stored](https://docs.google.com/spreadsheets/d/1dqIKycRCwzrEnp-mFv6wnfPc0-V3XjOcm07BrI6kqkw/edit#gid=626639085) to quickly look through changesets that have these words in the changeset comments. For example "Google" and any profane language.
 
 
-#### Finding vandalism detected by the community and reverted by DWG
+#### Finding vandalism detected by the community and reverted by Data Working Group
 
-The community is very active in finding and commenting on suspicious changesets. If the edits in the changesets are destructive to the map then the community will inform DWG and DWG will revert these changesets with a changeset comment.
+The community is very active in finding and commenting on suspicious changesets. If the edits in the changesets are destructive to the map then the community will inform Data Working Group and Data Working Group will revert these changesets with a changeset comment.
 
 
 - Using **Keywords**
-  - Using keywords such as `revert`, `cleanup`, `fix` in changeset comment filter, we can find most of the changesets community has taken action on. This list in OSMCha includes fixes, reverts DWG as well.
+  - Using keywords such as `revert`, `cleanup`, `fix` in changeset comment filter, we can find most of the changesets community has taken action on. This list in OSMCha includes fixes, reverts Data Working Group as well.
 
 - Using [**OSM - comments**](https://www.mapbox.com/osm-comments/)
   - OSM-comments API allows querying changesets with specific parameters
   - Link to see changeset comments from all users in OSM - [URL for web view](https://www.mapbox.com/osm-comments/#/changesets/?q=users%3A%2A)
 
-Currently, there is no direct way of using OSM-Comments-API to see all the changesets on which DWG members have commented. [Issue #44](https://github.com/mapbox/osm-comments-api/issues/44)
+Currently, there is no direct way of using OSM-Comments-API to see all the changesets on which Data Working Group members have commented. [Issue #44](https://github.com/mapbox/osm-comments-api/issues/44)
 
-**Finding reverts by DWG**
+**Finding reverts by Data Working Group**
 
 ![documentations1](https://cloud.githubusercontent.com/assets/8921295/18270714/0cc820da-744c-11e6-8db8-71421c956e07.gif)
-_Finding DWG reverts using OSMCha_
+_Finding Data Working Group reverts using OSMCha_
 
 - OSMCha allows us to query changesets from specific users.
-- We can query all changesets from revert accounts of DWG members such `Woodpeck_repair`, `pnorman_mechanical`, etc.
+- We can query all changesets from revert accounts of Data Working Group members such `Woodpeck_repair`, `pnorman_mechanical`, etc.
