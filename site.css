@@ -70,6 +70,15 @@ svg {
 {
   height: 350px;
 }
+#mapping-to-improve-navigation svg
+{
+  max-height: 260px;
+}
+
+ #validating-openstreetmap svg
+{
+  height: 210px;
+}
 
 /* Colors
 ------------------------------------------------------- */
@@ -1283,7 +1292,8 @@ pre.pre-guides:before {
   }
   #the-openstreetmap-data-model svg {
     height: 140px;
-}
+  }
+
 
 }
 
@@ -1317,5 +1327,19 @@ pre.pre-guides:before {
       padding-left: 0px;
       padding-right: 0px;
       min-height: 0px;
+    }
+
+    #the-openstreetmap-data-model svg
+    {
+      max-height: 140px;
+    }
+    #mapping-to-improve-navigation svg
+    {
+      max-height: 140px;
+    }
+
+     #validating-openstreetmap svg
+    {
+      max-height: 140px;
     }
 }
