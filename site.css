@@ -70,9 +70,9 @@ svg {
 {
   height: 350px;
 }
-#mapping-to-improve-navigation svg
+#mapping-for-navigation svg
 {
-  max-height: 260px;
+  max-height: 300px;
 }
 
  #validating-openstreetmap svg
@@ -1252,6 +1252,11 @@ pre.pre-guides:before {
   #the-openstreetmap-data-model svg {
     height: 270px;
   }
+  #mapping-for-navigation svg
+{
+    max-height: 230px;
+  }
+
 }
 
 @media  only screen and (max-width: 1024px) {
@@ -1267,6 +1272,11 @@ pre.pre-guides:before {
   #the-openstreetmap-data-model svg {
       height: 360px;
   }
+  #mapping-for-navigation svg
+  {
+    max-height: 300px;
+  }
+
 }
 
 @media  only screen and (max-width: 900px) {
@@ -1279,6 +1289,9 @@ pre.pre-guides:before {
   .image-card {
     height: 255px;
   }
+  #mapping-for-navigation svg {
+    max-height: 250px;
+}
 }
 
 @media only screen and  (max-width: 700px) {
@@ -1333,11 +1346,9 @@ pre.pre-guides:before {
     {
       max-height: 140px;
     }
-    #mapping-to-improve-navigation svg
-    {
-      max-height: 140px;
+    #mapping-for-navigation svg {
+    max-height: 120px;
     }
-
      #validating-openstreetmap svg
     {
       max-height: 140px;
