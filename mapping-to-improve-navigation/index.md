@@ -1,5 +1,5 @@
 ---
-title: Mapping to improve navigation
+title: Mapping for navigation
 layout: category
 order: 6
 color: orange
