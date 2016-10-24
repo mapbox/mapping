@@ -30,6 +30,7 @@ The value of the key helps show the importance of the highway within the road ne
 Road classification may varies from country to country. The country specific use cases can be found in detail on separate wiki pages. For example, when mapping roads in India, the local community refer to the [India road tagging wiki](http://wiki.openstreetmap.org/wiki/India:Tags/Highway).
 
 Examples:
+
 * [US roads classification](http://wiki.openstreetmap.org/wiki/United_States_Road_Classification)
 * [UK roads classification/numbering](https://en.wikipedia.org/wiki/Great_Britain_road_numbering_scheme)
 

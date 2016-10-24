@@ -1,4 +1,3 @@
-
 ---
 title: Mapping Guide for adding Turn Lanes from Imagery
 ---

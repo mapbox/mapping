@@ -2,7 +2,6 @@
 title: Modeling Roads for Map Navigation
 ---
 
-## Data influence map
 A navigation map is influenced by several road characteristics, such as the turn restrictions, improper way of road tracing and road classification. The most important ones among those are:
 
 ### Road geometry
