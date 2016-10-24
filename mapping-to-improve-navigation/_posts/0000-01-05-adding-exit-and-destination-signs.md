@@ -1,5 +1,5 @@
 ---
-title: Mapping guide for exit and destination
+title: Adding exit and destination signs
 ---
 
 ![5138660996_1957ee06ed_o](https://cloud.githubusercontent.com/assets/17887418/15180552/ec541b64-179f-11e6-88d7-4b3074f161e4.jpg)

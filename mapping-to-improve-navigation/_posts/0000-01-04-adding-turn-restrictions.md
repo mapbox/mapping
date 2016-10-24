@@ -1,5 +1,5 @@
 ---
-title: Mapping Guide for adding Turn Restrictions using Mapillary
+title: Adding turn restrictions
 ---
 ## What are turn restrictions?
 

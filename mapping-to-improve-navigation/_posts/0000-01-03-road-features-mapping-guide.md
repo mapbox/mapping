@@ -57,7 +57,7 @@ The best source of mapping oneways are again street level photos.
 
 * `type=restriction`
 * [OSM Wiki](http://wiki.openstreetmap.org/wiki/Relation:restriction)
-* [Mapping guide](/mapping/mapping-to-improve-navigation/mapping-guide-for-adding-turn-restrictions-using-mapillary/)
+* [Mapping guide](/mapping/mapping-to-improve-navigation/adding-turn-restrictions/)
 
 `type=restriction` is added to a relation in OpenStreetMap which is used to describe turn restrictions at junctions. The relation has a set of tags that describes the type of restriction, for example. `no_left_turn`, `no_right_turn`, `no_u_turn`, etc. These are traffic signs at junctions and this information must be present on the map to find the best route by the routing engine while planning a route.
 
@@ -145,7 +145,7 @@ Street view photos from Mapillary, local mapping drives using [OpenStreetMap tra
 
 An example of a place with good exit/destination coverage in OpenStreetMap is [Ottawa, Canada](http://www.openstreetmap.org/#map=11/45.4283/-75.8331). These overpass queries for [destination](http://overpass-turbo.eu/s/i61) and [exit numbers](http://overpass-turbo.eu/s/i78) can be used to extract exit/destination data from OpenStreetMap.
 
-The [detailed guide](/mapping/mapping-to-improve-navigation/mapping-guide-for-adding-exit-and-destination/) on adding exit and destination numbers can be followed for adding exit/destinations. This guide is specifically focused on North America (US/Canada) for now.
+The [detailed guide](/mapping/mapping-to-improve-navigation/adding-exit-and-destination-signs/) on adding exit and destination numbers can be followed for adding exit/destinations. This guide is specifically focused on North America (US/Canada) for now.
 
 ### 2. Turn Lanes
 
@@ -201,7 +201,7 @@ turn:lanes:backward=*
 
 Turn lanes can be mapped from high-resolution satellite imagery sources and street level photos. An example of the high density turn lane area in OpenStreetMap is [Los Angeles](https://www.openstreetmap.org/#map=11/33.9883/-118.3303). This [overpass query](http://overpass-turbo.eu/s/ipk) can be used to extract turn lanes data from OpenStreetMap
 
-[Mapping guide for mapping turn lanes](/mapping/mapping-to-improve-navigation/mapping-guide-for-adding-turn-lanes-from-imagery/): This is a detailed mapping guide for adding turn lanes in general with specific focus on the US. It will be updated as more and more countries are mapped for lane information in OpenStreetMap.
+[Mapping guide for mapping turn lanes](/mapping/mapping-to-improve-navigation/adding-turn-lanes/): This is a detailed mapping guide for adding turn lanes in general with specific focus on the US. It will be updated as more and more countries are mapped for lane information in OpenStreetMap.
 
 
 --

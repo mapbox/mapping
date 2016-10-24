@@ -1,5 +1,5 @@
 ---
-title: Mapping Guide for adding Turn Lanes from Imagery
+title: Adding turn lanes
 ---
 
 ## What is a turn lane
