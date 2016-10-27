@@ -54,11 +54,11 @@ The new version of iD, the web editor for OpenStreetMap, makes it even simpler t
  ![traffic overlay mapillary](https://cloud.githubusercontent.com/assets/17887418/17285393/069163a8-57e0-11e6-9564-293d91b276bc.gif)
 
 #### Pain Points in adding Turn Restrictions in iD editor:
-1. iD editor provides no way of adding a `no_u_turn` restrictions via way. If there is a via way `no_u_turn`, you have to add it using JOSM editor.
+* iD editor provides no way of adding a `no_u_turn` restrictions via way. If there is a via way `no_u_turn`, you have to add it using JOSM editor.
  
  ![image](https://cloud.githubusercontent.com/assets/17887418/17285567/1a145830-57e1-11e6-8e2f-0581bc16695e.png)
 
-2. In certain cases, adding [no_u_turn turn via node](https://github.com/mapbox/mapping/issues/213#issuecomment-234221535) is also not possible. For such cases, it is better to add it using JOSM.
+* In certain cases, adding [no_u_turn turn via node](https://github.com/mapbox/mapping/issues/213#issuecomment-234221535) is also not possible. For such cases, it is better to add it using JOSM.
 
 
 # Mapping turn restrictions with JOSM
