@@ -4,10 +4,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "230.930017722412",
-        "label": "Buffalo_NY",
+        "label": "Buffalo_exterior_NY",
         "type": "exterior",
-        "id": "way/-2613",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -261,8 +260,9 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Lyon",
-        "type": "core"
+        "label": "Lyon_core",
+        "type": "core",
+        "is_in": "europe"
       },
       "geometry": {
         "coordinates": [
@@ -313,10 +313,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "539.558247239838",
-        "label": "Columbus_OH",
+        "label": "Columbus_exterior_OH",
         "type": "exterior",
-        "id": "way/-908",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -531,10 +530,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "47.0081680800171",
-        "label": "Salt_Lake_UT",
+        "label": "Salt_Lake_core_UT",
         "type": "core",
-        "id": "way/-17960",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -713,10 +711,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "158.770702720825",
-        "label": "NewYork_NY",
+        "label": "NewYork_core_NY",
         "type": "core",
-        "id": "way/-3486",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -1063,10 +1060,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "306.523417755821",
-        "label": "Houston_TX",
+        "label": "Houston_core_TX",
         "type": "core",
-        "id": "way/-4525",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -1184,9 +1180,10 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Johor Bahru",
+        "label": "JohorBahru_exterior",
         "country": "MY",
-        "boundary": "exterior"
+        "boundary": "exterior",
+        "is_in": "asia"
       },
       "geometry": {
         "coordinates": [
@@ -1361,10 +1358,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "892.047720498413",
-        "label": "Philadelphia_PA",
+        "label": "Philadelphia_exterior_PA",
         "type": "exterior",
-        "id": "way/-474",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -1723,10 +1719,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "1585.2735183064",
-        "label": "Seattle_WA",
+        "label": "Seattle_exterior_WA",
         "type": "exterior",
-        "id": "way/-2066",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -2068,11 +2063,8 @@
     {
       "type": "Feature",
       "properties": {
-        "area_km": null,
         "label": "Ottawa_CA",
-        "type": null,
-        "id": "way/-94",
-        "area": "yes"
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -2239,10 +2231,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "6782.74513919171",
-        "label": "Los_Angeles_CA",
+        "label": "Los_Angeles_exterior_CA",
         "type": "exterior",
-        "id": "way/-2259",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -2509,10 +2500,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "1922.28941065613",
-        "label": "SFbay_CA",
+        "label": "SFbay_exterior_CA",
         "type": "exterior",
-        "id": "way/-2367",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -2955,10 +2945,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "19.7611089174194",
-        "label": "Atlantic_NJ",
+        "label": "Atlantic_core_NJ",
         "type": "core",
-        "id": "way/-4239",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -3345,63 +3334,14 @@
       },
       "id": "0fa76e898925937494ef37d67b21db9b"
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "label": "Lyon",
-        "type": "route"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            5.075934,
-            45.720805
-          ],
-          [
-            5.071419,
-            45.720563
-          ],
-          [
-            5.070724,
-            45.693151
-          ],
-          [
-            5.058218,
-            45.688298
-          ],
-          [
-            5.050229,
-            45.669367
-          ],
-          [
-            4.992912,
-            45.688541
-          ],
-          [
-            4.925174,
-            45.725171
-          ],
-          [
-            4.887582,
-            45.7304
-          ],
-          [
-            4.855206,
-            45.741361
-          ]
-        ],
-        "type": "LineString"
-      },
-      "id": "10cbdadfb95744efd2eca1f71de6538d"
-    },
+
     {
       "type": "Feature",
       "properties": {
         "area_km": "37.9100373779755",
-        "label": "Charlotte_NC",
+        "label": "Charlotte_core_NC",
         "type": "core",
-        "id": "way/-3797",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -3597,7 +3537,8 @@
       "properties": {
         "area": "yes",
         "id": "way/-15141",
-        "label": "Munich_GE"
+        "label": "Munich_GE",
+        "is_in": "europe"
       },
       "geometry": {
         "coordinates": [
@@ -3696,10 +3637,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "1827.08401314771",
-        "label": "NewYork_NY",
+        "label": "NewYork_exterior_NY",
         "type": "exterior",
-        "id": "way/-324",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -4370,66 +4310,14 @@
       },
       "id": "14bf147943bc8b165a253b0bf23b0448"
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "relation/76469",
-        "type": null,
-        "label": "Marseille_FR",
-        "area": "yes",
-        "area_km": null
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              5.29389,
-              43.269172
-            ],
-            [
-              5.293909,
-              43.269151
-            ],
-            [
-              5.293936,
-              43.269152
-            ],
-            [
-              5.29397,
-              43.269142
-            ],
-            [
-              5.294004,
-              43.269111
-            ],
-            [
-              5.294015,
-              43.269146
-            ],
-            [
-              5.293995,
-              43.269171
-            ],
-            [
-              5.293927,
-              43.269189
-            ],
-            [
-              5.29389,
-              43.269172
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "14c2e96a10bd3521ebe4533b9e16b002"
-    },
+    
     {
       "type": "Feature",
       "properties": {
         "country": "VN",
-        "label": "Halong",
-        "boundary": "exterior"
+        "label": "Halong_exterior",
+        "boundary": "exterior",
+         "is_in": "asia"
       },
       "geometry": {
         "coordinates": [
@@ -4539,9 +4427,10 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Bandung",
+        "label": "Bandung_exterior",
         "country": "ID",
-        "boundary": "exterior"
+        "boundary": "exterior",
+         "is_in": "asia"
       },
       "geometry": {
         "coordinates": [
@@ -4856,8 +4745,9 @@
       "type": "Feature",
       "properties": {
         "country": "MY",
-        "label": "Mandalay",
-        "boundary": "exterior"
+        "label": "Mandalay_exterior",
+        "boundary": "exterior",
+         "is_in": "asia"
       },
       "geometry": {
         "coordinates": [
@@ -4944,10 +4834,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "500.438400458496",
-        "label": "Portland_OR",
+        "label": "Portland_exterior_OR",
         "type": "exterior",
-        "id": "way/-2122",
-        "area": null
+         "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -5182,10 +5071,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "31.6171012929993",
-        "label": "Milwaukee_WI",
+        "label": "Milwaukee_core_WI",
         "type": "core",
-        "id": "way/-4005",
-        "area": null
+         "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -5535,9 +5423,8 @@
     {
       "type": "Feature",
       "properties": {
-        "area": "yes",
-        "id": "way/-20118",
-        "label": "Wolfsburg_GE"
+        "label": "Wolfsburg_GE",
+         "is_in": "europe"
       },
       "geometry": {
         "coordinates": [
@@ -5664,10 +5551,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "1728.34486729405",
-        "label": "Denver_CO",
+        "label": "Denver_exterior_CO",
         "type": "exterior",
-        "id": "way/-2417",
-        "area": null
+         "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -5874,123 +5760,14 @@
       },
       "id": "20e97177dd907123b7c075c643c4ae61"
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "label": "Paris",
-        "type": "route"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            2.412475,
-            48.866809
-          ],
-          [
-            2.421372,
-            48.865614
-          ],
-          [
-            2.427908,
-            48.867645
-          ],
-          [
-            2.432629,
-            48.871466
-          ],
-          [
-            2.460772,
-            48.884005
-          ],
-          [
-            2.469487,
-            48.884124
-          ],
-          [
-            2.47439,
-            48.887467
-          ],
-          [
-            2.472392,
-            48.894033
-          ],
-          [
-            2.469487,
-            48.899524
-          ],
-          [
-            2.47094,
-            48.904417
-          ],
-          [
-            2.478021,
-            48.915276
-          ],
-          [
-            2.482015,
-            48.928281
-          ],
-          [
-            2.47911,
-            48.940566
-          ],
-          [
-            2.473786,
-            48.953503
-          ],
-          [
-            2.473605,
-            48.961491
-          ],
-          [
-            2.475965,
-            48.96614
-          ],
-          [
-            2.507377,
-            48.987472
-          ],
-          [
-            2.523854,
-            49.002364
-          ],
-          [
-            2.526941,
-            49.007604
-          ],
-          [
-            2.531661,
-            49.00814
-          ],
-          [
-            2.536836,
-            49.006235
-          ],
-          [
-            2.557626,
-            49.007068
-          ],
-          [
-            2.558261,
-            49.003614
-          ],
-          [
-            2.571605,
-            49.00403
-          ]
-        ],
-        "type": "LineString"
-      },
-      "id": "22a1a26ef1e3a6b61d090af728ac82a7"
-    },
+    
     {
       "type": "Feature",
       "properties": {
         "area_km": "77.687882204834",
-        "label": "Jacksonville_FL",
+        "label": "Jacksonville_core_FL",
         "type": "core",
-        "id": "way/-3402",
-        "area": null
+         "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -6321,52 +6098,14 @@
       },
       "id": "23a85110a051b33a05c2cc435e50e1c3"
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "relation/76469",
-        "type": null,
-        "label": "Marseille_FR",
-        "area": "yes",
-        "area_km": null
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              5.294511,
-              43.269174
-            ],
-            [
-              5.294547,
-              43.269193
-            ],
-            [
-              5.294551,
-              43.269217
-            ],
-            [
-              5.294524,
-              43.269221
-            ],
-            [
-              5.294511,
-              43.269174
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "24f72a3e9f90b78915d13457dc5cabbc"
-    },
+    
     {
       "type": "Feature",
       "properties": {
         "area_km": "116.043473995605",
-        "label": "Seattle_WA",
+        "label": "Seattle_core_WA",
         "type": "core",
-        "id": "way/-4987",
-        "area": null
+         "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -6700,8 +6439,9 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Nice",
-        "type": "core"
+        "label": "Nice_core",
+        "type": "core",
+         "is_in": "europe"
       },
       "geometry": {
         "coordinates": [
@@ -6760,10 +6500,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "1061.57166390545",
-        "label": "Austin_TX",
+        "label": "Austin_exterior_TX",
         "type": "exterior",
-        "id": "way/-1680",
-        "area": null
+         "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -7109,9 +6848,10 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Kota Kinabalu ",
+        "label": "KotaKinabalu_exterior",
         "country": "MY",
-        "boundary": "exterior"
+        "boundary": "exterior",
+         "is_in": "asia"
       },
       "geometry": {
         "coordinates": [
@@ -7235,9 +6975,7 @@
       "properties": {
         "area_km": null,
         "label": "Vancouver_CA",
-        "type": null,
-        "id": "way/-5870",
-        "area": "yes"
+         "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -7387,9 +7125,10 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Cagayan de Oro",
+        "label": "CagayanDeOro_exterior",
         "country": "PH",
-        "boundary": "exterior"
+        "boundary": "exterior",
+         "is_in": "asia"
       },
       "geometry": {
         "coordinates": [
@@ -7500,10 +7239,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "914.001661013451",
-        "label": "Oklahoma_OK",
+        "label": "Oklahoma_exterior_OK",
         "type": "exterior",
-        "id": "way/-387",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -7766,10 +7504,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "30.7011310538635",
-        "label": "Minneapolis-StPaul_MN",
+        "label": "Minneapolis-StPaul_core_MN",
         "type": "core",
-        "id": "way/-4674",
-        "area": null
+         "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -8060,10 +7797,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "80.9588888466721",
-        "label": "Louisville_KY",
+        "label": "Louisville_core_KY",
         "type": "core",
-        "id": "way/-4288",
-        "area": null
+         "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -8269,8 +8005,9 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Nice",
-        "type": "exterior"
+        "label": "Nice_exterior",
+        "type": "exterior",
+         "is_in": "europe"
       },
       "geometry": {
         "coordinates": [
@@ -8332,49 +8069,11 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/76469",
-        "type": null,
-        "label": "Marseille_FR",
-        "area": "yes",
-        "area_km": null
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              5.294469,
-              43.269329
-            ],
-            [
-              5.294541,
-              43.269275
-            ],
-            [
-              5.294543,
-              43.269317
-            ],
-            [
-              5.294498,
-              43.269353
-            ],
-            [
-              5.294469,
-              43.269329
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "3a8580aaf979394540a94a9740b08e3f"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "area_km": "75.8655201638489",
-        "label": "Denver_CO",
+        "label": "Denver_core_CO",
         "type": "core",
-        "id": "way/-5301",
-        "area": null
+        "is_in": "north-america"
+       
       },
       "geometry": {
         "coordinates": [
@@ -8613,10 +8312,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "47.4813513351135",
-        "label": "Chicago_IL",
+        "label": "Chicago_core_IL",
         "type": "core",
-        "id": "way/-4084",
-        "area": null
+        "is_in":"north-america"
       },
       "geometry": {
         "coordinates": [
@@ -8944,9 +8642,7 @@
       "properties": {
         "area_km": null,
         "label": "Montreal_CA",
-        "type": null,
-        "id": "way/-3202",
-        "area": "yes"
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -9357,10 +9053,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "236.954948700821",
-        "label": "Nashville_TN",
+        "label": "Nashville_exterior_TN",
         "type": "exterior",
-        "id": "way/-1404",
-        "area": null
+       "is_in":"north-america"
       },
       "geometry": {
         "coordinates": [
@@ -9598,9 +9293,9 @@
     {
       "type": "Feature",
       "properties": {
-        "area": "yes",
-        "id": "way/-113381",
-        "label": "Stuttgart_GE"
+    
+        "label": "Stuttgart_GE",
+        "is_in": "europe"
       },
       "geometry": {
         "coordinates": [
@@ -9687,156 +9382,14 @@
       },
       "id": "417abd17ea78c031bf17014759bb54ea"
     },
-    {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              -82.870903,
-              42.496909
-            ],
-            [
-              -82.918624,
-              42.49539
-            ],
-            [
-              -82.973213,
-              42.493871
-            ],
-            [
-              -83.079643,
-              42.491339
-            ],
-            [
-              -83.090286,
-              42.477414
-            ],
-            [
-              -83.191909,
-              42.476148
-            ],
-            [
-              -83.206329,
-              42.479693
-            ],
-            [
-              -83.210449,
-              42.487795
-            ],
-            [
-              -83.26744,
-              42.486276
-            ],
-            [
-              -83.220748,
-              42.458927
-            ],
-            [
-              -83.215427,
-              42.310957
-            ],
-            [
-              -83.205986,
-              42.297246
-            ],
-            [
-              -83.205299,
-              42.292929
-            ],
-            [
-              -83.216972,
-              42.277308
-            ],
-            [
-              -83.209762,
-              42.278451
-            ],
-            [
-              -83.190193,
-              42.271465
-            ],
-            [
-              -83.184356,
-              42.271847
-            ],
-            [
-              -83.167705,
-              42.263971
-            ],
-            [
-              -83.15998,
-              42.254061
-            ],
-            [
-              -83.13097,
-              42.243514
-            ],
-            [
-              -83.115005,
-              42.257491
-            ],
-            [
-              -83.099899,
-              42.284167
-            ],
-            [
-              -83.083763,
-              42.304229
-            ],
-            [
-              -83.069343,
-              42.315908
-            ],
-            [
-              -83.024711,
-              42.329362
-            ],
-            [
-              -82.993469,
-              42.344589
-            ],
-            [
-              -82.972526,
-              42.353216
-            ],
-            [
-              -82.935104,
-              42.353216
-            ],
-            [
-              -82.903518,
-              42.364378
-            ],
-            [
-              -82.880859,
-              42.378836
-            ],
-            [
-              -82.86026,
-              42.42447
-            ],
-            [
-              -82.870988,
-              42.496909
-            ],
-            [
-              -82.870903,
-              42.496909
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "419e5956f46013a6ac8fd9c471a5eaf1"
-    },
+    
     {
       "type": "Feature",
       "properties": {
-        "label": "Bangkok",
+        "label": "Bangkok_exterior",
         "country": "TH",
-        "boundary": "exterior"
+        "boundary": "exterior",
+        "is_in": "asia"
       },
       "geometry": {
         "coordinates": [
@@ -10066,9 +9619,10 @@
     {
       "type": "Feature",
       "properties": {
-        "Label": "Kuala Lumpur",
+        "Label": "KualaLumpur_exterior",
         "country": "MY",
-        "boundary": "exterior"
+        "boundary": "exterior",
+        "is_in": "asia"
       },
       "geometry": {
         "coordinates": [
@@ -10283,10 +9837,8 @@
       "type": "Feature",
       "properties": {
         "area_km": "3491.30207016835",
-        "label": "Houston_TX",
-        "type": "exterior",
-        "id": "way/-1539",
-        "area": null
+        "label": "Houston_exterior_TX",
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -10652,9 +10204,10 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Pekanbaru",
+        "label": "Pekanbaru_exterior",
         "country": "ID",
-        "boundary": "exterior"
+        "boundary": "exterior",
+        "is_in":"asia"
       },
       "geometry": {
         "coordinates": [
@@ -11060,9 +10613,10 @@
     {
       "type": "Feature",
       "properties": {
-        "area_km": null,
-        "label": "Paris",
-        "type": "exterior"
+        
+        "label": "Paris_exterior",
+        "type": "exterior",
+        "is_in": "europe"
       },
       "geometry": {
         "coordinates": [
@@ -11157,45 +10711,14 @@
       },
       "id": "4af1cb5b996173fb19717af205f1b321"
     },
+    
     {
       "type": "Feature",
       "properties": {
-        "label": "Paris",
-        "type": "route"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            2.34429,
-            48.797363
-          ],
-          [
-            2.341839,
-            48.800294
-          ],
-          [
-            2.341567,
-            48.806512
-          ],
-          [
-            2.336211,
-            48.813447
-          ],
-          [
-            2.336937,
-            48.816855
-          ]
-        ],
-        "type": "LineString"
-      },
-      "id": "4bc9156360c6707a16d26631a45c4eab"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "label": "Chiang Rai",
+        "label": "ChiangRai_exterior",
         "Country": "TH",
-        "boundary": "exterior"
+        "boundary": "exterior",
+        "is_in": "asia"
       },
       "geometry": {
         "coordinates": [
@@ -11318,10 +10841,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "29.3005080750732",
-        "label": "Columbus_OH",
+        "label": "Columbus_core_OH",
         "type": "core",
-        "id": "way/-3854",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -11556,85 +11078,13 @@
       },
       "id": "517b96229e270665c2c9fe7a2479fcaa"
     },
-    {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "coordinates": [
-          [
-            2.29355,
-            48.827003
-          ],
-          [
-            2.335468,
-            48.816795
-          ],
-          [
-            2.36303,
-            48.816165
-          ],
-          [
-            2.411264,
-            48.835193
-          ],
-          [
-            2.415858,
-            48.851695
-          ],
-          [
-            2.410499,
-            48.87587
-          ],
-          [
-            2.397112,
-            48.885673
-          ],
-          [
-            2.391753,
-            48.900522
-          ],
-          [
-            2.320742,
-            48.899893
-          ],
-          [
-            2.283608,
-            48.8824
-          ],
-          [
-            2.262362,
-            48.858982
-          ],
-          [
-            2.252026,
-            48.85193
-          ],
-          [
-            2.256047,
-            48.836561
-          ],
-          [
-            2.260258,
-            48.83505
-          ],
-          [
-            2.272891,
-            48.83505
-          ],
-          [
-            2.293371,
-            48.826986
-          ]
-        ],
-        "type": "LineString"
-      },
-      "id": "54fc8c257145d97c71bbccfc04bda6f8"
-    },
+    
     {
       "type": "Feature",
       "properties": {
         "type": "core",
-        "label": "Paris"
+        "label": "Paris_core",
+        "is_in": "europe"
       },
       "geometry": {
         "coordinates": [
@@ -11753,10 +11203,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "1124.53113561224",
-        "label": "Detroit_MI",
+        "label": "Detroit_exterior_MI",
         "type": "exterior",
-        "id": "way/-985",
-        "area": null
+        "is_in": "europe"
       },
       "geometry": {
         "coordinates": [
@@ -12075,10 +11524,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "65.4245268098679",
-        "label": "Memphis_TN",
+        "label": "Memphis_core_TN",
         "type": "core",
-        "id": "way/-4498",
-        "area": null
+        "is_in": "north-america" 
       },
       "geometry": {
         "coordinates": [
@@ -12329,10 +11777,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "755.39871180014",
-        "label": "Washington_DC",
+        "label": "Washington_exterior_DC",
         "type": "exterior",
-        "id": "way/-649",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -12658,8 +12105,9 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Toulouse",
-        "type": "exterior"
+        "label": "Toulouse_exterior",
+        "type": "exterior",
+        "is_in": "europe"
       },
       "geometry": {
         "coordinates": [
@@ -12742,10 +12190,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "39.2380259379883",
-        "label": "Orlando_FL",
+        "label": "Orlando_core_FL",
         "type": "core",
-        "id": "way/-4906",
-        "area": null
+        "is_in" :"north-america"
       },
       "geometry": {
         "coordinates": [
@@ -13000,10 +12447,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "18.1277728153076",
-        "label": "Boston_MA",
+        "label": "Boston_core_MA",
         "type": "core",
-        "id": "way/-3751",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -13218,10 +12664,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "266.654878246277",
-        "label": "Salt_Lake_UT",
+        "label": "Salt_Lake_exterior_UT",
         "type": "exterior",
-        "id": "way/-17862",
-        "area": null
+        "is_in": "north-america" 
       },
       "geometry": {
         "coordinates": [
@@ -13412,10 +12857,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "53.1287530053101",
-        "label": "Atlanta_GA",
+        "label": "Atlanta_core_GA",
         "type": "core",
-        "id": "way/-4383",
-        "area": null
+        "is_in" :"north-america"
       },
       "geometry": {
         "coordinates": [
@@ -13805,51 +13249,10 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/76469",
-        "type": null,
-        "label": "Marseille_FR",
-        "area": "yes",
-        "area_km": null
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              5.380157,
-              43.180524
-            ],
-            [
-              5.380197,
-              43.180483
-            ],
-            [
-              5.38026,
-              43.180508
-            ],
-            [
-              5.380337,
-              43.180546
-            ],
-            [
-              5.380114,
-              43.180548
-            ],
-            [
-              5.380157,
-              43.180524
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "687ca023eea9f50cb253d769c97e7a3c"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "label": "Putrajaya",
+        "label": "Putrajaya_exterior",
         "country": "MY",
-        "boundary": "exterior"
+        "boundary": "exterior",
+        "is_in": "asia"
       },
       "geometry": {
         "coordinates": [
@@ -13983,9 +13386,10 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Davao City",
+        "label": "DavaoCity_exterior",
         "country": "PH",
-        "boundary": "exterior"
+        "boundary": "exterior",
+        "is_in": "asia"
       },
       "geometry": {
         "coordinates": [
@@ -14051,9 +13455,10 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Surabaya",
+        "label": "Surabaya_exterior",
         "country": "ID",
-        "boundary": "exterior"
+        "boundary": "exterior",
+        "is_in":"asia"
       },
       "geometry": {
         "coordinates": [
@@ -14416,11 +13821,10 @@
       "type": "Feature",
       "properties": {
         "area_km": "1245.53987528149",
-        "label": "Minneapolis-StPaul_MN",
+        "label": "Minneapolis-StPaul_exterior_MN",
         "type": "exterior",
-        "id": "way/-3046",
-        "area": null
-      },
+        "is_in":"north-america" 
+        },
       "geometry": {
         "coordinates": [
           [
@@ -14869,9 +14273,10 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Bacolod",
+        "label": "Bacolod_exterior",
         "country": "PH",
-        "boundary": "exterior"
+        "boundary": "exterior",
+        "is_in":"asia"
       },
       "geometry": {
         "coordinates": [
@@ -14970,10 +14375,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "1452.09825452439",
-        "label": "Kansas_MO",
+        "label": "Kansas_exterior_MO",
         "type": "exterior",
-        "id": "way/-3129",
-        "area": null
+        "is_in":"north-america"
       },
       "geometry": {
         "coordinates": [
@@ -15316,10 +14720,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "8.82610842389679",
-        "label": "Knoxville_TN",
+        "label": "Knoxville_core_TN",
         "type": "core",
-        "id": "way/-5244",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -15469,9 +14872,10 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Baguio",
+        "label": "Baguio_exterior",
         "country": "PH",
-        "boundary": "exterior"
+        "boundary": "exterior",
+        "is_in": "asia"
       },
       "geometry": {
         "coordinates": [
@@ -15721,70 +15125,9 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/76469",
-        "type": null,
-        "label": "Marseille_FR",
-        "area": "yes",
-        "area_km": null
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              5.294298,
-              43.269555
-            ],
-            [
-              5.294263,
-              43.269499
-            ],
-            [
-              5.294283,
-              43.269487
-            ],
-            [
-              5.294342,
-              43.269489
-            ],
-            [
-              5.29435,
-              43.269529
-            ],
-            [
-              5.294361,
-              43.269557
-            ],
-            [
-              5.294337,
-              43.269565
-            ],
-            [
-              5.294377,
-              43.269589
-            ],
-            [
-              5.29435,
-              43.269605
-            ],
-            [
-              5.294278,
-              43.269566
-            ],
-            [
-              5.294298,
-              43.269555
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "7e9b01d3ee5c9fba78514a36d97bb68d"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "label": "Marseille",
-        "type": "core"
+        "label": "Marseille_core",
+        "type": "core",
+        "is_in":"europe"
       },
       "geometry": {
         "coordinates": [
@@ -15839,61 +15182,14 @@
       },
       "id": "82c1755efaecbc8273c6e1f2a074a601"
     },
+   
     {
       "type": "Feature",
       "properties": {
-        "label": "Paris",
-        "type": "route"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            2.356939,
-            48.876712
-          ],
-          [
-            2.359401,
-            48.889659
-          ],
-          [
-            2.356886,
-            48.922477
-          ],
-          [
-            2.356704,
-            48.927369
-          ],
-          [
-            2.361062,
-            48.929635
-          ],
-          [
-            2.377403,
-            48.933691
-          ],
-          [
-            2.398102,
-            48.934645
-          ],
-          [
-            2.435686,
-            48.94359
-          ],
-          [
-            2.476901,
-            48.966362
-          ]
-        ],
-        "type": "LineString"
-      },
-      "id": "85653fad0bdc1ca12b10752888b52317"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "label": "Chiang",
+        "label": "Chiang_exterior",
         "country": "TH",
-        "boundary": "exterior"
+        "boundary": "exterior",
+        "is_in":"asia"
       },
       "geometry": {
         "coordinates": [
@@ -16148,10 +15444,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "170.075836419128",
-        "label": "Baltimore_MD",
+        "label": "Baltimore_core_MD",
         "type": "core",
-        "id": "way/-3653",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -16478,10 +15773,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "19.4649303746185",
-        "label": "San_Antonio_TX",
+        "label": "San_Antonio_core_TX",
         "type": "core",
-        "id": "way/-4604",
-        "area": null
+        "is_in":"north-america"
       },
       "geometry": {
         "coordinates": [
@@ -16807,9 +16101,10 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Iloilo City",
+        "label": "IloiloCity_exterior",
         "country": "PH",
-        "boundary": "exterior"
+        "boundary": "exterior",
+        "is_in": "asia"
       },
       "geometry": {
         "coordinates": [
@@ -16892,10 +16187,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "2220.68492051437",
-        "label": "Phoenix_AZ",
+        "label": "Phoenix_exterior_AZ",
         "type": "exterior",
-        "id": "way/-1927",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -17262,10 +16556,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "992.636541602066",
-        "label": "San_Antonio_TX",
+        "label": "San_Antonio_exterior_TX",
         "type": "exterior",
-        "id": "way/-1596",
-        "area": null
+        "is_in":"north-america"
       },
       "geometry": {
         "coordinates": [
@@ -17503,9 +16796,10 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Kuching",
+        "label": "Kuching_exterior",
         "country": "MY",
-        "boundary": "exterior"
+        "boundary": "exterior",
+        "is_in": "asia"
       },
       "geometry": {
         "coordinates": [
@@ -17624,10 +16918,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "835.398951207764",
-        "label": "Charlotte_NC",
+        "label": "Charlotte_exterior_NC",
         "type": "exterior",
-        "id": "way/-857",
-        "area": null
+        "is_in":"north-america"
       },
       "geometry": {
         "coordinates": [
@@ -17914,10 +17207,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "48.0604605000648",
-        "label": "Las_Vegas_NV",
+        "label": "Las_Vegas_core_NV",
         "type": "core",
-        "id": "way/-4845",
-        "area": null
+        "is_in":"north-america"
       },
       "geometry": {
         "coordinates": [
@@ -18063,53 +17355,10 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/76469",
-        "type": null,
-        "label": "Marseille_FR",
-        "area": "yes",
-        "area_km": null
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              5.380594,
-              43.180833
-            ],
-            [
-              5.380715,
-              43.180758
-            ],
-            [
-              5.380784,
-              43.180788
-            ],
-            [
-              5.38072,
-              43.180849
-            ],
-            [
-              5.380619,
-              43.180859
-            ],
-            [
-              5.380594,
-              43.180833
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "913248c797542cf403fbc06be3c48d0e"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "area_km": "40.896028435791",
-        "label": "Miami_FL",
+        "label": "Miami_core_FL",
         "type": "core",
-        "id": "way/-5144",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -18284,8 +17533,9 @@
       "type": "Feature",
       "properties": {
         "country": "KH",
-        "label": "Siem Reap",
-        "boundary": "exterior"
+        "label": "SiemReap_exterior",
+        "boundary": "exterior",
+        "is_in": "asia"
       },
       "geometry": {
         "coordinates": [
@@ -18348,10 +17598,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "16.8896265800781",
-        "label": "Portland_OR",
+        "label": "Portland_core_OR",
         "type": "core",
-        "id": "way/-5068",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -18494,10 +17743,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "411.425983352081",
-        "label": "Milwaukee_WI",
+        "label": "Milwaukee_exterior_WI",
         "type": "exterior",
-        "id": "way/-1056",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -18792,10 +18040,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "35.7958793520184",
-        "label": "Kansas_MO",
+        "label": "Kansas_core_MO",
         "type": "core",
-        "id": "way/-5209",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -18934,10 +18181,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "60.1787069699707",
-        "label": "Fort_Worth_Dallas_TX",
+        "label": "Fort_Worth_Dallas_core_TX",
         "type": "core",
-        "id": "way/-4811",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -19296,10 +18542,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "19.8346282043457",
-        "label": "Washington_DC",
+        "label": "Washington_core_DC",
         "type": "core",
-        "id": "way/-3700",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -19498,10 +18743,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "289.995467990654",
-        "label": "Knoxville_TN",
+        "label": "Knoxville_exterior_TN",
         "type": "exterior",
-        "id": "way/-3249",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -19992,10 +19236,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "9.13177716357422",
-        "label": "Buffalo_NY",
+        "label": "Buffalo_core_NY",
         "type": "core",
-        "id": "way/-5177",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -20137,8 +19380,9 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Tououse",
-        "type": "core"
+        "label": "Tououse_core",
+        "type": "core",
+        "is_in": "europe"
       },
       "geometry": {
         "coordinates": [
@@ -20204,51 +19448,10 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/76469",
-        "type": null,
-        "label": "Marseille_FR",
-        "area": "yes",
-        "area_km": null
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              5.285894,
-              43.263916
-            ],
-            [
-              5.285858,
-              43.263888
-            ],
-            [
-              5.285863,
-              43.263854
-            ],
-            [
-              5.285899,
-              43.263854
-            ],
-            [
-              5.285917,
-              43.263889
-            ],
-            [
-              5.285894,
-              43.263916
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "a1d039ee4b1acb41bf01340875e64e53"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "label": "Manila",
+        "label": "Manila_exterior",
         "country": "PH",
-        "boundary": "exterior"
+        "boundary": "exterior",
+        "is_in": "asia"
       },
       "geometry": {
         "coordinates": [
@@ -20427,10 +19630,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "489.102344090088",
-        "label": "ElPaso_TX",
+        "label": "ElPaso_exterior_TX",
         "type": "exterior",
-        "id": "way/-1838",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -20701,10 +19903,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "1503.96510853625",
-        "label": "Orlando_FL",
+        "label": "Orlando_exterior_FL",
         "type": "exterior",
-        "id": "way/-2792",
-        "area": null
+        "is_in":"north-america"
       },
       "geometry": {
         "coordinates": [
@@ -21431,10 +20632,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "63.1134768583374",
-        "label": "Philadelphia_PA",
+        "label": "Philadelphia_core_PA",
         "type": "core",
-        "id": "way/-3321",
-        "area": null
+        "is_in":"north-america"
       },
       "geometry": {
         "coordinates": [
@@ -21732,59 +20932,10 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/76469",
-        "type": null,
-        "label": "Marseille_FR",
-        "area": "yes",
-        "area_km": null
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              5.358607,
-              43.199214
-            ],
-            [
-              5.358569,
-              43.199239
-            ],
-            [
-              5.3585,
-              43.199189
-            ],
-            [
-              5.358497,
-              43.199128
-            ],
-            [
-              5.35853,
-              43.199122
-            ],
-            [
-              5.35858,
-              43.199138
-            ],
-            [
-              5.358626,
-              43.19918
-            ],
-            [
-              5.358607,
-              43.199214
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "a6e9c33c968f0165cc5ced83de03c593"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "label": "Padang",
+        "label": "Padang_exterior",
         "country": "ID",
-        "boundary": "exterior"
+        "boundary": "exterior",
+        "is_in": "asia"
       },
       "geometry": {
         "coordinates": [
@@ -22063,8 +21214,9 @@
       "type": "Feature",
       "properties": {
         "country": "MY",
-        "label": "Yangon",
-        "boundary": "exterior"
+        "label": "Yangon_exterior",
+        "boundary": "exterior",
+        "is_in": "asia"
       },
       "geometry": {
         "coordinates": [
@@ -22167,10 +21319,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "670.307111045776",
-        "label": "Baltimore_MD",
+        "label": "Baltimore_exterior_MD",
         "type": "exterior",
-        "id": "way/-570",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -22564,8 +21715,9 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Marseille",
-        "type": "exterior"
+        "label": "Marseille_exterior",
+        "type": "exterior",
+        "is_in": "europe"
       },
       "geometry": {
         "coordinates": [
@@ -22653,7 +21805,8 @@
       "properties": {
         "area": "yes",
         "id": "way/-72124",
-        "label": "Berlin_GE"
+        "label": "Berlin_GE",
+        "is_in": "europe"
       },
       "geometry": {
         "coordinates": [
@@ -22760,10 +21913,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "32.7935041215515",
-        "label": "Indianapolis_IN",
+        "label": "Indianapolis_core_IN",
         "type": "core",
-        "id": "way/-4144",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -23014,10 +22166,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "29.7044488384399",
-        "label": "San_Diego_CA",
+        "label": "San_Diego_core_CA",
         "type": "core",
-        "id": "way/-5103",
-        "area": null
+        "is_in":"north-america"
       },
       "geometry": {
         "coordinates": [
@@ -23168,10 +22319,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "883.249568863943",
-        "label": "Las_Vegas_NV",
+        "label": "Las_Vegas_exterior_NV",
         "type": "exterior",
-        "id": "way/-1983",
-        "area": null
+        "is_in":"north-america"
       },
       "geometry": {
         "coordinates": [
@@ -23405,9 +22555,10 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Jakarta",
+        "label": "Jakarta_exterior",
         "country": "ID",
-        "boundary": "exterior"
+        "boundary": "exterior",
+        "is_in":"asia"
       },
       "geometry": {
         "coordinates": [
@@ -25438,10 +24589,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "117.295844421146",
-        "label": "Oklahoma_OK",
+        "label": "Oklahoma_core_OK",
         "type": "core",
-        "id": "way/-3574",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -25803,9 +24953,10 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Pattaya",
+        "label": "Pattaya_exterior",
         "country": "TH",
-        "boundary": "exterior"
+        "boundary": "exterior",
+        "is_in":"asia"
       },
       "geometry": {
         "coordinates": [
@@ -25947,9 +25098,10 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Cyberjaya",
+        "label": "Cyberjaya_exterior",
         "country": "MY",
-        "boundary": "exterior"
+        "boundary": "exterior",
+        "is_in":"asia"
       },
       "geometry": {
         "coordinates": [
@@ -26060,10 +25212,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "2755.10067183755",
-        "label": "Fort_Worth_Dallas_TX",
+        "label": "Fort_Worth_Dallas_exterior_TX",
         "type": "exterior",
-        "id": "way/-1773",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -26446,10 +25597,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "43.523360288208",
-        "label": "Pittsburgh_PA",
+        "label": "Pittsburgh_core_PA",
         "type": "core",
-        "id": "way/-5035",
-        "area": null
+        "is_in":"north-america"
       },
       "geometry": {
         "coordinates": [
@@ -26651,73 +25801,10 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/76469",
-        "type": null,
-        "label": "Marseille_FR",
-        "area": "yes",
-        "area_km": null
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              5.350463,
-              43.280176
-            ],
-            [
-              5.350458,
-              43.280198
-            ],
-            [
-              5.350434,
-              43.280206
-            ],
-            [
-              5.350404,
-              43.280201
-            ],
-            [
-              5.350384,
-              43.280199
-            ],
-            [
-              5.350388,
-              43.280162
-            ],
-            [
-              5.350397,
-              43.280148
-            ],
-            [
-              5.350423,
-              43.28013
-            ],
-            [
-              5.350447,
-              43.28013
-            ],
-            [
-              5.350462,
-              43.280152
-            ],
-            [
-              5.350463,
-              43.280176
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "c00c9af349d1403f5fcb53723b58fe64"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "area_km": "1313.23193849817",
-        "label": "Miami_FL",
+        "label": "Miami_exterior_FL",
         "type": "exterior",
-        "id": "way/-2875",
-        "area": null
+        "is_in":"north-america"
       },
       "geometry": {
         "coordinates": [
@@ -27056,67 +26143,14 @@
       },
       "id": "c075aa814ffcfcfd3795545c0b21097f"
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "label": "Paris",
-        "type": "route"
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            2.368029,
-            48.729263
-          ],
-          [
-            2.362763,
-            48.743752
-          ],
-          [
-            2.343335,
-            48.764701
-          ],
-          [
-            2.346241,
-            48.774394
-          ],
-          [
-            2.346969,
-            48.783966
-          ],
-          [
-            2.344608,
-            48.793536
-          ],
-          [
-            2.344427,
-            48.805017
-          ],
-          [
-            2.351008,
-            48.811475
-          ],
-          [
-            2.355548,
-            48.813806
-          ],
-          [
-            2.357182,
-            48.816676
-          ]
-        ],
-        "type": "LineString"
-      },
-      "id": "c6750baa93022d9416b68c54e2268eda"
-    },
+    
     {
       "type": "Feature",
       "properties": {
         "area_km": "1914.19572833267",
-        "label": "Chicago_IL",
+        "label": "Chicago_exterior_IL",
         "type": "exterior",
-        "id": "way/-1151",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -27506,9 +26540,10 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Cebu City",
+        "label": "CebuCity_exterior",
         "country": "PH",
-        "boundary": "exterior"
+        "boundary": "exterior",
+        "is_in": "asia"
       },
       "geometry": {
         "coordinates": [
@@ -27670,9 +26705,10 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Phuket",
+        "label": "Phuket_exterior",
         "country": "TH",
-        "boundary": "exterior"
+        "boundary": "exterior",
+        "is_in": "asia"
       },
       "geometry": {
         "coordinates": [
@@ -27836,7 +26872,8 @@
       "properties": {
         "area": "yes",
         "id": "way/-22015",
-        "label": "Frankfurt_GE"
+        "label": "Frankfurt_GE",
+        "is_in": "europe"
       },
       "geometry": {
         "coordinates": [
@@ -27926,49 +26963,8 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/76469",
-        "type": null,
-        "label": "Marseille_FR",
-        "area": "yes",
-        "area_km": null
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              5.300385,
-              43.275157
-            ],
-            [
-              5.300356,
-              43.275151
-            ],
-            [
-              5.300353,
-              43.275127
-            ],
-            [
-              5.300384,
-              43.275137
-            ],
-            [
-              5.300385,
-              43.275157
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "cc078d7757cbf170e491e691c7b6946e"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "area_km": null,
         "label": "Calgary_CA",
-        "type": null,
-        "id": "way/-130",
-        "area": "yes"
+        "is_in":"north-america"
       },
       "geometry": {
         "coordinates": [
@@ -28395,10 +27391,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "613.469547604294",
-        "label": "Indianapolis_IN",
+        "label": "Indianapolis_exterior_IN",
         "type": "exterior",
-        "id": "way/-1230",
-        "area": null
+        "is_in":"north-america"
       },
       "geometry": {
         "coordinates": [
@@ -28725,10 +27720,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "713.184914811707",
-        "label": "Pittsburgh_PA",
+        "label": "Pittsburgh_exterior_PA",
         "type": "exterior",
-        "id": "way/-2552",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -29279,10 +28273,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "529.941860638161",
-        "label": "Louisville_KY",
+        "label": "Louisville_exterior_KY",
         "type": "exterior",
-        "id": "way/-1288",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -29525,10 +28518,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "1454.43933283508",
-        "label": "San_Diego_CA",
+        "label": "San_Diego_exterior_CA",
         "type": "exterior",
-        "id": "way/-2195",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -29830,93 +28822,10 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/76469",
-        "type": null,
-        "label": "Marseille_FR",
-        "area": "yes",
-        "area_km": null
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              5.349154,
-              43.284522
-            ],
-            [
-              5.349154,
-              43.284513
-            ],
-            [
-              5.349164,
-              43.284503
-            ],
-            [
-              5.349156,
-              43.284492
-            ],
-            [
-              5.349128,
-              43.284478
-            ],
-            [
-              5.349121,
-              43.284457
-            ],
-            [
-              5.349124,
-              43.284433
-            ],
-            [
-              5.349131,
-              43.284421
-            ],
-            [
-              5.34914,
-              43.284423
-            ],
-            [
-              5.349142,
-              43.284439
-            ],
-            [
-              5.349167,
-              43.284464
-            ],
-            [
-              5.349165,
-              43.284486
-            ],
-            [
-              5.349185,
-              43.284509
-            ],
-            [
-              5.349183,
-              43.284531
-            ],
-            [
-              5.349178,
-              43.284534
-            ],
-            [
-              5.349154,
-              43.284522
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "d3237fa531045e18951e5be2decd9677"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "area_km": "44.785735317421",
-        "label": "Austin_TX",
+        "label": "Austin_core_TX",
         "type": "core",
-        "id": "way/-4724",
-        "area": null
+        "is_in":"north-america"
       },
       "geometry": {
         "coordinates": [
@@ -30126,9 +29035,10 @@
     {
       "type": "Feature",
       "properties": {
-        "Label": "Singapore",
+        "Label": "Singapore_exterior",
         "Country": "SG",
-        "boundary": "exterior"
+        "boundary": "exterior",
+        "is_in": "asia"
       },
       "geometry": {
         "coordinates": [
@@ -30319,10 +29229,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "21.919674727417",
-        "label": "Nashville_TN",
+        "label": "Nashville_core_TN",
         "type": "core",
-        "id": "way/-4438",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -30553,10 +29462,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "453.955905764893",
-        "label": "Boston_MA",
+        "label": "Boston_exterior_MA",
         "type": "exterior",
-        "id": "way/-788",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -31122,65 +30030,10 @@
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/76469",
-        "type": null,
-        "label": "Marseille_FR",
-        "area": "yes",
-        "area_km": null
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              5.293473,
-              43.281356
-            ],
-            [
-              5.293484,
-              43.281333
-            ],
-            [
-              5.293489,
-              43.281298
-            ],
-            [
-              5.293509,
-              43.281285
-            ],
-            [
-              5.293523,
-              43.281311
-            ],
-            [
-              5.293516,
-              43.281328
-            ],
-            [
-              5.293516,
-              43.281344
-            ],
-            [
-              5.293492,
-              43.281359
-            ],
-            [
-              5.293473,
-              43.281356
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "dbb3cdd4d9c94b83e070ddc00a9f7dc3"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "area_km": "694.272182545959",
-        "label": "Atlanta_GA",
+        "label": "Atlanta_exterior_GA",
         "type": "exterior",
-        "id": "way/-1347",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -31426,9 +30279,10 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Malacca",
+        "label": "Malacca_exterior",
         "country": "MY",
-        "boundary": "exterior"
+        "boundary": "exterior",
+        "is_in": "asia"
       },
       "geometry": {
         "coordinates": [
@@ -31627,114 +30481,13 @@
       },
       "id": "e456bf7459b6a2865d7f42acfdb81106"
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "relation/76469",
-        "type": null,
-        "label": "Marseille_FR",
-        "area": "yes",
-        "area_km": null
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              5.39305,
-              43.172732
-            ],
-            [
-              5.393135,
-              43.172719
-            ],
-            [
-              5.393208,
-              43.172759
-            ],
-            [
-              5.393157,
-              43.172803
-            ],
-            [
-              5.393081,
-              43.172805
-            ],
-            [
-              5.393015,
-              43.172765
-            ],
-            [
-              5.39305,
-              43.172732
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "e495e70542e3720d812e6e6fe8502faa"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "@id": "relation/76469",
-        "type": null,
-        "label": "Marseille_FR",
-        "area": "yes",
-        "area_km": null
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              5.302148,
-              43.283169
-            ],
-            [
-              5.302099,
-              43.283176
-            ],
-            [
-              5.3021,
-              43.283151
-            ],
-            [
-              5.302111,
-              43.283076
-            ],
-            [
-              5.302178,
-              43.283078
-            ],
-            [
-              5.302228,
-              43.283088
-            ],
-            [
-              5.30222,
-              43.283127
-            ],
-            [
-              5.302196,
-              43.283149
-            ],
-            [
-              5.302148,
-              43.283169
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "e5a5868551969d69225f61a249f0ca2c"
-    },
+    
     {
       "type": "Feature",
       "properties": {
         "area_km": null,
         "label": "Toronto_CA",
-        "type": null,
-        "id": "way/-15247",
-        "area": "yes"
+        "is_in":"north-america"
       },
       "geometry": {
         "coordinates": [
@@ -31952,8 +30705,9 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Lyon",
-        "type": "exterior"
+        "label": "Lyon_exterior",
+        "type": "exterior",
+        "is_in": "europe"
       },
       "geometry": {
         "coordinates": [
@@ -32024,10 +30778,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "453.805306206299",
-        "label": "Atlantic_NJ",
+        "label": "Atlantic_exterior_NJ",
         "type": "exterior",
-        "id": "way/-2936",
-        "area": null
+        "is_in":"north-america"
       },
       "geometry": {
         "coordinates": [
@@ -32281,9 +31034,10 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Ha noi",
+        "label": "Hanoi_exterior",
         "country": "VN",
-        "boundary": "exterior"
+        "boundary": "exterior",
+        "is_in":"asia"
       },
       "geometry": {
         "coordinates": [
@@ -32391,8 +31145,9 @@
       "properties": {
         "country": "KH",
         "boundary": "exterior",
-        "label": "Phnom Penh"
-      },
+        "label": "PhnomPenh_exterior",
+        "is_in":"asia"      
+        },
       "geometry": {
         "coordinates": [
           [
@@ -32482,10 +31237,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "1766.2632511861",
-        "label": "Jacksonville_FL",
+        "label": "Jacksonville_exterior_FL",
         "type": "exterior",
-        "id": "way/-158",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -32960,10 +31714,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "61.4131710821533",
-        "label": "Detroit_MI",
+        "label": "Detroit_core_MI",
         "type": "core",
-        "id": "way/-3920",
-        "area": null
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -33234,62 +31987,14 @@
       },
       "id": "edd33b33f36da89f28a4dd15d5d41ecf"
     },
+    
     {
       "type": "Feature",
       "properties": {
-        "@id": "relation/76469",
-        "type": null,
-        "label": "Marseille_FR",
-        "area": "yes",
-        "area_km": null
-      },
-      "geometry": {
-        "coordinates": [
-          [
-            [
-              5.294389,
-              43.269464
-            ],
-            [
-              5.294381,
-              43.269446
-            ],
-            [
-              5.294404,
-              43.269383
-            ],
-            [
-              5.294426,
-              43.269375
-            ],
-            [
-              5.294436,
-              43.269397
-            ],
-            [
-              5.29442,
-              43.269415
-            ],
-            [
-              5.294418,
-              43.269447
-            ],
-            [
-              5.294389,
-              43.269464
-            ]
-          ]
-        ],
-        "type": "Polygon"
-      },
-      "id": "f452f353933f9cfd77b3879362495dfb"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "label": "Penang",
+        "label": "Penang_exterior",
         "country": "MY",
-        "boundary": "exterior"
+        "boundary": "exterior",
+        "is_in": "asia"
       },
       "geometry": {
         "coordinates": [
@@ -33459,9 +32164,10 @@
     {
       "type": "Feature",
       "properties": {
-        "label": "Ho Chi Minh City",
+        "label": "HoChiMinhCity_exterior",
         "country": "ID",
-        "boundary": "exterior"
+        "boundary": "exterior",
+        "is_in": "asia"
       },
       "geometry": {
         "coordinates": [
@@ -33584,8 +32290,9 @@
   "id": "relation\/2833530", 
   "properties": { 
        
-        "label": "Oakland_SF",
-        "boundary": "exterior"
+        "label": "Oakland_exterior_SF",
+        "boundary": "exterior",
+        "is_in": "north-america"
 
  }, 
 "geometry": { "type": "Polygon", 
@@ -33593,8 +32300,9 @@
     {
       "type": "Feature",
       "properties": {
-      "label": "Alameda_SF",
-        "boundary": "exterior"
+      "label": "Alameda_exterior_SF",
+        "boundary": "exterior",
+        "is_in": "north-america"
       },
       "geometry": {
         "coordinates": [
@@ -34102,11 +32810,12 @@
       "id": "a0f8513094c38e1919ea50a8c0e2a5c9"
     },         
 
-             {
+    {
      "type": "Feature",
      "properties": {
-      "label": "SFCity_CA",
-      "boundary": "exterior"
+      "label": "SFCity_exterior_CA",
+      "boundary": "exterior",
+      "is_in": "north-america"
      },
      "geometry": {
        "coordinates": [
@@ -34226,10 +32935,9 @@
       "type": "Feature",
       "properties": {
         "area_km": "321.990390606552",
-        "label": "Memphis_TN",
+        "label": "Memphis_exterior_TN",
         "type": "exterior",
-        "id": "way/-1450",
-        "area": null
+        "is_in": "north-america"      
       },
       "geometry": {
         "coordinates": [
