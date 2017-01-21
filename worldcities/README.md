@@ -29,4 +29,4 @@ Each boundary polygon will have the following properties:
 - `label=city_name`
 - `country=country_iso2_code`
 - `boundary=core or exterior`
-- `is_in` name of the bigger geographci area the place s part of (north-america/south-america/asia/europe/central-america/africa/australia/)
+- `is_in` name of the bigger geographic area the place is part of (north-america/south-america/asia/europe/central-america/africa/australia/)
