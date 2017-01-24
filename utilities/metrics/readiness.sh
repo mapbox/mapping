@@ -73,7 +73,9 @@ do
     aws s3 cp readiness/${cities[$i]}/${cities[$i]}_poi.json ${uploadTo}/${cities[$i]}/ --acl public-read
     node osmlazer/index.js --file readiness/${cities[$i]}/${cities[$i]}.osm.pbf --mode address  > readiness/${cities[$i]}/${cities[$i]}_address.json
     aws s3 cp readiness/${cities[$i]}/${cities[$i]}_address.json ${uploadTo}/${cities[$i]}/ --acl public-read
-    node readiness.js --mode aggregate
+    node readiness.js --mode aggregate > worldcities.csv
+    aws s3 cp worldcities.csv ${uploadTo}/ --acl public-read
+    
     
     
 done
