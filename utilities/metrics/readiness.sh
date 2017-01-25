@@ -16,9 +16,11 @@ uploadTo="s3://mapbox/worldcities"
 
 #install dependencies
 sudo npm install -g minimist
+sudo npm install -g path
 sudo npm install -g geojson2poly
 wget -O - http://m.m.i24.cc/osmconvert.c | cc -x c - -lz -O3 -o osmconvert
 sudo apt-get install jq
+mkdir readiness
 git clone https://github.com/geohacker/osmlazer.git
 cd osmlazer
 git checkout readiness
@@ -43,6 +45,7 @@ cities=( $(jq -r '.[].properties.label' citiesArr.json) )
 
 for ((i=0; i < ${#cities[@]}; i++))
 do
+  mkdir readiness/${cities[$i]}
   if [ ${states[$i]} != "null" ]
   then
      if [ -f ${states[$i]}-latest.osm.pbf ]
@@ -60,25 +63,28 @@ do
   	wget -c http://download.geofabrik.de/${continents[$i]}/${countries[$i]}-latest.osm.pbf
        ./osmconvert --complete-ways  --complex-ways ${countries[$i]}-latest.osm.pbf -B=${cities[$i]}.geojson.poly -o=readiness/${cities[$i]}/${cities[$i]}.osm.pbf
     fi
- fi
-    echo aws s3 cp readiness/${cities[$i]}/${cities[$i]}.osm.pbf ${uploadTo}/${cities[$i]}/ --acl public-read
+ fi 
+    
+    #echo aws s3 cp readiness/${cities[$i]}/${cities[$i]}.osm.pbf ${uploadTo}/${cities[$i]}/ --acl public-read
     aws s3 cp readiness/${cities[$i]}/${cities[$i]}.osm.pbf ${uploadTo}/${cities[$i]}/ --acl public-read
-    echo node osmlazer/index.js --file readiness/${cities[$i]}/${cities[$i]}.osm.pbf --mode basemap > readiness/{${cities[$i]}/${cities[$i]}_basemap.json
+    #echo node osmlazer/index.js --file readiness/${cities[$i]}/${cities[$i]}.osm.pbf --mode basemap > readiness/${cities[$i]}/${cities[$i]}_basemap.json
     node osmlazer/index.js --file readiness/${cities[$i]}/${cities[$i]}.osm.pbf --mode basemap > readiness/${cities[$i]}/${cities[$i]}_basemap.json
-    echo aws s3 cp readiness/${cities[$i]}/${cities[$i]}_basemap.json ${uploadTo}/${cities[$i]}/ --acl public-read
+    #echo aws s3 cp readiness/${cities[$i]}/${cities[$i]}_basemap.json ${uploadTo}/${cities[$i]}/ --acl public-read
     aws s3 cp readiness/${cities[$i]}/${cities[$i]}_basemap.json ${uploadTo}/${cities[$i]}/ --acl public-read
-    echo node osmlazer/index.js --file readiness/${cities[$i]}/${cities[$i]}.osm.pbf --mode poi > readiness/${cities[$i]}/${cities[$i]}_poi.json
+    #echo node osmlazer/index.js --file readiness/${cities[$i]}/${cities[$i]}.osm.pbf --mode poi > readiness/${cities[$i]}/${cities[$i]}_poi.json
     node osmlazer/index.js --file readiness/${cities[$i]}/${cities[$i]}.osm.pbf --mode poi > readiness/${cities[$i]}/${cities[$i]}_poi.json
-    echo aws s3 cp readiness/${cities[$i]}/${cities[$i]}_poi.json ${uploadTo}/${cities[$i]}/ --acl public-read
+    #echo aws s3 cp readiness/${cities[$i]}/${cities[$i]}_poi.json ${uploadTo}/${cities[$i]}/ --acl public-read
     aws s3 cp readiness/${cities[$i]}/${cities[$i]}_poi.json ${uploadTo}/${cities[$i]}/ --acl public-read
-    node osmlazer/index.js --file readiness/${cities[$i]}/${cities[$i]}.osm.pbf --mode address  > readiness/${cities[$i]}/${cities[$i]}_address.json
-    aws s3 cp readiness/${cities[$i]}/${cities[$i]}_address.json ${uploadTo}/${cities[$i]}/ --acl public-read
-    node readiness.js --mode aggregate > worldcities.csv
-    aws s3 cp worldcities.csv ${uploadTo}/ --acl public-read
+   # node osmlazer/index.js --file readiness/${cities[$i]}/${cities[$i]}.osm.pbf --mode address  > readiness/${cities[$i]}/${cities[$i]}_address.json
+   # aws s3 cp readiness/${cities[$i]}/${cities[$i]}_address.json ${uploadTo}/${cities[$i]}/ --acl public-read
     
     
     
 done
+
+node readiness.js --mode aggregate > worldcities.csv
+aws s3 cp worldcities.csv ${uploadTo}/ --acl public-read
+
 
 rm *.geojson
 rm *.poly

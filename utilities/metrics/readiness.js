@@ -1,5 +1,6 @@
 var fs = require('fs');
 var argv = require('minimist')(process.argv.slice(2));
+var path = require('path');
 var cities = require('./worldcities.json');
 var basePath = 'readiness';
 
@@ -120,8 +121,17 @@ function getFolders(srcpath) {
     
     if (projFolder!='node_modules' && projFolder!= 'Phoenix_exterior_AZ' ){
         var feature = {"type":"feature","properties":{}};
-        var baseMapData = require('./'+projFolder+'/'+projFolder+'_basemap.json');
-        var poiData = require('./'+projFolder+'/'+projFolder+'_poi.json');
+        var stats = fs.statSync('./'+basePath+'/'+projFolder+'/'+projFolder+'_basemap.json')
+        var basemapFileSizeInBytes = stats["size"];
+        var stats = fs.statSync('./'+basePath+'/'+projFolder+'/'+projFolder+'_basemap.json')
+        var poiFileSizeInBytes = stats["size"];
+        
+       if (basemapFileSizeInBytes!=0 && poiFileSizeInBytes!=0)
+       {
+
+       
+        var baseMapData = require('./'+basePath+'/'+projFolder+'/'+projFolder+'_basemap.json');
+        var poiData = require('./'+basePath+'/'+projFolder+'/'+projFolder+'_poi.json');
         var poiList =["transport","amenities","shopping","leisure","infrastructure",
                       "tourism","namedBuildings","natural","landuse"];
         var poiCount =0;
@@ -207,6 +217,7 @@ function getFolders(srcpath) {
             );
 
      }
+ }
    
 });
 
