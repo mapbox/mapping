@@ -43,7 +43,10 @@ function getFolders(srcpath) {
 
   
   var projFolders = getFolders(basePath);
-  console.log("boundary"+','+"exit"+','+
+  console.log("boundary"+','+
+            "buildings"+','+
+            "3D_buildings"+','+
+            "exit"+','+
             "destination"+','+
             "restriction"+','+
             "turn_lanes"+','+
@@ -143,7 +146,10 @@ function getFolders(srcpath) {
 
         });
         
-    console.log(projFolder+','+baseMapData.exit+','+
+    console.log(projFolder+','+
+            baseMapData.buildings+','+
+            baseMapData["3D_buildings"]+','+
+            baseMapData.exit+','+
             baseMapData.destination+','+
             baseMapData.restriction+','+
             baseMapData["turn_lanes"]+','+
