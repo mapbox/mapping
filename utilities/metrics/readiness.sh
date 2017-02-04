@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+s#!/usr/bin/env bash
 
 uploadTo="s3://mapbox/worldcities"
 
@@ -15,7 +15,7 @@ uploadTo="s3://mapbox/worldcities"
 
 
 #install dependencies
-sudo npm install -g minimist
+sudo npm install minimist
 sudo npm install -g path
 sudo npm install -g geojson2poly
 wget -O - http://m.m.i24.cc/osmconvert.c | cc -x c - -lz -O3 -o osmconvert
