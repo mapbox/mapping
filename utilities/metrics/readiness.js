@@ -115,7 +115,12 @@ function getFolders(srcpath) {
             "hamlet"+','+
             "suburb"+','+
             "village"+','+
-            "poi"
+            "poi"+','+
+            "waterway"+','+
+            "named_waterway"+','+
+            "park" +','+
+            "named_park"
+
             );
 
 
@@ -218,7 +223,11 @@ function getFolders(srcpath) {
             baseMapData["hamlet"]+','+
             baseMapData["suburb"]+','+
             baseMapData["village"]+','+
-            poiCount
+            poiCount+','+
+            baseMapData["waterway"]+','+
+            baseMapData["named_waterway"]+','+
+            baseMapData["park"]+','+
+            baseMapData["named_park"]
 
             );
 
