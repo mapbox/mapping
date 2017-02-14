@@ -8,20 +8,19 @@ area[area:highway=traffic_island] {
   fill-color: #777;
 }
 
-area[area:highway] {
-  fill-color: #eee;
+area[area:highway]{
+  fill-color: white;
 }
 
 area[area:highway][crossing] {
   fill-color: white;
 }
 
-area[area:highway=footway][footway=crossing] {
+area[area:highway=footway][footway=crossing]{
+  line-color: white
   fill-color: green;
   object-z-index:+1.0;
 }
-
-
 
 way[road_marking]{
   width: 3;
