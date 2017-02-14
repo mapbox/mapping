@@ -1,0 +1,8 @@
+/*
+JOSM mappaint style for detailed road areas
+https://www.openstreetmap.org/user/PlaneMad/diary/40442
+*/
+
+area[area:highway] {
+  fill-color: #eee;
+}
