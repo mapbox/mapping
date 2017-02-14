@@ -13,11 +13,12 @@ area[area:highway] {
 }
 
 area[area:highway][crossing] {
-  fill-color: yellow;
+  fill-color: white;
 }
 
-area[area:highway=footway][crossing] {
-  fill-color: yellow;
+area[area:highway=footway][footway=crossing] {
+  fill-color: green;
+  object-z-index:+1.0;
 }
 
 
@@ -46,6 +47,5 @@ way[highway:lane]{
 }
 
 way[crossing=yes]{
-  color: red;
-  dashes 5,5;
+  dashes: 5,10;
 }
