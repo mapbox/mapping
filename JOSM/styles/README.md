@@ -5,6 +5,8 @@
 ## Creating custom styles
 
 - https://josm.openstreetmap.de/wiki/Styles
+- Tutorial https://josm.openstreetmap.de/wiki/Help/Styles/MapCSSTutorial
+- Style reference https://josm.openstreetmap.de/wiki/Help/Styles/MapCSSImplementation
 
 ## Using custom styles
 
