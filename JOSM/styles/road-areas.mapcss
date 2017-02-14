@@ -7,6 +7,10 @@ area[area:highway] {
   fill-color: #eee;
 }
 
+area[area:highway][crossing] {
+  fill-color: yellow;
+}
+
 way[road_marking=dash]{
   width: 2;
   color: white;
