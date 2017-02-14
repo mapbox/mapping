@@ -6,3 +6,14 @@ https://www.openstreetmap.org/user/PlaneMad/diary/40442
 area[area:highway] {
   fill-color: #eee;
 }
+
+way[road_marking=dash]{
+  width: 2;
+  color: white;
+  dashes 2,2;
+}
+
+way[road_marking]{
+  width: 2;
+  color: white;
+}
