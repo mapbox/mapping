@@ -17,3 +17,8 @@ way[road_marking]{
   width: 2;
   color: white;
 }
+
+way[highway:lane]{
+  width: 6;
+  color: #777;
+}
