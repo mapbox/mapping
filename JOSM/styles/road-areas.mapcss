@@ -1,0 +1,50 @@
+/*
+JOSM mappaint style for detailed road areas
+https://www.openstreetmap.org/user/PlaneMad/diary/40442
+*/
+
+
+area[area:highway=traffic_island] {
+  fill-color: #777;
+}
+
+area[area:highway]{
+  fill-color: white;
+}
+
+area[area:highway][crossing] {
+  fill-color: white;
+}
+
+area[area:highway=footway][footway=crossing]{
+  line-color: white
+  fill-color: green;
+  object-z-index:+1.0;
+}
+
+way[road_marking]{
+  width: 3;
+  color: white;
+}
+
+way[road_marking=solid_lane_divider]{
+  dashes: none;
+}
+
+way[road_marking=solid_stop_line]{
+  width: 6;
+  dashes: none;
+}
+
+way[road_marking=dash]{
+  dashes:10,20;
+}
+
+way[highway:lane]{
+  width: 6;
+  color: lightblue;
+}
+
+way[crossing=yes]{
+  dashes: 5,10;
+}
