@@ -4,7 +4,7 @@ var path = require('path');
 var cities = require('./worldcities.json');
 var basePath = 'readiness';
 var turf = require('turf');
-var geojson2csv = require('geojson2csv')
+
 
 
 
