@@ -84,6 +84,10 @@ done
 
 node readiness.js --mode aggregate > worldcities.csv
 aws s3 cp worldcities.csv ${uploadTo}/ --acl public-read
+aws s3 cp coverage.csv ${uploadTo}/ --acl public-read
+aws s3 cp coverage.json ${uploadTo}/ --acl public-read
+
+
 
 
 rm *.geojson
