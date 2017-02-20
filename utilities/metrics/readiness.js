@@ -3,6 +3,9 @@ var argv = require('minimist')(process.argv.slice(2));
 var path = require('path');
 var cities = require('./worldcities.json');
 var basePath = 'readiness';
+var turf = require('turf');
+var geojson2csv = require('geojson2csv')
+
 
 
 var citiesArr =[];
@@ -33,7 +36,8 @@ var citiesArrFile = fs.createWriteStream('citiesArr.json');
 });
 } else if (argv.mode === 'aggregate'){
 
-  
+var boundaryCoverage ={"type":"FeatureCollection", "features":[]};
+
 function getFolders(srcpath) {
   
   return fs.readdirSync(srcpath).filter(function(file) {
@@ -126,9 +130,20 @@ function getFolders(srcpath) {
 
   
   projFolders.forEach(function(projFolder){
+    var feature ={};
+    feature.boundary = projFolder;
+    cities.features.forEach(function(item){
+       if(item.properties.label=== projFolder){
+         feature.area = turf.area(item)/1000000;
+
+       }
+      
+    });
     
-    if (projFolder!='node_modules' && projFolder!= 'Phoenix_exterior_AZ' ){
-        var feature = {"type":"feature","properties":{}};
+    
+
+    
+    if (projFolder!='node_modules' ){
         var stats = fs.statSync('./'+basePath+'/'+projFolder+'/'+projFolder+'_basemap.json')
         var basemapFileSizeInBytes = stats["size"];
         var stats = fs.statSync('./'+basePath+'/'+projFolder+'/'+projFolder+'_basemap.json')
@@ -150,7 +165,33 @@ function getFolders(srcpath) {
          }
 
         });
+        feature["buildings coverage"] = baseMapData.buildings/feature.area;
+        feature["trunk to motorway coverage"] = (baseMapData["l_trunk"] + baseMapData["l_trunk_link"]+ baseMapData["l_motorway"]+baseMapData["l_motorway_link"])/feature.area;
+        feature["tertiary to primary road coverage"] = (baseMapData["l_primary"] + baseMapData["l_primary_link"]+
+                                                       baseMapData["l_secondary"] + baseMapData["l_secondary_link"]+
+                                                       baseMapData["l_tertiary"] + baseMapData["l_tertiary_link"])/feature.area;
+        feature["residential road coverage"]  = baseMapData["l_residential"]/feature.area;
+        feature["cities + town names"] = (baseMapData["city"] + baseMapData["town"] )/feature.area;                                                  
+        feature["village + hamlet + neighborhoods"] =(baseMapData["village"]+baseMapData["suburb"]+baseMapData["neighbourhood"]+baseMapData["hamlet"])/feature.area;
+        feature["waterway coverage"] = baseMapData["waterway"]/feature.area;
+        feature["park"] = baseMapData["park"]/feature.area;
+        feature["POI density"] = poiCount/feature.area;
+        feature["motorable_length"] = baseMapData["motorable_length"];
+        feature["percent_oneway_motorway"] = (baseMapData["oneway_motorway"]+baseMapData["oneway_motorway_link"])/(baseMapData["l_motorway"]+baseMapData["l_motorway_link"]);
+        feature["percent_named_motorway"] = (baseMapData["named_motorway"]+baseMapData["named_motorway_link"])/(baseMapData["l_motorway"]+baseMapData["l_motorway_link"]);
+        feature["percent_oneway_trunk"] = (baseMapData["oneway_trunk"]+baseMapData["oneway_trunk_link"])/(baseMapData["l_trunk"]+baseMapData["l_trunk_link"]);
+        feature["percent_named_trunk"] = (baseMapData["named_trunk"]+baseMapData["named_trunk_link"])/(baseMapData["l_trunk"]+baseMapData["l_trunk_link"]);
+        feature["percent_oneway_primary"] = (baseMapData["oneway_primary"]+baseMapData["oneway_primary_link"])/(baseMapData["l_primary"]+baseMapData["l_primary_link"]);
+        feature["percent_named_primary"] = (baseMapData["named_primary"]+baseMapData["named_primary_link"])/(baseMapData["l_primary"]+baseMapData["l_primary_link"]);
+        feature["percent_oneway_secondary"] = (baseMapData["oneway_secondary"]+baseMapData["oneway_secondary_link"])/(baseMapData["l_secondary"]+baseMapData["l_secondary_link"]);
+        feature["percent_named_secondary"] = (baseMapData["named_secondary"]+baseMapData["named_secondary_link"])/(baseMapData["l_secondary"]+baseMapData["l_secondary_link"]);
+        feature["percent_oneway_tertiary"] = (baseMapData["oneway_tertiary"]+baseMapData["oneway_tertiary_link"])/(baseMapData["l_tertiary"]+baseMapData["l_tertiary_link"]);
+        feature["percent_named_tertiary"] = (baseMapData["named_tertiary"]+baseMapData["named_tertiary_link"])/(baseMapData["l_tertiary"]+baseMapData["l_tertiary_link"]);
         
+        feature["TR coverage"] = baseMapData["restriction"]/feature["motorable_length"];
+        feature["TL coverage"] = baseMapData["turn_lanes"]/feature["motorable_length"];
+        feature["exit + destination coverage"] = (baseMapData.exit+baseMapData.destination)/feature["motorable_length"];
+        boundaryCoverage.features.push(feature);
     console.log(projFolder+','+
             baseMapData.buildings+','+
             baseMapData["3D_buildings"]+','+
@@ -235,7 +276,69 @@ function getFolders(srcpath) {
  }
    
 });
+fs.writeFile('coverage.json', JSON.stringify(boundaryCoverage), (err) => {
+  if (err) throw err;
+  // console.log('It\'s saved!');
+}); 
+var coverageCSV ='';
+var properties = Object.keys(boundaryCoverage.features[0]);
+properties.forEach(function(item,index){
+    if(index!=[properties.length]-1){
+        coverageCSV += item+',';
 
-   
-} 
+    } else{
+        coverageCSV += item;
+    }
+  
+});
+ 
+    
 
+coverageCSV += '\n';
+
+
+
+boundaryCoverage.features.forEach(function(item){
+   var properties = Object.keys(item);
+   properties.forEach(function(property,index){
+    if(index!=[properties.length]-1){
+        coverageCSV += item[property]+',';
+
+    } else{
+        coverageCSV += item[property];
+    }
+  
+});
+ 
+    
+
+coverageCSV += '\n';
+
+});
+
+fs.writeFile('coverage.csv', coverageCSV, (err) => {
+  if (err) throw err;
+  // console.log('It\'s saved!');
+}); 
+} else if (argv.mode === 'baseline'){
+
+    var baseline ={};
+    var north_america_highways =["NewYork_exterior_NY", "Washington_exterior_DC", "SFCity_exterior_CA", "Los_Angeles_exterior_CA"];
+    var north_america_buildings =["NewYork_exterior_NY", "Washington_core_DC","SFCity_exterior_CA","Boston_exterior_MA"];
+    var north_america_tr = ["Montreal_CA","Ottawa_CA","SFCity_exterior_CA"];
+    var north_america_tl = ["Oklahoma_exterior_OK","San_Diego_exterior_CA","SFbay_exterior_CA"];
+    var north_america_exit = ["NewYork_exterior_NY","Washington_exterior_DC","SFCity_exterior_CA","Los_Angeles_exterior_CA"];
+    var europe_highways = ["Berlin_GE","London","Paris_exterior","Munich_GE"];
+    var europe_buildings = ["Berlin_GE","London","Paris_exterior","Munich_GE"];
+    var europe_tr =["Berlin_GE","London","Paris_exterior","Munich_GE"];
+    var europe_tl=["Berlin_GE","London","Paris_exterior","Munich_GE"];
+    var europe_exit =["Berlin_GE","London","Paris_exterior","Munich_GE"];
+    var asia_highways=["Manila_exterior","KualaLumpur_exterior","Bangkok_exterior","Singapore_exterior","Jakarta_exterior"];
+    var asia_buildings = ["Manila_exterior","KualaLumpur_exterior","Singapore_exterior"];
+    var asia_tr=["Manila_exterior","KualaLumpur_exterior","Bangkok_exterior","Singapore_exterior","Jakarta_exterior"];
+    var asia_tl=["Manila_exterior","KualaLumpur_exterior","Bangkok_exterior","Singapore_exterior","Jakarta_exterior"];
+    var asia_exit =["Manila_exterior","KualaLumpur_exterior","Bangkok_exterior","Singapore_exterior","Jakarta_exterior"];
+
+} else if (argv.mode === 'coverage'){
+
+}
