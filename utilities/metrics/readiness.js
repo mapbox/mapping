@@ -177,6 +177,42 @@ function getFolders(srcpath) {
         feature["park"] = baseMapData["park"]/feature.area;
         feature["POI density"] = poiCount/feature.area;
         feature["motorable_length"] = baseMapData["motorable_length"];
+        feature["percent_named_major"] = (baseMapData["named_motorway"]+baseMapData["named_motorway_link"]+
+                                          baseMapData["named_trunk"]+baseMapData["named_trunk_link"]+
+                                          baseMapData["named_primary"]+baseMapData["named_primary_link"]+
+                                          baseMapData["named_secondary"]+baseMapData["named_secondary_link"]+
+                                          baseMapData["named_tertiary"]+baseMapData["named_tertiary_link"])/
+                                         (baseMapData["l_motorway"]+baseMapData["l_motorway_link"]+
+                                          baseMapData["l_trunk"]+baseMapData["l_trunk_link"]+
+                                          baseMapData["l_primary"]+baseMapData["l_primary_link"]+
+                                          baseMapData["l_secondary"]+baseMapData["l_secondary_link"]+
+                                          baseMapData["l_tertiary"]+baseMapData["l_tertiary_link"]);
+        feature["percent_oneway_major"] = (baseMapData["oneway_motorway"]+baseMapData["oneway_motorway_link"]+
+                                           baseMapData["oneway_trunk"]+baseMapData["oneway_trunk_link"]+
+                                           baseMapData["oneway_primary"]+baseMapData["oneway_primary_link"]+
+                                           baseMapData["oneway_secondary"]+baseMapData["oneway_secondary_link"]+
+                                           baseMapData["oneway_tertiary"]+baseMapData["oneway_tertiary_link"])/
+                                         (baseMapData["l_motorway"]+baseMapData["l_motorway_link"]+
+                                          baseMapData["l_trunk"]+baseMapData["l_trunk_link"]+
+                                          baseMapData["l_primary"]+baseMapData["l_primary_link"]+
+                                          baseMapData["l_secondary"]+baseMapData["l_secondary_link"]+
+                                          baseMapData["l_tertiary"]+baseMapData["l_tertiary_link"]);
+        feature["percent_named_motorable"] = (baseMapData["named_motorway"]+baseMapData["named_motorway_link"]+
+                                          baseMapData["named_trunk"]+baseMapData["named_trunk_link"]+
+                                          baseMapData["named_primary"]+baseMapData["named_primary_link"]+
+                                          baseMapData["named_secondary"]+baseMapData["named_secondary_link"]+
+                                          baseMapData["named_tertiary"]+baseMapData["named_tertiary_link"]+
+                                          baseMapData["named_residential"]+
+                                          baseMapData["named_unclassified"]+
+                                          baseMapData["named_service"])/baseMapData["motorable_length"];
+        feature["percent_oneway_motorable"] = (baseMapData["oneway_motorway"]+baseMapData["oneway_motorway_link"]+
+                                           baseMapData["oneway_trunk"]+baseMapData["oneway_trunk_link"]+
+                                           baseMapData["oneway_primary"]+baseMapData["oneway_primary_link"]+
+                                           baseMapData["oneway_secondary"]+baseMapData["oneway_secondary_link"]+
+                                           baseMapData["oneway_tertiary"]+baseMapData["oneway_tertiary_link"]+
+                                           baseMapData["oneway_residential"]+
+                                           baseMapData["oneway_unclassified"]+
+                                           baseMapData["oneway_service"])/baseMapData["motorable_length"];                                         
         feature["percent_oneway_motorway"] = (baseMapData["oneway_motorway"]+baseMapData["oneway_motorway_link"])/(baseMapData["l_motorway"]+baseMapData["l_motorway_link"]);
         feature["percent_named_motorway"] = (baseMapData["named_motorway"]+baseMapData["named_motorway_link"])/(baseMapData["l_motorway"]+baseMapData["l_motorway_link"]);
         feature["percent_oneway_trunk"] = (baseMapData["oneway_trunk"]+baseMapData["oneway_trunk_link"])/(baseMapData["l_trunk"]+baseMapData["l_trunk_link"]);
@@ -322,7 +358,9 @@ fs.writeFile('coverage.csv', coverageCSV, (err) => {
 }); 
 } else if (argv.mode === 'baseline'){
 
-    var baseline ={};
+    
+
+    var baseline ={"type":"FeatureCollection","features":[]};
     var north_america_highways =["NewYork_exterior_NY", "Washington_exterior_DC", "SFCity_exterior_CA", "Los_Angeles_exterior_CA"];
     var north_america_buildings =["NewYork_exterior_NY", "Washington_core_DC","SFCity_exterior_CA","Boston_exterior_MA"];
     var north_america_tr = ["Montreal_CA","Ottawa_CA","SFCity_exterior_CA"];
@@ -338,6 +376,12 @@ fs.writeFile('coverage.csv', coverageCSV, (err) => {
     var asia_tr=["Manila_exterior","KualaLumpur_exterior","Bangkok_exterior","Singapore_exterior","Jakarta_exterior"];
     var asia_tl=["Manila_exterior","KualaLumpur_exterior","Bangkok_exterior","Singapore_exterior","Jakarta_exterior"];
     var asia_exit =["Manila_exterior","KualaLumpur_exterior","Bangkok_exterior","Singapore_exterior","Jakarta_exterior"];
+
+    var baselineFeature ={}
+
+
+
+
 
 } else if (argv.mode === 'coverage'){
 
