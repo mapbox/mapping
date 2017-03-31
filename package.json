@@ -1,0 +1,27 @@
+{
+  "name": "mapping",
+  "version": "0.1.0",
+  "description": "OpenStreetMap contributions from the data team at Mapbox",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mapbox/mapping.git"
+  },
+  "author": "Mapbox",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mapbox/mapping/issues"
+  },
+  "homepage": "https://github.com/mapbox/mapping#readme",
+  "dependencies": {
+    "@turf/turf": "^3.14.3",
+    "csv": "^1.1.1",
+    "d3-queue": "^3.0.5",
+    "minimist": "^1.2.0",
+    "moment": "^2.18.1",
+    "tile-reduce": "^3.1.1"
+  }
+}
