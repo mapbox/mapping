@@ -86,7 +86,7 @@ By default JOSM is allocated with 247-1024 MB of memory depending on the operati
 
 To get rid of this error increase the default allocated memory for JOSM by following [these steps](https://gist.github.com/jothirnadh/00352fff58ce2628cc4f#supply-parameters). If you are not sure of fixing this, do contact someone from the data team.
 
-## How to configure tha gaming mouse?
+## How to configure the gaming mouse?
 
 **Systems:** Linux and Mac
 
