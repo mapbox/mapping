@@ -85,3 +85,48 @@ By default JOSM is allocated with 247-1024 MB of memory depending on the operati
 ![increasing memory]({{site.baseurl}}/images/increasing-memory.png)
 
 To get rid of this error increase the default allocated memory for JOSM by following [these steps](https://gist.github.com/jothirnadh/00352fff58ce2628cc4f#supply-parameters). If you are not sure of fixing this, do contact someone from the data team.
+
+## How to configure tha gaming mouse?
+
+**Systems:** Linux and Mac
+
+**Equipment:** Razer Gaming mouse
+
+**General guidelines:** Increase mouse speed in `System Preferences> Mouse` for Mac
+
+**Example Feature**
+
+**Buildings**
+
+**Configure gaming mouse and keyboard**
+
+1. Install Razer Naga config software: https://www.razerzone.com/synapse/
+2. Create an account in razer ID: https://razer-id.razerzone.com/new
+3. Build your profile using email id
+4. Configure the mouse: 
+
+**Common shortcuts essential to configure in your gaming mouse for buildings**: enter, extrude (keyboard:X), building tracing (keyboard:B), upload and download data to OSM (use the default keyboard shortcuts in your JOSM).
+
+**Good to have**: Join and merge shortcuts (J and M), selection of overlapping ways(I), Join overlapping areas (SHift+J), split objects (alt+X)
+
+**Note**: Pattern to follow in setting up your mouse:
+
+**Left hand(shortcuts in the keyboard)**:
+   * Upload
+   * Select
+   * Orthogonalize 
+   * Rotate
+
+**Right hand(shortcuts in your mouse)**:
+   * enter
+   * X
+   * B
+   * Merge two nodes(M)
+   * Join node to way (N)
+   * Select intersecting ways (I)
+   * Join overlapping ways (shift+J)
+   
+ Configure any other shortcut according to the mapper choices.
+ 
+**Note**: For mapping other features like roads and to fix task, create separate configurations with the shortcuts required exclusively for those features.
+
