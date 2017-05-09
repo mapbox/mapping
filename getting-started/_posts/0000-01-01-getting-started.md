@@ -112,18 +112,29 @@ To get rid of this error increase the default allocated memory for JOSM by follo
 **Note**: Pattern to follow in setting up your mouse:
 
 **Left hand(shortcuts in the keyboard)**:
+
    * Upload
+
    * Select
+
    * Orthogonalize 
+
    * Rotate
 
 **Right hand(shortcuts in your mouse)**:
+
    * enter
+
    * X
+
    * B
+
    * Merge two nodes(M)
+
    * Join node to way (N)
+
    * Select intersecting ways (I)
+   
    * Join overlapping ways (shift+J)
    
  Configure any other shortcut according to the mapper choices.
