@@ -29,18 +29,18 @@ Here is a good example:
 
 We are using the Java OpenStreetMap Editor (JOSM) for most tasks. Here's how to get set up.
 
-### 1. Download and install JRE
+**1. Download and install JRE**
 
 JOSM requires the Java Runtime Environment - JRE. [Download and install JRE]( http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html).
 
-### 2. Download JOSM
+**2. Download JOSM**
 
 Go to the [JOSM website](https://josm.openstreetmap.de/wiki/Download) to download the `tested` version. Place it in a common location for applications on your operating system.
 
 - OSX: `/Applications/`
 - Windows: `C:\Program Files\`
 
-### 3. Open JOSM
+**3. Open JOSM**
 
 Open the JOSM application you downloaded with a double click.
 
@@ -52,13 +52,13 @@ Once JOSM is up and running it looks like this. Go find the **Preferences** dial
 
 ![josm-preferences]({{site.baseurl}}/images/josm-preferences.png)
 
-### 4. Enable expert mode
+**4. Enable expert mode**
 
 Open the **Preferences** dialog and enable **Expert mode**.
 
 ![check-expert-mode]({{site.baseurl}}/images/check-expert-mode.png)
 
-### 5. Add user and password
+**5. Add user and password**
 
 Now it's time to connect to OpenStreetMap. Add the user name and password of the account you just created on OpenStreetMap to JOSM.
 
@@ -68,7 +68,7 @@ Now you should be able to retrieve data from OpenStreetMap by clicking on the bu
 
 ![download-data]({{site.baseurl}}/images/download-data.gif)
 
-### 6. Enable Remote Control
+**6. Enable Remote Control**
 
 Remote control allows you to launch JOSM directly from the map on OpenStreetMap.org. To enable Remote Control, check this box in the settings:
 
@@ -78,7 +78,7 @@ Also check the **Download objects to a new layer** option. Now you should be abl
 
 ![retrieve-data]({{site.baseurl}}/images/retrieve-data.gif)
 
-### 7. Increasing the allocated memory for JOSM
+**7. Increasing the allocated memory for JOSM**
 
 By default JOSM is allocated with 247-1024 MB of memory depending on the operating system. When JOSM reaches its maximum handling limit it pops up an error highlighting `JOSM is out of memory`
 
