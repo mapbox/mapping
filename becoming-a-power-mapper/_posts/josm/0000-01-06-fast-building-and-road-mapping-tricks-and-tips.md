@@ -1,3 +1,8 @@
+---
+title: Fast mapping tips and tricks for buildings and roads
+---
+
+
 ### Buildings:
 
 * For selecting intersecting buildings and combining them use, `I and Shift+J`
