@@ -86,7 +86,9 @@ By default JOSM is allocated with 247-1024 MB of memory depending on the operati
 
 To get rid of this error increase the default allocated memory for JOSM by following [these steps](https://gist.github.com/jothirnadh/00352fff58ce2628cc4f#supply-parameters). If you are not sure of fixing this, do contact someone from the data team.
 
-## How to configure the gaming mouse?
+## Using a gaming mouse
+
+Using a gaming can increase your productivity by assigning shortcuts to common mapping tasks.  This section outlines the basic configuration to use a gaming in JOSM.
 
 **Systems:** Linux and Mac
 
@@ -121,7 +123,7 @@ To get rid of this error increase the default allocated memory for JOSM by follo
 
    * Rotate
 
-**Right hand(shortcuts in your mouse)**:
+**Right hand (shortcuts in your mouse)**:
 
    * enter
 
@@ -140,4 +142,3 @@ To get rid of this error increase the default allocated memory for JOSM by follo
  Configure any other shortcut according to the mapper choices.
  
 **Note**: For mapping other features like roads and to fix task, create separate configurations with the shortcuts required exclusively for those features.
-
