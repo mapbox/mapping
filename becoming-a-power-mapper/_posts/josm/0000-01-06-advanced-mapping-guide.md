@@ -9,26 +9,28 @@ title: Advanced mapping guide
 Residential buildings are usually located on a `residential` or `living_street` and has access to a road only on one side, and optionally on the backside via a `service alleyway`. A building with residential roads on multiple sides is a sign of mistaking building shadows for streets. The street grid in an an area will have repeating patterns that make it easy to guess how the roads are laid even if they are obscured by trees.
 ![untitled](https://cloud.githubusercontent.com/assets/126868/9808707/434854d4-587f-11e5-9132-c9e0824bd9e5.gif)
 
-* Install and use Fast draw plugin (shortcut: shift+F)
-* Press down arrow to simplify way, up arrow to add more complexity and then `enter`
-* `Q` to simplify straight segments of roads
-* Shortcuts to tag each type of road classification `Preferences > customize the icons in the toolbar > Presets > highways/ features that require shortcut > highways/streets > select the road you want to add as shortcut > right click on the shortcut and add a shortcut`
+
+**Using Fast draw plugin**
+
+* Install and use **Fast draw** plugin (`shift + F`).
+* Press down arrow to simplify way, up arrow to add more complexity and then `Enter`.
+* `Q` to simplify straight segments of roads.
+* Shortcuts to tag each type of road classification **Preferences > Customize the icons in the toolbar > Presets > highways/ features that require shortcut > highways/streets > select the road you want to add as shortcut > right click on the shortcut and add a shortcut**.
 
 *Video* [Faster draw in JOSM](https://youtu.be/xqDd-Crk3o4)
 
 ## Buildings
 
-**Parallel buildings** can be traced using the [building tools plugin](). Select a building and using the tool align subsequent buildings to the first one in one step.
+* **Parallel buildings** can be traced using the **building tools** plugin (`B`). Select a building and using the tool align subsequent buildings to the first one in one step.
 ![untitled](https://cloud.githubusercontent.com/assets/126868/9729213/73f5971e-562b-11e5-8c86-a1fa91eb969e.gif)
-You can use the area extrude tool (x), to quickly add details to the outlines by creating new nodes (double click) and then dragging the faces.
+
+* You can use the **Area extrude** tool (`x`), to quickly add details to the outlines by creating new nodes (double click) and then dragging the faces.
 ![untitled](https://cloud.githubusercontent.com/assets/126868/9730603/419f04bc-5635-11e5-8ab8-bda7b1223892.gif)
 
-**Compound buildings** can be constructed using simple primitives and joining the overlapping areas (Shift+J)
+* **Compound buildings** * To combine overlapping buildings, select both building and click *Join overlapping Areas* (`Shift + J`). For multiple intersecting buildings, use `I > Shift+J`. Or, use the *Auto Tools > Combine LA buildings*.
+
 ![untitled](https://cloud.githubusercontent.com/assets/126868/9731646/c5816cd8-563b-11e5-84c4-497d9ac7536f.gif)
 
-* To combine overlapping buildings, select both building and click *Join overlapping Areas* (`Shift + J`). For muiltiple intersecting buildings, use `I and Shift+J`. Or, use the *Auto Tools > Combine LA buildings*.
-
-![gif](gif)
 
 * In *Extrusion mode* (`X`), do `Ctrl + Cmd` to redraw/reshape buildings for irregularly shaped buildings.
 
@@ -57,14 +59,12 @@ You can use the area extrude tool (x), to quickly add details to the outlines by
 
 * Use *Resize* tool (`Ctrl + Alt`) to re-size shape.
 
-Read also the blog post [Fast building tracing with JOSM](https://www.mapbox.com/blog/fast-building-tracing/)
-
 *Videos*
 
 * [Drawing different types of buildings](https://www.youtube.com/watch?v=VNPfKh_ZI58&feature=youtu.be)
 * [Tracing touching buildings in JOSM](https://www.youtube.com/watch?v=7GQtNnjIO0Q&feature=youtu.be)
 
-### Others
+## Others
 
 **Individual parking spaces**
 
