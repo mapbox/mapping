@@ -24,7 +24,6 @@ Here is a good example:
 
 ![osm-profile-description-example]({{site.baseurl}}/images/osm-profile-description-example.png)
 
-
 ## Installing JOSM
 
 We are using the Java OpenStreetMap Editor (JOSM) for most tasks. Here's how to get set up.
@@ -60,7 +59,7 @@ Open the **Preferences** dialog and enable **Expert mode**.
 
 **5. Add user and password**
 
-Now it's time to connect to OpenStreetMap. Add the user name and password of the account you just created on OpenStreetMap to JOSM.
+Now it's time to connect to OpenStreetMap. Add the user name and password of the account you created on OpenStreetMap to JOSM.
 
 ![set-osm-username-and-password]({{site.baseurl}}/images/set-osm-username-and-password.png)
 
@@ -104,16 +103,16 @@ Using a gaming can increase your productivity by assigning shortcuts to common m
 
 1. Install Razer Naga config software: https://www.razerzone.com/synapse/
 2. Create an account in razer ID: https://razer-id.razerzone.com/new
-3. Build your profile using email id
+3. Build your profile using your email id
 4. Configure the mouse: 
 
-**Common shortcuts essential to configure in your gaming mouse for buildings**: enter, extrude (keyboard:X), building tracing (keyboard:B), upload and download data to OSM (use the default keyboard shortcuts in your JOSM).
+**Common shortcuts essential to configure in your gaming mouse for buildings**: Enter, Extrude (`X`), building tracing (`B`), upload and download data to OSM (use the default keyboard shortcuts in your JOSM).
 
-**Good to have**: Join and merge shortcuts (J and M), selection of overlapping ways(I), Join overlapping areas (SHift+J), split objects (alt+X)
+**Good to have**: Join and merge nodes/ways (`J` and `M`), selec overlapping ways (`I`), join overlapping areas (`Shift + J`), Split objects (`Alt + X`)
 
 **Note**: Pattern to follow in setting up your mouse:
 
-**Left hand(shortcuts in the keyboard)**:
+**Left hand (shortcuts in the keyboard)**:
 
    * Upload
 
@@ -125,7 +124,7 @@ Using a gaming can increase your productivity by assigning shortcuts to common m
 
 **Right hand (shortcuts in your mouse)**:
 
-   * enter
+   * Enter
 
    * X
 
@@ -141,4 +140,4 @@ Using a gaming can increase your productivity by assigning shortcuts to common m
    
  Configure any other shortcut according to the mapper choices.
  
-**Note**: For mapping other features like roads and to fix task, create separate configurations with the shortcuts required exclusively for those features.
+**Note**: For mapping other features like roads and to fix task, create separate configurations with the shortcuts required only for those features.
