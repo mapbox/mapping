@@ -34,22 +34,25 @@ Residential buildings are usually located on a `residential` or `living_street` 
 
 * In *Extrusion mode* (`X`), do `Ctrl + Cmd` to redraw/reshape buildings for irregularly shaped buildings.
 
-![gif](gif)
+
+![x-ctrl cmd](https://cloud.githubusercontent.com/assets/13744156/25951924/cf3403da-367c-11e7-84d7-fa43187b38f4.gif)
+
 
 * In *Extrusion mode* (`X`), add four nodes in a segment, hold the `Ctrl + Cmd` key, and drag the middle segment to create pyramidal extrusions.
 
-![gif](gif)
+![pyramidal buildings](https://cloud.githubusercontent.com/assets/13744156/25951031/190971be-367a-11e7-9de1-12bae8b9a056.gif)
 
-* Double tap `A` to draw buildings with irregular sized extrusions. Or create several smaller builsdings 
+* Double tap `A` to draw buildings with irregular sized extrusions. Or create several smaller buildings 
 
-![gif](gif)
+![double tap a](https://cloud.githubusercontent.com/assets/13744156/25951540/aab0855c-367b-11e7-814d-e874320fc4ab.gif)
 
 * For buildings sharing the same wall, draw buildings (`B`) and, select intersecting node and click *Join Node to a Way* (`J`) or *Move Node unto Way* (`N`).
 
+![join j](https://cloud.githubusercontent.com/assets/13744156/25953311/90f74560-3680-11e7-8936-254744c3aeb3.gif)
 
 * To split a single building into two, select two nodes and select *Split Object* (`Alt + X`)
 
-![gif](gif)
+![alt x_split_buildings1](https://cloud.githubusercontent.com/assets/13744156/25953093/03458b0a-3680-11e7-91dc-b5e1bfc81e12.gif)
 
 * Use *Terracer* plugin for multiple same shaped buildings sharing the same wall (`Shift + T`)
 
