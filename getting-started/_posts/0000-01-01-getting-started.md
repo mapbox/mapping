@@ -108,7 +108,7 @@ Using a gaming can increase your productivity by assigning shortcuts to common m
 
 **Common shortcuts essential to configure in your gaming mouse for buildings**: Enter, Extrude (`X`), building tracing (`B`), upload and download data to OSM (use the default keyboard shortcuts in your JOSM).
 
-**Good to have**: Join and merge nodes/ways (`J` and `M`), selec overlapping ways (`I`), join overlapping areas (`Shift + J`), Split objects (`Alt + X`)
+**Good to have**: Join and merge nodes/ways (`J` and `M`), select overlapping ways (`I`), join overlapping areas (`Shift + J`), Split objects (`Alt + X`)
 
 **Note**: Pattern to follow in setting up your mouse:
 
