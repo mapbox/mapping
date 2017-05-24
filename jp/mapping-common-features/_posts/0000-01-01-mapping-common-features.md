@@ -11,8 +11,6 @@ title: Mapping common features
 
 ![](https://s3.amazonaws.com/f.cl.ly/items/3C3A0S3k011k1P3b2J0N/google.gif)
 
-A valuable complimentary resource is [taginfo.openstreetmap.org](http://taginfo.openstreetmap.org/). Tag info shows you the number of times a specific tag has been used, which lets you find out how established a tag is.
-
 [taginfo.openstreetmap.org](http://taginfo.openstreetmap.org/)は、資料的価値が高く、よく参照されるサイトです。Taginfoでは、特定のタグが何回使われているかを表示することが可能で、既存の確立したタグの使い方を教えてくれます。
 
 ## 道路と歩道
@@ -22,8 +20,6 @@ A valuable complimentary resource is [taginfo.openstreetmap.org](http://taginfo.
 ### 道路のトレース
 
 道路のトレース作業はたいへんシンプルです。JOSMでは **描画** (`Aキー`) 、iDでは **ライン** ツールを使って道路のコースに沿って線を描きます。道路を描く際には、適切な量のノードを配置するのがコツです。ノードの量が少なすぎると道路の線が雑になります。逆に、ノードの量が多すぎると後の編集で道路を修正することが困難になります。
-
-Look at the picture below, the first example was traced with too few nodes, it is too jagged; the second example was traced with too many nodes adding redundant information; the last one is traced right:
 
 以下の図を見てみてください。左の図はノードの数が少なすぎる状態で、線がギザギザになっています。マンな中の図はノードが多すぎて、冗長な情報が含まれています。右の図が最も望ましいトレース状態です。
 
@@ -74,8 +70,6 @@ Look at the picture below, the first example was traced with too few nodes, it i
 OpenStreetMap Wiki: [Key:oneway](http://wiki.openstreetmap.org/wiki/Key:oneway)
 
 ### 方向転回制限
-
-Turn restrictions are rules that disallow certain turn maneuvers. Here's for instance a "no right turn" sign.
 
 方向転回制限は、特定の方向へ曲がることを不許可にするルールです。例えば、"右方向転回禁止"の道路標識は以下のようになります。
 
@@ -212,8 +206,6 @@ POIをマップするための最も簡単な方法は、単一のノードを�
 
 ### エリアとしてのPOI
 
-Wherever you can clearly determine the extent of a "point" of interest, map it. A good example are parks, here is Folger Park in Washington DC. The Park is mapped as a closed way tagged `leisure=park`. Note how the way follows the exact outline of the park.
-
 "ポイント" オブ・インタレストの中には、その境界線が明確に確定できる地物があります。そうしたPOIもマップしてみましょう。わかりやすい例として公園をあげます。以下はワシントンDCにあるFolger Parkの例です。この公園は閉じたウェイとして描かれ、そこに `leusure=park`タグが付与されています。
 
 ![](https://s3.amazonaws.com/f.cl.ly/items/0V2N0n290Z1L0H1h2b1e/Screen%20Shot%202015-01-10%20at%208.29.39%20AM.png)
@@ -221,8 +213,6 @@ Wherever you can clearly determine the extent of a "point" of interest, map it. 
 ### POIとしての建物
 
 時折、建物そのものがPOIとして扱われる場合があります。例えば駅前の多用途施設の中にあるマクドナルドレストランの建物や、郊外のショッピングセンターに併設しているドライブスルー専用マクドナルドのことを考えてみてください。あるいは、衛星写真を使って判別可能な地物としては、教会や寺院のような礼拝施設を考えてみてください。このようなケースでは、建物そのものがPOIとしてタグづけされるべきです。以下は、既存のマッピングとして建物のなかのノードとして書かれていた教会の例です。この場合、ノードに付与されていた全てのタグを建物に転記し、その後ノードを削除しています。
-
-
 
 ![](https://s3.amazonaws.com/f.cl.ly/items/2m0k0v333M1H0i1t3p1V/church.gif)
 
@@ -233,8 +223,6 @@ Wherever you can clearly determine the extent of a "point" of interest, map it. 
 以下は、学校が建物全体を *専有していない* 場合の例です。
 
 ![](https://s3.amazonaws.com/f.cl.ly/items/0H2W3b401X3H0r0O011s/Screen%20Shot%202015-01-09%20at%206.09.01%20PM.png)
-
-An example where a school *does* occupy an entire building:
 
 学校が建物全体を *専有している* 場合は以下のようになります。
 
