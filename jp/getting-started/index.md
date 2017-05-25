@@ -3,6 +3,6 @@ title: Getting started
 layout: category
 order: 1
 color: purple
-description: To get started editing OpenStreetMap using JOSM, set up your work environment with the tools you would need.
+description: JOSMを使ったOpenStreetMap編集をはじめる方法。必要となるツールと環境のセットアップ方法。
 image: getting-started.svg
 ---

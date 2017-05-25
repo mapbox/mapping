@@ -10,8 +10,8 @@ sections:
 - Mapping
 - JOSM
 - Reference
-description: These advanced topics will allow you to take your mapping skills to the next level.
+description: マッピングスキルを一段向上させるための中上級者向けトピック
 image: becoming-a-power-mapper.svg
 ---
 
-These advanced topics will allow you to take your mapping skills to the next level.
+マッピングスキルを一段向上させるための中上級者向けトピック

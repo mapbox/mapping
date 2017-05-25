@@ -2,64 +2,63 @@
 title: The OpenStreetMap data model
 ---
 
-In OpenStreetMap, each feature is described as one or more geometries (think for instance of a river's shape) with attached attribute data (think of the river's name). Geometries are described with three different *elements*: *nodes*, *ways* and *relations*. Attributes are described as *tags* that can be part of a node, a way or a relation.
+OpenStreetMapにおいて、それぞれの地物は1つ以上のジオメトリ（位置情報。例えば、河川の形状そのものを思い浮かべてください）と、そこに付属する属性データ（例えば、河川の名称など）を保有しています。ジオメトリは3つの異なる *要素* で記述されます。*ノード/node*、*ウェイ/way*そして*リレーション/relation*です。属性は*タグ*として記述され、ノードやウェイ、リレーションの一部となることができます。
 
-Nodes are the equivalent of a point, ways are like lines that connect points and relations are collections of points or ways that represent a larger whole. This is easiest to understand with a couple of examples.
+ノードはポイント/pointとも呼ばれ、ウェイはライン/lineと同様ノードが接続されたもの、リレーションはノードやウェイの集合体でより大きな地物全体を表現するために使われます。実際に例を見てみるのがわかりやすいでしょう。
 
-## Nodes
+## ノード
 
-Nodes are used to represent any kind of point type feature or just to designate a name for a point of interest in the vicinity. Here's a node representing a café:
+ノードは、ポイント形状を持つあらゆる地物や、その地点のPOIの名前を指定するために使われます。以下のノードは、喫茶店を表しています。
 
 ![node-example1]({{site.baseurl}}/images/node-example1.png)
-and here's one representing New York City:
+
+以下はニューヨーク市を表している例です。
     
 ![node-example-2]({{site.baseurl}}/images/node-example-2.png)
 
-## Ways
+## ウェイ
 
-A way is a line feature *connecting two or more nodes* - like a road here:
+ウェイは *2つ以上のノードが接続された* 線状の地物 - 例えば道路を表すために使われます。
 
 ![way-example-1]({{site.baseurl}}/images/way-example-1.png)
 
-If you close a way - by connecting its end to its start, you can map area type features like this building here:
+ウェイを始点と終点で閉じた場合、建物などのエリアを表すことが可能です。
  
 ![way-example-2]({{site.baseurl}}/images/way-example-2.png)
 
-or this park:
+以下は公園の例です
  
 ![way-example-3]({{site.baseurl}}/images/way-example-3.png)
 
-Nodes are usually just the items that define a way. But nodes sitting on a way can have their own significance. In this example the node is part of 14th Street and R Street and it also denotes that there's a traffic light.
-
+ノードは通常、ウェイの一部を構成するための構成要素として使われます。しかし、ウェイの中に組み込まれたノードそれ自体が何らかの意味合いを持つことも可能です。この例では、ノードは14thストリートとRストリートの一部であり、なおかつこの場所に信号機があることも意味しています。
 
 ![way-example-4]({{site.baseurl}}/images/way-example-4.gif)
 
-## Tags
+## タグ
 
-Before we hop to the third element next to nodes and ways - relations, let's look at tags. You've seen them now already a couple of times in the examples above, like in this café node:
+ノード、ウェイに続いてリレーションという3つめの要素の解説を行う前に、タグについて解説します。これまでに出てきた喫茶店の例などを見てみましょう。
 
 ![osm-tag]({{site.baseurl}}/images/osm-tag.png)
 
-Any point type feature is a node. Whether the node designates a café, a school, a fire hydrant, a tree, a park, a mountainpeak is entirely up to how the node is tagged. Any line type feature is a way. Whether the way is a road, a building, a lake, a railway, a cycleway is again, defined by how it is tagged.
+ポイント形状の地物はノードと呼ばれます。喫茶店や学校、消火栓、木、公園、山頂などノードが表現できる地物は様々であり、どのようなタグを付与するかによってその内容は変わってきます。ライン形状の地物はすべてウェイと呼ばれます。道路や建物、湖沼、線路、自転車道など、そのウェイが何を表現するかはタグによって変わってきます。
 
-Tags can be on any element: on nodes, ways and relations.
+タグは、ノード、ウェイ、リレーションといったすべての要素に付与することができます。
 
-## Relations
+## リレーション
 
-Relations are used to organize multiple nodes or ways into a larger whole. Take here for instance the bus route 23 running through 3 different ways.
+リレーションは複数のノードやウェイの集合体であり、大きな地物全体を表現するために使われます。例として、3つの異なるウェイから成立する、バス経路23系統を見てみましょう。
 
 ![relations]({{site.baseurl}}/images/relations.gif)
 
-The type of relation that you'll probably deal most with describes an area with punched out holes - a so called *multipolygon*.  Here is an example of a multipolygon building with a yard. It consists of 2 ways with each multiple nodes. One way describes the *outer* wall of the building, the other one the *inner* wall. The ways are part of a relation of the type `type=multipolygon`, the outer way has the role `outer` and the and the inner way has the role `inner`. Note: the `building=yes` tag is on the relation (not on the way).
+編集中にもっともよく見かけるリレーションは、穴の開いたエリアを表現するために使われる *マルチポリゴン/multipolygon*と呼ばれるリレーションと思われます。以下は中庭を持ったマルチポリゴンの建物の例です。この例では、複数のノードを持ったウェイが2つ使われています。1つのウェイは*外側/outer*の建物の壁を表し、もうひとつは*内側/inner*の壁を表現しています。2つのウェイは`type=multipolygon`というタイプのリレーションの一部で、外側のウェイは `outer`のロール、内側のウェイは `inner`のロールを割り当てられています。注意：`building=yes`のタグは、リレーションに対して付与されています（ウェイではありません）。
 
-Your OpenStreetMap editor will take care of creating multipolygons for you so don't worry if this seems dense for now. If you need to fix a multipolygon, this is a good section to come back and review.
-
+現在利用可能なOpenStreetMapエディタの多くはマルチポリゴンの作成機能を持っていますので、内容を濃く感じても心配する必要はありません。マルチポリゴンを編集することになった場合、またもう一度この文章を読み直してみてください。
 
 ![multipolygon]({{site.baseurl}}/images/multipolygon.gif)
 
-## Further reading
+## 参考文献
 
-To learn more about the OpenStreetMap data structure, take a look at these resources:
+OpenStreetMapのデータ構造についてより詳しい解説は以下の資料を参照してください。
 
 - OpenStreetMap Elements http://wiki.openstreetmap.org/wiki/Elements
 - Multipolygons http://wiki.openstreetmap.org/wiki/Relation:multipolygon

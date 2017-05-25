@@ -2,117 +2,117 @@
 title: Getting started
 ---
 
-To [get started editing OpenStreetMap using JOSM](https://www.mapbox.com/blog/making-the-most-josm/), set up your work environment with the tools you would need.
+[OpenStreetMap編集を始める](https://www.mapbox.com/blog/making-the-most-josm/)ために、まずは編集に必要となるツールと環境を整えましょう。
 
-## Setting up an OpenStreetMap Account
+## OpenStreetMapアカウントの設定Setting up an OpenStreetMap Account
 
-1. Go to OpenStreetMap.org and create an account: [https://www.openstreetmap.org/user/new](https://www.openstreetmap.org/user/new).
-2. **IMPORTANT** add a picture of yourself to your profile.
-3. Add a profile description like below:
+1. OpenStreetMap.orgを表示し、アカウントを作成: [https://www.openstreetmap.org/user/new](https://www.openstreetmap.org/user/new)
+2. **重要** プロフィール画面に写真を登録
+3. 以下を参考に、プロフィール文章を作成
 
-### Profile description
+### Profile description　プロフィールの書き方
 
-It is useful to include:
+以下の情報が含まれると有用です。
 
-- The areas you are interested in mapping;
-- A nice message that allows others to get in touch;
-- Links to your homepage/twitter etc that allows people to follow you.
+- マッピングに興味があるエリア
+- 他のユーザからの連絡を受け入れることを示すナイスな一言
+- ホームページやTwitterなど、他のユーザがあなたのことを知るために手掛かりとなるリンク
 
-*(format in [Markdown]( http://en.wikipedia.org/wiki/Markdown))*
+* (記載は[Markdown](http://en.wikipedia.org/wiki/Markdown)形式で行います)*
 
-Here is a good example:
+以下は良いプロフィールの一例です。
 
 ![osm-profile-description-example]({{site.baseurl}}/images/osm-profile-description-example.png)
 
-## Installing JOSM
+## JOSMのインストール
 
-We are using the Java OpenStreetMap Editor (JOSM) for most tasks. Here's how to get set up.
+ここでは多くのタスクをJava OpenStreetMap Editor (JOSM)を使って行います。以下の手順でセットアップしてください。
 
-**1. Download and install JRE**
+**1. JREのダウンロードとインストール**
 
-JOSM requires the Java Runtime Environment - JRE. [Download and install JRE]( http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html).
+JOSMはJava Runtime Environment - JREを必要とします。[JREのダウンロードとインストール]( http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)を行います。
 
-**2. Download JOSM**
+**2. JOSMのダウンロード**
 
-Go to the [JOSM website](https://josm.openstreetmap.de/wiki/Download) to download the `tested` version. Place it in a common location for applications on your operating system.
+[JOSMのウェブサイト](https://josm.openstreetmap.de/wiki/Download)を表示し、 `テスト済み`バージョンをダウンロードしてください。利用中のOS環境に合わせて、アプリケーションの配置場所としてよく使われる場所に移動させてください。
 
 - OSX: `/Applications/`
 - Windows: `C:\Program Files\`
 
-**3. Open JOSM**
+**3. JOSMを起動**
 
-Open the JOSM application you downloaded with a double click.
+ダウンロードしたJOSMアプリケーションをダブルクリックすると起動します。
 
-If you want JOSM to use more memory and you're using [Linux](http://wiki.openstreetmap.org/wiki/JOSM/Linux) you can also run it with:
+JOSMへのメモリ割り当てを多くする場合、[Linux環境](http://wiki.openstreetmap.org/wiki/JOSM/Linux)であれば以下のコマンドでも起動可能です
 
     ~$ java -Xmx1024M -DproxyHost=$PROXY -DproxyPort=8080 -jar josm-tested.jar
 
-Once JOSM is up and running it looks like this. Go find the **Preferences** dialog, you'll need it for the next couple of steps. You can access it from under the light switch icon.
+JOSMが起動すると、以下のような画面が表示されます。**設定/Preference**ダイアログを選択し、次のステップに進んでください。ダイアログは証明スイッチの形をしたアイコンの下にあります。
 
 ![josm-preferences]({{site.baseurl}}/images/josm-preferences.png)
 
-**4. Enable expert mode**
+**4. 上級者モードの有効化**
 
-Open the **Preferences** dialog and enable **Expert mode**.
+**設定**ダイアログを開き、 **上級者モード**を有効化します。
 
 ![check-expert-mode]({{site.baseurl}}/images/check-expert-mode.png)
 
-**5. Add user and password**
+**5. ユーザ名とパスワードの設定**
 
-Now it's time to connect to OpenStreetMap. Add the user name and password of the account you created on OpenStreetMap to JOSM.
+OpenStreetMapへの接続を行います。あなたがOpenStreetMapで取得したユーザ名とパスワードをJOSMに入力します。
 
 ![set-osm-username-and-password]({{site.baseurl}}/images/set-osm-username-and-password.png)
 
-Now you should be able to retrieve data from OpenStreetMap by clicking on the button with the green down error in the top left:
+これでOpenStreetMapからデータをダウンロードすることができるようになりました。画面左上の緑色の矢印ボタンをクリックするとダウンロードを行うことができます。
 
 ![download-data]({{site.baseurl}}/images/download-data.gif)
 
-**6. Enable Remote Control**
+**6. 遠隔コントロールの有効化**
 
-Remote control allows you to launch JOSM directly from the map on OpenStreetMap.org. To enable Remote Control, check this box in the settings:
+遠隔コントロールを有効化することで、OpenStreetMap.orgの地図表示からJOSMを直接起動することができるようになります。遠隔コントロールを有効化するには、設定にある以下のボックスをチェックしてください。
 
 ![enable-remote-control]({{site.baseurl}}/images/enable-remote-control.png)
 
-Also check the **Download objects to a new layer** option. Now you should be able to retrieve data directly starting on OpenStreetMap.org like this:
+その際、**オブジェクトを新規レイヤーでダウンロードする**のオプションもチェックしておきましょう。これでOpenStreetMap.orgから直接データをダウンロードし、編集作業を開始する準備が整ったはずです。
 
 ![retrieve-data]({{site.baseurl}}/images/retrieve-data.gif)
 
-**7. Increasing the allocated memory for JOSM**
+**7. JOSMの割り当てメモリを追加**
 
-By default JOSM is allocated with 247-1024 MB of memory depending on the operating system. When JOSM reaches its maximum handling limit it pops up an error highlighting `JOSM is out of memory`
+JOSMはOS環境により、デフォルトで247～1024MBのメモリを割り当てる設定になっています。JOSMがメモリの利用可能上限に近づくと、以下のポップアップとともに `JOSMのメモリ不足`エラーが表示されます。
 
 ![increasing memory]({{site.baseurl}}/images/increasing-memory.png)
 
-To get rid of this error increase the default allocated memory for JOSM by following [these steps](https://gist.github.com/jothirnadh/00352fff58ce2628cc4f#supply-parameters). If you are not sure of fixing this, do contact someone from the data team.
+このエラーを回避するには、[こちらの手順](https://gist.github.com/jothirnadh/00352fff58ce2628cc4f#supply-parameters)に従い、JOSMへのメモリ割り当てを増やしてください。やりかたがよくわからない場合は、Mapboxのデータチームの誰かに問い合わせてください。
 
-## Using a gaming mouse
+## ゲーミングマウスの利用
 
-Using a gaming can increase your productivity by assigning shortcuts to common mapping tasks.  This section outlines the basic configuration to use a gaming in JOSM.
+ゲーミングマウスを使い、よく使うマッピング動作のショートカットを登録しておくことで、作業効率が向上します。この項目では、JOSMでゲーミングマウスを使うための基本的な設定の概要を解説します。
 
-**Systems:** Linux and Mac
+**システム:** Linux and Mac
 
-**Equipment:** Razer Gaming mouse
+**利用するマウス:** Razer Gaming mouse
 
-**General guidelines:** Increase mouse speed in `System Preferences> Mouse` for Mac
+**全般的なガイドライン:** Macの場合、`システム設定 > マウス`からマウスの速度を早くする
 
-**Example Feature**
+**機能の例**
 
-**Buildings**
+**建物**
 
-**Configure gaming mouse and keyboard**
+**ゲーミングマウスとキーボードの設定**
 
-1. Install Razer Naga config software: https://www.razerzone.com/synapse/
-2. Create an account in razer ID: https://razer-id.razerzone.com/new
-3. Build your profile using your email id
-4. Configure the mouse: 
+1. Razer Naga config softwareをインストール: https://www.razerzone.com/synapse/
+2. razer IDでアカウント作成: https://razer-id.razerzone.com/new
+3. メールアドレスを使ってプロファイルを作成
+4. マウスを設定: 
 
-**Common shortcuts essential to configure in your gaming mouse for buildings**: Enter, Extrude (`X`), building tracing (`B`), upload and download data to OSM (use the default keyboard shortcuts in your JOSM).
+**建物を描く際にゲーミングマウスに設定しておくとよいショートカット**: Enter, Extrude (`X`), building tracing (`B`), OSMのデータアップロードとダウンロード (JOSMのデフォルトキーボードショートカットを利用).
 
-**Good to have**: Join and merge nodes/ways (`J` and `M`), select overlapping ways (`I`), join overlapping areas (`Shift + J`), Split objects (`Alt + X`)
+**登録推奨**: Join and merge nodes/ways (`J` and `M`), select overlapping ways (`I`), join overlapping areas (`Shift + J`), Split objects (`Alt + X`)
 
-**Note**: Pattern to follow in setting up your mouse:
+**注意事項**: マウスの設定例:
 
-**Left hand (shortcuts in the keyboard)**:
+**左利き (キーボードショートカット設定)**:
 
    * Upload
 
@@ -122,7 +122,7 @@ Using a gaming can increase your productivity by assigning shortcuts to common m
 
    * Rotate
 
-**Right hand (shortcuts in your mouse)**:
+**右利き (マウスへのショートカット設定)**:
 
    * Enter
 
@@ -138,6 +138,6 @@ Using a gaming can increase your productivity by assigning shortcuts to common m
    
    * Join overlapping ways (shift+J)
    
- Configure any other shortcut according to the mapper choices.
- 
-**Note**: For mapping other features like roads and to fix task, create separate configurations with the shortcuts required only for those features.
+　マッパーの好みに応じて他のショートカットも設定ください。
+
+**注意事項**: 道路の修正や、to fixを使ったタスク作業を行う場合、それらの地物に対応したショートカット・プロファイルを別途設定しておくことを推奨

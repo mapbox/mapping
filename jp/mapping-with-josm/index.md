@@ -3,6 +3,6 @@ title: Mapping with JOSM
 layout: category
 order: 4
 color: darkblue
-description: Get started mapping with the Java OpenStreetMap editor (JOSM) - a powerful and popular desktop editor for OpenStreetMap.
+description: OpenStreetMap編集のパワフルでポピュラーなデスクトップエディタ Java OpenStreetMap editor (JOSM)を使ったマッピングについて
 image: mapping-with-josm.svg
 ---

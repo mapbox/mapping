@@ -2,49 +2,50 @@
 title: JOSM shortcuts
 ---
 
-As you draw using the JOSM editor, or correct map errors on to-fix, keyboard shortcuts can save help you save a great deal of time and increase the quality of your mapping [strokes replaced] if used correctly. Here we'll cover keyboard shortcuts on JOSM - default settings, how you can customize these to suit your preferences, and shortcuts most popular with the data team.
+JOSMエディタを使って編集を行う場合、あるいはto-fixを使って地図データのエラーを修正する場合、もしキーボードショートカットを正しく使うことができれば、時間の短縮とマッピングの品質向上を見込むことができます。ここではJOSMのショートカット - 特にそのデフォルト設定とあなたの環境に合わせたカスタマイズ方法、データチームでよく使われるキー操作について説明します。
 
 ![](https://scontent-frt3-1.xx.fbcdn.net/hphotos-xfl1/t31.0-8/920735_554891274669057_2113729309314231818_o.jpg)
-*Use the [JOSM cheatsheet](http://www.openstreetmap.org/user/baditaflorin/diary/37606) by user:baditaflorin*
+*[JOSM cheatsheet](http://www.openstreetmap.org/user/baditaflorin/diary/37606) by user:baditaflorin も参照してください*
 
 
-## Basic Shortcuts [Default]
+## 基本のショートカット [デフォルト]
 
-By default, the JOSM editor comes pre-loaded with approximately 100+ shortcuts which cover everything from downloading/uploading map data from the OpenStreetMap server, adding/editing/deleting tags, validating results, and working with nodes, ways, and polygons. See the [Common Keyboard Shortcuts](https://josm.openstreetmap.de/wiki/Presets/CommonKeyboardShortcuts) on the JOSM wiki for more details.
+JOSMエディタにはデフォルトで、OpenStreetMapデータのダウンロード/アップロードやタグの追加/編集/削除、編集結果の妥当性検証を含め、ノードやウェイ、ポリゴンを対象として100以上のショートカットが設定されています。詳細はJOSM wikiの[一般的なキーボードショートカット](https://josm.openstreetmap.de/wiki/Presets/CommonKeyboardShortcuts)ページを参照ください。
+
 
 ![image](https://cloud.githubusercontent.com/assets/8562256/7113237/5beb62a8-e1ef-11e4-832d-0fa5e827503e.png)
 
-_Under **Tools** on the menu bar, you can see some of the basic default shortcuts on JOSM_
+_メニューバーの **ツール** を選択すると、JOSMの基本的なデフォルトショートカットを表示する事が可能です_
 
-The default shortcuts on JOSM are a great way to get started, but once you are familiar and start speed mapping, you may want to consider customizing the JOSM shortcuts to fit your mapping preferences. For example, you can customize shortcuts to allow you to map quickly without having to take your right hand off the mouse.
+まずこれらJOSMの基本的なデフォルトショートカットを覚えるとよいのですが、JOSMでの高速編集に慣れてくるにつれ、より自身のマッピング環境に合わせたカスタマイズが便利になってきます。例えばカスタマイズを行うことで、マウスから右手を離すことなくショートカットを押してマッピングを行うような設定も可能です。
 
-Action | Keyboard Shortcut
+
+アクション | キーボードショートカット
 ---- | ----
-Uploading the edit | <kbd>`</kbd><!--`-->
-Downloading data | <kbd>Q</kbd>
-Deleting data | <kbd>D</kbd>
+編集アップロード | <kbd>`</kbd><!--`-->
+データダウンロード | <kbd>Q</kbd>
+データ削除 | <kbd>D</kbd>
 
-To access the Shortcuts Menu, go to **Preferences** on the JOSM menu bar. Within **Preferences**, click **Options**  on the left (seventh button).
+ショートカットメニューを表示するにはJOSMの **設定** メニューを表示してください。 **設定**の中の左側にある **オプション** (上から7つめのボタン)をクリックしてください。
 
 ![configure_image_shortcuts](https://cloud.githubusercontent.com/assets/353700/11626533/8cbfdb90-9d09-11e5-8641-8a1260e232a8.png)
 
+以下、慣れ親しんでいるマッパーの多いであろうショートカットです。
 
-Here is a comprehensive categorized list of shortcuts everyone should be familiar with. 
+### JOSMショートカット
 
-### JOSM Shortcuts
+#### データ
 
-#### DATA
-
-ACTION | DESCRIPTION | Mac | Win/Linux
+アクション | 解説 | Mac | Win/Linux
 ---- | ---- | ---- | ----
-OPEN | open a file | `Cmd+O` |
-SAVE | save current data | `Cmd+S` |
-DATA DOWNLOAD | download map data from OSM server | `Cmd+Shift+Down` |
-DATA UPLOAD | upload all changes in the active data layer to the OSM server | `Cmd+Shift+Up` |
+開く | ファイルを開く | `Cmd+O` |
+保存 | 現在のデータを保存 | `Cmd+S` |
+データダウンロード | OSMサーバからの地図データダウンロード | `Cmd+Shift+Down` |
+データアップロード | 現在選択しているデータレイヤの変更箇所をOSMサーバへアップロード | `Cmd+Shift+Up` |
 
 -----
 
-### Basic map editing
+### 基本的な地図編集
 
 ACTION | DESCRIPTION | Mac | Win/Linux
 ---- | ---- | ---- | ----
@@ -75,7 +76,7 @@ UPDATE MULTIPOLYGON | update a multipolygon | `Cmd+Shift+B` |
 
 ----
 
-## Accuracy & precision
+## 位置精度、正確さ
 
 ACTION | DESCRIPTION | SHORTCUT
 ---- | ---- | ----

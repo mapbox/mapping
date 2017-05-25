@@ -39,3 +39,14 @@ defaults:
     type: "posts"
   values:
     lang: "es"
+# JAPANESE
+- scope:
+    path: "jp"
+    type: "pages"
+  values:
+    lang: "jp"
+- scope:
+    path: "jp"
+    type: "posts"
+  values:
+    lang: "jp"
