@@ -22,6 +22,14 @@ getES.forEach(function(e) {
 });
 // combine paths + spanish paths
 var paths = paths.concat(es);
+// get jp dirs
+var getJP = getDir('jp');
+var jp = [];
+getJP.forEach(function(e) {
+  jp.push('jp/' + e);
+});
+// combine paths + jp paths
+var paths = paths.concat(jp);
 
 var categories = [];
 var posts = [];
@@ -33,7 +41,7 @@ paths.forEach(function(dir) {
       categories.push(dir +'/' + file);
     } else if (file == '_posts') { // get _posts/
       var post_path = dir + '/' + file;
-      
+
       // get any subdirs and then files
       var foundSubDirs = getDir(post_path);
       if (foundSubDirs) {
@@ -45,9 +53,9 @@ paths.forEach(function(dir) {
               posts.push(this_path +'/' + file);
             }
           });
-        });  
+        });
       }
-      
+
       // get the files
       post_path = fs.readdirSync(post_path).filter(function(file) {
         var isFile = fs.statSync(path.join(post_path, file)).isFile();
@@ -55,7 +63,7 @@ paths.forEach(function(dir) {
           posts.push(post_path +'/' + file);
         }
       });
-      
+
     } else if (file[0] != '.' && !isFile) { // get folder/_posts/
       var post_path = dir + '/' + file + '/_posts';
       post_path = fs.readdirSync(post_path).filter(function(file) {
@@ -78,11 +86,11 @@ function getDir(srcpath) {
 function readPost(filename) {
   var buffer = fs.readFileSync(filename),
   file = buffer.toString('utf8');
-  
+
   try {
     var parts = file.split(/---\s*[\n^]/),
     frontmatter = parts[1];
-    
+
     return {
       name: filename,
       file: file,
@@ -97,16 +105,16 @@ function readPost(filename) {
 function readData(dir, filename) {
   var buffer = fs.readFileSync(dir + filename),
   file = buffer.toString('utf8');
-  
+
   try {
-    
+
     return {
       name: filename,
       file: file,
       metadata: jsyaml.load(file)
     };
   } catch(err) {}
-  
+
 }
 
 ////////////////////////////////////////////////
@@ -117,12 +125,12 @@ function readData(dir, filename) {
 
 categories.forEach(function(post){
   var file = readPost(post);
-  
+
   var metadata = file.metadata;
   var content = file.content;
-  
+
   test(post, function(t) {
-    
+
     t.ok(metadata.title,'must have a title');
     t.equal(metadata.layout,'category','layout must equal "category"');
     t.ok(metadata.color,'must have a color');
@@ -130,17 +138,17 @@ categories.forEach(function(post){
     t.equal(typeof metadata.order,'number','order must be a number');
     t.ok(metadata.description,'must have a description');
     t.ok(metadata.image,'must have an image');
-    
+
     t.equal(post.indexOf(' '),-1,'file name must not contain spaces');
     t.equal(post.toLowerCase(),post,'file name must be lowercase');
     if (!post.match('index.md')) {
       t.fail('file name must be index.md');
     }
-    
+
     if (metadata.section) {
       t.equal(typeof metadata, 'array', 'section must be formatted as a list');
     }
-    
+
     t.end();
   });
 });
@@ -154,19 +162,19 @@ categories.forEach(function(post){
 
 posts.forEach(function(post){
   var file = readPost(post);
-  
+
   var metadata = file.metadata;
   var content = file.content;
-  
+
   test(post, function(t) {
-    
+
     t.ok(metadata.title,'must have a title');
     t.equal(post.indexOf(' '),-1,'file name must not contain spaces');
     t.equal(post.toLowerCase(),post,'file name must be lowercase');
     if (!post.match('0000-01-')) {
       t.fail('file name must start with 0000-01-');
     }
-    
+
     t.end();
   });
 });

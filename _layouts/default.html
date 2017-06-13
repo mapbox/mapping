@@ -93,7 +93,7 @@
 <div class="fill-darkblue dark pad4y">
 <div class='limiter clearfix contain'>
 <a href="#" class="pin-topright" id="about"><span class="icon info" id="about-icon"></span></a>
-  <div class="pad2y clearfix">
+  <div class="pad2y fl">
     <a href="{{site.baseurl}}/{% if page.lang != 'en' %}{{page.lang}}/{% endif %}" class="fl" style="width: 60px; margin-right: 20px;">
       {% include svgs/logo.svg %}
     </a>
@@ -102,8 +102,13 @@
     <p class="quiet space-top0">{% include translate.html swap='Mapping guides' lang=page.lang %}</p>
     </div>
   </div>
-  {% if lang == 'en' %}<a class="button fill-lighten0 language pad2x space-top4" href="{{site.baseurl}}/es/">Español</a>{% else %}<a class="button fill-lighten0 language pad2x space-top4"  href="{{site.baseurl}}/">English</a>{% endif %}
-
+  <div class="fr">
+    {% for lang in site.languages %}
+      {% if lang[0] != page.lang %}
+      <a class="button fill-lighten0 pad2x space-top4" href="{{site.baseurl}}/{{lang[0]}}/">{{lang[1]}}</a>
+      {% endif %}
+    {% endfor %}
+  </div>
 </div>
 </div>
 

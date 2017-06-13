@@ -104,5 +104,6 @@ The guides are also offered in Spanish. All files are found under the `es/` fold
 1. Create a folder with the language abbreviation. For example, `fr/` for French and `de/` for German.
 2. Update `_config.yml` to add the new language to the `defaults`. Follow the pattern of the English and Spanish scopes.
 3. Update `translations.yml` and add to each set of words the new translation using the language abbreviation from step 1. If you don't add a translation, it will appear in English.
+4. Add the new language abbreviation and name of language to `languages` in `_config.yml`.
 
 Follow the patterns mentioned above in creating categories and posts.

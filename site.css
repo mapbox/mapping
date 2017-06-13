@@ -55,7 +55,6 @@ h1, h2 {
 }
 
 .icon.heart:before {
-    content: "\e63e";
     margin-top: -1px;
     width: 30px;
     height: 30px;
@@ -117,8 +116,7 @@ svg {
 }
 
 #search .icon.search:before {
-    content: "\e66f";
-    color: #A1ABD0;
+  color: #A1ABD0;
 }
 
 #guide-search .on {
