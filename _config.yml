@@ -11,6 +11,11 @@ exclude:
 - CONTRIBUTING.md
 - test
 
+languages:
+  en: English # abbreviation: Name of native language
+  es: Español
+  #jp: 日本語
+
 defaults:
 - scope:
     path: "" # an empty string here means all files in the project
