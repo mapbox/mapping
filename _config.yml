@@ -14,7 +14,7 @@ exclude:
 languages:
   en: English # abbreviation: Name of native language
   es: Español
-  #jp: 日本語
+  jp: 日本語
 
 defaults:
 - scope:
