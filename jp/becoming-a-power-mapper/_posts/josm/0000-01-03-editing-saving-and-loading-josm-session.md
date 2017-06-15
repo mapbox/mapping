@@ -2,27 +2,25 @@
 title: Saving and loading a JOSM session
 ---
 
-It is possible to save a JOSM session similar most GIS software (in QGIS we call it a project file).  The JOSM session saves your current map view, OSM data and loaded layers such as imagery. 
+他の多くのGISソフトウェアと同様、JOSMでもセッションを保存することが可能です（QGISでいうところのプロジェクトファイルと同等です）。JOSMのセッションでは、現在の地図表示位置とOSMデータ、読み込み中の地図画像レイヤなどが保存されます。
 
-The JOSM session is available in **File** menu.  You need to be in **Expert mode** to access this feature.  
-To activate Expert mode, go to JOSM Preferences, activate **Expert mode** by clicking the checkbox.
+JOSMセッションは**ファイル**メニューから利用可能です。この機能にアクセスするには**上級者モード**を有効化している必要があります。
+上級者モードを有効化するには、JOSMの設定を表示させ、**上級者モード**のチェックボックスにチェックを入れてください。
 
-## Saving a JOSM session
+## JOSMセッションの保存
 
-Load any of your preferred layers in JOSM.  
-Save the JOSM session file clicking, **File > Session > Save session as ...**
-Select any layers you want loaded when you start a new JOSM session.
+JOSMで任意のレイヤを表示させます。
+**ファイル > セッション > 別名でセッションを保存**をクリックし、JOSMのセッションをファイルとして保存します。
+新しくJOSMのセッションを開始する際に、読み込みを行うレイヤを選択してください。
 
 ![josm_session_save2]({{site.baseurl}}/images/saving-a-josm-session.gif)
 
-## Loading a JOSM session
+## JOSMセッションの読み込み
 
-To load a previously saved JOSM session, click **File > Session > Load session**.
-Select the `.jos` you saved.
+以前に保存したJOSMセッションを読み込むには、 **ファイル > セッション > セッションの読み込み**をクリックします。保存した`.jos`ファイルを選択してください。
 
 ![josm_session_load2]({{site.baseurl}}/images/loading-a-josm-session.gif)
 
-NOTE: Do not save any OSM data within your `.jos` file.  Always load new data to avoid data conflicts. 
+注意: `.jos`ファイルとしてOSMデータは保存しないでください。データの競合を避けるため、データは常に新しいものを読み込むようにします。
 
-Examples of session files we use in the [/mapping repo](https://github.com/mapbox/mapping/tree/master/JOSM/sessions).
-
+現在チームで利用しているセッションファイルの例は [/mapping repo](https://github.com/mapbox/mapping/tree/master/JOSM/sessions)から利用可能です。
