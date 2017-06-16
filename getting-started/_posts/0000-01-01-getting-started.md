@@ -87,7 +87,7 @@ To get rid of this error increase the default allocated memory for JOSM by follo
 
 ## Using a gaming mouse
 
-Using a gaming can increase your productivity by assigning shortcuts to common mapping tasks.  This section outlines the basic configuration to use a gaming in JOSM.
+Using a gaming mouse can increase your productivity by assigning shortcuts to common mapping tasks. This section outlines the basic configuration to use a gaming mouse in JOSM.
 
 **Systems:** Linux and Mac
 
@@ -104,7 +104,7 @@ Using a gaming can increase your productivity by assigning shortcuts to common m
 1. Install Razer Naga config software: https://www.razerzone.com/synapse/
 2. Create an account in razer ID: https://razer-id.razerzone.com/new
 3. Build your profile using your email id
-4. Configure the mouse: 
+4. Configure the mouse:
 
 **Common shortcuts essential to configure in your gaming mouse for buildings**: Enter, Extrude (`X`), building tracing (`B`), upload and download data to OSM (use the default keyboard shortcuts in your JOSM).
 
@@ -118,7 +118,7 @@ Using a gaming can increase your productivity by assigning shortcuts to common m
 
    * Select
 
-   * Orthogonalize 
+   * Orthogonalize
 
    * Rotate
 
@@ -135,9 +135,9 @@ Using a gaming can increase your productivity by assigning shortcuts to common m
    * Join node to way (N)
 
    * Select intersecting ways (I)
-   
+
    * Join overlapping ways (shift+J)
-   
+
  Configure any other shortcut according to the mapper choices.
- 
+
 **Note**: For mapping other features like roads and to fix task, create separate configurations with the shortcuts required only for those features.
