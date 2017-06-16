@@ -15,6 +15,7 @@ languages:
   en: English # abbreviation: Name of native language
   es: Español
   jp: 日本語
+  uk: Українська
 
 defaults:
 - scope:
@@ -55,3 +56,14 @@ defaults:
     type: "posts"
   values:
     lang: "jp"
+# UKRAINIAN
+- scope:
+    path: "uk"
+    type: "pages"
+  values:
+    lang: "uk"
+- scope:
+    path: "uk"
+    type: "posts"
+  values:
+    lang: "uk"
