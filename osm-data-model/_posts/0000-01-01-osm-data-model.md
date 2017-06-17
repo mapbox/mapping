@@ -60,5 +60,5 @@ Your OpenStreetMap editor will take care of creating multipolygons for you so do
 
 To learn more about the OpenStreetMap data structure, take a look at these resources:
 
-- OpenStreetMap Elements http://wiki.openstreetmap.org/wiki/Elements
-- Multipolygons http://wiki.openstreetmap.org/wiki/Relation:multipolygon
+-   OpenStreetMap Elements <http://wiki.openstreetmap.org/wiki/Elements>
+-   Multipolygons <http://wiki.openstreetmap.org/wiki/Relation:multipolygon>
