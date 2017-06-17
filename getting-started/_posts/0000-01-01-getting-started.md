@@ -63,7 +63,7 @@ Now it's time to connect to OpenStreetMap. Add the user name and password of the
 
 ![set-osm-username-and-password]({{site.baseurl}}/images/set-osm-username-and-password.png)
 
-Now you should be able to retrieve data from OpenStreetMap by clicking on the button with the green down error in the top left:
+Now you should be able to retrieve data from OpenStreetMap by clicking on the button with the green down arrow in the top left:
 
 ![download-data]({{site.baseurl}}/images/download-data.gif)
 
