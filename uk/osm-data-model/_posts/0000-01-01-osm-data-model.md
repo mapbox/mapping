@@ -10,36 +10,44 @@ title: Модель даних OpenStreetMap
 
 Точки використовуються для того, щоб показати будь-який точковий обʼєкт або, щоб просто додати назву до певного місця. Тут точкою позначено кавʼярню:
 
-![node-example1]({{site.baseurl}}/images/node-example1.png)
+![node-example1]({{site.baseurl}}/uk/images/node-example1.png)
 
 а ця використовується для позначення міста New York:
 
-![node-example-2]({{site.baseurl}}/images/node-example-2.png)
+![node-example-2]({{site.baseurl}}/uk/images/node-example2.png)
 
 ## Лінії
 
 Лінії використовуються для позначення лінійних обʼєктів, що *зʼєднують дві чи більше точок*, наприклад, для позначення доріг:
 
-![way-example-1]({{site.baseurl}}/images/way-example-1.png)
+![way-example-1]({{site.baseurl}}/uk/images/way-example-1.png)
 
 Якщо ви замкнете лінію – тобто її кінцева та начальна точки будуть збігатись – в такий спосіб ви можете позначати полігональні обʼєкти, такі як будинки:
 
-![way-example-2]({{site.baseurl}}/images/way-example-2.png)
+![way-example-2]({{site.baseurl}}/uk/images/way-example-2.png)
 
 або парки:
 
-![way-example-3]({{site.baseurl}}/images/way-example-3.png)
+![way-example-3]({{site.baseurl}}/uk/images/way-example-3.png)
 
 Точки, зазвичай, використовуються для утворення ліній. Але точки, що входять до складу ліній також можуть мати власні особливості. В цьому прикладі точка є частиною 14-ї вулиці та вулиці R, а також вона позначає ствітлофор на цьому перехресті.
 
 
-![way-example-4]({{site.baseurl}}/images/way-example-4.gif)
+<!-- ![way-example-4]({{site.baseurl}}/images/way-example-4.gif) -->
+<div class="video space-bottom4">
+  <p>
+    <video autoplay loop>
+      <source type="video/mp4" src="{{site.baseurl}}/uk/images/way-example-4.mp4"></source>
+      Your browser does not support the video element.
+    </video>
+  </p>
+</div>
 
 ## Теґи
 
 До того, як ми перейдемо до третього елемента після точок та ліній – звʼязків, давайте зʼясуємо що таке теґи. Ви вже бачили їх кілька разів, прямо зараз, в прикладах вище, як на цій точці для кавʼярні:
 
-![osm-tag]({{site.baseurl}}/images/osm-tag.png)
+![osm-tag]({{site.baseurl}}/uk/images/osm-tag.png)
 
 Будь-які точкові обʼєкти позначаються точками. Те що може представляти точка, наприклад: кавʼярня, школа, пожежний гідрант, дерево, парк, гірський пік – залежить від того, яким теґом вона позначена. Будь-які лінійні обʼєкти позначаються лініями. Але в залежності від того, які теґи вони мають, ми будемо знати, що це дороги чи будинок, озеро або залізнична колія, або велодоріжка.
 
@@ -49,14 +57,32 @@ title: Модель даних OpenStreetMap
 
 Звʼязки використовуються для обʼєднання кількох точок або ліній в єдине ціле. Як наприклад тут автобусний маршрут 23 проходить по 3 різним шляхам.
 
-![relations]({{site.baseurl}}/images/relations.gif)
+<!-- ![relations]({{site.baseurl}}/images/relations.gif) -->
+<div class="video space-bottom4">
+  <p>
+    <video autoplay loop>
+      <source type="video/webm; codecs=vp8,vorbis" src="{{site.baseurl}}/uk/images/relations.webm"></source>
+      <source type="video/mp4" src="{{site.baseurl}}/uk/images/relations.mov"></source>
+      Your browser does not support the video element.
+    </video>
+  </p>
+</div>
 
 Тип звʼязків, з яким вам доведеться стикатись найчастіше, що використовується для опису полігонів з отворами в серединиі, називається – *мультиполігон*. Ось приклад мультиполігона – будинок із внутрішнім двором. Він складається з двох ліній. Одна – описує *зовнішню* стіну, інша – *внутрішню*. Обидві ці лінії є елементами звʼязку, що має тип `type=multipolygon`; лінія зовнішнього контуру має роль `outer`, а лінія внутрішнього контуру – `inner`. Примітка: теґ `building=yes` ставиться на звʼязок, а не на лінію.
 
 Ваш редактор OpenStreetMap бере на себе клопіт по створеню мультиполігонів, тож покищо не переймайтеся, якщо це виглядає трохи складним зараз. Коли вам доведеться редагувати мультиполігони, поверніться сюди та перечитайте цей розділ ще раз.
 
 
-![multipolygon]({{site.baseurl}}/images/multipolygon.gif)
+<!-- ![multipolygon]({{site.baseurl}}/images/multipolygon.gif) -->
+<div class="video space-bottom4">
+  <p>
+    <video autoplay loop>
+      <source type="video/webm; codecs=vp8,vorbis" src="{{site.baseurl}}/uk/images/multipolygon.webm"></source>
+      <source type="video/mp4" src="{{site.baseurl}}/uk/images/multipolygon.mov"></source>
+      Your browser does not support the video element.
+    </video>
+  </p>
+</div>
 
 ## Додаткові матеріали
 
