@@ -1,65 +1,64 @@
 ---
 title: Useful OSM resources
 ---
-The OSM ecosystem has an array of tools that you can use to extract, modify, visualize data, and contribute to!
 
-## Mapping
+OSMのエコシステムでは、データの抽出や改変、可視化、そして参加のためのツールが揃っています！
+
+## マッピング
 - [OSM Map features](http://wiki.openstreetmap.org/wiki/Map_Features)
 - [Taginfo - tagging stats](http://taginfo.openstreetmap.org/)
 
-## Survey tools
+## 現地調査ツール
 - [Fieldpapers](http://fieldpapers.org) for paper based surveying
 - [Mapillary](http://mapillary.com/) for crowdsourcing streetview imagery
 
-### Tasking Tools
+### タスク管理ツール
 - [To-fix](http://osmlab.github.io/to-fix/)
 - [Map Roulette](http://maproulette.org/)
-- [Map tasking manager](http://tasks.openstreetmap.us/) for coordinating mapping in a continuos area
+- [Map tasking manager](http://tasks.openstreetmap.us/) 特定エリアを複数人で継続的にマッピングする際に便利
 
-## Data
-- [Awesome GeoJSON](https://github.com/tmcw/awesome-geojson) - list of some awesome tools around GeoJSON
-- [Overpass Turbo](http://overpass-turbo.eu/) for querying OSM by properties
-- [GeoJSON.io](http://geojson.io/) for creating / editing GeoJSON data
-- [Dropchop](http://dropchop.io/) for GIS based actions
-- [Flatten GeoJSON attributes](http://batpad.github.io/geojson-flatten-tags/) Converter
+## データ
+- [Awesome GeoJSON](https://github.com/tmcw/awesome-geojson) - GeoJSONまわりの便利なツール
+- [Overpass Turbo](http://overpass-turbo.eu/) プロパティ別にOSMデータへクエリ実施
+- [GeoJSON.io](http://geojson.io/) GeoJSONデータの作成と編集
+- [Dropchop](http://dropchop.io/) GISベースの作業
+- [Flatten GeoJSON attributes](http://batpad.github.io/geojson-flatten-tags/) データ形式変換
 - [Merge GeoJSONs](https://github.com/mapbox/geojson-merge)
-- [Minjur](https://github.com/mapbox/minjur) for converting large OSM data to GeoJSON 
-- [tippecanoe](https://github.com/mapbox/tippecanoe) Builds vector tilesets from large collections of GeoJSON features 
+- [Minjur](https://github.com/mapbox/minjur) 大容量のOSMデータをGeoJSONに変換する際に利用 
+- [tippecanoe](https://github.com/mapbox/tippecanoe) 複数のGeoJSONファイルからベクトルタイルセットを構築
 - [Collection of useful GeoJSON tools](https://github.com/tmcw/awesome-geojson)
-- [toGeoJSON](http://mapbox.github.io/togeojson/) toGeoJSON turns KML & GPX into GeoJSON
+- [toGeoJSON](http://mapbox.github.io/togeojson/) toGeoJSONではKMLとGPXをGeoJSONに変換可能
 
-
-### Visualization
+### 可視化
 - [OSM Changes Visualization](https://github.com/ericfischer/osm-animate)
 - [Compare OSM and Google Maps](http://lxbarth.com/compare/#17/33.81196/-117.91879)
 
-### Extracts
+### 抽出
 - [OSM planet extracts](http://planet.osm.org)
 - [Geofabrik region extracts](http://download.geofabrik.de/openstreetmap/)
 - [Mapzen metro extracts](https://mapzen.com/data/metro-extracts)
 - [OSM QA Tiles](http://osmlab.github.io/osm-qa-tiles/)
 
-### QA and Activity Tracking
+### 品質管理、活動追跡
 - [OSM Inspector](http://wiki.openstreetmap.org/wiki/OSM_Inspector) 
 - [WHODIDIT](http://zverik.osm.rambler.ru/whodidit/) OpenStreetMap Changeset Analyzer
 - [Heatmap](http://yosmhm.neis-one.org/)
 
-For full list check the [OSM Wiki](http://wiki.openstreetmap.org/wiki/Quality_assurance)
+[OSM Wiki](http://wiki.openstreetmap.org/wiki/Quality_assurance)に全リストあり
 
+## コミュニティ
+- [地図の履歴機能](http://www.openstreetmap.org/history#map=14/51.5150/-0.0972)を使ってその地域で活動しているアクティブマッパーを見つけ、メッセージを送付
+- [OSMダイアリー](http://www.openstreetmap.org/diary)を書いて、コミュニティとの議論の機会を展開
+- [自分が住んでいる地域のメーリングリスト]()で、様々なトピックについて相談
+- [Who is around me?](http://resultmaps.neis-one.org/oooc) 地域のマッパーを検索
 
-## Community
-- Use the [history tab on the map](http://www.openstreetmap.org/history#map=14/51.5150/-0.0972) to find and message active mappers nearby
-- Write on your [OSM Diaries](http://www.openstreetmap.org/diary) to bring up issues for community discussion
-- Join your local [community mailing list]() for discussions on various topics
-- [Who is around me?](http://resultmaps.neis-one.org/oooc) Find local mappers
-
-### Contribute
-- To the [OSM Homepage](https://github.com/openstreetmap/openstreetmap-website)
-- To the development of the [OSM map style and cartography](https://github.com/gravitystorm/openstreetmap-carto/issues)
-- By publishing your tool on [osmlab](https://github.com/osmlab)
+### 活動参加
+- [OSMウェブページ](https://github.com/openstreetmap/openstreetmap-website)への参加方法
+- [OSM地図スタイル](https://github.com/gravitystorm/openstreetmap-carto/issues)の開発参加
+- [osmlab](https://github.com/osmlab)でツール公開
 - [OSM wiki: Contribute](http://wiki.openstreetmap.org/wiki/How_to_contribute)
 
-### Guides and FAQ
+### ガイドとFAQ
 - [OSM wiki FAQ](http://wiki.openstreetmap.org/wiki/FAQ)
 - [OSM help](https://help.openstreetmap.org)
 - [LearnOSM mapping guides](http://learnosm.org)
