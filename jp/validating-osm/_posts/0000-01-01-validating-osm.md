@@ -8,7 +8,7 @@ Mapboxでは地図データを作成するだけではなく、OpenStreetMapへ�
 
 OpenStreetMapに加えられる変更は全て、[変更セット](http://wiki.openstreetmap.org/wiki/Changeset)にまとめられています。変更セットには、マッパーによって行われるデータの追加（新規地物）や、変更（タグの修正、地物の位置変更、参照される地物の位置など）、あるいはデータ削除などが含まれます。
 
-OpenStreetMapのデータを利用していると、誰か他のマッパーが間違った地物やタグを追加したり、大量のデータ削除を行ったり、特定のタグを含んだデータのインポートが行われていたりする場面に遭遇することがありあｍす。OpenStreetMapデータの品質を損なうこれらのデータ変更は、問題のある編集として扱われます。
+OpenStreetMapのデータを利用していると、誰か他のマッパーが間違った地物やタグを追加したり、大量のデータ削除を行ったり、特定のタグを含んだデータのインポートが行われていたりする場面に遭遇することがあります。OpenStreetMapデータの品質を損なうこれらのデータ変更は、問題のある編集として扱われます。
 
 問題のある可能性が高い変更にはいくつかの種類があります。例えば、
 
@@ -56,8 +56,6 @@ OpenStreetMapのデータを利用していると、誰か他のマッパーが�
 この例では、あるノードが大幅に移動させられています。JOSM履歴ウィンドウを参照すると、実施したユーザは`osm_user_name`、変更セットは`38544431`、日付は`04/14/2016`であることがわかります。
 
 ### マッパーを理解する
-
-The mapper's OSM user profile and [HDYC](http://hdyc.neis-one.org) profile gives an overview of the user's activity and reputation. New mappers are more likely to make unintentional changes; though sometimes a new user account is used for intentional edits that break the map. Experienced mappers might have more detailed, trustworthy knowledge of an area, or sometimes a history of bad edits.
 
 マッパーのOSMユーザプロフィール、および[HDYC](http://hdyc.neis-one.org)のプロフィールを参照することで、ユーザの活動内容と評価を知ることができます。新規マッパーは意図しない間違い編集を行ってしまいがちで、その結果、そのユーザが気が付かないうちに地図データを壊してしまうことがあります。経験豊かなマッパーは、より詳しい記述や、地域に対して信頼できる知識を持っていることがありますが、間違い編集の履歴もあることでしょう。
 
@@ -110,8 +108,6 @@ OpenStreetMapの変更セットページでは、当該の変更セットの中�
 #### JOSMプラグインを使った巻き戻し
 
 JOSMの[Reverter Plugin](http://wiki.openstreetmap.org/wiki/JOSM/Plugins/Reverter)を使うことで、OpenStreetMapの変更を簡単に巻き戻すことが可能です。リバートを行った後は、その変更セットを何故巻き戻したのか、変更セットに対して理由を説明するコメントを残すようにします。
-
-Reverting changesets can be tricky, and you can unintentionally break things yourself. Attempt to revert a changeset if you are 100% sure that the changeset is bad and if something goes wrong -- you should be able to fix it.
 
 変更セットの巻き戻しは複雑な作業であり、気が付かないうちに自分自身でデータを破壊してしまうことがあります。巻き戻し対象の変更セットが100％完全に間違いであったり、なにかよくないことが進行中でその修正をあなたが修正しなくてはならない場合にのみ、巻き戻し作業を行うようにしてください
 
