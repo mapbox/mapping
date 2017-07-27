@@ -10,7 +10,7 @@ Exit numbers and destinations are used as a part of guidance in routing engine. 
 
 ## What are exit numbers?
 
-An exit number is a unique alpha-numeric identity assigned to a road junction, usually an exit from where a freeway starts. It is usually marked on the same sign as the destinations of the exit, as well as a sign in the [gore](https://en.wikipedia.org/wiki/Gore_(road)). OSM based guidance systems such as OSRM can use exit numbers as a way to guide drivers to take the right exit during navigation.
+An exit number is a unique alpha-numeric identity assigned to a road junction, usually an exit from where a freeway starts. It is usually marked on the same sign as the destinations of the exit, as well as a sign in the [gore](https://en.wikipedia.org/wiki/Gore_(road)). OpenStreetMap based guidance systems such as OSRM can use exit numbers as a way to guide drivers to take the right exit during navigation.
 
 ![image](https://d2mxuefqeaa7sj.cloudfront.net/s_9E15E3C9473E7DCE0777B5A1E9261280CC984DAB5FF2C792D39F0C17D7C1920E_1499941784379_I-4_east_exits_111A-B.jpg)
 
@@ -20,13 +20,13 @@ An exit number is a unique alpha-numeric identity assigned to a road junction, u
 - `highway=motorway_junction` → is used in representing the specific node as a junction where the exiting way starts
 - `ref=*` → is used when the exit has a specific number assigned to it
   - Also tag `junction:ref=*` on the connecting `highway=motorway_link` way
-- `noref=yes` → is used when the exit doesn’t have any official number assigned to it
+- `noref=yes` → is used when the exit does not have any official number assigned to it
 
-**In California**, exit number signage is inconsistent. The state is in the process of gradually adding exit numbers. In the meantime, it’s common for a freeway exit to lack any exit number sign, even if Wikipedia provides an exit number. If there’s already a `ref` tag on the `highway=motorway_junction` node but no exit number sign appears in Mapillary imagery from within the past year, replace the `ref` tag with `unsigned_ref`. Sometimes there’s no exit number at the exit, but an advance guide sign (the one that says “½ mile” or “1 mile”) does display an exit number. In that case, leave the exit number in `ref`, because a driver would be able to use that information while navigating.
+**In California**, exit number signage is inconsistent. The state is gradually adding exit numbers. In the meantime, it’s common for a freeway exit to lack any exit number sign, even if Wikipedia provides an exit number. If there’s already a `ref` tag on the `highway=motorway_junction` node but no exit number sign appears in Mapillary imagery from within the past year, replace the `ref` tag with `unsigned_ref`. Sometimes there’s no exit number at the exit, but an advance guide sign (the one that says “½ mile” or “1 mile”) does display an exit number. In that case, leave the exit number in `ref`, because a driver would be able to use that information while navigating.
 
 ## What are destinations?
 
-Destination tags describe the content of road signposts or ground information indicating the names of the locations that a certain exit from the freeway or a highway is heading to, or that a certain entrance to the freeway is heading to. The `destination` tag refers to the place the entering/exiting way is leading to. Thus navigation systems can represent accurate guidance with the respect to road signs that the driver actually sees when driving. The destination references are also  alpha-numeric identities which changes from state to state in US. For reference check [the shield dictionary](https://wiki.openstreetmap.org/wiki/United_States_roads_tagging/Routes) to understand how highway shields are represented in different states of US. If you can’t figure out how to map a particular highway shield, look at the `ref` tags on the way that the `motorway_link` way leads to.
+Destination tags describe the content of road signposts or ground information indicating the names of the locations that a certain exit from the freeway or a highway is heading to, or that a certain entrance to the freeway is heading to. The `destination` tag refers to the place the entering/exiting way is leading to. Thus navigation systems can represent correct guidance with the respect to road signs that the driver actually sees when driving. The destination references are also  alpha-numeric identities which changes from state to state in US. For reference check [the shield dictionary](https://wiki.openstreetmap.org/wiki/United_States_roads_tagging/Routes) to understand how highway shields are represented in different states of US. If you can’t figure out how to map a particular highway shield, look at the `ref` tags on the way that the `motorway_link` way leads to.
 
 ![image](https://d2mxuefqeaa7sj.cloudfront.net/s_9E15E3C9473E7DCE0777B5A1E9261280CC984DAB5FF2C792D39F0C17D7C1920E_1499946385542_I-4_east_exits_111A-B+1.jpg)
 
@@ -42,12 +42,12 @@ Destination tags describe the content of road signposts or ground information in
 
 ## How to map exit numbers and destinations?
 
-Ground based imagery or a field survey is the only way one can verify freeway junctions and road signs. For imagery, Mapillary imagery can be used as a reference to verify and add exit numbers and destinations to mapped highways on OSM. Sometimes [the pavement is marked with a route shield in each lane](http://www.knoxnews.com/story/news/traffic/2016/10/27/knoxville-road-shields-guide--40-drivers/92823646/), indicating the destination ref, in which case you can also use aerial imagery.
+Ground based imagery or a field survey is the only way one can verify freeway junctions and road signs. For imagery, Mapillary imagery can be used as a reference to verify and add exit numbers and destinations to mapped highways on OpenStreetMap. Sometimes [the pavement is marked with a route shield in each lane](http://www.knoxnews.com/story/news/traffic/2016/10/27/knoxville-road-shields-guide--40-drivers/92823646/), indicating the destination ref, in which case you can also use aerial imagery.
 
 ### Node:
 Exit numbers are mapped as nodes at the junction's on highways where freeways have exit ways.
 
-| S.No | Mapillary Image | JOSM representation | OSM tags 
+| S.No | Mapillary Image | JOSM representation | Tags 
 ---- | ---- | ---- | ---- 
 1| <img width="592" alt="screen shot 2017-07-18 at 11 23 16 am" src="https://user-images.githubusercontent.com/8401827/28302523-8b113ea2-6bab-11e7-9a01-6c61a5db1f60.png"> | <img width="534" alt="screen shot 2017-07-18 at 11 24 50 am" src="https://user-images.githubusercontent.com/8401827/28302567-c1062d1a-6bab-11e7-809e-5f6e4f245b44.png"> | <ul><li>`highway=motorway_junction`<li>`noref=yes`</ul>
 2| <img width="613" alt="screen shot 2017-07-18 at 11 48 11 am" src="https://user-images.githubusercontent.com/8401827/28303127-04873aae-6baf-11e7-843c-2f00c455c50d.png"> | <img width="468" alt="screen shot 2017-07-18 at 11 52 15 am" src="https://user-images.githubusercontent.com/8401827/28303220-97fb81aa-6baf-11e7-8f3a-77929984746e.png"> | <ul><li>`highway=motorway_junction`<li>`ref=414A`</ul>
@@ -71,8 +71,8 @@ S.No| Mapillary Image | JOSM representation | OSM tags
 * Shield marks of state routes changes from state to state. Refer to the [shield dictionary](https://wiki.openstreetmap.org/wiki/United_States_roads_tagging/Routes).
 * Use [checkautopista2](https://k1wiosm.github.io/checkautopista2/) for identifying missing junctions
 
-### Abbreviations for texting on sign boards:
-|  **Shortform** | **Abbrivation** |
+### Short forms of common words on sign boards:
+|  **Short-form** | **Full-form** |
 |  ------ | ------ |
 |  Rd | Road |
 |  St | Street |
@@ -83,3 +83,6 @@ S.No| Mapillary Image | JOSM representation | OSM tags
 | Pt | Point |
 | Pkwy | Parkway|
 | Cr | Creek |
+| Mtn | Mountain |
+| Mt | Mount |
+| Jct | Junction |
