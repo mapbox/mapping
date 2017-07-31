@@ -49,7 +49,7 @@ Exit numbers are mapped as nodes at the junction's on highways where freeways ha
 
 | S.No | Mapillary Image | JOSM representation | Tags 
 ---- | ---- | ---- | ---- 
-1| <img width="592" alt="screen shot 2017-07-18 at 11 23 16 am" src="https://user-images.githubusercontent.com/8401827/28302523-8b113ea2-6bab-11e7-9a01-6c61a5db1f60.png"> | <img width="534" alt="screen shot 2017-07-18 at 11 24 50 am" src="https://user-images.githubusercontent.com/8401827/28302567-c1062d1a-6bab-11e7-809e-5f6e4f245b44.png"> | <ul><li>`highway=motorway_junction`<li>`noref=yes`</ul>
+1| <img width="592" alt="screen shot 2017-07-18 at 11 23 16 am" src="https://user-images.githubusercontent.com/8401827/28302523-8b113ea2-6bab-11e7-9a01-6c61a5db1f60.png"> | <img width="534" alt="screen shot 2017-07-18 at 11 24 50 am" src="https://user-images.githubusercontent.com/8401827/28302567-c1062d1a-6bab-11e7-809e-5f6e4f245b44.png"> | <ul><li>`highway=motorway_junction`</li><li>`noref=yes`</li></ul>
 2| <img width="613" alt="screen shot 2017-07-18 at 11 48 11 am" src="https://user-images.githubusercontent.com/8401827/28303127-04873aae-6baf-11e7-843c-2f00c455c50d.png"> | <img width="468" alt="screen shot 2017-07-18 at 11 52 15 am" src="https://user-images.githubusercontent.com/8401827/28303220-97fb81aa-6baf-11e7-8f3a-77929984746e.png"> | <ul><li>`highway=motorway_junction`<li>`ref=414A`</ul>
 3| <img src="https://wiki.openstreetmap.org/w/images/2/2c/I-83_N_exit_51A-B.jpg" width="300" alt=""> | <img width="300" alt="" src="https://user-images.githubusercontent.com/1231218/28347318-3a747cda-6beb-11e7-8aa9-cf7ffa1e8d6b.png"> | <ul><li>`highway=motorway_junction`<li>`ref=51A;51B`<li>`ref:left=51A`<li>`ref:right=51B`</ul>
 4| <img width="411" alt="screen shot 2017-07-20 at 12 28 02 pm" src="https://user-images.githubusercontent.com/8401827/28404474-1d175cea-6d47-11e7-88be-ae06eb21af9e.png"> | <img width="279" alt="screen shot 2017-07-20 at 12 28 49 pm" src="https://user-images.githubusercontent.com/8401827/28404498-389d7224-6d47-11e7-9d24-b0f920ec3efe.png"> | <ul><li>`highway=motorway_junction`<li>`ref=56`</ul> Note: Some times exit numbers are placed separately
@@ -72,6 +72,7 @@ S.No| Mapillary Image | JOSM representation | OSM tags
 * Use [checkautopista2](https://k1wiosm.github.io/checkautopista2/) for identifying missing junctions
 
 ### Short forms of common words on sign boards:
+
 |  **Short-form** | **Full-form** |
 |  ------ | ------ |
 |  Rd | Road |
