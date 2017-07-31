@@ -4,6 +4,9 @@ tileApi: https://api-maps-staging.tilestream.net
 permalink: /:categories/:title/
 baseurl: /mapping
 title: Mapping with OpenStreetMap
+markdown: kramdown
+kramdown:
+  input: GFM
 exclude:
 - package.json
 - node_modules
