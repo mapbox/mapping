@@ -88,3 +88,7 @@ S.No| Mapillary Image | JOSM representation | OSM tags
 | Mtn | Mountain |
 | Mt | Mount |
 | Jct | Junction |
+| Ft | Fort |
+| AFB | Air Force Base|
+| JR |Junior| 
+| MLK | Martin Luther King |
