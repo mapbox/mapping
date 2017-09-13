@@ -322,7 +322,10 @@ This can be tagged normally `restriction:conditional = no_left_turn @ (Mo-Su 06:
 
 **Case 12**
 
-*To be continued*
+![case 12](https://user-images.githubusercontent.com/13744156/30376263-433d36fa-98a9-11e7-8e09-be7b98d54824.png)
+
+This should be tagged as `restriction:conditional = no_left_turn @ (Mo-Fr 07:00-09:00,14:00-16:00;Su 05:00-17:00)`
+Reference: wiki: https://wiki.openstreetmap.org/wiki/Conditional_restrictions
 
 **Reference**
 
