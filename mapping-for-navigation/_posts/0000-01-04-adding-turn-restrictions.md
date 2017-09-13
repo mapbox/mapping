@@ -239,7 +239,90 @@ _An example of a `restriction=no_right_turn` traffic sign in Germany_
 ![screen shot 2016-08-17 at 4 27 33 pm](https://cloud.githubusercontent.com/assets/11845908/17734070/a6125f5e-6497-11e6-8d70-d55248e938ec.png)
 
 *Courtesy: [German wiki](http://wiki.openstreetmap.org/wiki/DE:Relation:restriction)*
- 
+
+# Edge cases in turn restriction mapping
+
+**Case 1**
+
+![case 1](https://user-images.githubusercontent.com/13744156/30359820-0c219e42-986b-11e7-90ca-af04ac2064d2.png)
+
+It should be tagged as `restriction:conditional=no_left_turn @ (Sa-Su,PH 00:00-24:00)`
+
+Reference: 
+* https://wiki.openstreetmap.org/wiki/Key:opening_hours#Rules 
+* http://openingh.openstreetmap.de/evaluation_tool/?EXP=Sa-Su%2CPH%2000%3A00-24%3A00&lat=48.7769&lon=9.1844&mode=0
+
+**Case 2**
+
+![case 2](https://user-images.githubusercontent.com/13744156/30359911-b8e1fcbc-986b-11e7-9815-730f2b01bd10.png)
+
+Correct way of tagging is restriction:conditional=no_u_turn @ (weight > 1500 lbs). Use `pounds` instead on ton to make the metric unambiguous.
+
+**Case 3**
+
+![case 3](https://user-images.githubusercontent.com/13744156/30359998-53076516-986c-11e7-978e-e094affeccaf.png)
+
+This is not a turn restriction but a turn lane and should be handled as such. 
+
+**Case 4**
+
+![case 4](https://user-images.githubusercontent.com/13744156/30360424-ea5e50a8-986e-11e7-879c-bfecc8938e65.png)
+
+In this case, there is only one turn lane, and that turn lane disallows U-turns. So a turn restriction is appropriate.
+
+**Case 5**
+
+![case 5](https://user-images.githubusercontent.com/13744156/30360533-9c9057da-986f-11e7-8587-3affa24a580d.png)
+
+Tag the gate itself on the service road (with access=permissive, since we don’t know the school’s hours). Then it becomes less important whether the turn restriction sign is mapped.
+
+**Case 6**
+
+![case 6](https://user-images.githubusercontent.com/13744156/30360732-bb06108c-9870-11e7-85e1-acc6c1ce1850.png)
+
+This should be tagged as restriction:conditional = no_u_turn @ ("School days"). The sign reads as `WHEN CHILDREN ARE PRESENT`.
+
+**Case 7**
+
+![case 7](https://user-images.githubusercontent.com/13744156/30361176-181fadc6-9873-11e7-870d-a5c72d7e0cf1.png)
+
+This is a simple `no_u_turn`. The `3-way Signal` has no bearing on the turn restriction.
+
+**Case 8**
+
+
+![case 811](https://user-images.githubusercontent.com/13744156/30361544-33ef50ea-9875-11e7-86c5-6110e57a4944.png)
+
+- The middle segment is split, then add four turn restrictions in total
+
+![case 8](https://user-images.githubusercontent.com/13744156/30361414-77a87a06-9874-11e7-9d8b-21adf7bdf59a.png)
+
+- If the middle segment is not split, add only two turn restrictions.
+
+![case 8 2](https://user-images.githubusercontent.com/13744156/30361468-cca2b6ac-9874-11e7-962b-49403aa236e0.png)
+
+**Case 9**
+
+![case 9](https://user-images.githubusercontent.com/13744156/30361604-8c1e6544-9875-11e7-8c66-1a9ef783acad.png)
+
+This should be tagged as `restriction:conditional = no_right_turn @ (Mo-Su 23:00-06:00) as per community guidelines.
+
+**Case 10**
+
+![case 10](https://user-images.githubusercontent.com/13744156/30361666-e6332cc2-9875-11e7-9b42-d8d8823994dc.png)
+
+This should be tagged as `no_left_turn` with Virgil Avenue as the `to` way. Usually this is the case when a junction might have multiple possibilities for a `to` way. 
+Reference:https://www.mapillary.com/app/?pKey=FNZlh9MM8f9GL6REfHl87Q&focus=photo&lat=34.098005&lng=-118.286773&z=17&x=0.4954349839192229&y=0.5228299328251644&zoom=2.6133125138457505
+
+**Case 11**
+
+![case 11](https://user-images.githubusercontent.com/13744156/30361893-08d23aa6-9877-11e7-9172-f33195d18936.png)
+
+This can be tagged normally `restriction:conditional = no_left_turn @ (Mo-Su 06:00-09:00,16:00-17:00)`
+
+**Case 12**
+
+*To be continued*
 
 **Reference**
 
