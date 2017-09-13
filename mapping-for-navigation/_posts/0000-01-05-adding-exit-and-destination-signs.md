@@ -39,6 +39,12 @@ Destination tags describe the content of road signposts or ground information in
 - `destination:street=*` → is an alternative name for the numbered route – **only use in Florida, Kentucky, and Maryland**
 - `destination:lanes=*`, `destination:ref:lanes`, etc. → Often the destinations of a road differ from lane to lane. To specify those for every lane, `destination:lanes=*` is used.
 
+### Cardinal direction:
+Every dual carriage way has two oneways roads having traffic in opposite directions. Considering a dual carriage way as a destination, it is important to provide the cardinal direction of the way to which the route is navigating the user. To get this information we need to add cardinal directions to the `destination:ref` tags of the exit/entrance ways.
+
+<img width="632" alt="screen shot 2017-09-13 at 10 55 21 am" src="https://user-images.githubusercontent.com/8401827/30361068-97d03028-9872-11e7-9f89-f62439cb9b27.png"> 
+
+The [cardinal direction](https://en.wikipedia.org/wiki/Cardinal_direction) of the road is the direction in which a road is linearly-referenced in increasing order. It is an important feature in navigation and helps in guiding the user in write direction.
 
 ## How to map exit numbers and destinations?
 
@@ -67,6 +73,10 @@ S.No| Mapillary Image | JOSM representation | OSM tags
 5| [![dearborn2](https://user-images.githubusercontent.com/1231218/27760810-277b9be8-5e05-11e7-8f14-6568f83b2e5c.jpg)](https://www.mapillary.com/map/im/mUDqicHyq4in0_OMpYYdkw) | <img width="172" alt="iD" src="https://user-images.githubusercontent.com/1231218/27760241-724e6ed8-5df7-11e7-974d-6b96aa70360f.png"> | {::nomarkdown}<ul><li><code>destination=Dearborn Street;James Street;Madison Street;Spokane</code></li><li><code>destination:lanes=Dearborn Street;James Street;Madison Street\|Spokane</code></li><li><code>destination:ref=I 90 East</code></li><li><code>destination:ref:lanes=\|I 90 East</code></li><li><code>junction:ref=164A</code></li></ul>{:/}
 6| <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Idaho_40_western_terminus.jpg/320px-Idaho_40_western_terminus.jpg" width="172"> | <img width="703" alt="" src="https://user-images.githubusercontent.com/1231218/28347182-66f01f86-6bea-11e7-944d-5e7999ab0277.png"> | {::nomarkdown}<ul><li><code>destination=Pocatello</code></li><li><code>destination:ref=I 15 North</code></li></ul>{:/} Note: Make sure to split the `highway=motorway_link` way at the intersection, so that the on-ramp and off-ramp are represented by separate ways.
 7| <img width="300" alt="" src="https://user-images.githubusercontent.com/1231218/28347522-793092d2-6bec-11e7-8c9e-95e1e3f1f32d.png"> | <img width="300" src="https://user-images.githubusercontent.com/1231218/28347552-a253fda2-6bec-11e7-97bb-5bb386d862fc.png"> | {::nomarkdown}<ul><li><code>destination:ref=I 275 West</code></li><li><code>destination:ref:to=I 74</code></li><li><code>destination=Indianapolis</code></li></ul>{:/}
+
+**Note:**
+* Cardinal direction can be found on the sigh boards but this is not the same in all cases. In case, the cardinal direction is missing on the sign board do look into the route relation of the connecting motorway of the exit/entrance way and get the cardinal direction.
+* If you come across missing street level imagery, get the `destination` and `destination:ref` information from the connecting motorway of the exit/entrance way along with the cardinal direction of the way.
 
 ### References:
 * Shield marks of state routes changes from state to state. Refer to the [shield dictionary](https://wiki.openstreetmap.org/wiki/United_States_roads_tagging/Routes).
