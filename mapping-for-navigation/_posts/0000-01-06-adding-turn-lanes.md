@@ -6,8 +6,8 @@ title: Adding turn lanes
 
 A turn lane is an auxiliary lane demarcated on the road to specify directions to ongoing vehicles.
 Turn lanes serve two purposes:
- * Provide directional information to the ongoing vehicles and
- * Provide the lane information to be chosen for the vehicles changing their direction
+*   Provide directional information to the ongoing vehicles and
+*   Provide the lane information to be chosen for the vehicles changing their direction
 
 ### Types of turn lanes
 
@@ -20,13 +20,13 @@ turn:lanes = right | ![right](https://cloud.githubusercontent.com/assets/8401827
 turn:lanes = through | ![through](https://cloud.githubusercontent.com/assets/8401827/13214156/f885d4b4-d973-11e5-9fb7-e9ecb70a932b.jpg)
 turn:lanes = left;through | ![through left](https://cloud.githubusercontent.com/assets/8401827/13217986/80786072-d98c-11e5-99c6-db8665977550.png)
 turn:lanes = right;through | ![through_right](https://cloud.githubusercontent.com/assets/8401827/13218022/b8aa9352-d98c-11e5-87c2-d8c17ee68305.jpg)
-turn:lanes = left;through;right | ![leftthroughright](https://cloud.githubusercontent.com/assets/8401827/13218061/027e10ee-d98d-11e5-9747-c6867e0787b0.JPG)
+turn:lanes = left;through;right| ![leftthroughright](https://cloud.githubusercontent.com/assets/8401827/13218061/027e10ee-d98d-11e5-9747-c6867e0787b0.JPG)
 turn:lanes = left;right | ![left_right](https://cloud.githubusercontent.com/assets/8401827/13217579/8f833c66-d989-11e5-9b2c-dc98fdff09b2.png)
 turn:lanes = slight_left | ![slightleft](https://cloud.githubusercontent.com/assets/8401827/13218207/e450feaa-d98d-11e5-938c-a3956de2f7ba.png)
 turn:lanes = slight_right | ![slightright](https://cloud.githubusercontent.com/assets/8401827/13218219/07052b56-d98e-11e5-8fc0-82b945fb95c6.png)
 turn:lanes = merge_to_left | ![merge to left](https://cloud.githubusercontent.com/assets/8401827/13218244/2ca1fd6c-d98e-11e5-8be9-cb64271f5991.png)
 turn:lanes = merge_to_right | ![fahrbahn_2](https://cloud.githubusercontent.com/assets/8401827/13218183/bc5d0790-d98d-11e5-9781-307f80cc0732.png)
-turn:lanes:bothways = * | ![turn lanes both ways](https://cloud.githubusercontent.com/assets/8401827/13217721/a2594d48-d98a-11e5-87f1-11e11ebf57ec.png)
+turn:lanes:bothways = * |![turn lanes both ways](https://cloud.githubusercontent.com/assets/8401827/13217721/a2594d48-d98a-11e5-87f1-11e11ebf57ec.png)
 
   ![](http://pdd.ua/r/r/EEB7A996-D8DC-40FC-87EA-01F3E115BC7C/m_1.18_4.jpg)
   _road markings on the ground_ - © [pdd.ua](http://pdd.ua/ua/34/1.18/)
@@ -34,44 +34,44 @@ turn:lanes:bothways = * | ![turn lanes both ways](https://cloud.githubuserconten
 ### Pre-requirements for mapping a turn lane in JOSM
 
 Before mapping turn lanes activate the following preferences in JOSM to visualize the mapped turn lanes: `preferences > Map Settings`
-* *`Map Paint Styles > Lane and road attributes`*
+*   _`Map Paint Styles > Lane and road attributes`_
 
-  ![lane_and_road_attributes](https://cloud.githubusercontent.com/assets/13744156/13218788/c55fab96-d991-11e5-89b2-b281986d704e.gif)
+    ![lane_and_road_attributes](https://cloud.githubusercontent.com/assets/13744156/13218788/c55fab96-d991-11e5-89b2-b281986d704e.gif)
 
-* *`Tagging Presets > lane attributes`*
+*   _`Tagging Presets > lane attributes`_
 
-  ![tagging_presets](https://cloud.githubusercontent.com/assets/13744156/13218902/ad15c902-d992-11e5-872b-1bde24f27f5b.gif)
+     ![tagging_presets](https://cloud.githubusercontent.com/assets/13744156/13218902/ad15c902-d992-11e5-872b-1bde24f27f5b.gif)
 
-* Filter out non-road features with inverse filter: `boundary: | leisure: | landuse: | waterway: | amenity: | natural: | building:`
+*   Filter out non-road features with inverse filter: `boundary: | leisure: | landuse: | waterway: | amenity: | natural: | building:`
 
 **Plugins**
 
-* Knife-tool: https://gist.github.com/jothirnadh/a10daeaef1498537ea56f0a65f7fdbc2
-* TurnLanes-tagging plugin: `JOSM Preferences > Plugins > turnlanes-tagging`
+*   Knife-tool: <https://gist.github.com/jothirnadh/a10daeaef1498537ea56f0a65f7fdbc2>
+*   TurnLanes-tagging plugin: `JOSM Preferences > Plugins > turnlanes-tagging`
 
 ### Mapping a turn lane
 
-* Check all roads in the imagery for turn lanes at junction points
+*   Check all roads in the imagery for turn lanes at junction points
 
-  ![roads_markings](https://cloud.githubusercontent.com/assets/126868/11710074/b58b52e4-9f42-11e5-971a-000a699a0b6d.png)
+    ![roads_markings](https://cloud.githubusercontent.com/assets/126868/11710074/b58b52e4-9f42-11e5-971a-000a699a0b6d.png)
 
-* Split the road into segments based on the total number of lanes for the segment. The easiest way for splitting the road is by using [Knife_tool](https://gist.github.com/jothirnadh/a10daeaef1498537ea56f0a65f7fdbc2)
+*   Split the road into segments based on the total number of lanes for the segment. The easiest way for splitting the road is by using [Knife_tool](https://gist.github.com/jothirnadh/a10daeaef1498537ea56f0a65f7fdbc2)
 
-  ![residential_road](https://cloud.githubusercontent.com/assets/369696/13223732/34cf7ffa-d98e-11e5-9a33-8f40f6498004.png)
+    ![residential_road](https://cloud.githubusercontent.com/assets/369696/13223732/34cf7ffa-d98e-11e5-9a33-8f40f6498004.png)
 
-* For each road segment tag the turn lanes based on the road markings in the direction of the way. Eg. `turn:lanes=left|left;through|through`. Check [OSM turn:lanes](http://wiki.openstreetmap.org/wiki/Key:turn:lanes) for reference.
+*   For each road segment tag the turn lanes based on the road markings in the direction of the way. Eg. `turn:lanes=left|left;through|through`. Check [OSM turn:lanes](http://wiki.openstreetmap.org/wiki/Key:turn:lanes) for reference.
 
-  ![oneway_turn:lanes_tagging](https://cloud.githubusercontent.com/assets/8401827/13252110/a6bdea8a-da5a-11e5-8c79-aa15c0c15f68.gif)
+    ![oneway_turn:lanes_tagging](https://cloud.githubusercontent.com/assets/8401827/13252110/a6bdea8a-da5a-11e5-8c79-aa15c0c15f68.gif)
 
-* For bi-directional segments, use `turn:lanes:backward=` and `turn:lanes:forward=` to specify turn lanes in each direction.
+*   For bi-directional segments, use `turn:lanes:backward=` and `turn:lanes:forward=` to specify turn lanes in each direction.
 
-  ![bidirectional_tagging](https://cloud.githubusercontent.com/assets/13744156/13219545/acd78f62-d996-11e5-85eb-3e05a7b79d3b.gif)
+    ![bidirectional_tagging](https://cloud.githubusercontent.com/assets/13744156/13219545/acd78f62-d996-11e5-85eb-3e05a7b79d3b.gif)
 
-* Verify correct tagging using the `Lane attributes` style
+*   Verify correct tagging using the `Lane attributes` style
 
-  ![lane_attributes](https://cloud.githubusercontent.com/assets/8401827/13251884/ddcbdd54-da58-11e5-86ae-c4a2918c9577.gif)
+    ![lane_attributes](https://cloud.githubusercontent.com/assets/8401827/13251884/ddcbdd54-da58-11e5-86ae-c4a2918c9577.gif)
 
-* The simplest way to add turn lanes is by using **[turnlanes-tagging plugin](https://www.mapbox.com/blog/turnlanes-tagging/)**
+*   The simplest way to add turn lanes is by using **[turnlanes-tagging plugin](https://www.mapbox.com/blog/turnlanes-tagging/)**
 
 ![turnlenes](https://cloud.githubusercontent.com/assets/8401827/17246767/d086ef48-55ab-11e6-8bce-46c434cb9005.gif)
 
@@ -127,8 +127,8 @@ In case of bi-directional ways, the key [turn:lanes:backward=*](http://wiki.open
 
   ![turn:lanes:backward](https://cloud.githubusercontent.com/assets/13744156/13172709/859957c4-d71f-11e5-8cd9-ea154ad5d2e8.gif)
 
-  *Adding a `turn:lanes:backward` tag*
-  
+  _Adding a `turn:lanes:backward` tag_
+
 ### 7. Adding dual carriageways:
 
 When finding roads mapped as single carriageway while the imagery shows clear separation between roads, split the road where the physical separation starts and add dual carriageways.
@@ -137,10 +137,10 @@ When finding roads mapped as single carriageway while the imagery shows clear se
 
 
 **When to add dual carriageway?**
-- Add Dual-carriage when 
- - you see physical separation betweens roads
- - **no relation is attached to the way.**
-- Add `turn:lanes` tag to both the ways.
+-   Add Dual-carriage when
+    -   you see physical separation betweens roads
+    -   **no relation is attached to the way.**
+-   Add `turn:lanes` tag to both the ways.
 
 
 ### 8. Bicycle lanes and road shoulders
@@ -151,15 +151,15 @@ Road shoulders and bicycle lanes are ignored from the lane count. Both these roa
 
   ![bicycle_lanes](https://cloud.githubusercontent.com/assets/13744156/13172922/adc69f08-d720-11e5-8600-7a606d2e9bae.png)
 
-  *lanes=3 for the above example, ignoring the two cycle ways*
+  _lanes=3 for the above example, ignoring the two cycle ways_
 
-* Ignore bicycle lanes even though they are in the middle;example below:
+*   Ignore bicycle lanes even though they are in the middle;example below:
 
-  ![xyz2](https://cloud.githubusercontent.com/assets/8401827/13495220/79a65aca-e16f-11e5-83e7-24d3e4f53ad0.png)
+    ![xyz2](https://cloud.githubusercontent.com/assets/8401827/13495220/79a65aca-e16f-11e5-83e7-24d3e4f53ad0.png)
 
-  *The middle way is also a bicycle lane which is not counted while adding the `lanes` tag*
+    _The middle way is also a bicycle lane which is not counted while adding the `lanes` tag_
 
-* Additionally, `Strava global-heat cycle` layer can used to verify if a particular lane is a cycle-way.
+*   Additionally, `Strava global-heat cycle` layer can used to verify if a particular lane is a cycle-way.
 `tms[16]:http://globalheat.strava.com/tiles/cycling/color3/{zoom}/{x}/{y}.png`
 
 ### 9. Lane marked as a separate way
@@ -209,39 +209,30 @@ These are the lanes specifically categorized to take U-turn or reverse-turn.
 
 ### 14. The order of the directions and valid combinations of values
 
-  - `none` itself is valid value but **not** in conjunction with other  
-  
-  - ✅ `turn:lanes=none|right` is equal to `turn:lanes=|right` - we use `none` for "_better readability_"
-
-  - 👎  `turn:lanes=left||none|merge_to_right` - this combination of values is valid but there is mixing `none` and `||` (empty) - this is not good choice.  
-
-  - 👍  `turn:lanes=left|none|none|merge_to_right` or `turn:lanes=left|||merge_to_right`  
-  
-  - ❎ `turn:lanes=none|none|none` or `turn:lanes=||` - in this case `turn:lanes=*` tag is redundant, just specify `lanes=3` or real number of lanes  
-
-  - ❎ `turn:lanes=none|none;slight_right` - isn't valid combination - "_there are no turn indications_"  on the rightmost lane. Instead, must be used (based on https://github.com/mapbox/mapping/issues/180#issuecomment-225574666)
-
+-   `none` itself is valid value but **not** in conjunction with other
+    -   ✅ `turn:lanes=none|right` is equal to `turn:lanes=|right` - we use `none` for "_better readability_"
+    -   👎  `turn:lanes=left||none|merge_to_right` - this combination of values is valid but there is mixing `none` and `||` (empty) - this is not good choice.
+    -   👍  `turn:lanes=left|none|none|merge_to_right` or `turn:lanes=left|||merge_to_right`
+    -   ❎ `turn:lanes=none|none|none` or `turn:lanes=||` - in this case `turn:lanes=*` tag is redundant, just specify `lanes=3` or real number of lanes
+    -   ❎ `turn:lanes=none|none;slight_right` - isn't valid combination - "_there are no turn indications_"  on the rightmost lane. Instead, must be used (based on <https://github.com/mapbox/mapping/issues/180#issuecomment-225574666>)
 ```
 lanes=2
 turn:lanes=none|through;slight_right
 transit:lanes=continue|new_on_right
-```  
+```
 
-- using `*right` | `*left` values  
+-   using `*right` | `*left` values
+    -   ✅ `turn:lanes=left|none|none` or `turn:lanes=||right` or `turn:lanes=merge_to_right||` or `turn:lanes=left|left;through|none|slight_right|right|right`- 👍
+    -   ❎  `turn:lanes=|right|left|` or `turn:lanes=none|right|left|through` or `turn:lanes=none|left|none`- 👎  lanes that go in one direction should not cross with each other
 
-  - ✅ `turn:lanes=left|none|none` or `turn:lanes=||right` or `turn:lanes=merge_to_right||` or `turn:lanes=left|left;through|none|slight_right|right|right`- 👍  
-
-  - ❎  `turn:lanes=|right|left|` or `turn:lanes=none|right|left|through` or `turn:lanes=none|left|none`- 👎  lanes that go in one direction should not cross with each other
-
-- using `reverse` value
- 
- - `reverse` (u-turn) have to be on the leftmost lane for right-hand traffic or on the rightmost lane for right-hand
+-   using `reverse` value
+    -   `reverse` (u-turn) have to be on the leftmost lane for right-hand traffic or on the rightmost lane for right-hand
 
 ### 15.
 
 _to be continued …_
 
-### Further reading: 
-* [Mapping turn lanes: OSM wiki](http://wiki.openstreetmap.org/wiki/Key:turn)
-* [Mapping turn lanes in OpenStreetMap by Andrey Golovin](https://www.mapbox.com/blog/turn-lanes-mapping/)
-* Diary post by @Andygol : [Mapping turn lanes in OpenStreetMap](http://www.openstreetmap.org/user/andygol/diary/35489#)
+### Further reading:
+*   [Mapping turn lanes: OSM wiki](http://wiki.openstreetmap.org/wiki/Key:turn)
+*   [Mapping turn lanes in OpenStreetMap by Andrey Golovin](https://www.mapbox.com/blog/turn-lanes-mapping/)
+*   Diary post by @Andygol : [Mapping turn lanes in OpenStreetMap](http://www.openstreetmap.org/user/andygol/diary/35489#)
