@@ -16,7 +16,7 @@ This site is built with [Jekyll](https://help.github.com/articles/setting-up-you
 
 **Running site locally**
 
-    bundle exec jekyll serve -w
+    jekyll serve
 
 **Testing site** (if testing for the first time, run `npm install` first);
 
