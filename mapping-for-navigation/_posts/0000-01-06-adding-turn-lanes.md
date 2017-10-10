@@ -26,7 +26,11 @@ turn:lanes = slight_left | ![slightleft](https://cloud.githubusercontent.com/ass
 turn:lanes = slight_right | ![slightright](https://cloud.githubusercontent.com/assets/8401827/13218219/07052b56-d98e-11e5-8fc0-82b945fb95c6.png)
 turn:lanes = merge_to_left | ![merge to left](https://cloud.githubusercontent.com/assets/8401827/13218244/2ca1fd6c-d98e-11e5-8be9-cb64271f5991.png)
 turn:lanes = merge_to_right | ![fahrbahn_2](https://cloud.githubusercontent.com/assets/8401827/13218183/bc5d0790-d98d-11e5-9781-307f80cc0732.png)
+<<<<<<< HEAD
 turn:lanes:bothways = * |![turn lanes both ways](https://cloud.githubusercontent.com/assets/8401827/13217721/a2594d48-d98a-11e5-87f1-11e11ebf57ec.png)
+=======
+turn:lanes:both_ways = * | ![turn lanes both ways](https://cloud.githubusercontent.com/assets/8401827/13217721/a2594d48-d98a-11e5-87f1-11e11ebf57ec.png)
+>>>>>>> mb-pages
 
   ![](http://pdd.ua/r/r/EEB7A996-D8DC-40FC-87EA-01F3E115BC7C/m_1.18_4.jpg)
   _road markings on the ground_ - © [pdd.ua](http://pdd.ua/ua/34/1.18/)

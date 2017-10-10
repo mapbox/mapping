@@ -63,6 +63,7 @@ h1, h2 {
 
 svg {
   width: 100%;
+  max-height: 250px;
 }
 
 #the-openstreetmap-data-model svg
@@ -229,7 +230,7 @@ svg {
 
 @media (min-width: 650px) {
   .about.open {
-    height: 320px;
+    height: 380px;
   }
 }
 
