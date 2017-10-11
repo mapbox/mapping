@@ -34,9 +34,9 @@ JOSM потребує для своєї роботи Java Runtime Environment -
 
 **2. Завантаження JOSM**
 
-Перейдіть на [сайт JOSM](https://josm.openstreetmap.de/wiki/Download) та  завантажте `tested`-версію редактора. Розташуйте його там, де знаходяться інші застосунки для вашої операційної системи.
+Перейдіть на [сайт JOSM](https://josm.openstreetmap.de/wiki/Download) та завантажте `tested`-версію редактора. Розташуйте його там, де знаходяться інші застосунки для вашої операційної системи.
 
--   OSX: `/Applications/`
+-   MacOS: `/Applications/`
 -   Windows: `C:\Program Files\`
 
 **3. Запуск JOSM**
