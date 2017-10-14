@@ -102,3 +102,4 @@ S.No| Mapillary Image | JOSM representation | OSM tags
 | AFB | Air Force Base|
 | JR |Junior| 
 | MLK | Martin Luther King |
+| Co | County |
