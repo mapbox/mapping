@@ -5,7 +5,6 @@
       "type": "Feature",
       "properties": {
         "label": "Lyon_exterior",
-        "type": "exterior",
         "is_in": "europe",
         "country": "france",
         "state": "rhone-alpes"
@@ -79,7 +78,6 @@
       "type": "Feature",
       "properties": {
         "label": "Lyon_core",
-        "type": "core",
         "is_in": "europe",
         "country": "france",
         "state": "rhone-alpes"
@@ -133,7 +131,6 @@
       "type": "Feature",
       "properties": {
         "label": "Nice_exterior",
-        "type": "exterior",
         "is_in": "europe",
         "country": "france",
         "state": "provence-alpes-cote-d-azur"
@@ -199,7 +196,6 @@
       "type": "Feature",
       "properties": {
         "label": "Nice_core",
-        "type": "core",
         "is_in": "europe",
         "country": "france",
         "state": "provence-alpes-cote-d-azur"
@@ -261,7 +257,6 @@
       "type": "Feature",
       "properties": {
         "label": "Marseille_exterior",
-        "type": "exterior",
         "is_in": "europe",
         "country": "france",
         "state": "provence-alpes-cote-d-azur"
@@ -351,7 +346,6 @@
       "type": "Feature",
       "properties": {
         "label": "Marseille_core",
-        "type": "core",
         "is_in": "europe",
         "country": "france",
         "state": "provence-alpes-cote-d-azur"
@@ -413,7 +407,6 @@
       "type": "Feature",
       "properties": {
         "label": "Paris_exterior",
-        "type": "exterior",
         "is_in": "europe",
         "country": "france",
         "state": "ile-de-france"
@@ -514,7 +507,6 @@
     {
       "type": "Feature",
       "properties": {
-        "type": "core",
         "label": "Paris_core",
         "is_in": "europe",
         "country": "france",
@@ -637,7 +629,6 @@
       "type": "Feature",
       "properties": {
         "label": "Toulouse_exterior",
-        "type": "exterior",
         "is_in": "europe",
         "country": "france",
         "state": "midi-pyrenees"
@@ -723,795 +714,6 @@
       "type": "Feature",
       "properties": {
         "label": "Toulouse_core",
-        "type": "core",
-        "is_in": "europe",
-        "country": "france",
-        "state": "midi-pyrenees"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              1.418649,
-              43.589981
-            ],
-            [
-              1.417985,
-              43.59786
-            ],
-            [
-              1.419571,
-              43.605477
-            ],
-            [
-              1.425527,
-              43.604464
-            ],
-            [
-              1.425861,
-              43.613294
-            ],
-            [
-              1.43908,
-              43.617458
-            ],
-            [
-              1.452347,
-              43.614576
-            ],
-            [
-              1.458715,
-              43.604778
-            ],
-            [
-              1.460042,
-              43.593441
-            ],
-            [
-              1.463226,
-              43.586137
-            ],
-            [
-              1.451153,
-              43.58287
-            ],
-            [
-              1.425415,
-              43.583735
-            ],
-            [
-              1.418649,
-              43.589981
-            ]
-          ]
-        ]
-      },
-      "id": "a12f9a341bec885f5c017fe0636e8532"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "label": "Lyon_exterior",
-        "type": "exterior",
-        "is_in": "europe",
-        "country": "france",
-        "state": "rhone-alpes"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              4.912102,
-              45.762666
-            ],
-            [
-              4.883191,
-              45.79489
-            ],
-            [
-              4.858334,
-              45.790745
-            ],
-            [
-              4.821588,
-              45.796208
-            ],
-            [
-              4.797811,
-              45.786223
-            ],
-            [
-              4.784301,
-              45.770583
-            ],
-            [
-              4.812942,
-              45.751544
-            ],
-            [
-              4.809699,
-              45.737591
-            ],
-            [
-              4.820777,
-              45.711561
-            ],
-            [
-              4.838069,
-              45.693824
-            ],
-            [
-              4.850228,
-              45.691559
-            ],
-            [
-              4.847796,
-              45.71307
-            ],
-            [
-              4.902375,
-              45.722691
-            ],
-            [
-              4.912102,
-              45.762666
-            ]
-          ]
-        ]
-      },
-      "id": "e7424548e91b4e0430c06ea78e366fd5"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "label": "Lyon_core",
-        "type": "core",
-        "is_in": "europe",
-        "country": "france",
-        "state": "rhone-alpes"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              4.816724,
-              45.751167
-            ],
-            [
-              4.845094,
-              45.740985
-            ],
-            [
-              4.846986,
-              45.737591
-            ],
-            [
-              4.858064,
-              45.739288
-            ],
-            [
-              4.862117,
-              45.766625
-            ],
-            [
-              4.85239,
-              45.774917
-            ],
-            [
-              4.828072,
-              45.773975
-            ],
-            [
-              4.82456,
-              45.760216
-            ],
-            [
-              4.816724,
-              45.751167
-            ]
-          ]
-        ]
-      },
-      "id": "01ef4ee4de1d4558d57f16a4d6dc41b5"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "label": "Nice_exterior",
-        "type": "exterior",
-        "is_in": "europe",
-        "country": "france",
-        "state": "provence-alpes-cote-d-azur"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              7.14502,
-              43.661838
-            ],
-            [
-              7.146048,
-              43.647207
-            ],
-            [
-              7.213229,
-              43.656135
-            ],
-            [
-              7.263614,
-              43.689108
-            ],
-            [
-              7.337307,
-              43.671508
-            ],
-            [
-              7.354788,
-              43.716117
-            ],
-            [
-              7.316399,
-              43.718099
-            ],
-            [
-              7.292749,
-              43.738905
-            ],
-            [
-              7.238593,
-              43.736676
-            ],
-            [
-              7.184094,
-              43.706455
-            ],
-            [
-              7.183752,
-              43.671012
-            ],
-            [
-              7.14502,
-              43.661838
-            ]
-          ]
-        ]
-      },
-      "id": "399af364d0fd65b83b903baa943b8828"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "label": "Nice_core",
-        "type": "core",
-        "is_in": "europe",
-        "country": "france",
-        "state": "provence-alpes-cote-d-azur"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              7.199776,
-              43.657862
-            ],
-            [
-              7.208173,
-              43.660465
-            ],
-            [
-              7.23388,
-              43.679928
-            ],
-            [
-              7.244848,
-              43.688851
-            ],
-            [
-              7.265071,
-              43.693436
-            ],
-            [
-              7.296176,
-              43.683522
-            ],
-            [
-              7.307059,
-              43.684761
-            ],
-            [
-              7.292663,
-              43.702853
-            ],
-            [
-              7.271241,
-              43.710534
-            ],
-            [
-              7.245876,
-              43.700251
-            ],
-            [
-              7.199776,
-              43.657862
-            ]
-          ]
-        ]
-      },
-      "id": "28cf39ecf55a00d2f0196334a61d0c5b"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "label": "Marseille_exterior",
-        "type": "exterior",
-        "is_in": "europe",
-        "country": "france",
-        "state": "provence-alpes-cote-d-azur"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              5.489756,
-              43.289862
-            ],
-            [
-              5.458174,
-              43.324118
-            ],
-            [
-              5.408082,
-              43.332526
-            ],
-            [
-              5.366785,
-              43.362288
-            ],
-            [
-              5.359237,
-              43.380336
-            ],
-            [
-              5.335004,
-              43.368497
-            ],
-            [
-              5.295079,
-              43.36301
-            ],
-            [
-              5.294682,
-              43.351312
-            ],
-            [
-              5.352316,
-              43.314568
-            ],
-            [
-              5.344371,
-              43.28074
-            ],
-            [
-              5.366833,
-              43.239768
-            ],
-            [
-              5.402387,
-              43.222835
-            ],
-            [
-              5.46138,
-              43.232822
-            ],
-            [
-              5.465353,
-              43.249028
-            ],
-            [
-              5.427415,
-              43.253947
-            ],
-            [
-              5.422648,
-              43.265953
-            ],
-            [
-              5.456415,
-              43.283741
-            ],
-            [
-              5.489756,
-              43.289862
-            ]
-          ]
-        ]
-      },
-      "id": "ae7072e8727071f6f4beee924c4da7f8"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "label": "Marseille_core",
-        "type": "core",
-        "is_in": "europe",
-        "country": "france",
-        "state": "provence-alpes-cote-d-azur"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              5.364765,
-              43.313369
-            ],
-            [
-              5.373676,
-              43.316191
-            ],
-            [
-              5.386676,
-              43.30452
-            ],
-            [
-              5.394119,
-              43.30719
-            ],
-            [
-              5.402925,
-              43.299866
-            ],
-            [
-              5.400724,
-              43.281933
-            ],
-            [
-              5.385418,
-              43.282315
-            ],
-            [
-              5.367386,
-              43.289107
-            ],
-            [
-              5.353337,
-              43.286588
-            ],
-            [
-              5.351136,
-              43.29338
-            ],
-            [
-              5.364765,
-              43.313369
-            ]
-          ]
-        ]
-      },
-      "id": "82c1755efaecbc8273c6e1f2a074a601"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "label": "Paris_exterior",
-        "type": "exterior",
-        "is_in": "europe",
-        "country": "france",
-        "state": "ile-de-france"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.164722,
-              48.89141
-            ],
-            [
-              2.24897,
-              48.936277
-            ],
-            [
-              2.318692,
-              48.94057
-            ],
-            [
-              2.367352,
-              48.923871
-            ],
-            [
-              2.42618,
-              48.931505
-            ],
-            [
-              2.441432,
-              48.914803
-            ],
-            [
-              2.476293,
-              48.904302
-            ],
-            [
-              2.499534,
-              48.82786
-            ],
-            [
-              2.469031,
-              48.824991
-            ],
-            [
-              2.453779,
-              48.810167
-            ],
-            [
-              2.445064,
-              48.773803
-            ],
-            [
-              2.38333,
-              48.766623
-            ],
-            [
-              2.386235,
-              48.751781
-            ],
-            [
-              2.348469,
-              48.750345
-            ],
-            [
-              2.307072,
-              48.759442
-            ],
-            [
-              2.243886,
-              48.758006
-            ],
-            [
-              2.235897,
-              48.773803
-            ],
-            [
-              2.148018,
-              48.780982
-            ],
-            [
-              2.158912,
-              48.806818
-            ],
-            [
-              2.137124,
-              48.838856
-            ],
-            [
-              2.164722,
-              48.89141
-            ]
-          ]
-        ]
-      },
-      "id": "4af1cb5b996173fb19717af205f1b321"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "type": "core",
-        "label": "Paris_core",
-        "is_in": "europe",
-        "country": "france",
-        "state": "ile-de-france"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              2.315877,
-              48.837255
-            ],
-            [
-              2.349939,
-              48.828689
-            ],
-            [
-              2.380173,
-              48.839144
-            ],
-            [
-              2.401222,
-              48.839144
-            ],
-            [
-              2.40371,
-              48.846323
-            ],
-            [
-              2.387253,
-              48.865208
-            ],
-            [
-              2.372136,
-              48.87855
-            ],
-            [
-              2.371562,
-              48.884716
-            ],
-            [
-              2.337309,
-              48.883206
-            ],
-            [
-              2.329272,
-              48.885723
-            ],
-            [
-              2.321426,
-              48.883206
-            ],
-            [
-              2.31205,
-              48.889749
-            ],
-            [
-              2.283538,
-              48.879053
-            ],
-            [
-              2.252394,
-              48.888805
-            ],
-            [
-              2.244451,
-              48.895916
-            ],
-            [
-              2.228186,
-              48.89774
-            ],
-            [
-              2.225316,
-              48.892456
-            ],
-            [
-              2.237658,
-              48.886039
-            ],
-            [
-              2.24493,
-              48.885976
-            ],
-            [
-              2.250001,
-              48.882894
-            ],
-            [
-              2.254498,
-              48.885788
-            ],
-            [
-              2.278614,
-              48.87729
-            ],
-            [
-              2.256608,
-              48.844621
-            ],
-            [
-              2.272108,
-              48.837001
-            ],
-            [
-              2.305787,
-              48.826735
-            ],
-            [
-              2.315877,
-              48.837255
-            ]
-          ]
-        ]
-      },
-      "id": "567972cde2a04298acee245b70fe0d3a"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "label": "Toulouse_exterior",
-        "type": "exterior",
-        "is_in": "europe",
-        "country": "france",
-        "state": "midi-pyrenees"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
-          [
-            [
-              1.419195,
-              43.653922
-            ],
-            [
-              1.479449,
-              43.645696
-            ],
-            [
-              1.504081,
-              43.580397
-            ],
-            [
-              1.50067,
-              43.549368
-            ],
-            [
-              1.469975,
-              43.551016
-            ],
-            [
-              1.450269,
-              43.569964
-            ],
-            [
-              1.429048,
-              43.565845
-            ],
-            [
-              1.422984,
-              43.546896
-            ],
-            [
-              1.369552,
-              43.569415
-            ],
-            [
-              1.358183,
-              43.591376
-            ],
-            [
-              1.36993,
-              43.613878
-            ],
-            [
-              1.384331,
-              43.612232
-            ],
-            [
-              1.361404,
-              43.645484
-            ],
-            [
-              1.356209,
-              43.667409
-            ],
-            [
-              1.372949,
-              43.67676
-            ],
-            [
-              1.397747,
-              43.66141
-            ],
-            [
-              1.419195,
-              43.653922
-            ]
-          ]
-        ]
-      },
-      "id": "5d570f73f9a6739760fcd19f2cc4d39b"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "label": "Toulouse_core",
-        "type": "core",
         "is_in": "europe",
         "country": "france",
         "state": "midi-pyrenees"
@@ -10958,7 +10160,6 @@
       "properties": {
         "area_km": "6782.74513919171",
         "label": "Los_Angeles_exterior_CA",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "california"
@@ -11229,7 +10430,6 @@
       "properties": {
         "area_km": "1922.28941065613",
         "label": "SFbay_exterior_CA",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "california"
@@ -11798,7 +10998,6 @@
       "properties": {
         "area_km": "2220.68492051437",
         "label": "Phoenix_exterior_AZ",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "arizona"
@@ -12169,7 +11368,6 @@
       "properties": {
         "area_km": "489.102344090088",
         "label": "ElPaso_exterior_TX",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "texas"
@@ -12444,7 +11642,6 @@
       "properties": {
         "area_km": "230.930017722412",
         "label": "Buffalo_exterior_NY",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "new-york"
@@ -12703,7 +11900,6 @@
       "properties": {
         "area_km": "9.13177716357422",
         "label": "Buffalo_core_NY",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "new-york"
@@ -12850,7 +12046,6 @@
       "properties": {
         "area_km": "539.558247239838",
         "label": "Columbus_exterior_OH",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "ohio"
@@ -13069,7 +12264,6 @@
       "properties": {
         "area_km": "29.3005080750732",
         "label": "Columbus_core_OH",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "ohio"
@@ -13312,7 +12506,6 @@
       "properties": {
         "area_km": "266.654878246277",
         "label": "Salt_Lake_exterior_UT",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "utah"
@@ -13507,7 +12700,6 @@
       "properties": {
         "area_km": "47.0081680800171",
         "label": "Salt_Lake_core_UT",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "utah"
@@ -13690,7 +12882,6 @@
       "properties": {
         "area_km": "1827.08401314771",
         "label": "NewYork_exterior_NY",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "new-york"
@@ -14369,7 +13560,6 @@
       "properties": {
         "area_km": "158.770702720825",
         "label": "NewYork_core_NY",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "new-york"
@@ -15090,7 +14280,6 @@
       "properties": {
         "area_km": "306.523417755821",
         "label": "Houston_core_TX",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "texas"
@@ -15213,7 +14402,6 @@
       "properties": {
         "area_km": "892.047720498413",
         "label": "Philadelphia_exterior_PA",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "pennsylvania"
@@ -15576,7 +14764,6 @@
       "properties": {
         "area_km": "63.1134768583374",
         "label": "Philadelphia_core_PA",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "pennsylvania"
@@ -15879,7 +15066,6 @@
       "properties": {
         "area_km": "1585.2735183064",
         "label": "Seattle_exterior_WA",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "washington"
@@ -16226,7 +15412,6 @@
       "properties": {
         "area_km": "116.043473995605",
         "label": "Seattle_core_WA",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "washington"
@@ -16565,7 +15750,6 @@
       "properties": {
         "area_km": "453.805306206299",
         "label": "Atlantic_exterior_NJ",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "new-jersey"
@@ -16824,7 +16008,6 @@
       "properties": {
         "area_km": "19.7611089174194",
         "label": "Atlantic_core_NJ",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "new-jersey"
@@ -17219,7 +16402,6 @@
       "properties": {
         "area_km": "835.398951207764",
         "label": "Charlotte_exterior_NC",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "north-carolina"
@@ -17510,7 +16692,6 @@
       "properties": {
         "area_km": "37.9100373779755",
         "label": "Charlotte_core_NC",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "north-carolina"
@@ -17709,7 +16890,6 @@
       "properties": {
         "area_km": "500.438400458496",
         "label": "Portland_exterior_OR",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "oregon"
@@ -17948,7 +17128,6 @@
       "properties": {
         "area_km": "16.8896265800781",
         "label": "Portland_core_OR",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "oregon"
@@ -18095,7 +17274,6 @@
       "properties": {
         "area_km": "411.425983352081",
         "label": "Milwaukee_exterior_WI",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "wisconsin"
@@ -18394,7 +17572,6 @@
       "properties": {
         "area_km": "31.6171012929993",
         "label": "Milwaukee_core_WI",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "wisconsin"
@@ -18749,7 +17926,6 @@
       "properties": {
         "area_km": "1728.34486729405",
         "label": "Denver_exterior_CO",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "colorado"
@@ -18964,7 +18140,6 @@
       "properties": {
         "area_km": "75.8655201638489",
         "label": "Denver_core_CO",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "colorado"
@@ -19207,7 +18382,6 @@
       "properties": {
         "area_km": "1766.2632511861",
         "label": "Jacksonville_exterior_FL",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "florida"
@@ -19686,7 +18860,6 @@
       "properties": {
         "area_km": "77.687882204834",
         "label": "Jacksonville_core_FL",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "florida"
@@ -20025,7 +19198,6 @@
       "properties": {
         "area_km": "1061.57166390545",
         "label": "Austin_exterior_TX",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "texas"
@@ -20376,7 +19548,6 @@
       "properties": {
         "area_km": "44.785735317421",
         "label": "Austin_core_TX",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "texas"
@@ -20591,7 +19762,6 @@
       "properties": {
         "area_km": "914.001661013451",
         "label": "Oklahoma_exterior_OK",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "oklahoma"
@@ -20858,7 +20028,6 @@
       "properties": {
         "area_km": "117.295844421146",
         "label": "Oklahoma_core_OK",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "oklahoma"
@@ -21225,7 +20394,6 @@
       "properties": {
         "area_km": "1245.53987528149",
         "label": "Minneapolis-StPaul_exterior_MN",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "minnesota"
@@ -21680,7 +20848,6 @@
       "properties": {
         "area_km": "30.7011310538635",
         "label": "Minneapolis-StPaul_core_MN",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "minnesota"
@@ -21975,7 +21142,6 @@
       "properties": {
         "area_km": "529.941860638161",
         "label": "Louisville_exterior_KY",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "kentucky"
@@ -22222,7 +21388,6 @@
       "properties": {
         "area_km": "80.9588888466721",
         "label": "Louisville_core_KY",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "kentucky"
@@ -22433,7 +21598,6 @@
       "properties": {
         "area_km": "1914.19572833267",
         "label": "Chicago_exterior_IL",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "illinois"
@@ -22828,7 +21992,6 @@
       "properties": {
         "area_km": "47.4813513351135",
         "label": "Chicago_core_IL",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "illinois"
@@ -23159,7 +22322,6 @@
       "properties": {
         "area_km": "236.954948700821",
         "label": "Nashville_exterior_TN",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "tennessee"
@@ -23402,7 +22564,6 @@
       "properties": {
         "area_km": "21.919674727417",
         "label": "Nashville_core_TN",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "tennessee"
@@ -23637,7 +22798,6 @@
       "properties": {
         "area_km": "1124.53113561224",
         "label": "Detroit_exterior_MI",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "michigan"
@@ -23960,7 +23120,6 @@
       "properties": {
         "area_km": "61.4131710821533",
         "label": "Detroit_core_MI",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "michigan"
@@ -24239,7 +23398,6 @@
       "properties": {
         "area_km": "321.990390606552",
         "label": "Memphis_exterior_TN",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "tennessee"
@@ -24438,7 +23596,6 @@
       "properties": {
         "area_km": "65.4245268098679",
         "label": "Memphis_core_TN",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "tennessee"
@@ -24693,7 +23850,6 @@
       "properties": {
         "area_km": "755.39871180014",
         "label": "Washington_exterior_DC",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "district-of-columbia"
@@ -25024,7 +24180,6 @@
       "properties": {
         "area_km": "19.8346282043457",
         "label": "Washington_core_DC",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "district-of-columbia"
@@ -25227,7 +24382,6 @@
       "properties": {
         "area_km": "1503.96510853625",
         "label": "Orlando_exterior_FL",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "florida"
@@ -25958,7 +25112,6 @@
       "properties": {
         "area_km": "39.2380259379883",
         "label": "Orlando_core_FL",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "florida"
@@ -26217,7 +25370,6 @@
       "properties": {
         "area_km": "453.955905764893",
         "label": "Boston_exterior_MA",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "massachusetts"
@@ -26788,7 +25940,6 @@
       "properties": {
         "area_km": "18.1277728153076",
         "label": "Boston_core_MA",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "massachusetts"
@@ -27007,7 +26158,6 @@
       "properties": {
         "area_km": "694.272182545959",
         "label": "Atlanta_exterior_GA",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "georgia"
@@ -27258,7 +26408,6 @@
       "properties": {
         "area_km": "53.1287530053101",
         "label": "Atlanta_core_GA",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "georgia"
@@ -27653,7 +26802,6 @@
       "properties": {
         "area_km": "1452.09825452439",
         "label": "Kansas_exterior_MO",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "missouri"
@@ -28000,7 +27148,6 @@
       "properties": {
         "area_km": "35.7958793520184",
         "label": "Kansas_core_MO",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "missouri"
@@ -28143,7 +27290,6 @@
       "properties": {
         "area_km": "289.995467990654",
         "label": "Knoxville_exterior_TN",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "tennessee"
@@ -28638,7 +27784,6 @@
       "properties": {
         "area_km": "8.82610842389679",
         "label": "Knoxville_core_TN",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "tennessee"
@@ -28793,7 +27938,6 @@
       "properties": {
         "area_km": "670.307111045776",
         "label": "Baltimore_exterior_MD",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "maryland"
@@ -29192,7 +28336,6 @@
       "properties": {
         "area_km": "170.075836419128",
         "label": "Baltimore_core_MD",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "maryland"
@@ -29523,7 +28666,6 @@
       "properties": {
         "area_km": "992.636541602066",
         "label": "San_Antonio_exterior_TX",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "texas"
@@ -29766,7 +28908,6 @@
       "properties": {
         "area_km": "19.4649303746185",
         "label": "San_Antonio_core_TX",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "texas"
@@ -30097,7 +29238,6 @@
       "properties": {
         "area_km": "883.249568863943",
         "label": "Las_Vegas_exterior_NV",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "nevada"
@@ -30336,7 +29476,6 @@
       "properties": {
         "area_km": "48.0604605000648",
         "label": "Las_Vegas_core_NV",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "nevada"
@@ -30487,7 +29626,6 @@
       "properties": {
         "area_km": "1313.23193849817",
         "label": "Miami_exterior_FL",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "florida"
@@ -30834,7 +29972,6 @@
       "properties": {
         "area_km": "40.896028435791",
         "label": "Miami_core_FL",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "florida"
@@ -31013,7 +30150,6 @@
       "properties": {
         "area_km": "2755.10067183755",
         "label": "Fort_Worth_Dallas_exterior_TX",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "texas"
@@ -31400,7 +30536,6 @@
       "properties": {
         "area_km": "60.1787069699707",
         "label": "Fort_Worth_Dallas_core_TX",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "texas"
@@ -31763,7 +30898,6 @@
       "properties": {
         "area_km": "613.469547604294",
         "label": "Indianapolis_exterior_IN",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "indiana"
@@ -32094,7 +31228,6 @@
       "properties": {
         "area_km": "32.7935041215515",
         "label": "Indianapolis_core_IN",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "indiana"
@@ -32349,7 +31482,6 @@
       "properties": {
         "area_km": "1454.43933283508",
         "label": "San_Diego_exterior_CA",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "california"
@@ -32656,7 +31788,6 @@
       "properties": {
         "area_km": "29.7044488384399",
         "label": "San_Diego_core_CA",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "california"
@@ -32811,7 +31942,6 @@
       "properties": {
         "area_km": "713.184914811707",
         "label": "Pittsburgh_exterior_PA",
-        "type": "exterior",
         "is_in": "north-america",
         "country": "us",
         "state": "pennsylvania"
@@ -33366,7 +32496,6 @@
       "properties": {
         "area_km": "43.523360288208",
         "label": "Pittsburgh_core_PA",
-        "type": "core",
         "is_in": "north-america",
         "country": "us",
         "state": "pennsylvania"
