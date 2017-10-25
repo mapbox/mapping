@@ -1,4 +1,5 @@
 ﻿{
+  "type": "FeatureCollection",
   "features": [
     {
       "type": "Feature",
@@ -11,6 +12,7 @@
         "state": "new-york"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -254,8 +256,7 @@
               42.959014
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "006c4f3b24e9bdec5e8765fa04b68675"
     },
@@ -265,10 +266,11 @@
         "label": "Lyon_core",
         "type": "core",
         "is_in": "europe",
-        "country":"france",
-        "state":"rhone-alpes"
+        "country": "france",
+        "state": "rhone-alpes"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -308,8 +310,7 @@
               45.751167
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "01ef4ee4de1d4558d57f16a4d6dc41b5"
     },
@@ -320,10 +321,11 @@
         "label": "Columbus_exterior_OH",
         "type": "exterior",
         "is_in": "north-america",
-        "country":"us",
-        "state":"ohio"
+        "country": "us",
+        "state": "ohio"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -527,8 +529,7 @@
               40.033516
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "044a290e15ab748560902c20c94a96db"
     },
@@ -539,10 +540,11 @@
         "label": "Salt_Lake_core_UT",
         "type": "core",
         "is_in": "north-america",
-        "country":"us",
+        "country": "us",
         "state": "utah"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -710,8 +712,7 @@
               40.774135
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "0584f8760df5d2bca39c13fda061a282"
     },
@@ -722,10 +723,11 @@
         "label": "NewYork_core_NY",
         "type": "core",
         "is_in": "north-america",
-        "country":"us",
+        "country": "us",
         "state": "new-york"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -1061,8 +1063,7 @@
               40.644824
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "06038055bf181c584fcc5d232a409aff"
     },
@@ -1073,10 +1074,11 @@
         "label": "Houston_core_TX",
         "type": "core",
         "is_in": "north-america",
-        "country":"us",
+        "country": "us",
         "state": "texas"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -1184,8 +1186,7 @@
               29.68247
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "075eaed7fb7ef02859f0df6e8d44d11e"
     },
@@ -1193,12 +1194,12 @@
       "type": "Feature",
       "properties": {
         "label": "JohorBahru_exterior",
-     
         "boundary": "exterior",
         "is_in": "asia",
-        "country":"malaysia-singapore-brunei"
+        "country": "malaysia-singapore-brunei"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -1362,8 +1363,7 @@
               1.575253
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "0891c8c12fc5e5c776f4e3be80ccf777"
     },
@@ -1374,10 +1374,11 @@
         "label": "Philadelphia_exterior_PA",
         "type": "exterior",
         "is_in": "north-america",
-         "country":"us",
-         "state":"pennsylvania"
+        "country": "us",
+        "state": "pennsylvania"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -1725,8 +1726,7 @@
               40.136887
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "0aa8325221f031552ee50e8ca3d54f13"
     },
@@ -1737,10 +1737,11 @@
         "label": "Seattle_exterior_WA",
         "type": "exterior",
         "is_in": "north-america",
-        "country":"us",
-        "state":"washington"
+        "country": "us",
+        "state": "washington"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -2072,8 +2073,7 @@
               47.394141
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "0b7a6dbe9ed9cf9686d130cfb9a2dede"
     },
@@ -2082,10 +2082,11 @@
       "properties": {
         "label": "Ottawa_CA",
         "is_in": "north-america",
-        "country":"canada",
-        "state":"ontario"
+        "country": "canada",
+        "state": "ontario"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -2241,8 +2242,7 @@
               45.354412
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "0bffecb1ae30dd1003ab2c67cc69f77c"
     },
@@ -2253,10 +2253,11 @@
         "label": "Los_Angeles_exterior_CA",
         "type": "exterior",
         "is_in": "north-america",
-        "country":"us",
-        "state":"california"
+        "country": "us",
+        "state": "california"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -2512,8 +2513,7 @@
               33.421019
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "0e1700fc85ca4147e86d957eb8a446cb"
     },
@@ -2524,10 +2524,11 @@
         "label": "SFbay_exterior_CA",
         "type": "exterior",
         "is_in": "north-america",
-        "country":"us",
-        "state":"california"
+        "country": "us",
+        "state": "california"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -2959,8 +2960,7 @@
               37.555635
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "0f0f491476758228353a9b3571bc22d2"
     },
@@ -2971,10 +2971,11 @@
         "label": "Atlantic_core_NJ",
         "type": "core",
         "is_in": "north-america",
-        "country":"us",
-        "state":"new-jersey"
+        "country": "us",
+        "state": "new-jersey"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -3354,12 +3355,10 @@
               39.444727
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "0fa76e898925937494ef37d67b21db9b"
     },
-
     {
       "type": "Feature",
       "properties": {
@@ -3367,10 +3366,11 @@
         "label": "Charlotte_core_NC",
         "type": "core",
         "is_in": "north-america",
-        "country":"us",
-        "state":"north-carolina"
+        "country": "us",
+        "state": "north-carolina"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -3554,8 +3554,7 @@
               35.242005
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "14073c455b69ff0e7ddb3db707273eb9"
     },
@@ -3566,10 +3565,11 @@
         "id": "way/-15141",
         "label": "Munich_GE",
         "is_in": "europe",
-        "country":"germany",
-        "state":"bayern"
+        "country": "germany",
+        "state": "bayern"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -3657,8 +3657,7 @@
               48.230775
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "1457f3cfb07f96a7abf404fcdaf04719"
     },
@@ -3669,10 +3668,11 @@
         "label": "NewYork_exterior_NY",
         "type": "exterior",
         "is_in": "north-america",
-        "country":"us",
-        "state":"new-york"
+        "country": "us",
+        "state": "new-york"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -4336,22 +4336,20 @@
               40.758889
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "14bf147943bc8b165a253b0bf23b0448"
     },
-    
     {
       "type": "Feature",
       "properties": {
-        
         "label": "Halong_exterior",
         "boundary": "exterior",
-         "is_in": "asia",
-         "country":"vietnam"
+        "is_in": "asia",
+        "country": "vietnam"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -4451,8 +4449,7 @@
               20.964629
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "15c0813d6d5e4b4a502189bcc70a9d1d"
     },
@@ -4460,12 +4457,12 @@
       "type": "Feature",
       "properties": {
         "label": "Bandung_exterior",
-       
         "boundary": "exterior",
-         "is_in": "asia",
-         "country":"indonesia"
+        "is_in": "asia",
+        "country": "indonesia"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -4769,21 +4766,20 @@
               -6.980806
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "16a38f00551adcff20b248ec53f887f6"
     },
     {
       "type": "Feature",
       "properties": {
-       
         "label": "Mandalay_exterior",
         "boundary": "exterior",
-         "is_in": "asia",
-         "country":"myanmar"
+        "is_in": "asia",
+        "country": "myanmar"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -4859,8 +4855,7 @@
               22.021642
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "19a7f07858863a6fa5cb24eb9153e43e"
     },
@@ -4870,11 +4865,12 @@
         "area_km": "500.438400458496",
         "label": "Portland_exterior_OR",
         "type": "exterior",
-         "is_in": "north-america",
-         "country":"us",
-         "state":"oregon"
+        "is_in": "north-america",
+        "country": "us",
+        "state": "oregon"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -5098,8 +5094,7 @@
               45.372638
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "1a1cb95f0e3ac3d079aa0a795fa92eef"
     },
@@ -5109,11 +5104,12 @@
         "area_km": "31.6171012929993",
         "label": "Milwaukee_core_WI",
         "type": "core",
-         "is_in": "north-america",
-         "country":"us",
-         "state":"wisconsin"
+        "is_in": "north-america",
+        "country": "us",
+        "state": "wisconsin"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -5453,8 +5449,7 @@
               42.94707
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "1a78bfc34d21424424bd780294404c79"
     },
@@ -5462,11 +5457,12 @@
       "type": "Feature",
       "properties": {
         "label": "Wolfsburg_GE",
-         "is_in": "europe",
-         "country":"germany",
-         "state":"niedersachsen"
+        "is_in": "europe",
+        "country": "germany",
+        "state": "niedersachsen"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -5582,8 +5578,7 @@
               52.460064
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "201a78c4efa8f9d41628701269414c79"
     },
@@ -5593,11 +5588,12 @@
         "area_km": "1728.34486729405",
         "label": "Denver_exterior_CO",
         "type": "exterior",
-         "is_in": "north-america",
-         "country":"us",
-         "state":"colorado"
+        "is_in": "north-america",
+        "country": "us",
+        "state": "colorado"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -5797,23 +5793,22 @@
               39.608919
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "20e97177dd907123b7c075c643c4ae61"
     },
-    
     {
       "type": "Feature",
       "properties": {
         "area_km": "77.687882204834",
         "label": "Jacksonville_core_FL",
         "type": "core",
-         "is_in": "north-america",
-         "country":"us",
-         "state":"florida"
+        "is_in": "north-america",
+        "country": "us",
+        "state": "florida"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -6137,23 +6132,22 @@
               30.487651
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "23a85110a051b33a05c2cc435e50e1c3"
     },
-    
     {
       "type": "Feature",
       "properties": {
         "area_km": "116.043473995605",
         "label": "Seattle_core_WA",
         "type": "core",
-         "is_in": "north-america",
-         "country":"us",
-         "state":"washington"
+        "is_in": "north-america",
+        "country": "us",
+        "state": "washington"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -6477,8 +6471,7 @@
               47.626702
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "25ae487c6d3609ec0036e3c011f343f5"
     },
@@ -6487,11 +6480,12 @@
       "properties": {
         "label": "Nice_core",
         "type": "core",
-         "is_in": "europe",
-         "country":"france",
-         "state":"provence-alpes-cote-d-azur"
+        "is_in": "europe",
+        "country": "france",
+        "state": "provence-alpes-cote-d-azur"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -6539,8 +6533,7 @@
               43.657862
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "28cf39ecf55a00d2f0196334a61d0c5b"
     },
@@ -6550,11 +6543,12 @@
         "area_km": "1061.57166390545",
         "label": "Austin_exterior_TX",
         "type": "exterior",
-         "is_in": "north-america",
-         "country":"us",
-         "state":"texas"
+        "is_in": "north-america",
+        "country": "us",
+        "state": "texas"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -6890,8 +6884,7 @@
               30.205078
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "2c5732a5a191149b89d5acde2928275f"
     },
@@ -6899,12 +6892,12 @@
       "type": "Feature",
       "properties": {
         "label": "KotaKinabalu_exterior",
-       
         "boundary": "exterior",
-         "is_in": "asia",
-         "country":"malaysia-singapore-brunei"
+        "is_in": "asia",
+        "country": "malaysia-singapore-brunei"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -7016,8 +7009,7 @@
               6.494914
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "2d9d816267229879cc2c7d64d3a93be9"
     },
@@ -7026,11 +7018,12 @@
       "properties": {
         "area_km": null,
         "label": "Vancouver_CA",
-         "is_in": "north-america",
-         "country":"canada",
-         "state":"british-columbia"
+        "is_in": "north-america",
+        "country": "canada",
+        "state": "british-columbia"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -7170,8 +7163,7 @@
               49.17302
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "30231bbf307cb73759cb9c2abc6f92c8"
     },
@@ -7179,12 +7171,12 @@
       "type": "Feature",
       "properties": {
         "label": "CagayanDeOro_exterior",
-        
         "boundary": "exterior",
-         "is_in": "asia",
-         "country":"philippines"
+        "is_in": "asia",
+        "country": "philippines"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -7284,8 +7276,7 @@
               8.516012
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "3095cf52362468216f3e9a603353d63d"
     },
@@ -7296,10 +7287,11 @@
         "label": "Oklahoma_exterior_OK",
         "type": "exterior",
         "is_in": "north-america",
-        "country":"us",
-        "state":"oklahoma"
+        "country": "us",
+        "state": "oklahoma"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -7551,8 +7543,7 @@
               35.309677
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "361873f16ebb1bb1f63e86fa44bc6d22"
     },
@@ -7562,12 +7553,12 @@
         "area_km": "30.7011310538635",
         "label": "Minneapolis-StPaul_core_MN",
         "type": "core",
-         "is_in": "north-america",
-         "country":"us",
-         "state":"minnesota"
-
+        "is_in": "north-america",
+        "country": "us",
+        "state": "minnesota"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -7847,8 +7838,7 @@
               44.974217
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "36e750497b1389d0fd992530d5205481"
     },
@@ -7858,12 +7848,12 @@
         "area_km": "80.9588888466721",
         "label": "Louisville_core_KY",
         "type": "core",
-         "is_in": "north-america",
-         "country":"us",
-         "state":"kentucky"
-
+        "is_in": "north-america",
+        "country": "us",
+        "state": "kentucky"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -8059,8 +8049,7 @@
               38.279579
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "3870c073a1d8a1ff722bea5379d00097"
     },
@@ -8069,11 +8058,12 @@
       "properties": {
         "label": "Nice_exterior",
         "type": "exterior",
-         "is_in": "europe",
-         "country":"france",
-         "state":"provence-alpes-cote-d-azur"
+        "is_in": "europe",
+        "country": "france",
+        "state": "provence-alpes-cote-d-azur"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -8125,8 +8115,7 @@
               43.661838
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "399af364d0fd65b83b903baa943b8828"
     },
@@ -8137,11 +8126,11 @@
         "label": "Denver_core_CO",
         "type": "core",
         "is_in": "north-america",
-        "country":"us",
-        "state":"colorado"
-       
+        "country": "us",
+        "state": "colorado"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -8369,8 +8358,7 @@
               39.770248
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "3d154cb3c63657daaa360ae6df769648"
     },
@@ -8380,11 +8368,12 @@
         "area_km": "47.4813513351135",
         "label": "Chicago_core_IL",
         "type": "core",
-        "is_in":"north-america",
-        "country":"us",
-        "state":"illinois"
+        "is_in": "north-america",
+        "country": "us",
+        "state": "illinois"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -8700,8 +8689,7 @@
               41.846928
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "3d97012916829d7cecad20a564034a6e"
     },
@@ -8711,10 +8699,11 @@
         "area_km": null,
         "label": "Montreal_CA",
         "is_in": "north-america",
-        "country":"canada",
-        "state":"quebec"
+        "country": "canada",
+        "state": "quebec"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -9114,8 +9103,7 @@
               45.449461
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "3dc45209a5f5e6355c5c372544adb581"
     },
@@ -9125,11 +9113,12 @@
         "area_km": "236.954948700821",
         "label": "Nashville_exterior_TN",
         "type": "exterior",
-       "is_in":"north-america",
-       "country":"us",
-       "state":"tennessee"
+        "is_in": "north-america",
+        "country": "us",
+        "state": "tennessee"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -9357,21 +9346,20 @@
               36.107438
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "3e96b8313d6678e3f01209a753f13e8e"
     },
     {
       "type": "Feature",
       "properties": {
-    
         "label": "Stuttgart_GE",
         "is_in": "europe",
-        "country":"germany",
-        "state":"baden-wuerttemberg"
+        "country": "germany",
+        "state": "baden-wuerttemberg"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -9451,22 +9439,20 @@
               48.837219
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "417abd17ea78c031bf17014759bb54ea"
     },
-    
     {
       "type": "Feature",
       "properties": {
         "label": "Bangkok_exterior",
-        
         "boundary": "exterior",
         "is_in": "asia",
-        "country":"thailand"
+        "country": "thailand"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -9686,8 +9672,7 @@
               13.49594
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "45186b35e202f8e8f10aea2ab1ffa0df"
     },
@@ -9695,12 +9680,12 @@
       "type": "Feature",
       "properties": {
         "label": "KualaLumpur_exterior",
-     
         "boundary": "exterior",
         "is_in": "asia",
         "country": "malaysia-singapore-brunei"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -9904,8 +9889,7 @@
               3.215466
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "452cbe393b04471676fdd0a8d9b08527"
     },
@@ -9919,6 +9903,7 @@
         "country": "us"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -10274,8 +10259,7 @@
               29.699688
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "480eccd4a0ff973769eb4c64f73e33fe"
     },
@@ -10283,12 +10267,12 @@
       "type": "Feature",
       "properties": {
         "label": "Pekanbaru_exterior",
-        
         "boundary": "exterior",
-        "is_in":"asia",
-        "country":"indonesia"
+        "is_in": "asia",
+        "country": "indonesia"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -10684,22 +10668,21 @@
               0.545899
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "49f17f5ae3fc0d5f497fcbcbabbfb434"
     },
     {
       "type": "Feature",
       "properties": {
-        
         "label": "Paris_exterior",
         "type": "exterior",
         "is_in": "europe",
-        "country":"france",
-        "state":"ile-de-france"
+        "country": "france",
+        "state": "ile-de-france"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -10787,22 +10770,20 @@
               48.89141
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "4af1cb5b996173fb19717af205f1b321"
     },
-    
     {
       "type": "Feature",
       "properties": {
         "label": "ChiangRai_exterior",
-        
         "boundary": "exterior",
         "is_in": "asia",
-        "country":"thailand"
+        "country": "thailand"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -10914,8 +10895,7 @@
               19.959126
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "5053870dc6cba2445e68fec8e806e159"
     },
@@ -10926,10 +10906,11 @@
         "label": "Columbus_core_OH",
         "type": "core",
         "is_in": "north-america",
-        "country":"us",
+        "country": "us",
         "state": "ohio"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -11157,22 +11138,21 @@
               39.979804
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "517b96229e270665c2c9fe7a2479fcaa"
     },
-    
     {
       "type": "Feature",
       "properties": {
         "type": "core",
         "label": "Paris_core",
         "is_in": "europe",
-        "country":"france",
-        "state":"ile-de-france"
+        "country": "france",
+        "state": "ile-de-france"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -11280,8 +11260,7 @@
               48.837255
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "567972cde2a04298acee245b70fe0d3a"
     },
@@ -11292,10 +11271,11 @@
         "label": "Detroit_exterior_MI",
         "type": "exterior",
         "is_in": "north-america",
-        "country":"us",
+        "country": "us",
         "state": "michigan"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -11603,8 +11583,7 @@
               42.253053
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "56d18bc000029aa8e05fac13428e6b7a"
     },
@@ -11614,11 +11593,12 @@
         "area_km": "65.4245268098679",
         "label": "Memphis_core_TN",
         "type": "core",
-        "is_in": "north-america" ,
-        "country":"us",
-        "state":"tennessee"
+        "is_in": "north-america",
+        "country": "us",
+        "state": "tennessee"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -11858,8 +11838,7 @@
               35.155448
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "574e44cfde5967d9c75ab72d29bce30d"
     },
@@ -11870,10 +11849,11 @@
         "label": "Washington_exterior_DC",
         "type": "exterior",
         "is_in": "north-america",
-        "country":"us",
-        "state":"district-of-columbia"
+        "country": "us",
+        "state": "district-of-columbia"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -12189,8 +12169,7 @@
               38.786801
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "5980080811bf576438ab8cc4129ccb18"
     },
@@ -12200,10 +12179,11 @@
         "label": "Toulouse_exterior",
         "type": "exterior",
         "is_in": "europe",
-        "country":"france",
-        "state":"midi-pyrenees"
+        "country": "france",
+        "state": "midi-pyrenees"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -12275,8 +12255,7 @@
               43.653922
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "5d570f73f9a6739760fcd19f2cc4d39b"
     },
@@ -12286,11 +12265,12 @@
         "area_km": "39.2380259379883",
         "label": "Orlando_core_FL",
         "type": "core",
-        "is_in" :"north-america",
-        "country":"us",
-        "state":"florida"
+        "is_in": "north-america",
+        "country": "us",
+        "state": "florida"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -12534,8 +12514,7 @@
               28.395141
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "5f9471a1aef52fbe3b3b981d471f1c3e"
     },
@@ -12546,10 +12525,11 @@
         "label": "Boston_core_MA",
         "type": "core",
         "is_in": "north-america",
-        "country":"us",
-        "state":"massachusetts"
+        "country": "us",
+        "state": "massachusetts"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -12753,8 +12733,7 @@
               42.361551
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "5fd4ff02879d8fc80f5137ffd59f582b"
     },
@@ -12764,11 +12743,12 @@
         "area_km": "266.654878246277",
         "label": "Salt_Lake_exterior_UT",
         "type": "exterior",
-        "is_in": "north-america" ,
-        "country":"us",
-        "state":"utah"
+        "is_in": "north-america",
+        "country": "us",
+        "state": "utah"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -12948,8 +12928,7 @@
               40.632808
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "66ce55d158faa16c32af5fd6965c913a"
     },
@@ -12959,11 +12938,12 @@
         "area_km": "53.1287530053101",
         "label": "Atlanta_core_GA",
         "type": "core",
-        "is_in" :"north-america",
-        "country":"us",
-        "state":"georgia"
+        "is_in": "north-america",
+        "country": "us",
+        "state": "georgia"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -13343,8 +13323,7 @@
               33.616711
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "67ef01dd2e53755ee2fbf67c97a20a71"
     },
@@ -13352,12 +13331,12 @@
       "type": "Feature",
       "properties": {
         "label": "Putrajaya_exterior",
-        
         "boundary": "exterior",
         "is_in": "asia",
-        "country":"malaysia-singapore-brunei"
+        "country": "malaysia-singapore-brunei"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -13481,8 +13460,7 @@
               3.00166
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "688514dcec01cfa7ff50b66d60bb4161"
     },
@@ -13490,12 +13468,12 @@
       "type": "Feature",
       "properties": {
         "label": "DavaoCity_exterior",
-        
         "boundary": "exterior",
         "is_in": "asia",
-        "country":"philippines"
+        "country": "philippines"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -13551,8 +13529,7 @@
               6.983998
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "6b4ff2bb2978adc1efb581e57c9523a6"
     },
@@ -13560,12 +13537,12 @@
       "type": "Feature",
       "properties": {
         "label": "Surabaya_exterior",
-        
         "boundary": "exterior",
-        "is_in":"asia",
-        "country":"indonesia"
+        "is_in": "asia",
+        "country": "indonesia"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -13917,8 +13894,7 @@
               -7.193175
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "6b7c005bf18d996ca862b5d774a6f38d"
     },
@@ -13928,11 +13904,12 @@
         "area_km": "1245.53987528149",
         "label": "Minneapolis-StPaul_exterior_MN",
         "type": "exterior",
-        "is_in":"north-america" ,
-        "country":"us",
-        "state":"minnesota"
-        },
+        "is_in": "north-america",
+        "country": "us",
+        "state": "minnesota"
+      },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -14372,8 +14349,7 @@
               45.192328
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "740bc13ef1577cab0b7d8eee37ef98fb"
     },
@@ -14381,12 +14357,12 @@
       "type": "Feature",
       "properties": {
         "label": "Bacolod_exterior",
-       
         "boundary": "exterior",
-        "is_in":"asia",
-        "country":"philippines"
+        "is_in": "asia",
+        "country": "philippines"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -14474,8 +14450,7 @@
               10.713577
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "7754a245c8aef9e44c3f9d2a6a49ab8d"
     },
@@ -14485,11 +14460,12 @@
         "area_km": "1452.09825452439",
         "label": "Kansas_exterior_MO",
         "type": "exterior",
-        "is_in":"north-america",
-        "country":"us",
-        "state":"missouri"
+        "is_in": "north-america",
+        "country": "us",
+        "state": "missouri"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -14821,8 +14797,7 @@
               39.346163
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "7a577052649856790364a59f918d6fce"
     },
@@ -14833,10 +14808,11 @@
         "label": "Knoxville_core_TN",
         "type": "core",
         "is_in": "north-america",
-        "country":"us",
-        "state":"tennessee"
+        "country": "us",
+        "state": "tennessee"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -14976,8 +14952,7 @@
               35.96472
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "7e4cc9910fef2d3efdbd1a586c4e8917"
     },
@@ -14985,12 +14960,12 @@
       "type": "Feature",
       "properties": {
         "label": "Baguio_exterior",
-        
         "boundary": "exterior",
         "is_in": "asia",
-        "country":"philippines"
+        "country": "philippines"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -15230,8 +15205,7 @@
               16.435335
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "7e951b5dc2aef6bef2adef8fd1999ca8"
     },
@@ -15240,11 +15214,12 @@
       "properties": {
         "label": "Marseille_core",
         "type": "core",
-        "is_in":"europe",
-        "country":"france",
-        "state":"rhone-alpes"
+        "is_in": "europe",
+        "country": "france",
+        "state": "rhone-alpes"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -15292,22 +15267,20 @@
               43.313369
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "82c1755efaecbc8273c6e1f2a074a601"
     },
-   
     {
       "type": "Feature",
       "properties": {
         "label": "Chiang_exterior",
-        
         "boundary": "exterior",
-        "is_in":"asia",
-        "country":"thailand"
+        "is_in": "asia",
+        "country": "thailand"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -15551,8 +15524,7 @@
               18.681211
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "87725ac4e1f1a57007c821bc4afecf4c"
     },
@@ -15563,10 +15535,11 @@
         "label": "Baltimore_core_MD",
         "type": "core",
         "is_in": "north-america",
-        "country":"us",
-        "state":"maryland"
+        "country": "us",
+        "state": "maryland"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -15882,8 +15855,7 @@
               39.309592
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "8806420af3d15006f472dbb73f36bfdc"
     },
@@ -15893,11 +15865,12 @@
         "area_km": "19.4649303746185",
         "label": "San_Antonio_core_TX",
         "type": "core",
-        "is_in":"north-america",
-        "country":"us",
-        "state":"texas"
+        "is_in": "north-america",
+        "country": "us",
+        "state": "texas"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -16213,8 +16186,7 @@
               29.395222
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "88153170a459b7900855f6a9220bfdca"
     },
@@ -16222,12 +16194,12 @@
       "type": "Feature",
       "properties": {
         "label": "IloiloCity_exterior",
-        
         "boundary": "exterior",
         "is_in": "asia",
-        "country":"philippines"
+        "country": "philippines"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -16299,8 +16271,7 @@
               10.684926
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "898c18f4ab4594ea8028ba21ee483bfc"
     },
@@ -16311,10 +16282,11 @@
         "label": "Phoenix_exterior_AZ",
         "type": "exterior",
         "is_in": "north-america",
-        "country":"us",
-        "state":"arizona"
+        "country": "us",
+        "state": "arizona"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -16670,8 +16642,7 @@
               33.511594
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "89fbb848bd2114fe3376d3f11dddd6e7"
     },
@@ -16681,11 +16652,12 @@
         "area_km": "992.636541602066",
         "label": "San_Antonio_exterior_TX",
         "type": "exterior",
-        "is_in":"north-america",
-        "country":"us",
-        "state":"texas"
+        "is_in": "north-america",
+        "country": "us",
+        "state": "texas"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -16913,8 +16885,7 @@
               29.315326
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "8a70ab780da41da57aecdcb4c2990f3f"
     },
@@ -16922,12 +16893,12 @@
       "type": "Feature",
       "properties": {
         "label": "Kuching_exterior",
-        
         "boundary": "exterior",
         "is_in": "asia",
-        "country":"malaysia-singapore-brunei"
+        "country": "malaysia-singapore-brunei"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -17035,8 +17006,7 @@
               1.694589
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "8b470d7ce83946ea1ca312f1679ca993"
     },
@@ -17046,11 +17016,12 @@
         "area_km": "835.398951207764",
         "label": "Charlotte_exterior_NC",
         "type": "exterior",
-        "is_in":"north-america",
-        "country":"us",
-        "state":"north-carolina"
+        "is_in": "north-america",
+        "country": "us",
+        "state": "north-carolina"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -17326,8 +17297,7 @@
               35.104689
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "8cd9b8f0dc583e85495f90f0491940a0"
     },
@@ -17337,11 +17307,12 @@
         "area_km": "48.0604605000648",
         "label": "Las_Vegas_core_NV",
         "type": "core",
-        "is_in":"north-america",
-        "country":"us",
-        "state":"nevada"
+        "is_in": "north-america",
+        "country": "us",
+        "state": "nevada"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -17477,8 +17448,7 @@
               36.057307
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "8ce83240bc954ac3d2745e36f23679fa"
     },
@@ -17489,10 +17459,11 @@
         "label": "Miami_core_FL",
         "type": "core",
         "is_in": "north-america",
-        "country":"us",
-        "state":"florida"
+        "country": "us",
+        "state": "florida"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -17656,21 +17627,20 @@
               25.787347
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "91b71903eb8c48ffa190a5ad7db8ebe3"
     },
     {
       "type": "Feature",
       "properties": {
-        
         "label": "SiemReap_exterior",
         "boundary": "exterior",
         "is_in": "asia",
-        "country":"cambodia"
+        "country": "cambodia"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -17722,8 +17692,7 @@
               13.459637
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "921a119f225fa5ddc349d125da5453eb"
     },
@@ -17734,10 +17703,11 @@
         "label": "Portland_core_OR",
         "type": "core",
         "is_in": "north-america",
-        "country":"us",
-        "state":"oregon"
+        "country": "us",
+        "state": "oregon"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -17869,8 +17839,7 @@
               45.547645
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "93b5eb663a291006eceb80ac4c01192f"
     },
@@ -17881,10 +17850,11 @@
         "label": "Milwaukee_exterior_WI",
         "type": "exterior",
         "is_in": "north-america",
-        "country":"us",
-        "state":"wisconsin"
+        "country": "us",
+        "state": "wisconsin"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -18168,8 +18138,7 @@
               42.93241
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "966b9e2907cece3fd708b83dfa0dda9a"
     },
@@ -18180,10 +18149,11 @@
         "label": "Kansas_core_MO",
         "type": "core",
         "is_in": "north-america",
-        "country":"us",
-        "state":"missouri"
+        "country": "us",
+        "state": "missouri"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -18311,8 +18281,7 @@
               39.118524
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "982e667b69c7704202fe6c5a7ff3dbcb"
     },
@@ -18323,10 +18292,11 @@
         "label": "Fort_Worth_Dallas_core_TX",
         "type": "core",
         "is_in": "north-america",
-        "country":"us",
-        "state":"texas"
+        "country": "us",
+        "state": "texas"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -18674,8 +18644,7 @@
               32.754036
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "9bd1d1e1787a31eb0565309c074e6608"
     },
@@ -18686,10 +18655,11 @@
         "label": "Washington_core_DC",
         "type": "core",
         "is_in": "north-america",
-        "country":"us",
-        "state":"district-of-columbia"
+        "country": "us",
+        "state": "district-of-columbia"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -18877,8 +18847,7 @@
               38.903452
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "9c3dffcb8dbb881994cb6b5d8aeed0f7"
     },
@@ -18889,10 +18858,11 @@
         "label": "Knoxville_exterior_TN",
         "type": "exterior",
         "is_in": "north-america",
-        "country":"us",
-        "state":"tennessee"
+        "country": "us",
+        "state": "tennessee"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -19372,8 +19342,7 @@
               36.013126
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "9e17195ab87259e49f4edbdaa8f74471"
     },
@@ -19384,10 +19353,11 @@
         "label": "Buffalo_core_NY",
         "type": "core",
         "is_in": "north-america",
-        "country":"us",
-        "state":"new-york"
+        "country": "us",
+        "state": "new-york"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -19519,8 +19489,7 @@
               42.874911
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "9e7d46c48999a5e5a6e39ecd4b742e8b"
     },
@@ -19530,10 +19499,11 @@
         "label": "Tououse_core",
         "type": "core",
         "is_in": "europe",
-        "country":"france",
-        "state":"midi-pyrenees"
+        "country": "france",
+        "state": "midi-pyrenees"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -19589,8 +19559,7 @@
               43.589981
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "a12f9a341bec885f5c017fe0636e8532"
     },
@@ -19598,12 +19567,12 @@
       "type": "Feature",
       "properties": {
         "label": "Manila_exterior",
-       
         "boundary": "exterior",
         "is_in": "asia",
-        "country":"philippines"
+        "country": "philippines"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -19771,8 +19740,7 @@
               14.545075
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "a4810fbf2087bf7aeb86caf5e6f4f757"
     },
@@ -19783,10 +19751,11 @@
         "label": "ElPaso_exterior_TX",
         "type": "exterior",
         "is_in": "north-america",
-        "country":"us",
-        "state":"texas"
+        "country": "us",
+        "state": "texas"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -20046,8 +20015,7 @@
               31.918938
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "a50e177aaa2027a9bef8a682c24abc2b"
     },
@@ -20057,11 +20025,12 @@
         "area_km": "1503.96510853625",
         "label": "Orlando_exterior_FL",
         "type": "exterior",
-        "is_in":"north-america",
-        "country":"us",
-        "state":"florida"
+        "is_in": "north-america",
+        "country": "us",
+        "state": "florida"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -20777,8 +20746,7 @@
               28.278272
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "a54667df2348e8c9946f00ccffae2d2e"
     },
@@ -20788,11 +20756,12 @@
         "area_km": "63.1134768583374",
         "label": "Philadelphia_core_PA",
         "type": "core",
-        "is_in":"north-america",
-        "country":"us",
-        "state":"pennsylvania"
+        "is_in": "north-america",
+        "country": "us",
+        "state": "pennsylvania"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -21080,8 +21049,7 @@
               39.868268
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "a5498bb19124eddd3d58b851a94ea14a"
     },
@@ -21089,12 +21057,12 @@
       "type": "Feature",
       "properties": {
         "label": "Padang_exterior",
-        
         "boundary": "exterior",
         "is_in": "asia",
-        "country":"indonesia"
+        "country": "indonesia"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -21362,21 +21330,20 @@
               -0.818292
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "ac7093b0dde5f9cdf671afd616164e05"
     },
     {
       "type": "Feature",
       "properties": {
- 
         "label": "Yangon_exterior",
         "boundary": "exterior",
         "is_in": "asia",
-        "country":"myanmar"
+        "country": "myanmar"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -21468,8 +21435,7 @@
               16.75975
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "ad64ca95e37e3b6bd5dcf1072f89d813"
     },
@@ -21480,10 +21446,11 @@
         "label": "Baltimore_exterior_MD",
         "type": "exterior",
         "is_in": "north-america",
-        "country":"us",
-        "state":"maryland"
+        "country": "us",
+        "state": "maryland"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -21867,8 +21834,7 @@
               39.314904
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "ae32d71ad3d5d8496b4501f8f5d62584"
     },
@@ -21878,10 +21844,11 @@
         "label": "Marseille_exterior",
         "type": "exterior",
         "is_in": "europe",
-        "country":"france",
-        "state":"provence-alpes-cote-d-azur"
+        "country": "france",
+        "state": "provence-alpes-cote-d-azur"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -21957,8 +21924,7 @@
               43.289862
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "ae7072e8727071f6f4beee924c4da7f8"
     },
@@ -21969,10 +21935,11 @@
         "id": "way/-72124",
         "label": "Berlin_GE",
         "is_in": "europe",
-        "country":"germany",
-        "state":"berlin"
+        "country": "germany",
+        "state": "berlin"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -22068,8 +22035,7 @@
               52.58668
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "b0315c85ce824b55b4bab78873b5e3d1"
     },
@@ -22080,10 +22046,11 @@
         "label": "Indianapolis_core_IN",
         "type": "core",
         "is_in": "north-america",
-        "country":"us",
-        "state":"indiana"
+        "country": "us",
+        "state": "indiana"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -22323,8 +22290,7 @@
               39.717405
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "b04cae9f793ac54a4641d28f47a68eaa"
     },
@@ -22334,11 +22300,12 @@
         "area_km": "29.7044488384399",
         "label": "San_Diego_core_CA",
         "type": "core",
-        "is_in":"north-america",
-        "country":"us",
-        "state":"california"
+        "is_in": "north-america",
+        "country": "us",
+        "state": "california"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -22478,8 +22445,7 @@
               32.760609
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "b13047d7def08a896320abc1637fff51"
     },
@@ -22489,11 +22455,12 @@
         "area_km": "883.249568863943",
         "label": "Las_Vegas_exterior_NV",
         "type": "exterior",
-        "is_in":"north-america",
-        "country":"us",
-        "state":"nevada"
+        "is_in": "north-america",
+        "country": "us",
+        "state": "nevada"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -22717,8 +22684,7 @@
               36.292486
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "b7d933bb7306e2d6af4afb4787ffd1d0"
     },
@@ -22726,12 +22692,12 @@
       "type": "Feature",
       "properties": {
         "label": "Jakarta_exterior",
-  
         "boundary": "exterior",
-        "is_in":"asia",
-        "country":"indonesia"
+        "is_in": "asia",
+        "country": "indonesia"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -24751,8 +24717,7 @@
               -6.088845
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "b8b172958703b635e6d5f0e62faf419a"
     },
@@ -24763,10 +24728,11 @@
         "label": "Oklahoma_core_OK",
         "type": "core",
         "is_in": "north-america",
-        "country":"us",
-        "state":"oklahoma"
+        "country": "us",
+        "state": "oklahoma"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -25118,8 +25084,7 @@
               35.395103
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "b97edf0659614c4b043ec13d29ced58e"
     },
@@ -25127,12 +25092,12 @@
       "type": "Feature",
       "properties": {
         "label": "Pattaya_exterior",
-        
         "boundary": "exterior",
-        "is_in":"asia",
-        "country":"thailand"
+        "is_in": "asia",
+        "country": "thailand"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -25264,8 +25229,7 @@
               12.979846
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "bb87c014a2598ed8efe4d5177f84c434"
     },
@@ -25273,12 +25237,12 @@
       "type": "Feature",
       "properties": {
         "label": "Cyberjaya_exterior",
-       
         "boundary": "exterior",
-        "is_in":"asia",
-        "country":"malaysia-singapore-brunei"
+        "is_in": "asia",
+        "country": "malaysia-singapore-brunei"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -25378,8 +25342,7 @@
               2.955629
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "bba8ac9bd484ca5db41a199a757b52b5"
     },
@@ -25390,10 +25353,11 @@
         "label": "Fort_Worth_Dallas_exterior_TX",
         "type": "exterior",
         "is_in": "north-america",
-        "country":"us",
-        "state":"texas"
+        "country": "us",
+        "state": "texas"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -25765,8 +25729,7 @@
               33.066042
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "bf383b03e780ac814bd4819f075cfb1d"
     },
@@ -25776,11 +25739,12 @@
         "area_km": "43.523360288208",
         "label": "Pittsburgh_core_PA",
         "type": "core",
-        "is_in":"north-america",
-        "country":"us",
-        "state":"pennsylvania"
+        "is_in": "north-america",
+        "country": "us",
+        "state": "pennsylvania"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -25972,8 +25936,7 @@
               40.459875
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "bf90e1aeabd1907addbbdf7f414a7c9e"
     },
@@ -25983,11 +25946,12 @@
         "area_km": "1313.23193849817",
         "label": "Miami_exterior_FL",
         "type": "exterior",
-        "is_in":"north-america",
-        "country":"us",
-        "state":"florida"
+        "is_in": "north-america",
+        "country": "us",
+        "state": "florida"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -26319,12 +26283,10 @@
               26.081121
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "c075aa814ffcfcfd3795545c0b21097f"
     },
-    
     {
       "type": "Feature",
       "properties": {
@@ -26332,10 +26294,11 @@
         "label": "Chicago_exterior_IL",
         "type": "exterior",
         "is_in": "north-america",
-        "country":"us",
-        "state":"illinois"
+        "country": "us",
+        "state": "illinois"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -26715,8 +26678,7 @@
               42.072517
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "c74a3eb1dcd9df4b425bd8877b3a5e1a"
     },
@@ -26724,12 +26686,12 @@
       "type": "Feature",
       "properties": {
         "label": "CebuCity_exterior",
-     
         "boundary": "exterior",
         "is_in": "asia",
-        "country":"philippines"
+        "country": "philippines"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -26881,8 +26843,7 @@
               10.246531
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "c97b806f04a2e69664a521127af907c0"
     },
@@ -26890,12 +26851,12 @@
       "type": "Feature",
       "properties": {
         "label": "Phuket_exterior",
-        
         "boundary": "exterior",
         "is_in": "asia",
-        "country":"thailand"
+        "country": "thailand"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -27047,8 +27008,7 @@
               7.956959
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "c9aa3d4d6f06732756e1d5c70d42043d"
     },
@@ -27059,10 +27019,11 @@
         "id": "way/-22015",
         "label": "Frankfurt_GE",
         "is_in": "europe",
-        "country":"germany",
-        "state":"hessen"
+        "country": "germany",
+        "state": "hessen"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -27142,8 +27103,7 @@
               50.142242
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "cb25010bb189c95856a1a08247383648"
     },
@@ -27151,11 +27111,12 @@
       "type": "Feature",
       "properties": {
         "label": "Calgary_CA",
-        "is_in":"north-america",
-        "country":"canada",
-        "state":"alberta"
+        "is_in": "north-america",
+        "country": "canada",
+        "state": "alberta"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -27571,8 +27532,7 @@
               51.137828
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "cc48d26f41a5f859c3fbc9b2d76ef1d0"
     },
@@ -27582,11 +27542,12 @@
         "area_km": "613.469547604294",
         "label": "Indianapolis_exterior_IN",
         "type": "exterior",
-        "is_in":"north-america",
-        "country":"us",
-        "state":"indiana"
+        "is_in": "north-america",
+        "country": "us",
+        "state": "indiana"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -27902,8 +27863,7 @@
               39.69185
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "cc851efdd922e5b1098fedf3c39a4913"
     },
@@ -27914,10 +27874,11 @@
         "label": "Pittsburgh_exterior_PA",
         "type": "exterior",
         "is_in": "north-america",
-        "country":"us",
-        "state":"pennsylvania"
+        "country": "us",
+        "state": "pennsylvania"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -28457,8 +28418,7 @@
               40.537478
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "cf22afd3502947c158e08d886ce3b4f2"
     },
@@ -28469,10 +28429,11 @@
         "label": "Louisville_exterior_KY",
         "type": "exterior",
         "is_in": "north-america",
-        "country":"us",
-        "state":"kentucky"
+        "country": "us",
+        "state": "kentucky"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -28704,8 +28665,7 @@
               38.107294
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "d05977333efe10129f98275c15cf5030"
     },
@@ -28716,10 +28676,11 @@
         "label": "San_Diego_exterior_CA",
         "type": "exterior",
         "is_in": "north-america",
-        "country":"us",
-        "state":"california"
+        "country": "us",
+        "state": "california"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -29011,8 +28972,7 @@
               33.163457
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "d11cc926bad7f3e51c56fc7eac29842e"
     },
@@ -29022,11 +28982,12 @@
         "area_km": "44.785735317421",
         "label": "Austin_core_TX",
         "type": "core",
-        "is_in":"north-america",
-        "country":"us",
-        "state":"texas"
+        "is_in": "north-america",
+        "country": "us",
+        "state": "texas"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -29226,8 +29187,7 @@
               30.208975
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "d69e206ab238724936b1eb3ddb4d48b7"
     },
@@ -29235,12 +29195,12 @@
       "type": "Feature",
       "properties": {
         "label": "Singapore_exterior",
-        
         "boundary": "exterior",
         "is_in": "asia",
-        "country":"malaysia-singapore-brunei"
+        "country": "malaysia-singapore-brunei"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -29420,8 +29380,7 @@
               1.360783
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "d6dc7416001899f20b588f0477cd369f"
     },
@@ -29432,10 +29391,11 @@
         "label": "Nashville_core_TN",
         "type": "core",
         "is_in": "north-america",
-        "country":"us",
-        "state":"tennessee"
+        "country": "us",
+        "state": "tennessee"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -29655,8 +29615,7 @@
               36.127772
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "d73c5ed9b309d3cf3475b3230fa2081f"
     },
@@ -29667,10 +29626,11 @@
         "label": "Boston_exterior_MA",
         "type": "exterior",
         "is_in": "north-america",
-        "country":"us",
-        "state":"massachusetts"
+        "country": "us",
+        "state": "massachusetts"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -30226,8 +30186,7 @@
               42.269945
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "d782fecaca3ad176019a7a45570d32d9"
     },
@@ -30238,10 +30197,11 @@
         "label": "Atlanta_exterior_GA",
         "type": "exterior",
         "is_in": "north-america",
-        "country":"us",
-        "state":"georgia"
+        "country": "us",
+        "state": "georgia"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -30477,8 +30437,7 @@
               33.8787
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "e09b12df86f62dec6c11e91b628d4fe7"
     },
@@ -30486,12 +30445,12 @@
       "type": "Feature",
       "properties": {
         "label": "Malacca_exterior",
-       
         "boundary": "exterior",
         "is_in": "asia",
-        "country":"malaysia-singapore-brunei"
+        "country": "malaysia-singapore-brunei"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -30683,22 +30642,21 @@
               2.313972
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "e456bf7459b6a2865d7f42acfdb81106"
     },
-    
     {
       "type": "Feature",
       "properties": {
         "area_km": null,
         "label": "Toronto_CA",
-        "is_in":"north-america",
-        "country":"canada",
-        "state":"ontario"
+        "is_in": "north-america",
+        "country": "canada",
+        "state": "ontario"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -30906,8 +30864,7 @@
               43.567806
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "e5d827ebe3b90b48f23eeb0373e9c57f"
     },
@@ -30917,10 +30874,11 @@
         "label": "Lyon_exterior",
         "type": "exterior",
         "is_in": "europe",
-        "country":"france",
-        "state":"rhone-alpes"
+        "country": "france",
+        "state": "rhone-alpes"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -30980,8 +30938,7 @@
               45.762666
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "e7424548e91b4e0430c06ea78e366fd5"
     },
@@ -30991,11 +30948,12 @@
         "area_km": "453.805306206299",
         "label": "Atlantic_exterior_NJ",
         "type": "exterior",
-        "is_in":"north-america",
-        "country":"us",
-        "state":"new-jersey"
+        "is_in": "north-america",
+        "country": "us",
+        "state": "new-jersey"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -31239,8 +31197,7 @@
               39.410849
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "e801432df402829d0c64288bd9b20d84"
     },
@@ -31248,12 +31205,12 @@
       "type": "Feature",
       "properties": {
         "label": "Hanoi_exterior",
-        
         "boundary": "exterior",
-        "is_in":"asia",
-        "country":"vietnam"
+        "is_in": "asia",
+        "country": "vietnam"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -31349,21 +31306,20 @@
               21.154108
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "e87aa470e1aae9c76c1d478f50004b9c"
     },
     {
       "type": "Feature",
       "properties": {
-        
         "boundary": "exterior",
         "label": "PhnomPenh_exterior",
-        "is_in":"asia",
-        "country":"cambodia"
-        },
+        "is_in": "asia",
+        "country": "cambodia"
+      },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -31443,8 +31399,7 @@
               11.591481
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "e92c0aa3af9c3e816b4e2c732e76dd52"
     },
@@ -31455,10 +31410,11 @@
         "label": "Jacksonville_exterior_FL",
         "type": "exterior",
         "is_in": "north-america",
-        "country":"us",
-        "state":"florida"
+        "country": "us",
+        "state": "florida"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -31922,8 +31878,7 @@
               30.42017
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "ed52070051e097ff6e0cdb1473587bd3"
     },
@@ -31934,10 +31889,11 @@
         "label": "Detroit_core_MI",
         "type": "core",
         "is_in": "north-america",
-        "country":"us",
-        "state":"michigan"
+        "country": "us",
+        "state": "michigan"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -32201,22 +32157,20 @@
               42.225348
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "edd33b33f36da89f28a4dd15d5d41ecf"
     },
-    
     {
       "type": "Feature",
       "properties": {
         "label": "Penang_exterior",
-        
         "boundary": "exterior",
         "is_in": "asia",
-        "country":"malaysia-singapore-brunei"
+        "country": "malaysia-singapore-brunei"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -32376,8 +32330,7 @@
               5.484744
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "f71cb633c62cea9a704111e97df2de94"
     },
@@ -32385,12 +32338,12 @@
       "type": "Feature",
       "properties": {
         "label": "HoChiMinhCity_exterior",
-        
         "boundary": "exterior",
         "is_in": "asia",
-        "country":"vietnam"
+        "country": "vietnam"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -32502,662 +32455,132 @@
               10.924391
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "fcd4c212b86a76c1298bd7dc07b4bf7d"
     },
-    { "type": "Feature", 
-  "id": "relation\/2833530", 
-  "properties": { 
-       
-        "label": "Oakland_exterior_SF",
-        "boundary": "exterior",
-        "is_in": "north-america",
-        "country":"us",
-        "state":"california"
-
- }, 
-"geometry": { "type": "Polygon", 
-             "coordinates": [ [ [ -122.2889528, 37.849946 ], [ -122.288859, 37.849897 ], [ -122.288697, 37.849671 ], [ -122.288643, 37.849596 ], [ -122.288577, 37.849385 ], [ -122.288567, 37.849351 ], [ -122.288485, 37.849085 ], [ -122.288397, 37.848803 ], [ -122.288382, 37.848754 ], [ -122.288317, 37.848544 ], [ -122.288244, 37.848339 ], [ -122.288026, 37.847725 ], [ -122.287954, 37.847521 ], [ -122.287936, 37.847398 ], [ -122.287883, 37.847029 ], [ -122.287866, 37.846907 ], [ -122.287837, 37.846825 ], [ -122.28775, 37.84658 ], [ -122.287722, 37.846499 ], [ -122.287677, 37.846353 ], [ -122.287543, 37.845917 ], [ -122.287499, 37.845772 ], [ -122.287441, 37.845604 ], [ -122.287268, 37.845101 ], [ -122.287211, 37.844934 ], [ -122.287157, 37.844751 ], [ -122.286996, 37.844202 ], [ -122.286943, 37.84402 ], [ -122.286897, 37.843885 ], [ -122.286759, 37.84348 ], [ -122.286714, 37.843345 ], [ -122.28663, 37.843076 ], [ -122.286378, 37.842269 ], [ -122.286294, 37.842001 ], [ -122.286179, 37.84165 ], [ -122.285835, 37.840597 ], [ -122.285721, 37.840247 ], [ -122.285698, 37.840179 ], [ -122.28569, 37.840153 ], [ -122.285604, 37.839871 ], [ -122.285576, 37.839778 ], [ -122.285463, 37.839424 ], [ -122.285124, 37.838363 ], [ -122.285012, 37.83801 ], [ -122.284964, 37.837884 ], [ -122.28482, 37.837507 ], [ -122.284773, 37.837382 ], [ -122.284742, 37.837245 ], [ -122.28465, 37.836834 ], [ -122.28462, 37.836698 ], [ -122.284582, 37.836706 ], [ -122.284529, 37.836718 ], [ -122.284467, 37.836721 ], [ -122.284429, 37.836724 ], [ -122.284343, 37.836739 ], [ -122.284085, 37.836787 ], [ -122.284, 37.836803 ], [ -122.283589, 37.836879 ], [ -122.282356, 37.837109 ], [ -122.282131, 37.837152 ], [ -122.282085, 37.837154 ], [ -122.282037, 37.837149 ], [ -122.281946, 37.837124 ], [ -122.281928, 37.83707 ], [ -122.281876, 37.836911 ], [ -122.281859, 37.836858 ], [ -122.281785, 37.83687 ], [ -122.28171, 37.836884 ], [ -122.281563, 37.836909 ], [ -122.28149, 37.836922 ], [ -122.280969, 37.836983 ], [ -122.280501, 37.837039 ], [ -122.279591, 37.837147 ], [ -122.27941, 37.837102 ], [ -122.278901, 37.836976 ], [ -122.278851, 37.836958 ], [ -122.278703, 37.836907 ], [ -122.278654, 37.83689 ], [ -122.278174, 37.836854 ], [ -122.2775483, 37.8368074 ], [ -122.276736, 37.836747 ], [ -122.276416, 37.836724 ], [ -122.276292, 37.836623 ], [ -122.276184, 37.836663 ], [ -122.276168, 37.83667 ], [ -122.276012, 37.836729 ], [ -122.276088, 37.836588 ], [ -122.276144, 37.836488 ], [ -122.276199, 37.836339 ], [ -122.276366, 37.835893 ], [ -122.276423, 37.835745 ], [ -122.276476, 37.835603 ], [ -122.276636, 37.83518 ], [ -122.27669, 37.835039 ], [ -122.276739, 37.834903 ], [ -122.276886, 37.834498 ], [ -122.276936, 37.834363 ], [ -122.27699, 37.834223 ], [ -122.277152, 37.833804 ], [ -122.277207, 37.833665 ], [ -122.277253, 37.833528 ], [ -122.277391, 37.833119 ], [ -122.277438, 37.832983 ], [ -122.277487, 37.832843 ], [ -122.277634, 37.832425 ], [ -122.277684, 37.832286 ], [ -122.277763, 37.8321 ], [ -122.278002, 37.831541 ], [ -122.278082, 37.831356 ], [ -122.278118, 37.831266 ], [ -122.278173, 37.831125 ], [ -122.278446, 37.830435 ], [ -122.278538, 37.830205 ], [ -122.278586, 37.830042 ], [ -122.278733, 37.829553 ], [ -122.278782, 37.829391 ], [ -122.278815, 37.829247 ], [ -122.278914, 37.828814 ], [ -122.278948, 37.828671 ], [ -122.278949, 37.828646 ], [ -122.278951, 37.828606 ], [ -122.278952, 37.828573 ], [ -122.278954, 37.828549 ], [ -122.278934, 37.828484 ], [ -122.278912, 37.828412 ], [ -122.278905, 37.82839 ], [ -122.278759, 37.827914 ], [ -122.278711, 37.827756 ], [ -122.278665, 37.827631 ], [ -122.2785061, 37.82718 ], [ -122.2787392, 37.827075 ], [ -122.2820062, 37.8277893 ], [ -122.313937194122673, 37.819343228476747 ], [ -122.317176354083969, 37.81623575440674 ], [ -122.323076065454387, 37.809989424786735 ], [ -122.328569209609824, 37.810739256782284 ], [ -122.333447340873334, 37.810572241863461 ], [ -122.338752717662146, 37.808067546941288 ], [ -122.343090762172309, 37.80634307619696 ], [ -122.340281, 37.800628 ], [ -122.33516, 37.799448 ], [ -122.3198, 37.795908 ], [ -122.31468, 37.794728 ], [ -122.312471, 37.794484 ], [ -122.305305, 37.793692 ], [ -122.29478, 37.792528 ], [ -122.29388, 37.792628 ], [ -122.292678, 37.792778 ], [ -122.286379, 37.793565 ], [ -122.28428, 37.793828 ], [ -122.282679, 37.793548 ], [ -122.27788, 37.792708 ], [ -122.27628, 37.792428 ], [ -122.275951, 37.792272 ], [ -122.274964, 37.791804 ], [ -122.274636, 37.791648 ], [ -122.274544, 37.791584 ], [ -122.274271, 37.791392 ], [ -122.27418, 37.791328 ], [ -122.27302, 37.790668 ], [ -122.26954, 37.788688 ], [ -122.26838, 37.788028 ], [ -122.26596, 37.787152 ], [ -122.264285, 37.786545 ], [ -122.260868, 37.785308 ], [ -122.258703, 37.784525 ], [ -122.25788, 37.784228 ], [ -122.25668, 37.785428 ], [ -122.25558, 37.786328 ], [ -122.25478, 37.786728 ], [ -122.253844, 37.786594 ], [ -122.25058, 37.786127 ], [ -122.246179, 37.783426 ], [ -122.245606, 37.782233 ], [ -122.244978, 37.780925 ], [ -122.244817, 37.779123 ], [ -122.24488, 37.777354 ], [ -122.244385, 37.776997 ], [ -122.242569, 37.775687 ], [ -122.240684, 37.774327 ], [ -122.238506, 37.772954 ], [ -122.236566, 37.771731 ], [ -122.236488, 37.771696 ], [ -122.235308, 37.77114 ], [ -122.231769, 37.769474 ], [ -122.23059, 37.768919 ], [ -122.230537, 37.768899 ], [ -122.230514, 37.768891 ], [ -122.230438, 37.768864 ], [ -122.230377, 37.768842 ], [ -122.230325, 37.768823 ], [ -122.229152, 37.768077 ], [ -122.226947, 37.766675 ], [ -122.225986, 37.765454 ], [ -122.225154, 37.764397 ], [ -122.225127, 37.764363 ], [ -122.224662, 37.762402 ], [ -122.224639, 37.762302 ], [ -122.224151, 37.760241 ], [ -122.223983, 37.75953 ], [ -122.2239157, 37.7578529 ], [ -122.223859, 37.75644 ], [ -122.2238617, 37.7546503 ], [ -122.223939, 37.754148 ], [ -122.224419, 37.753308 ], [ -122.224579, 37.753028 ], [ -122.224842, 37.752361 ], [ -122.225631, 37.75036 ], [ -122.225895, 37.749694 ], [ -122.226029, 37.749335 ], [ -122.226432, 37.748261 ], [ -122.2266426, 37.747496 ], [ -122.226634, 37.7456907 ], [ -122.2266, 37.745501 ], [ -122.226174, 37.745402 ], [ -122.225782, 37.745347 ], [ -122.225491, 37.745305 ], [ -122.22512, 37.745253 ], [ -122.225221, 37.742207 ], [ -122.2252677, 37.7407975 ], [ -122.2253386, 37.7386598 ], [ -122.225524, 37.733071 ], [ -122.225562, 37.731959 ], [ -122.225653, 37.731766 ], [ -122.225785, 37.731462 ], [ -122.226171, 37.731039 ], [ -122.22664, 37.730371 ], [ -122.226574, 37.729607 ], [ -122.226379, 37.727316 ], [ -122.226314, 37.726553 ], [ -122.226663, 37.726615 ], [ -122.22771, 37.726804 ], [ -122.22806, 37.726867 ], [ -122.228084, 37.726841 ], [ -122.228158, 37.726763 ], [ -122.228183, 37.726738 ], [ -122.228379, 37.726529 ], [ -122.228625, 37.726277 ], [ -122.231853, 37.72297 ], [ -122.232267, 37.722546 ], [ -122.235965, 37.718759 ], [ -122.236101, 37.71862 ], [ -122.236902, 37.71902 ], [ -122.2396303, 37.7209887 ], [ -122.244042, 37.724172 ], [ -122.244359, 37.724401 ], [ -122.246139, 37.725685 ], [ -122.247919, 37.726969 ], [ -122.248308, 37.72725 ], [ -122.248827, 37.727808 ], [ -122.252695137709452, 37.725103207593634 ], [ -122.248638755371644, 37.722688784963701 ], [ -122.245260795466194, 37.719808421242305 ], [ -122.233511784131778, 37.712131542731797 ], [ -122.220602708175008, 37.701008671959848 ], [ -122.214127063150329, 37.697947528471111 ], [ -122.210774313483114, 37.701607006204526 ], [ -122.2097269, 37.7110873 ], [ -122.2095537, 37.7111279 ], [ -122.2021641, 37.7129826 ], [ -122.1970286, 37.7158295 ], [ -122.1944188, 37.7158303 ], [ -122.1942652, 37.7159125 ], [ -122.1947148, 37.7175385 ], [ -122.1934018, 37.71783 ], [ -122.1929355, 37.7167944 ], [ -122.1928385, 37.7168587 ], [ -122.1894244, 37.7178267 ], [ -122.1894208, 37.7178277 ], [ -122.1894176, 37.7178288 ], [ -122.1894151, 37.7178296 ], [ -122.1894124, 37.7178306 ], [ -122.1894031, 37.7178342 ], [ -122.189401, 37.7178352 ], [ -122.1893983, 37.7178364 ], [ -122.1893941, 37.7178383 ], [ -122.1893907, 37.7178401 ], [ -122.189387, 37.717842 ], [ -122.1893835, 37.7178439 ], [ -122.1893793, 37.7178464 ], [ -122.1893772, 37.7178477 ], [ -122.1893741, 37.7178496 ], [ -122.1893714, 37.7178515 ], [ -122.1893687, 37.7178533 ], [ -122.189363, 37.7178576 ], [ -122.1893601, 37.7178599 ], [ -122.1893585, 37.7178613 ], [ -122.1893562, 37.7178632 ], [ -122.1893538, 37.7178654 ], [ -122.1893509, 37.7178681 ], [ -122.189345, 37.7178742 ], [ -122.189342, 37.7178774 ], [ -122.1893395, 37.7178804 ], [ -122.1893357, 37.7178852 ], [ -122.1893342, 37.7178874 ], [ -122.1893315, 37.7178912 ], [ -122.1893303, 37.7178931 ], [ -122.1893289, 37.7178953 ], [ -122.1893271, 37.7178983 ], [ -122.1893257, 37.7179007 ], [ -122.1893242, 37.7179036 ], [ -122.1893231, 37.7179058 ], [ -122.1893214, 37.7179094 ], [ -122.1893203, 37.7179119 ], [ -122.1893194, 37.717914 ], [ -122.1893185, 37.7179166 ], [ -122.1893171, 37.7179205 ], [ -122.1893157, 37.7179249 ], [ -122.1893149, 37.7179277 ], [ -122.189314, 37.7179314 ], [ -122.1893134, 37.7179344 ], [ -122.189313, 37.7179369 ], [ -122.1893119, 37.7179444 ], [ -122.189312, 37.7179672 ], [ -122.1893135, 37.7179768 ], [ -122.1893139, 37.7179788 ], [ -122.1893144, 37.7179809 ], [ -122.1893148, 37.7179827 ], [ -122.1893153, 37.7179846 ], [ -122.1893162, 37.7179878 ], [ -122.1893171, 37.7179906 ], [ -122.1893179, 37.717993 ], [ -122.1893188, 37.7179953 ], [ -122.1893203, 37.7179991 ], [ -122.1893219, 37.7180026 ], [ -122.1893229, 37.7180047 ], [ -122.1893246, 37.7180082 ], [ -122.1893261, 37.7180109 ], [ -122.1893287, 37.7180154 ], [ -122.1893299, 37.7180173 ], [ -122.1893311, 37.7180192 ], [ -122.1893329, 37.7180219 ], [ -122.189334, 37.7180235 ], [ -122.1893369, 37.7180273 ], [ -122.1893391, 37.7180301 ], [ -122.1893404, 37.7180316 ], [ -122.1893419, 37.7180334 ], [ -122.1893432, 37.7180349 ], [ -122.1893457, 37.7180376 ], [ -122.1893482, 37.7180403 ], [ -122.1893513, 37.7180433 ], [ -122.1896114, 37.7182735 ], [ -122.1896694, 37.7183248 ], [ -122.1897403, 37.7183875 ], [ -122.1898928, 37.7185224 ], [ -122.1916813, 37.7200515 ], [ -122.1941311, 37.722154 ], [ -122.196274, 37.7233103 ], [ -122.1973963, 37.725263 ], [ -122.1977464, 37.7251716 ], [ -122.1980552, 37.726228 ], [ -122.1978711, 37.7263046 ], [ -122.1967977, 37.7267491 ], [ -122.1961451, 37.7260038 ], [ -122.1954553, 37.7262718 ], [ -122.1952086, 37.7264054 ], [ -122.1948941, 37.7265704 ], [ -122.1928486, 37.7276857 ], [ -122.192822, 37.7277 ], [ -122.191928, 37.7272881 ], [ -122.1913121, 37.7281349 ], [ -122.1912641, 37.7282055 ], [ -122.1909753, 37.7280742 ], [ -122.190868, 37.7282223 ], [ -122.1903756, 37.7288887 ], [ -122.1899975, 37.7287534 ], [ -122.1891083, 37.7285127 ], [ -122.1890454, 37.7285988 ], [ -122.1891494, 37.7286265 ], [ -122.1885992, 37.7285078 ], [ -122.1884698, 37.7284718 ], [ -122.1882556, 37.7284262 ], [ -122.1874393, 37.7279755 ], [ -122.1868822, 37.727823 ], [ -122.1864542, 37.7275891 ], [ -122.1857221, 37.7268046 ], [ -122.1852324, 37.7266499 ], [ -122.1846873, 37.7262287 ], [ -122.1842807, 37.7260538 ], [ -122.1841885, 37.7260013 ], [ -122.1841292, 37.7259475 ], [ -122.1838317, 37.7256772 ], [ -122.1836064, 37.7256155 ], [ -122.1832917, 37.7255527 ], [ -122.1830944, 37.7255134 ], [ -122.1826574, 37.7254263 ], [ -122.1825374, 37.7253893 ], [ -122.1823891, 37.7253636 ], [ -122.1820591, 37.7253566 ], [ -122.1819762, 37.7253638 ], [ -122.1811691, 37.7254509 ], [ -122.1806893, 37.7256561 ], [ -122.1805064, 37.7257343 ], [ -122.1802918, 37.7257438 ], [ -122.1799844, 37.7257126 ], [ -122.1794164, 37.7253756 ], [ -122.179384, 37.7252492 ], [ -122.1791375, 37.7251858 ], [ -122.1788379, 37.7252225 ], [ -122.1785682, 37.7252746 ], [ -122.1782293, 37.7253359 ], [ -122.1778849, 37.7253893 ], [ -122.1775339, 37.7253339 ], [ -122.176846, 37.7252873 ], [ -122.1763483, 37.7252519 ], [ -122.1758036, 37.7252311 ], [ -122.1754448, 37.7253031 ], [ -122.175344, 37.7253843 ], [ -122.1750137, 37.7259339 ], [ -122.1744285, 37.7265571 ], [ -122.1743408, 37.7266501 ], [ -122.1738338, 37.7267387 ], [ -122.172991, 37.7267561 ], [ -122.1727029, 37.7268155 ], [ -122.1725545, 37.726994 ], [ -122.1719996, 37.7276456 ], [ -122.1716637, 37.7278988 ], [ -122.1712937, 37.7280067 ], [ -122.1708486, 37.7279032 ], [ -122.1708186, 37.7277917 ], [ -122.1706181, 37.7276984 ], [ -122.1706496, 37.7278214 ], [ -122.1703134, 37.727733 ], [ -122.1711993, 37.7285065 ], [ -122.1714246, 37.7286989 ], [ -122.1737891, 37.7307651 ], [ -122.1738645, 37.730831 ], [ -122.1742246, 37.7311469 ], [ -122.1738491, 37.7312285 ], [ -122.1738553, 37.7312339 ], [ -122.1704969, 37.7318686 ], [ -122.1702468, 37.7319863 ], [ -122.1700477, 37.7320799 ], [ -122.1697494, 37.7322202 ], [ -122.1703259, 37.7331068 ], [ -122.1707048, 37.7336891 ], [ -122.1710034, 37.7341482 ], [ -122.1710304, 37.7341899 ], [ -122.1711622, 37.7343925 ], [ -122.1713846, 37.7347345 ], [ -122.1715558, 37.7349977 ], [ -122.1682354, 37.7365559 ], [ -122.1657833, 37.7377064 ], [ -122.1656116, 37.737765 ], [ -122.1655207, 37.737665 ], [ -122.1654101, 37.7375148 ], [ -122.1642137, 37.7359063 ], [ -122.1619133, 37.7369743 ], [ -122.1609566, 37.7374211 ], [ -122.1608178, 37.7374742 ], [ -122.1604759, 37.7375793 ], [ -122.1600633, 37.7376895 ], [ -122.1585491, 37.7381101 ], [ -122.1570126, 37.7385389 ], [ -122.1550669, 37.7390789 ], [ -122.1533827, 37.7395558 ], [ -122.1519627, 37.7399359 ], [ -122.1511309, 37.7401734 ], [ -122.1502028, 37.7404312 ], [ -122.148709, 37.7408692 ], [ -122.1483791, 37.7409385 ], [ -122.1476529, 37.7411413 ], [ -122.1475835, 37.74117 ], [ -122.1474431, 37.7412748 ], [ -122.1472679, 37.7414673 ], [ -122.147065, 37.7417138 ], [ -122.1468414, 37.7420216 ], [ -122.1466717, 37.7422465 ], [ -122.1464985, 37.7424683 ], [ -122.1460379, 37.742759 ], [ -122.145817, 37.7425455 ], [ -122.145599, 37.7423058 ], [ -122.1454693, 37.7421489 ], [ -122.1453518, 37.7419981 ], [ -122.1451824, 37.7417681 ], [ -122.1448518, 37.7413334 ], [ -122.144348, 37.7406615 ], [ -122.1441973, 37.740473 ], [ -122.1439685, 37.7402125 ], [ -122.1437932, 37.7400302 ], [ -122.1436466, 37.7398904 ], [ -122.143419, 37.7396883 ], [ -122.1432605, 37.7395583 ], [ -122.142072, 37.73862 ], [ -122.1417536, 37.738357 ], [ -122.1415949, 37.7382191 ], [ -122.141337, 37.7379762 ], [ -122.1411082, 37.737715 ], [ -122.1409355, 37.7374932 ], [ -122.1408545, 37.7373814 ], [ -122.1406291, 37.737017 ], [ -122.1404936, 37.7367474 ], [ -122.1403861, 37.7365 ], [ -122.1403549, 37.7364163 ], [ -122.1402959, 37.7362482 ], [ -122.1402321, 37.7360245 ], [ -122.140177, 37.7357997 ], [ -122.139887, 37.7344925 ], [ -122.1395223, 37.732917 ], [ -122.1395038, 37.7328333 ], [ -122.1392729, 37.731973 ], [ -122.1389863, 37.7309553 ], [ -122.1389777, 37.7309251 ], [ -122.1382175, 37.730972 ], [ -122.1380935, 37.73101 ], [ -122.1376528, 37.7313688 ], [ -122.1370743, 37.7316136 ], [ -122.1367004, 37.7318582 ], [ -122.1364487, 37.7321244 ], [ -122.1360826, 37.7327258 ], [ -122.1357078, 37.7331831 ], [ -122.1354577, 37.7336226 ], [ -122.1348479, 37.7343087 ], [ -122.1344678, 37.7342969 ], [ -122.1344389, 37.734296 ], [ -122.1343745, 37.7342839 ], [ -122.1335191, 37.7341223 ], [ -122.1331783, 37.734058 ], [ -122.1328173, 37.7339896 ], [ -122.1319995, 37.7336674 ], [ -122.1312254, 37.7335876 ], [ -122.1306236, 37.7336948 ], [ -122.1303936, 37.7334258 ], [ -122.1304913, 37.7327701 ], [ -122.131113, 37.7322682 ], [ -122.1323459, 37.7317268 ], [ -122.1315798, 37.7308849 ], [ -122.1312274, 37.7304277 ], [ -122.1306501, 37.7301222 ], [ -122.130356, 37.7300795 ], [ -122.129838, 37.7300059 ], [ -122.1293413, 37.7299604 ], [ -122.1281228, 37.729885 ], [ -122.1270029, 37.7293317 ], [ -122.126866, 37.729587 ], [ -122.126824, 37.729576 ], [ -122.126651, 37.729532 ], [ -122.126416, 37.729477 ], [ -122.126072, 37.729434 ], [ -122.125546, 37.729396 ], [ -122.125491, 37.72938 ], [ -122.125429, 37.729352 ], [ -122.125387, 37.729352 ], [ -122.125173, 37.729297 ], [ -122.125131, 37.729275 ], [ -122.125055, 37.729253 ], [ -122.124931, 37.729204 ], [ -122.124813, 37.729149 ], [ -122.12473, 37.729122 ], [ -122.12471, 37.729111 ], [ -122.124688, 37.7291 ], [ -122.124557, 37.72905 ], [ -122.124426, 37.729012 ], [ -122.124384, 37.729006 ], [ -122.124121, 37.729007 ], [ -122.124038, 37.729023 ], [ -122.124004, 37.729034 ], [ -122.123887, 37.72908 ], [ -122.12377, 37.729127 ], [ -122.123676, 37.729174 ], [ -122.122721, 37.72966 ], [ -122.122403, 37.729823 ], [ -122.122322, 37.729873 ], [ -122.122082, 37.730027 ], [ -122.122002, 37.730078 ], [ -122.121584, 37.730417 ], [ -122.120997, 37.730894 ], [ -122.120268, 37.731348 ], [ -122.119812, 37.731633 ], [ -122.117984, 37.732559 ], [ -122.117891, 37.732668 ], [ -122.116765, 37.734006 ], [ -122.116492, 37.734329 ], [ -122.115618, 37.735886 ], [ -122.115366, 37.736704 ], [ -122.1155, 37.738461 ], [ -122.11556, 37.739233 ], [ -122.114984, 37.739994 ], [ -122.114847, 37.740178 ], [ -122.114672, 37.740334 ], [ -122.114694, 37.740381 ], [ -122.11471, 37.740414 ], [ -122.114714, 37.740533 ], [ -122.114716, 37.740586 ], [ -122.114962, 37.742155 ], [ -122.114983, 37.742284 ], [ -122.115701, 37.746865 ], [ -122.115948, 37.748436 ], [ -122.115987, 37.748725 ], [ -122.116105, 37.749593 ], [ -122.116145, 37.749883 ], [ -122.116584, 37.750715 ], [ -122.117145, 37.751777 ], [ -122.117438, 37.752331 ], [ -122.117903, 37.753212 ], [ -122.11823, 37.753831 ], [ -122.118343, 37.754045 ], [ -122.118424, 37.754156 ], [ -122.118457, 37.754256 ], [ -122.118547, 37.754543 ], [ -122.120237, 37.757223 ], [ -122.12232, 37.760528 ], [ -122.125794, 37.76687 ], [ -122.126196, 37.767603 ], [ -122.128166, 37.769701 ], [ -122.1292499, 37.7708957 ], [ -122.129465, 37.771127 ], [ -122.130074, 37.771795 ], [ -122.130075, 37.771797 ], [ -122.1301207, 37.771847 ], [ -122.130382, 37.772133 ], [ -122.1312789, 37.7734601 ], [ -122.132361, 37.775061 ], [ -122.132768, 37.775611 ], [ -122.132837, 37.775681 ], [ -122.132915, 37.775759 ], [ -122.134276, 37.777127 ], [ -122.133852, 37.777409 ], [ -122.133676, 37.777527 ], [ -122.134376, 37.778327 ], [ -122.134608, 37.778227 ], [ -122.135076, 37.778027 ], [ -122.136872, 37.779955 ], [ -122.142263, 37.78574 ], [ -122.142634, 37.786138 ], [ -122.143312, 37.786865 ], [ -122.144061, 37.787669 ], [ -122.143517, 37.78839 ], [ -122.142207, 37.790129 ], [ -122.142645, 37.790431 ], [ -122.143389, 37.790945 ], [ -122.143527, 37.790831 ], [ -122.143943, 37.79049 ], [ -122.144082, 37.790377 ], [ -122.144368, 37.790625 ], [ -122.144885, 37.791075 ], [ -122.145227, 37.791372 ], [ -122.145514, 37.791622 ], [ -122.14627, 37.79234 ], [ -122.149924, 37.792398 ], [ -122.151171, 37.792418 ], [ -122.151473, 37.796394 ], [ -122.156874, 37.796469 ], [ -122.156874, 37.796866 ], [ -122.157874, 37.797361 ], [ -122.158575, 37.796957 ], [ -122.159276, 37.797452 ], [ -122.159078, 37.797647 ], [ -122.158576, 37.798147 ], [ -122.160077, 37.799735 ], [ -122.16187, 37.799934 ], [ -122.162229, 37.800745 ], [ -122.161961, 37.800896 ], [ -122.161868, 37.800949 ], [ -122.16192, 37.801356 ], [ -122.164266, 37.803229 ], [ -122.164289, 37.803286 ], [ -122.164733, 37.804395 ], [ -122.164477, 37.804424 ], [ -122.164779, 37.805111 ], [ -122.166682, 37.805586 ], [ -122.166936, 37.805635 ], [ -122.167022, 37.805652 ], [ -122.17059, 37.804734 ], [ -122.170192, 37.802315 ], [ -122.169399, 37.801071 ], [ -122.1686, 37.801161 ], [ -122.168502, 37.800652 ], [ -122.168703, 37.800346 ], [ -122.168703, 37.800044 ], [ -122.168705, 37.799025 ], [ -122.17081, 37.799696 ], [ -122.171733, 37.8003 ], [ -122.172321, 37.800587 ], [ -122.17569, 37.802234 ], [ -122.175286, 37.803162 ], [ -122.175758, 37.803357 ], [ -122.176581, 37.803697 ], [ -122.17736, 37.803316 ], [ -122.177527, 37.803455 ], [ -122.178031, 37.803874 ], [ -122.178199, 37.804014 ], [ -122.178182, 37.804028 ], [ -122.178134, 37.80407 ], [ -122.178118, 37.804085 ], [ -122.177736, 37.804721 ], [ -122.176592, 37.806632 ], [ -122.176477, 37.806825 ], [ -122.176129, 37.807208 ], [ -122.176057, 37.807225 ], [ -122.175995, 37.807241 ], [ -122.17593, 37.807264 ], [ -122.17585, 37.807297 ], [ -122.17583, 37.807306 ], [ -122.175785, 37.80733 ], [ -122.175599, 37.807773 ], [ -122.175577, 37.807827 ], [ -122.175424, 37.808193 ], [ -122.175111, 37.808929 ], [ -122.175036, 37.809103 ], [ -122.174849, 37.809547 ], [ -122.174477, 37.810427 ], [ -122.174562, 37.810982 ], [ -122.175077, 37.814327 ], [ -122.175903, 37.815153 ], [ -122.176977, 37.816227 ], [ -122.179093, 37.817778 ], [ -122.181477, 37.819526 ], [ -122.185977, 37.820726 ], [ -122.18604, 37.820979 ], [ -122.186677, 37.823526 ], [ -122.186611, 37.823677 ], [ -122.186417, 37.82413 ], [ -122.186377, 37.824226 ], [ -122.186355, 37.824283 ], [ -122.186144, 37.824829 ], [ -122.186036, 37.825113 ], [ -122.185877, 37.825526 ], [ -122.186413, 37.826381 ], [ -122.186725, 37.826877 ], [ -122.186752, 37.826972 ], [ -122.186759, 37.826993 ], [ -122.186784, 37.827043 ], [ -122.186807, 37.827065 ], [ -122.186858, 37.827075 ], [ -122.186973, 37.827146 ], [ -122.187058, 37.827199 ], [ -122.187068, 37.827329 ], [ -122.187094, 37.827665 ], [ -122.187177, 37.828726 ], [ -122.187134, 37.829062 ], [ -122.187077, 37.829526 ], [ -122.186811, 37.830003 ], [ -122.186577, 37.830426 ], [ -122.186166, 37.831013 ], [ -122.185977, 37.831226 ], [ -122.18589, 37.831357 ], [ -122.185589, 37.831813 ], [ -122.185584, 37.831818 ], [ -122.185544, 37.831859 ], [ -122.185525, 37.831878 ], [ -122.185516, 37.831889 ], [ -122.185468, 37.831945 ], [ -122.185409, 37.832042 ], [ -122.185375, 37.832107 ], [ -122.185336, 37.83219 ], [ -122.185276, 37.832297 ], [ -122.185251, 37.832343 ], [ -122.185207, 37.832434 ], [ -122.185141, 37.832542 ], [ -122.185085, 37.832612 ], [ -122.18501, 37.832709 ], [ -122.184802, 37.833012 ], [ -122.184179, 37.833922 ], [ -122.184177, 37.833926 ], [ -122.184271, 37.834277 ], [ -122.184305, 37.834406 ], [ -122.184408, 37.834793 ], [ -122.184443, 37.834923 ], [ -122.18449, 37.835103 ], [ -122.184516, 37.835199 ], [ -122.184575, 37.835427 ], [ -122.184628, 37.835646 ], [ -122.184674, 37.835828 ], [ -122.184703, 37.835887 ], [ -122.184707, 37.835893 ], [ -122.184783, 37.836047 ], [ -122.185114, 37.836703 ], [ -122.185225, 37.836923 ], [ -122.185277, 37.837026 ], [ -122.185903, 37.837143 ], [ -122.186877, 37.837326 ], [ -122.188132, 37.837514 ], [ -122.188877, 37.837626 ], [ -122.188886, 37.83763 ], [ -122.188915, 37.837645 ], [ -122.188925, 37.83765 ], [ -122.189298, 37.837836 ], [ -122.189644, 37.83801 ], [ -122.189679, 37.838027 ], [ -122.19031, 37.838559 ], [ -122.190318, 37.838565 ], [ -122.19063, 37.838828 ], [ -122.190812, 37.838981 ], [ -122.191358, 37.83944 ], [ -122.19154, 37.839594 ], [ -122.191578, 37.839626 ], [ -122.191778, 37.839826 ], [ -122.191794, 37.839833 ], [ -122.191963, 37.839906 ], [ -122.193433, 37.840545 ], [ -122.193923, 37.840758 ], [ -122.193917, 37.840834 ], [ -122.193917, 37.840859 ], [ -122.193917, 37.840963 ], [ -122.193947, 37.841028 ], [ -122.194028, 37.841126 ], [ -122.194109, 37.841159 ], [ -122.194123, 37.841164 ], [ -122.194124, 37.841193 ], [ -122.194191, 37.841284 ], [ -122.194304, 37.841366 ], [ -122.194452, 37.841426 ], [ -122.194458, 37.841427 ], [ -122.1946, 37.841468 ], [ -122.194771, 37.841487 ], [ -122.194988, 37.841524 ], [ -122.195124, 37.841553 ], [ -122.195214, 37.841593 ], [ -122.195268, 37.84163 ], [ -122.195335, 37.841688 ], [ -122.195623, 37.841913 ], [ -122.195666, 37.841936 ], [ -122.195709, 37.84196 ], [ -122.195831, 37.842004 ], [ -122.195972, 37.842012 ], [ -122.196101, 37.842005 ], [ -122.19593, 37.842174 ], [ -122.195418, 37.842685 ], [ -122.195315, 37.842789 ], [ -122.195293, 37.842799 ], [ -122.195287, 37.842817 ], [ -122.195282, 37.843113 ], [ -122.1952772, 37.8431795 ], [ -122.195278, 37.843312 ], [ -122.195274, 37.843587 ], [ -122.196209, 37.844361 ], [ -122.196575, 37.844663 ], [ -122.196593, 37.844678 ], [ -122.196703, 37.844765 ], [ -122.196778, 37.844825 ], [ -122.19704, 37.844983 ], [ -122.197059, 37.844994 ], [ -122.19718, 37.845068 ], [ -122.197279, 37.845123 ], [ -122.197383, 37.845197 ], [ -122.197528, 37.845307 ], [ -122.198541, 37.846069 ], [ -122.198879, 37.846324 ], [ -122.199255, 37.846566 ], [ -122.19999, 37.84704 ], [ -122.200278, 37.847225 ], [ -122.200371, 37.847309 ], [ -122.200678, 37.847589 ], [ -122.200702, 37.847612 ], [ -122.200837, 37.847734 ], [ -122.201242, 37.848103 ], [ -122.201378, 37.848226 ], [ -122.201744, 37.848684 ], [ -122.202843, 37.850058 ], [ -122.20321, 37.850516 ], [ -122.203809, 37.851106 ], [ -122.204094, 37.851387 ], [ -122.206218, 37.851474 ], [ -122.207063, 37.85151 ], [ -122.207232, 37.851511 ], [ -122.207307, 37.851526 ], [ -122.207378, 37.851555 ], [ -122.207564, 37.851649 ], [ -122.207784, 37.851737 ], [ -122.207861, 37.85175 ], [ -122.207967, 37.851751 ], [ -122.208063, 37.851754 ], [ -122.208174, 37.85174 ], [ -122.208486, 37.85169 ], [ -122.209044, 37.852325 ], [ -122.210718, 37.85423 ], [ -122.210978, 37.854526 ], [ -122.21081, 37.854946 ], [ -122.210778, 37.855026 ], [ -122.210957, 37.855322 ], [ -122.211629, 37.856431 ], [ -122.211854, 37.856801 ], [ -122.211862, 37.85682 ], [ -122.211885, 37.85687 ], [ -122.21189, 37.85688 ], [ -122.211902, 37.8569 ], [ -122.211907, 37.856909 ], [ -122.211926, 37.856937 ], [ -122.211933, 37.856946 ], [ -122.212012, 37.857013 ], [ -122.21238, 37.857234 ], [ -122.212494, 37.857269 ], [ -122.212973, 37.857503 ], [ -122.213135, 37.857583 ], [ -122.213136, 37.857583 ], [ -122.213176, 37.857623 ], [ -122.213175, 37.857658 ], [ -122.213173, 37.85778 ], [ -122.213172, 37.857822 ], [ -122.213194, 37.857835 ], [ -122.213263, 37.857874 ], [ -122.213778, 37.858026 ], [ -122.213874, 37.858546 ], [ -122.214736, 37.85951 ], [ -122.215452, 37.860147 ], [ -122.217531, 37.861998 ], [ -122.218616, 37.8629304 ], [ -122.220389, 37.864427 ], [ -122.221488, 37.865026 ], [ -122.220315, 37.866144 ], [ -122.219181, 37.867226 ], [ -122.217999, 37.867815 ], [ -122.217897, 37.867866 ], [ -122.217778, 37.867925 ], [ -122.217583, 37.868061 ], [ -122.217227, 37.868316 ], [ -122.217075, 37.868424 ], [ -122.216995, 37.868464 ], [ -122.216783, 37.868571 ], [ -122.216769, 37.868577 ], [ -122.216276, 37.868822 ], [ -122.216738, 37.870043 ], [ -122.217376, 37.871724 ], [ -122.218721, 37.872936 ], [ -122.220211, 37.874276 ], [ -122.2213955, 37.8753179 ], [ -122.22156, 37.875543 ], [ -122.221573, 37.875558 ], [ -122.221711, 37.875723 ], [ -122.222448, 37.876609 ], [ -122.223878, 37.878326 ], [ -122.225567, 37.879125 ], [ -122.225778, 37.879225 ], [ -122.226831, 37.87965 ], [ -122.227116, 37.879764 ], [ -122.227117, 37.879765 ], [ -122.227661, 37.879984 ], [ -122.230149, 37.880989 ], [ -122.230979, 37.881325 ], [ -122.231999, 37.881595 ], [ -122.234378, 37.882225 ], [ -122.235068, 37.882384 ], [ -122.235679, 37.882525 ], [ -122.236029, 37.88262 ], [ -122.236038, 37.882623 ], [ -122.236095, 37.882638 ], [ -122.236382, 37.882714 ], [ -122.237249, 37.882946 ], [ -122.237538, 37.883024 ], [ -122.237543, 37.883026 ], [ -122.237597, 37.88304 ], [ -122.237916, 37.883124 ], [ -122.238679, 37.883325 ], [ -122.239042, 37.883203 ], [ -122.239353, 37.8831 ], [ -122.239413, 37.88308 ], [ -122.239506, 37.883048 ], [ -122.239785, 37.882956 ], [ -122.239879, 37.882925 ], [ -122.240261, 37.882739 ], [ -122.240273, 37.882732 ], [ -122.241459, 37.882157 ], [ -122.241855, 37.881966 ], [ -122.241971, 37.881927 ], [ -122.241979, 37.881924 ], [ -122.244079, 37.883224 ], [ -122.244114, 37.883252 ], [ -122.244615, 37.883646 ], [ -122.244635, 37.883662 ], [ -122.244803, 37.883794 ], [ -122.24531, 37.884192 ], [ -122.245479, 37.884325 ], [ -122.245716, 37.884511 ], [ -122.24643, 37.885069 ], [ -122.246586, 37.885191 ], [ -122.2469126, 37.885368 ], [ -122.2468285, 37.8846227 ], [ -122.2468285, 37.8845997 ], [ -122.246797, 37.8845137 ], [ -122.246782, 37.8843897 ], [ -122.2468341, 37.8841026 ], [ -122.246759, 37.8840032 ], [ -122.2466999, 37.8835531 ], [ -122.2466768, 37.8833083 ], [ -122.2465613, 37.8822776 ], [ -122.2465292, 37.8819701 ], [ -122.2464823, 37.8816 ], [ -122.2464564, 37.8813696 ], [ -122.2458657, 37.8760803 ], [ -122.2451848, 37.8699791 ], [ -122.2451769, 37.8699366 ], [ -122.245128, 37.8694772 ], [ -122.2451033, 37.8693142 ], [ -122.2450873, 37.8691475 ], [ -122.2450221, 37.8685854 ], [ -122.2450019, 37.8684585 ], [ -122.2449901, 37.8683318 ], [ -122.2449425, 37.8679253 ], [ -122.2449283, 37.8676847 ], [ -122.2448268, 37.8675822 ], [ -122.244603, 37.8674008 ], [ -122.2447496, 37.8672107 ], [ -122.244814, 37.8670511 ], [ -122.2450153, 37.8669188 ], [ -122.2450636, 37.8668702 ], [ -122.2447049, 37.8666633 ], [ -122.2447907, 37.8665555 ], [ -122.2448185, 37.8664858 ], [ -122.2448283, 37.8663874 ], [ -122.244818, 37.8662784 ], [ -122.2455346, 37.8662374 ], [ -122.2451916, 37.8657979 ], [ -122.2447332, 37.8657883 ], [ -122.2446211, 37.8647213 ], [ -122.2448737, 37.8647056 ], [ -122.2451046, 37.8643863 ], [ -122.2452505, 37.8642577 ], [ -122.2455253, 37.8640367 ], [ -122.2450246, 37.8633557 ], [ -122.2450077, 37.8632025 ], [ -122.2449498, 37.8630586 ], [ -122.244766, 37.8628556 ], [ -122.2444098, 37.8627113 ], [ -122.2443424, 37.8620745 ], [ -122.244415, 37.8620742 ], [ -122.2444112, 37.8620459 ], [ -122.2444734, 37.8618713 ], [ -122.2441376, 37.8614963 ], [ -122.244273, 37.8614233 ], [ -122.244235, 37.8610662 ], [ -122.2442521, 37.8609628 ], [ -122.2440452, 37.8607118 ], [ -122.2441741, 37.8605911 ], [ -122.2442395, 37.8604995 ], [ -122.2442608, 37.8604491 ], [ -122.2443073, 37.8602233 ], [ -122.2444704, 37.8592479 ], [ -122.2445203, 37.8591076 ], [ -122.2445697, 37.8590004 ], [ -122.2440523, 37.8589753 ], [ -122.2440171, 37.8589649 ], [ -122.2439845, 37.8589455 ], [ -122.2439634, 37.8589249 ], [ -122.243947, 37.8588967 ], [ -122.2439222, 37.8586397 ], [ -122.2438106, 37.8586425 ], [ -122.2426025, 37.8587208 ], [ -122.2425214, 37.8579348 ], [ -122.2427189, 37.8579331 ], [ -122.2425515, 37.8577131 ], [ -122.2423989, 37.8576347 ], [ -122.2423854, 37.8576321 ], [ -122.2421966, 37.8575302 ], [ -122.2420782, 37.8574885 ], [ -122.2419728, 37.8574367 ], [ -122.2418497, 37.8573448 ], [ -122.2414906, 37.8573743 ], [ -122.2417604, 37.857253 ], [ -122.2416854, 37.8571477 ], [ -122.2416432, 37.8570529 ], [ -122.2411547, 37.8572623 ], [ -122.2412131, 37.8573975 ], [ -122.2407935, 37.8574323 ], [ -122.2405321, 37.8575453 ], [ -122.2404511, 37.8574342 ], [ -122.2403659, 37.8572964 ], [ -122.2397933, 37.8575393 ], [ -122.2397198, 37.8575681 ], [ -122.2396459, 37.8575023 ], [ -122.2394235, 37.8575099 ], [ -122.2391063, 37.8577233 ], [ -122.2389204, 37.8575487 ], [ -122.2386662, 37.8575528 ], [ -122.2382307, 37.8576782 ], [ -122.2381736, 37.8576897 ], [ -122.2381011, 37.8575496 ], [ -122.2380282, 37.8575704 ], [ -122.2376997, 37.8575905 ], [ -122.2371982, 37.857637 ], [ -122.2368218, 37.8576585 ], [ -122.23681, 37.8575811 ], [ -122.2367865, 37.8575818 ], [ -122.2367561, 37.8575772 ], [ -122.236729, 37.8575682 ], [ -122.236715, 37.8575604 ], [ -122.2367415, 37.8576506 ], [ -122.2364297, 37.8576683 ], [ -122.2362043, 37.8576914 ], [ -122.2347612, 37.8577907 ], [ -122.2346034, 37.8563505 ], [ -122.2345931, 37.8562144 ], [ -122.2345495, 37.8557916 ], [ -122.2345302, 37.8556829 ], [ -122.2345004, 37.8554109 ], [ -122.2344928, 37.8554112 ], [ -122.2344212, 37.8546582 ], [ -122.2343896, 37.8543809 ], [ -122.2342719, 37.8532878 ], [ -122.2342364, 37.8529745 ], [ -122.2341962, 37.8525906 ], [ -122.2342067, 37.8525929 ], [ -122.2342669, 37.8524675 ], [ -122.2344038, 37.8523568 ], [ -122.2351037, 37.8523109 ], [ -122.2361216, 37.8522499 ], [ -122.2362043, 37.8522462 ], [ -122.2383598, 37.8521323 ], [ -122.2417934, 37.8519192 ], [ -122.241932, 37.8519069 ], [ -122.243606, 37.851807 ], [ -122.2436612, 37.8517964 ], [ -122.2447812, 37.8517335 ], [ -122.2448805, 37.8517234 ], [ -122.2449929, 37.8517168 ], [ -122.245118, 37.8517146 ], [ -122.2460156, 37.8516644 ], [ -122.2460827, 37.851664 ], [ -122.2466184, 37.8516177 ], [ -122.2466188, 37.85162 ], [ -122.2471316, 37.8515861 ], [ -122.2472204, 37.8515774 ], [ -122.2473312, 37.8516579 ], [ -122.2473561, 37.8516048 ], [ -122.24918, 37.8514354 ], [ -122.2491586, 37.8513803 ], [ -122.2492552, 37.8513507 ], [ -122.2492927, 37.8514205 ], [ -122.2494073, 37.8513809 ], [ -122.2494362, 37.8514626 ], [ -122.2499799, 37.8512798 ], [ -122.2500379, 37.8514166 ], [ -122.2508216, 37.8512003 ], [ -122.25089, 37.8511227 ], [ -122.2510831, 37.8512301 ], [ -122.2515732, 37.851078 ], [ -122.2517295, 37.8510228 ], [ -122.251893, 37.8509791 ], [ -122.252333, 37.8508346 ], [ -122.2525331, 37.8508241 ], [ -122.2529193, 37.8507728 ], [ -122.2529636, 37.8511006 ], [ -122.2530026, 37.8512793 ], [ -122.2530622, 37.8518279 ], [ -122.253122, 37.8523773 ], [ -122.2531151, 37.8523782 ], [ -122.2531668, 37.852789 ], [ -122.2531966, 37.8530635 ], [ -122.253224, 37.8530599 ], [ -122.2533097, 37.8534662 ], [ -122.2532414, 37.8534752 ], [ -122.2532654, 37.8536955 ], [ -122.2533181, 37.8536885 ], [ -122.253341, 37.8538203 ], [ -122.2534824, 37.8538027 ], [ -122.2534462, 37.8536715 ], [ -122.2538339, 37.8536201 ], [ -122.2539358, 37.8536141 ], [ -122.2539709, 37.8537411 ], [ -122.2550916, 37.8535946 ], [ -122.2556813, 37.8535067 ], [ -122.2561085, 37.8534552 ], [ -122.2571154, 37.8533152 ], [ -122.2572325, 37.8533004 ], [ -122.2572083, 37.8531785 ], [ -122.2573217, 37.8531694 ], [ -122.2582092, 37.8530515 ], [ -122.2583146, 37.8530436 ], [ -122.2583397, 37.8531727 ], [ -122.259784, 37.8530013 ], [ -122.2597535, 37.8528548 ], [ -122.2617005, 37.8526013 ], [ -122.2622237, 37.8525345 ], [ -122.2622481, 37.8526789 ], [ -122.2634167, 37.8525229 ], [ -122.2635948, 37.852512 ], [ -122.2636448, 37.8524222 ], [ -122.2636082, 37.8522956 ], [ -122.2639236, 37.852167 ], [ -122.2639539, 37.8523121 ], [ -122.2651871, 37.8521488 ], [ -122.2655266, 37.8520932 ], [ -122.26553, 37.8521096 ], [ -122.2659616, 37.8520603 ], [ -122.266068, 37.8520452 ], [ -122.2660645, 37.8520202 ], [ -122.2665208, 37.8519642 ], [ -122.2665222, 37.8519709 ], [ -122.267014, 37.8519113 ], [ -122.267011, 37.8518951 ], [ -122.2671323, 37.8518829 ], [ -122.2678154, 37.851792 ], [ -122.2679182, 37.8517855 ], [ -122.2679274, 37.8518283 ], [ -122.2682485, 37.8517694 ], [ -122.2686517, 37.8516828 ], [ -122.2689699, 37.8516448 ], [ -122.2689227, 37.8514194 ], [ -122.2688693, 37.8511407 ], [ -122.2688273, 37.8509785 ], [ -122.2687699, 37.8506793 ], [ -122.2687309, 37.8504938 ], [ -122.2687041, 37.8503157 ], [ -122.268656, 37.850037 ], [ -122.2686164, 37.8498723 ], [ -122.2684875, 37.8492239 ], [ -122.2684565, 37.8490443 ], [ -122.2683984, 37.8487647 ], [ -122.2690002, 37.8486873 ], [ -122.2689917, 37.8486476 ], [ -122.2695078, 37.8485827 ], [ -122.2693883, 37.8479999 ], [ -122.2692367, 37.8472708 ], [ -122.2692143, 37.8471097 ], [ -122.2691445, 37.8467401 ], [ -122.2708519, 37.8465165 ], [ -122.2713299, 37.846452 ], [ -122.2723122, 37.8463243 ], [ -122.2732028, 37.8462016 ], [ -122.2758009, 37.8458671 ], [ -122.2759078, 37.8463958 ], [ -122.2761885, 37.8477345 ], [ -122.2797517, 37.8472607 ], [ -122.2797471, 37.8472391 ], [ -122.2798837, 37.8472209 ], [ -122.2798883, 37.8472426 ], [ -122.2818991, 37.8469752 ], [ -122.2819568, 37.8472454 ], [ -122.2819796, 37.8474261 ], [ -122.2820517, 37.8477507 ], [ -122.281863, 37.8477757 ], [ -122.2819905, 37.848349 ], [ -122.2821789, 37.8483073 ], [ -122.282464, 37.8491182 ], [ -122.2825974, 37.8490887 ], [ -122.2825881, 37.8490622 ], [ -122.2827049, 37.8490364 ], [ -122.2827142, 37.8490629 ], [ -122.2829644, 37.8490076 ], [ -122.2830574, 37.8492721 ], [ -122.2830829, 37.8493615 ], [ -122.2831933, 37.8493363 ], [ -122.2832454, 37.8494898 ], [ -122.2833838, 37.8499481 ], [ -122.2833465, 37.8499564 ], [ -122.2834408, 37.8502207 ], [ -122.2834648, 37.8503294 ], [ -122.2835447, 37.8505774 ], [ -122.2835514, 37.850576 ], [ -122.2835719, 37.8506423 ], [ -122.2843524, 37.8504907 ], [ -122.2843319, 37.8504245 ], [ -122.2845001, 37.8503919 ], [ -122.2845206, 37.8504581 ], [ -122.2858648, 37.8501971 ], [ -122.2860377, 37.8501684 ], [ -122.286151, 37.8505322 ], [ -122.2863159, 37.8504775 ], [ -122.2887006, 37.8499981 ], [ -122.2889528, 37.849946 ] ], [ [ -122.244191, 37.819027 ], [ -122.244287, 37.819074 ], [ -122.244554, 37.819203 ], [ -122.244578, 37.819215 ], [ -122.244676, 37.819262 ], [ -122.244851, 37.819377 ], [ -122.245378, 37.819722 ], [ -122.245554, 37.819838 ], [ -122.245579, 37.819819 ], [ -122.245604, 37.81981 ], [ -122.245643, 37.819813 ], [ -122.245688, 37.819831 ], [ -122.245753, 37.819874 ], [ -122.245788, 37.819901 ], [ -122.245841, 37.819942 ], [ -122.245992, 37.820079 ], [ -122.246123, 37.820215 ], [ -122.246322, 37.820499 ], [ -122.246395, 37.820602 ], [ -122.246468, 37.820725 ], [ -122.246667, 37.820899 ], [ -122.247267, 37.821424 ], [ -122.247414, 37.821552 ], [ -122.247468, 37.821599 ], [ -122.248041, 37.82201 ], [ -122.249336, 37.822939 ], [ -122.248953, 37.8233 ], [ -122.248859, 37.82339 ], [ -122.249374, 37.823649 ], [ -122.249123, 37.823883 ], [ -122.248373, 37.824586 ], [ -122.248324, 37.824632 ], [ -122.248118, 37.824815 ], [ -122.248098, 37.824894 ], [ -122.24804, 37.825131 ], [ -122.248022, 37.825211 ], [ -122.247953, 37.825417 ], [ -122.247748, 37.826034 ], [ -122.24768, 37.826241 ], [ -122.247236, 37.826496 ], [ -122.245945, 37.827239 ], [ -122.245907, 37.827263 ], [ -122.245476, 37.827538 ], [ -122.245308, 37.827648 ], [ -122.244805, 37.827978 ], [ -122.244638, 37.828089 ], [ -122.244548, 37.828135 ], [ -122.244417, 37.828205 ], [ -122.244292, 37.828293 ], [ -122.24426, 37.828317 ], [ -122.244367, 37.8285009 ], [ -122.2444357, 37.8286569 ], [ -122.244279, 37.828839 ], [ -122.243557, 37.829776 ], [ -122.243348, 37.830048 ], [ -122.243317, 37.830088 ], [ -122.243311, 37.830083 ], [ -122.243293, 37.830068 ], [ -122.243288, 37.830063 ], [ -122.243025, 37.830012 ], [ -122.242915, 37.830007 ], [ -122.242825, 37.830009 ], [ -122.242715, 37.830021 ], [ -122.242402, 37.830094 ], [ -122.242351, 37.830107 ], [ -122.241229, 37.830406 ], [ -122.241087, 37.830439 ], [ -122.240935, 37.830458 ], [ -122.240781, 37.830466 ], [ -122.239748, 37.830478 ], [ -122.239668, 37.830479 ], [ -122.239064, 37.830503 ], [ -122.238852, 37.830537 ], [ -122.238596, 37.830572 ], [ -122.238456, 37.830581 ], [ -122.238227, 37.830596 ], [ -122.237892, 37.830623 ], [ -122.237723, 37.830656 ], [ -122.237552, 37.830696 ], [ -122.237327, 37.830807 ], [ -122.237299, 37.830817 ], [ -122.237251, 37.830836 ], [ -122.237151, 37.830842 ], [ -122.237048, 37.830823 ], [ -122.236966, 37.830786 ], [ -122.236921, 37.830761 ], [ -122.236656, 37.830846 ], [ -122.236059, 37.831038 ], [ -122.235855, 37.831072 ], [ -122.235581, 37.831118 ], [ -122.23533, 37.831163 ], [ -122.23458, 37.831302 ], [ -122.234331, 37.831348 ], [ -122.233055, 37.831582 ], [ -122.232279, 37.831726 ], [ -122.230566, 37.8322557 ], [ -122.2302181, 37.8323633 ], [ -122.229317, 37.832642 ], [ -122.228079, 37.833026 ], [ -122.227873, 37.832887 ], [ -122.227258, 37.832473 ], [ -122.227054, 37.832335 ], [ -122.227016, 37.832247 ], [ -122.226966, 37.832155 ], [ -122.226962, 37.832148 ], [ -122.226919, 37.832109 ], [ -122.226873, 37.832079 ], [ -122.22682, 37.832052 ], [ -122.226752, 37.832029 ], [ -122.22646, 37.832 ], [ -122.226408, 37.831982 ], [ -122.226392, 37.831977 ], [ -122.22628, 37.831929 ], [ -122.226229, 37.831895 ], [ -122.226139, 37.831847 ], [ -122.225871, 37.831703 ], [ -122.225782, 37.831655 ], [ -122.2256897, 37.8316049 ], [ -122.225631, 37.831573 ], [ -122.225178, 37.83133 ], [ -122.225028, 37.831249 ], [ -122.224919, 37.831046 ], [ -122.224594, 37.83044 ], [ -122.224486, 37.830239 ], [ -122.224083, 37.829695 ], [ -122.223721, 37.829206 ], [ -122.222798, 37.828126 ], [ -122.222741, 37.828059 ], [ -122.222666, 37.827972 ], [ -122.222591, 37.827884 ], [ -122.222359, 37.827613 ], [ -122.222307, 37.827539 ], [ -122.2222597, 37.8274239 ], [ -122.222151, 37.827319 ], [ -122.2221, 37.827246 ], [ -122.221949, 37.82696 ], [ -122.2216251, 37.8263302 ], [ -122.2215874, 37.8262758 ], [ -122.221499, 37.826102 ], [ -122.221349, 37.825817 ], [ -122.220777, 37.825364 ], [ -122.2194664, 37.8243268 ], [ -122.2193598, 37.8242424 ], [ -122.219061, 37.824006 ], [ -122.218785, 37.823788 ], [ -122.218489, 37.823554 ], [ -122.218212, 37.823432 ], [ -122.217381, 37.823067 ], [ -122.2172545, 37.8230185 ], [ -122.217104, 37.822946 ], [ -122.217006, 37.822895 ], [ -122.216911, 37.822845 ], [ -122.216714, 37.822742 ], [ -122.216617, 37.822692 ], [ -122.216491, 37.822673 ], [ -122.216473, 37.822671 ], [ -122.216302, 37.822604 ], [ -122.216185, 37.822514 ], [ -122.216172, 37.822487 ], [ -122.216144, 37.822425 ], [ -122.216127, 37.82237 ], [ -122.215999, 37.822242 ], [ -122.2157672, 37.8220028 ], [ -122.215615, 37.821861 ], [ -122.215488, 37.821734 ], [ -122.215278, 37.82162 ], [ -122.214649, 37.821281 ], [ -122.21444, 37.821168 ], [ -122.214013, 37.820911 ], [ -122.212732, 37.820141 ], [ -122.212719, 37.8201173 ], [ -122.212305, 37.819885 ], [ -122.212135, 37.819791 ], [ -122.211627, 37.819512 ], [ -122.211458, 37.819419 ], [ -122.211195, 37.81928 ], [ -122.21041, 37.818866 ], [ -122.210148, 37.818728 ], [ -122.210724, 37.81832 ], [ -122.211212, 37.817981 ], [ -122.21161, 37.817707 ], [ -122.211929, 37.817457 ], [ -122.212129, 37.817268 ], [ -122.212327, 37.81704 ], [ -122.21248, 37.81683 ], [ -122.212596, 37.816646 ], [ -122.212731, 37.816384 ], [ -122.2128, 37.816227 ], [ -122.212848, 37.816077 ], [ -122.21291, 37.815812 ], [ -122.212988, 37.815202 ], [ -122.213017, 37.81506 ], [ -122.213054, 37.814913 ], [ -122.213104, 37.814779 ], [ -122.213108, 37.814772 ], [ -122.21319, 37.814636 ], [ -122.213623, 37.814122 ], [ -122.213673, 37.814058 ], [ -122.213728, 37.813968 ], [ -122.213802, 37.813822 ], [ -122.213847, 37.813712 ], [ -122.213863, 37.813669 ], [ -122.213901, 37.813591 ], [ -122.213959, 37.813499 ], [ -122.213978, 37.813473 ], [ -122.214015, 37.813423 ], [ -122.214044, 37.813383 ], [ -122.214086, 37.813336 ], [ -122.214237, 37.813201 ], [ -122.214354, 37.813107 ], [ -122.214476, 37.813024 ], [ -122.21459, 37.812934 ], [ -122.214645, 37.812892 ], [ -122.214791, 37.812749 ], [ -122.214857, 37.812695 ], [ -122.214882, 37.812668 ], [ -122.214993, 37.812554 ], [ -122.215021, 37.81252 ], [ -122.215111, 37.812381 ], [ -122.215134, 37.812347 ], [ -122.215174, 37.812276 ], [ -122.215445, 37.81237 ], [ -122.215945, 37.812543 ], [ -122.216164, 37.812646 ], [ -122.21625, 37.812677 ], [ -122.216521, 37.812776 ], [ -122.21676, 37.812818 ], [ -122.2172068, 37.8128994 ], [ -122.217478, 37.812945 ], [ -122.2175523, 37.8129583 ], [ -122.217718, 37.812988 ], [ -122.218206, 37.813096 ], [ -122.2182949, 37.8131104 ], [ -122.21967, 37.813421 ], [ -122.2196997, 37.813431 ], [ -122.220159, 37.81353 ], [ -122.220355, 37.813583 ], [ -122.220944, 37.813744 ], [ -122.221019, 37.8137605 ], [ -122.221141, 37.813798 ], [ -122.221439, 37.813845 ], [ -122.2222454, 37.8139701 ], [ -122.222336, 37.813986 ], [ -122.222635, 37.814034 ], [ -122.22291, 37.814097 ], [ -122.223735, 37.814286 ], [ -122.224011, 37.81435 ], [ -122.224256, 37.81442 ], [ -122.224992, 37.814632 ], [ -122.2250842, 37.8146599 ], [ -122.225238, 37.814703 ], [ -122.225912, 37.814855 ], [ -122.227934, 37.815313 ], [ -122.228609, 37.815466 ], [ -122.2289513, 37.8155298 ], [ -122.229332, 37.815613 ], [ -122.231504, 37.816054 ], [ -122.232228, 37.816202 ], [ -122.232438, 37.81627 ], [ -122.233067, 37.816476 ], [ -122.233278, 37.816545 ], [ -122.233549, 37.816621 ], [ -122.2341225, 37.8167768 ], [ -122.234363, 37.81685 ], [ -122.234635, 37.816927 ], [ -122.234761, 37.816961 ], [ -122.235139, 37.817064 ], [ -122.235265, 37.817099 ], [ -122.2355, 37.817143 ], [ -122.236208, 37.817277 ], [ -122.236444, 37.817322 ], [ -122.236673, 37.817341 ], [ -122.237361, 37.817399 ], [ -122.237591, 37.817419 ], [ -122.237934, 37.817503 ], [ -122.238966, 37.817756 ], [ -122.23931, 37.817841 ], [ -122.23957, 37.817892 ], [ -122.24035, 37.818045 ], [ -122.24061, 37.818096 ], [ -122.241007, 37.818187 ], [ -122.242198, 37.81846 ], [ -122.242596, 37.818552 ], [ -122.242747, 37.818592 ], [ -122.2432, 37.818712 ], [ -122.2431735, 37.8187221 ], [ -122.243351, 37.818753 ], [ -122.243518, 37.818807 ], [ -122.244022, 37.818972 ], [ -122.244191, 37.819027 ] ] ] } },
     {
       "type": "Feature",
       "properties": {
-      "label": "Alameda_exterior_SF",
+        "label": "SFCity_exterior_CA",
         "boundary": "exterior",
         "is_in": "north-america",
-        "country":"us",
-        "state":"california"
+        "country": "us",
+        "state": "california"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
-              -122.340281,
-              37.800628
+              -122.504483,
+              37.696695
             ],
             [
-              -122.333755,
-              37.790631
+              -122.386021,
+              37.696157
             ],
             [
-              -122.332994,
-              37.781235
+              -122.389314,
+              37.705543
             ],
             [
-              -122.318396,
-              37.776691
+              -122.368223,
+              37.705666
             ],
             [
-              -122.305617,
-              37.774884
+              -122.37498,
+              37.712593
             ],
             [
-              -122.305616,
-              37.771309
+              -122.357307,
+              37.716044
             ],
             [
-              -122.298113,
-              37.770237
+              -122.354651,
+              37.730725
             ],
             [
-              -122.276894,
-              37.758336
+              -122.362782,
+              37.735088
             ],
             [
-              -122.256665,
-              37.751676
+              -122.372818,
+              37.74987
             ],
             [
-              -122.263109,
-              37.739414
+              -122.38253,
+              37.765233
             ],
             [
-              -122.258265,
-              37.736566
+              -122.378623,
+              37.775454
             ],
             [
-              -122.255094,
-              37.73343
+              -122.381713,
+              37.779616
             ],
             [
-              -122.250975,
-              37.729414
+              -122.379893,
+              37.784952
             ],
             [
-              -122.248827,
-              37.727808
+              -122.397815,
+              37.807614
             ],
             [
-              -122.248308,
-              37.72725
+              -122.411444,
+              37.812914
             ],
             [
-              -122.247919,
-              37.726969
+              -122.429176,
+              37.810534
             ],
             [
-              -122.246139,
-              37.725685
+              -122.441244,
+              37.809141
             ],
             [
-              -122.244359,
-              37.724401
+              -122.456496,
+              37.807554
             ],
             [
-              -122.244042,
-              37.724172
+              -122.464889,
+              37.809471
             ],
             [
-              -122.23963,
-              37.720988
+              -122.481283,
+              37.812859
             ],
             [
-              -122.236902,
-              37.71902
+              -122.480828,
+              37.806032
             ],
             [
-              -122.236101,
-              37.71862
+              -122.485034,
+              37.79609
             ],
             [
-              -122.235965,
-              37.718759
+              -122.492539,
+              37.790694
             ],
             [
-              -122.232267,
-              37.722546
+              -122.501738,
+              37.792393
             ],
             [
-              -122.231853,
-              37.72297
+              -122.517053,
+              37.782144
             ],
             [
-              -122.228625,
-              37.726277
-            ],
-            [
-              -122.228379,
-              37.726529
-            ],
-            [
-              -122.228183,
-              37.726738
-            ],
-            [
-              -122.228158,
-              37.726763
-            ],
-            [
-              -122.228084,
-              37.726841
-            ],
-            [
-              -122.22806,
-              37.726867
-            ],
-            [
-              -122.22771,
-              37.726804
-            ],
-            [
-              -122.226663,
-              37.726615
-            ],
-            [
-              -122.226314,
-              37.726553
-            ],
-            [
-              -122.226379,
-              37.727316
-            ],
-            [
-              -122.226574,
-              37.729607
-            ],
-            [
-              -122.22664,
-              37.730371
-            ],
-            [
-              -122.226171,
-              37.731039
-            ],
-            [
-              -122.225785,
-              37.731462
-            ],
-            [
-              -122.225653,
-              37.731766
-            ],
-            [
-              -122.225562,
-              37.731959
-            ],
-            [
-              -122.225524,
-              37.733071
-            ],
-            [
-              -122.225338,
-              37.738659
-            ],
-            [
-              -122.225267,
-              37.740797
-            ],
-            [
-              -122.225221,
-              37.742207
-            ],
-            [
-              -122.22512,
-              37.745253
-            ],
-            [
-              -122.225491,
-              37.745305
-            ],
-            [
-              -122.225782,
-              37.745347
-            ],
-            [
-              -122.226174,
-              37.745402
-            ],
-            [
-              -122.2266,
-              37.745501
-            ],
-            [
-              -122.226634,
-              37.74569
-            ],
-            [
-              -122.226642,
-              37.747496
-            ],
-            [
-              -122.226432,
-              37.748261
-            ],
-            [
-              -122.226029,
-              37.749335
-            ],
-            [
-              -122.225895,
-              37.749694
-            ],
-            [
-              -122.225631,
-              37.75036
-            ],
-            [
-              -122.224842,
-              37.752361
-            ],
-            [
-              -122.224579,
-              37.753028
-            ],
-            [
-              -122.224419,
-              37.753308
-            ],
-            [
-              -122.223939,
-              37.754148
-            ],
-            [
-              -122.223861,
-              37.75465
-            ],
-            [
-              -122.223859,
-              37.75644
-            ],
-            [
-              -122.223915,
-              37.757852
-            ],
-            [
-              -122.223983,
-              37.75953
-            ],
-            [
-              -122.224151,
-              37.760241
-            ],
-            [
-              -122.224639,
-              37.762302
-            ],
-            [
-              -122.224662,
-              37.762402
-            ],
-            [
-              -122.225127,
-              37.764363
-            ],
-            [
-              -122.225154,
-              37.764397
-            ],
-            [
-              -122.225986,
-              37.765454
-            ],
-            [
-              -122.226947,
-              37.766675
-            ],
-            [
-              -122.229152,
-              37.768077
-            ],
-            [
-              -122.230325,
-              37.768823
-            ],
-            [
-              -122.230377,
-              37.768842
-            ],
-            [
-              -122.230438,
-              37.768864
-            ],
-            [
-              -122.230514,
-              37.768891
-            ],
-            [
-              -122.230537,
-              37.768899
-            ],
-            [
-              -122.23059,
-              37.768919
-            ],
-            [
-              -122.231769,
-              37.769474
-            ],
-            [
-              -122.235308,
-              37.77114
-            ],
-            [
-              -122.236488,
-              37.771696
-            ],
-            [
-              -122.236566,
-              37.771731
-            ],
-            [
-              -122.238506,
-              37.772954
-            ],
-            [
-              -122.240684,
-              37.774327
-            ],
-            [
-              -122.242569,
-              37.775687
-            ],
-            [
-              -122.244385,
-              37.776997
-            ],
-            [
-              -122.24488,
-              37.777354
-            ],
-            [
-              -122.244817,
-              37.779123
-            ],
-            [
-              -122.244978,
-              37.780925
-            ],
-            [
-              -122.245606,
-              37.782233
-            ],
-            [
-              -122.246179,
-              37.783426
-            ],
-            [
-              -122.25058,
-              37.786127
-            ],
-            [
-              -122.253844,
-              37.786594
-            ],
-            [
-              -122.25478,
-              37.786728
-            ],
-            [
-              -122.25558,
-              37.786328
-            ],
-            [
-              -122.25668,
-              37.785428
-            ],
-            [
-              -122.25788,
-              37.784228
-            ],
-            [
-              -122.258703,
-              37.784525
-            ],
-            [
-              -122.260868,
-              37.785308
-            ],
-            [
-              -122.264285,
-              37.786545
-            ],
-            [
-              -122.26596,
-              37.787152
-            ],
-            [
-              -122.26838,
-              37.788028
-            ],
-            [
-              -122.26954,
-              37.788688
-            ],
-            [
-              -122.27302,
-              37.790668
-            ],
-            [
-              -122.27418,
-              37.791328
-            ],
-            [
-              -122.274271,
-              37.791392
-            ],
-            [
-              -122.274544,
-              37.791584
-            ],
-            [
-              -122.274636,
-              37.791648
-            ],
-            [
-              -122.274964,
-              37.791804
-            ],
-            [
-              -122.275951,
-              37.792272
-            ],
-            [
-              -122.27628,
-              37.792428
-            ],
-            [
-              -122.27788,
-              37.792708
-            ],
-            [
-              -122.282679,
-              37.793548
-            ],
-            [
-              -122.28428,
-              37.793828
-            ],
-            [
-              -122.286379,
-              37.793565
-            ],
-            [
-              -122.292678,
-              37.792778
-            ],
-            [
-              -122.29388,
-              37.792628
-            ],
-            [
-              -122.29478,
-              37.792528
-            ],
-            [
-              -122.305305,
-              37.793692
-            ],
-            [
-              -122.312471,
-              37.794484
-            ],
-            [
-              -122.31468,
-              37.794728
-            ],
-            [
-              -122.3198,
-              37.795908
-            ],
-            [
-              -122.33516,
-              37.799448
-            ],
-            [
-              -122.340281,
-              37.800628
+              -122.504483,
+              37.696695
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
-      "id": "a0f8513094c38e1919ea50a8c0e2a5c9"
-    },         
-
-    {
-     "type": "Feature",
-     "properties": {
-      "label": "SFCity_exterior_CA",
-      "boundary": "exterior",
-      "is_in": "north-america",
-      "country":"us",
-      "state":"california"
-     },
-     "geometry": {
-       "coordinates": [
-         [
-           [
-             -122.504483,
-             37.696695
-           ],
-           [
-             -122.386021,
-             37.696157
-           ],
-           [
-             -122.389314,
-             37.705543
-           ],
-           [
-             -122.368223,
-             37.705666
-           ],
-           [
-             -122.37498,
-             37.712593
-           ],
-           [
-             -122.357307,
-             37.716044
-           ],
-           [
-             -122.354651,
-             37.730725
-           ],
-           [
-             -122.362782,
-             37.735088
-           ],
-           [
-             -122.372818,
-             37.74987
-           ],
-           [
-             -122.38253,
-             37.765233
-           ],
-           [
-             -122.378623,
-             37.775454
-           ],
-           [
-             -122.381713,
-             37.779616
-           ],
-           [
-             -122.379893,
-             37.784952
-           ],
-           [
-             -122.397815,
-             37.807614
-           ],
-           [
-             -122.411444,
-             37.812914
-           ],
-           [
-             -122.429176,
-             37.810534
-           ],
-           [
-             -122.441244,
-             37.809141
-           ],
-           [
-             -122.456496,
-             37.807554
-           ],
-           [
-             -122.464889,
-             37.809471
-           ],
-           [
-             -122.481283,
-             37.812859
-           ],
-           [
-             -122.480828,
-             37.806032
-           ],
-           [
-             -122.485034,
-             37.79609
-           ],
-           [
-             -122.492539,
-             37.790694
-           ],
-           [
-             -122.501738,
-             37.792393
-           ],
-           [
-             -122.517053,
-             37.782144
-           ],
-           [
-             -122.504483,
-             37.696695
-           ]
-         ]
-       ],
-       "type": "Polygon"
-     },
-     "id": "174c07bf438e1b9adfeccf823998b989"
-   },
-
+      "id": "174c07bf438e1b9adfeccf823998b989"
+    },
     {
       "type": "Feature",
       "properties": {
@@ -33165,10 +32588,11 @@
         "label": "Memphis_exterior_TN",
         "type": "exterior",
         "is_in": "north-america",
-        "country":"us",
-        "state":"tennessee"
+        "country": "us",
+        "state": "tennessee"
       },
       "geometry": {
+        "type": "Polygon",
         "coordinates": [
           [
             [
@@ -33352,11 +32776,9 @@
               35.121624
             ]
           ]
-        ],
-        "type": "Polygon"
+        ]
       },
       "id": "ff9cc900f5233af2bff8b730665b639d"
     }
-  ],
-  "type": "FeatureCollection"
+  ]
 }
