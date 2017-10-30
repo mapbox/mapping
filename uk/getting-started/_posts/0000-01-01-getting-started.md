@@ -20,7 +20,7 @@ title: Приступаючи до роботи
 
 *(використовуйте формат [Markdown]( http://en.wikipedia.org/wiki/Markdown) для цього)*
 
-Ось приклад, як це може виглядати:
+Ось такий вигляд це може мати:
 
 ![osm-profile-description-example]({{site.baseurl}}/images/osm-profile-description-example.png)
 
@@ -47,7 +47,7 @@ JOSM потребує для своєї роботи Java Runtime Environment -
 
     ~$ java -Xmx1024M -DproxyHost=$PROXY -DproxyPort=8080 -jar josm-tested.jar
 
-Після встановлення та запуску JOSM виглядатиме приблизно так. Відкрийте вікно **Налаштувань** (**Preferences**), воно вам знадобиться для виконаня наступних кроків. Просто клацніть на значок вимикача.
+Після встановлення та запуску JOSM матиме приблизно такий вигляд. Відкрийте вікно **Налаштувань** (**Preferences**), воно вам знадобиться для виконаня наступних кроків. Просто клацніть на значок вимикача.
 
 ![josm-preferences]({{site.baseurl}}/uk/images/josm-preferences.png)
 
