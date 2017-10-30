@@ -86,7 +86,7 @@ title: Модель даних OpenStreetMap
 
 ## Додаткові матеріали
 
-Для отримання більш докладної інформації про структуру даних OpenStreetMap, зверніться до цих джерел:
+Щоб дізнатися більше про структуру даних OpenStreetMap, зверніться до цих джерел:
 
 - Елементи OpenStreetMap – <http://wiki.openstreetmap.org/wiki/Uk:Elements>
 - Мультиполігони – <http://wiki.openstreetmap.org/wiki/Uk:Relation:multipolygon>
