@@ -4,13 +4,13 @@ title: Mapping implicit turn-restrictions
 
 ## What are implicit turn-restrictions?
 
-Implicit turn restrictions are turn restrictions that are _implied_ by local laws, safe driving norms, or the real-world physical layout of roads, but are not accompanied by explicit signs (posts or roadpaint). When a junction is missing an implicit turn restriction, a routing engine may direct the driver to make an illegal or dangerous maneuver.
+Implicit turn restrictions are turn restrictions that are _implied_ by local laws, safe driving norms, or the real-world physical layout of roads, but are not accompanied by explicit signs (posts or road paint). When a junction is missing an implicit turn restriction, a routing engine may direct the driver to make an illegal or dangerous maneuver.
 
 ## Types of implicit turn-restrictions
 
 ### Sharp turns between ramps or slip roads
 
-Where highway exit ramps join a road implicit turn restrictions are often need. Often a highway _off-ramp_ enters a road from one direction, and an _on-ramp_ branches off in the opposite direction at the same spot or very close by. In these situations, it is sometimes logically possible in the road network to navigate from an offramp directly onto an opposing on ramp:
+Where highway exit ramps join a road implicit turn restrictions are often need. Often a highway _off-ramp_ enters a road from one direction, and an _on-ramp_ branches off in the opposite direction at the same spot or very close by. In these situations, it is sometimes logically possible in the road network to navigate from an off-ramp directly onto an opposing on ramp:
 
 ![]({{site.baseurl}}/images/implicit-trs/image3.png)
 
@@ -69,9 +69,9 @@ We should remodel these as proper dual-carriageway intersections.
 
 Once the road has been remodeled, apply turn restrictions for highway ramps and slip roads as normal.
 
-### Complex intersections and microloops
+### Complex intersections and micro-loops
 
-Where multiple dual carriageways, ramps, slip roads, and/or single carriageways join, the complex network of crossing ways can create unpredictable routes. For example, "microloops" can enable unintended U-turn options:
+Where multiple dual carriageways, ramps, slip roads, and/or single carriageways join, the complex network of crossing ways can create unpredictable routes. For example, "micro-loops" can enable unintended U-turn options:
 
 ![]({{site.baseurl}}/images/implicit-trs/image8.png)
 
@@ -88,5 +88,3 @@ Just as for regular turn restrictions, there are situations where implicit turn 
 |Option 1 | Option 2|
 |--- | --- |
 | ![]({{site.baseurl}}/images/implicit-trs/image10.png) Add a `no_u_turn` via the node between `from` and `to`  ramps| ![]({{site.baseurl}}/images/implicit-trs/image9.png)  Add `only_straight_on` via the node.|
-
-
