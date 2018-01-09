@@ -12,16 +12,14 @@ A turn restriction at a junction is represented by a [relation](http://wiki.open
 Refer to the table given below to spot/match the traffic sign in the Mapillary image against the list of traffic signs and it also consists of the OSM tags: 
 
 
-Symbol | Description | OSM Tag | Node/Way/Relation | 
------- | ----------- | ------- | ----------------- |
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/MUTCD_R3-27.svg/80px-MUTCD_R3-27.svg.png)| No straight through | restriction=no_straight_on | [Relation](http://wiki.openstreetmap.org/wiki/Relation:restriction) | 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/MUTCD_R3-1.svg/80px-MUTCD_R3-1.svg.png)| No Right Turn | restriction=no_right_turn | [Relation](http://wiki.openstreetmap.org/wiki/Relation:restriction) |
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/MUTCD_R3-2.svg/80px-MUTCD_R3-2.svg.png)| No Left Turn | restriction=no_left_turn | [Relation](http://wiki.openstreetmap.org/wiki/Relation:restriction) |
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/MUTCD_R3-3.svg/80px-MUTCD_R3-3.svg.png)| No Turns	| restriction=only_straight_on | [Relation](http://wiki.openstreetmap.org/wiki/Relation:restriction) |
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/MUTCD_R3-4.svg/80px-MUTCD_R3-4.svg.png)| No U-turn | restriction=no_u_turn | [Relation](http://wiki.openstreetmap.org/wiki/Relation:restriction) |
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/MUTCD_R3-18.svg/80px-MUTCD_R3-18.svg.png)| No Left or U-turn | restriction=no_left_turn; restriction=no_u_turn | [Relation](http://wiki.openstreetmap.org/wiki/Relation:restriction) |
-
- _The last two columns of the table enlists the correct tagging convention for adding the traffic data to OpenStreetMap._
+| Turn restriction | Sign |  Restriction modelling | Tagging schema   |
+|------------------|------|---|---|
+| **no_left_turn**     | ![image](https://user-images.githubusercontent.com/20293098/34515970-c23d843e-f09a-11e7-8c39-ae1aee945b45.png) | ![image](https://user-images.githubusercontent.com/20293098/34552143-c9d89188-f145-11e7-8f20-8c8d3cef0f47.png) |<ul><li>**from**:`X-Road`</li><li>**via**:`Y-node`</li><li>**to**:`Z-Road`</li> <li>**restriction**=`no_left_turn`</li><li>**type**=`restriction`</li></ul>
+| **no_right_turn**    | ![image](https://user-images.githubusercontent.com/20293098/34516051-298ada7e-f09b-11e7-99ca-ff011e6fca20.png) | ![image](https://user-images.githubusercontent.com/20293098/34519854-198b5840-f0ac-11e7-85b5-882c558cee70.png) | <ul><li>**from**:`X-Road`</li><li>**via**:`Y-node`</li><li>**to**:`Z-Road` </li> <li>**restriction**=`no_right_turn`</li><li>**type**=`restriction`</li></ul>|
+| **no_u_turn**        | ![image](https://user-images.githubusercontent.com/20293098/34516091-60d7ec6a-f09b-11e7-8c8e-580b9ddeac83.png) |  ![image](https://user-images.githubusercontent.com/20293098/34519894-50bcaaf8-f0ac-11e7-986e-da81b5e993f3.png) ![image](https://user-images.githubusercontent.com/20293098/34519907-6681e7b8-f0ac-11e7-995d-5e347a30c578.png) | <ul><li>**from**:`X-Road`</li><li>**via**:`Y-node`</li><li>**to**: `X-Road`</li> <li>**restriction**=`no_u_turn`</li><li>**type**=`restriction`</li></br><li>**from**: `X-Road`</li><li> **via**: `Y-Road` </li><li>**to**: `Z-Road`</li><li>**restriction**=`no_u_turn`</li><li>**type**=`restriction`</li></ul> |
+| **no_straight_on**   | ![image](https://user-images.githubusercontent.com/20293098/34516148-c35afb8e-f09b-11e7-8a49-b89764c9f4e5.png) | ![image](https://user-images.githubusercontent.com/20293098/34519965-ac4fe632-f0ac-11e7-8956-df3cfc2933f8.png) | <ul><li>**from**:`X-Road`</li><li>**via**:`Y-node`</li><li>**to**:`Z-Road`</li><li>**restriction**=`no_straight_on`</li><li>**type**=`restriction`</li></ul> |
+| **no_turns**         | ![image](https://user-images.githubusercontent.com/20293098/34516200-0f55d9dc-f09c-11e7-81b7-153e0bacc22a.png) | ![image](https://user-images.githubusercontent.com/20293098/34550551-e83205f0-f137-11e7-8ce4-866e292b2dbb.png)  | <ul><li>**from**: `X-Road` </li><li> **via**: `Y-node` </li><li> **to**: `Z-Road` </li> <li>**restriction**=`only_straight_on`</li><li>**type**=`restriction`</li></ul> |
+| **no_left_or_u_turn**| ![image](https://user-images.githubusercontent.com/20293098/34516234-2edbddd8-f09c-11e7-8f07-2ac9214f3a0c.png) |  ![image](https://user-images.githubusercontent.com/20293098/34550597-490fc3e4-f138-11e7-9e6b-9c1f206ee187.png) |  <ul><li> **from**: `X-Road` </li><li> **via**: `Y-node` </li><li> **to**: `Z-Road` </li><li>**restriction**=`no_left_turn`</li><li>**type**=`restriction`</li></br><li>**from**: `X-Road`</li><li> **via**: `Y-Road`</li><li> **to**: `Z-Road`</li><li>**restriction**=`no_u_turn`</li><li>**type**=`restriction`</li></ul>|
 
 
 ## Using OSM Navigation Map
