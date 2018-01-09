@@ -7,9 +7,16 @@ A turn restriction at a junction is represented by a [relation](http://wiki.open
 
 ![image](https://cloud.githubusercontent.com/assets/3423533/15504805/5d678d70-21de-11e6-8290-d20db2380d4d.png)
 
-## Traffic signs to be added
+**How to interpret turn restriction :**
+**The best practice to interpret a TR is always to assume you as a rider.**This helps in analysing the TR board quickly . The below table explains how to understand the turn restriction and what are components we need to tag in relation.
 
-Refer to the table given below to spot/match the traffic sign in the Mapillary image against the list of traffic signs and it also consists of the OSM tags: 
+**from** : It indicates the road where you are driving.
+**via** : The  junction or road where you need to cross for making turn.
+**to**: The street you want to go. 
+
+🔴  - Red indicates the route where you should not proceed.
+🔵  - Blue indicates the route where you can proceed.
+
 
 
 | Turn restriction | Sign |  Restriction modelling | Tagging schema   |
