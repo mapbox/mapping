@@ -4,23 +4,20 @@ title: Modeling Intersections for Map Navigation
 
 Capturing the various cases of Intersection modelling in OSM and the best practices to follow. The aim of this document is not go into the technicalities of traffic flow in a junction but rather to give a mapper clear cut instructions on how to model different intersections in OSM. Aiming to keep this document simple and easy to follow.
 
-### Case 1
-
-
-When a transitioning dual carriageway intersects a bi-directional way. It has four ways in which the intersection can be designed :point_down:
+### Case 1: When a transitioning dual carriageway intersects a bi-directional way. It has four ways in which the intersection can be designed 👇 
 
 ![1(a)](https://user-images.githubusercontent.com/13744156/34767764-f09db5c2-f61e-11e7-8720-dc920acbb458.png)
-*1(a)*
+                                     *1(a)*
 
 ![1(b)](https://user-images.githubusercontent.com/13744156/34767776-fbc70e80-f61e-11e7-8296-9d1a37d57548.png)
-*1(b)*
+                                     *1(b)*
 
 ![1(c)](https://user-images.githubusercontent.com/13744156/34767825-1b2d1c42-f61f-11e7-8628-4ddb673fcc28.png)
-*1(c)*
+                                     *1(c)*
 
-So in case a dual carriageway intersects a bi-directional way to form a 4 way junction,1(b) variant is preferential for OSRM as it introduces less single-node intersections and for 1(d) additional turn restrictions are required to remove ambiguity in U-turns.
+So in case a dual carriageway intersects a bi-directional way to form a 4 way junction,1(b) variant is preferential for OSRM as it introduces less single-node intersections and for 1(c) additional turn restrictions are required to remove ambiguity in U-turns.
 
-For a transitioning divided way (dual carriageway) intersecting a single carriageway , this is the recommended model :point_down:
+For a transitioning divided way (dual carriageway) intersecting a single carriageway , this is the recommended model 👇 
 
 ![image](https://user-images.githubusercontent.com/13744156/34767973-8b83f65a-f61f-11e7-8bec-f2f7e811634b.png)
 
@@ -29,9 +26,7 @@ Note:
 - Keep the geometry smooth. Don’t follow the centreline too rigorously as it might cause sharp turns
 
 
-### Case 2
-
-When a transitioning dual carriageway intersects another dual carriageway, there are two methods to draw that intersection:
+### Case 2: When a transitioning dual carriageway intersects another dual carriageway, there are two methods to draw that intersection:
 
 #### Method 1:
 
@@ -39,12 +34,12 @@ Collapse the dual carriageway after/before the intersection (Triangle after/befo
 
 
 ![image](https://user-images.githubusercontent.com/13744156/34769147-048046fa-f623-11e7-889a-4977cf64d867.png)
-*2(a)*
+                                     *2(a)*
 
 Triangle before the intersection:
 
 ![image](https://user-images.githubusercontent.com/13744156/34770557-79afb51a-f627-11e7-820e-ceccc5ebe4c7.png)
-*2(b)*
+                                      *2(b)*
 
 **Pros**: Helps in lane guidance as this parses the turn lane information much more accurately in OSRM.
 
@@ -55,7 +50,7 @@ Triangle before the intersection:
 
 
 ![image](https://user-images.githubusercontent.com/13744156/34770758-1205e488-f628-11e7-8cdd-14f372fa64bc.png)
-*2(c)*
+                                      *2(c)*
 
 
 **2(c)** is the best approach from the cartography standpoint. 2(a) and 2(b) is mapping for navigation like leads to bad rendering.
@@ -68,7 +63,7 @@ Triangle before the intersection:
 In terms of these intersections, Waze recommends following the bow tie method
 
 ![image](https://user-images.githubusercontent.com/13744156/34770951-d1db8876-f628-11e7-89f1-80308d36c53d.png)
-*3(a)*
+                                     *3(a)*
 
 Pros:
 
@@ -81,24 +76,24 @@ Cons:
 
 **OR**
 
-A divided road intersecting a 2-way road. A dual carriageway intersecting a bi-directional road can also be modelled this way :point_down:
+A divided road intersecting a 2-way road. A dual carriageway intersecting a bi-directional road can also be modelled this way 👇 
 
 ![image](https://user-images.githubusercontent.com/13744156/34771066-40c4f6f0-f629-11e7-8692-c3582c86a9c5.png)
-*3(b)*
+                                      *3(b)*
 
 
 - Simplicity dictates that the mapper follows the **3(b)** form of intersection modelling.
-- Again there should not be any sausage road (braided street) type collapses in these cases. If you come across any, change it to this simpler intersection :point_up:
+- Again there should not be any sausage road (braided street) type collapses in these cases. If you come across any, change it to this simpler intersection 👆 
 
 ### Case 4: When two dual carriageways intersect each other: A divided road intersecting a divided road
 
 
 ![image](https://user-images.githubusercontent.com/13744156/34771167-a05941de-f629-11e7-9a36-75f58fb8e124.png)
-*4(a)*
+                                     *4(a)*
 
-Make sure to change any sausage style collapses to a simple intersection type :point_up: 
+Make sure to change any sausage style collapses to a simple intersection type 👆 
 
-Wrong :point_down:
+Wrong 👇 
 
 ![image](https://user-images.githubusercontent.com/13744156/34771198-c12430cc-f629-11e7-8470-05e7fb47574e.png)
 *4(b) In these cases of "suasage" type collapses, make sure the intersection is remodelled back to 4(a)*
@@ -107,55 +102,55 @@ Wrong :point_down:
 
 #### Example 1
 
- Wrong :point_down:
+ Wrong 👇 
 
  ![image](https://user-images.githubusercontent.com/13744156/34771394-7cd72efa-f62a-11e7-8576-3da6c665ccf8.png)
 
- Correct :point_down:
+ Correct 👇 
 
 ![image](https://user-images.githubusercontent.com/13744156/34771425-92cd333a-f62a-11e7-87f3-42866ac420c5.png)
 
 #### Example 2 
 
-Wrong :point_down:
+Wrong 👇 
 
 
 ![image](https://user-images.githubusercontent.com/13744156/34771482-b5078202-f62a-11e7-8cec-afd3b7f9b1d7.png)
 
-Correct :point_down: 
+Correct 👇 
 
 
 ![image](https://user-images.githubusercontent.com/13744156/34771511-cd8a0ac0-f62a-11e7-960c-f0efd53d13b8.png)
 
 #### Example 3 : 
 
-Wrong :point_down: 
+Wrong 👇  
 
 
 ![image](https://user-images.githubusercontent.com/13744156/34771584-0a40ba54-f62b-11e7-86ff-14bb785a8ca1.png)
 
-Correct :point_down: 
+Correct 👇 
 
 
 ![image](https://user-images.githubusercontent.com/13744156/34771610-20ab4bec-f62b-11e7-928d-2fb2aa858841.png)
 
 #### Example 4
 
-Wrong :point_down: 
+Wrong 👇  
 
 ![image](https://user-images.githubusercontent.com/13744156/34771634-3d40293a-f62b-11e7-8948-9647fcae90ea.png)
 
-Correct :point_down:
+Correct 👇 
 
 ![image](https://user-images.githubusercontent.com/13744156/34771663-5bb60dd0-f62b-11e7-9cee-51cfdd5fdc6f.png)
 
 #### Example 5
 
-Wrong :point_down:
+Wrong 👇 
 
 ![image](https://user-images.githubusercontent.com/13744156/34771739-a89ea896-f62b-11e7-9032-03f4be3cf0ac.png)
 
-Correct :point_down:
+Correct 👇 
 
 ![image](https://user-images.githubusercontent.com/13744156/34771764-bcdd5b04-f62b-11e7-9675-d192baa63914.png)
 
@@ -168,7 +163,7 @@ This option most accurately reflects the flows of traffic. Traffic flows directe
 ![image](https://user-images.githubusercontent.com/13744156/34771890-21cdc0c6-f62c-11e7-866c-86ddef165dcb.png)
 
 #### 1b Diamond ( ♦️ ). 
-The same as 1a :point_up: but without accurate reflection of traffic flows. Reduces clutter on a rendered map. Something between accuracy and simplicity.
+The same as 1a 👆  but without accurate reflection of traffic flows. Reduces clutter on a rendered map. Something between accuracy and simplicity.
 
 ![image](https://user-images.githubusercontent.com/13744156/34771980-748f30ce-f62c-11e7-9c11-bbde7a30b42f.png)
 
