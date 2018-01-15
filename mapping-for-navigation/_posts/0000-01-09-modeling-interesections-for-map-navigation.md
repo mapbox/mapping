@@ -8,7 +8,7 @@ Capturing the various cases of Intersection modelling in OSM and the best practi
 
 | ✅ | ❌ |
 |:---:|:---:|
-| ![simple intersection](../../images/intersection-modeling/simple_intersection.png)<br/>[wireframe view](../../images/intersection-modeling/simpleintersectionwireframe.png) | ![simple intersection_error](../../images/intersection-modeling/simple_intersection_error.png)<br/>[wireframe view](../../images/intersection-modeling/simple_intersection_wireframe_error.png) |
+| ![simple intersection]({{site.baseurl}}/images/intersection-modeling/simple_intersection.png)<br/>[wireframe view]({{site.baseurl}}/images/intersection-modeling/simpleintersectionwireframe.png) | ![simple intersection_error]({{site.baseurl}}/images/intersection-modeling/simple_intersection_error.png)<br/>[wireframe view]({{site.baseurl}}/images/intersection-modeling/simple_intersection_wireframe_error.png) |
 
 -   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=20.00/37.75213/-122.48172) 🗺
 
@@ -18,7 +18,7 @@ Each way is a bidirectional road, the movement along which is possible in two di
 
 | ✅ | ❌ |
 |:---:|:---:|
-| ![](../../images/intersection-modeling/simple_intersection_with_the_safety_islands.png)<br/>[wireframe view](../../images/intersection-modeling/simple_intersection_with_the_safety_islands_wireframe.png) | ![](../../images/intersection-modeling/simple_intersection_with_the_safety_islands_error.png)<br/>[wireframe view](../../images/intersection-modeling/simple_intersection_with_the_safety_islands_wireframe_error.png) |
+| ![]({{site.baseurl}}/images/intersection-modeling/simple_intersection_with_the_safety_islands.png)<br/>[wireframe view]({{site.baseurl}}/images/intersection-modeling/simple_intersection_with_the_safety_islands_wireframe.png) | ![]({{site.baseurl}}/images/intersection-modeling/simple_intersection_with_the_safety_islands_error.png)<br/>[wireframe view]({{site.baseurl}}/images/intersection-modeling/simple_intersection_with_the_safety_islands_wireframe_error.png) |
 
 -   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=20.00/37.75405/-122.48078) 🗺
 
@@ -28,7 +28,7 @@ In the presence of safety islands, located just before the crossroads, there is 
 
 | ✅ | ❌ |
 |:---:|:---:|
-| ![](../../images/intersection-modeling/bi-dir_dual_carriageway_intersection.png)<br/>[wireframe view](../../images/intersection-modeling/bi-dir_dual_carriageway_intersection_wireframe.png) | ![](../../images/intersection-modeling/bi-dir_dual_carriageway_intersection_error.png)<br/>[wireframe view](../../images/intersection-modeling/bi-dir_dual_carriageway_intersection_wireframe_error.png) |
+| ![]({{site.baseurl}}/images/intersection-modeling/bi-dir_dual_carriageway_intersection.png)<br/>[wireframe view]({{site.baseurl}}/images/intersection-modeling/bi-dir_dual_carriageway_intersection_wireframe.png) | ![]({{site.baseurl}}/images/intersection-modeling/bi-dir_dual_carriageway_intersection_error.png)<br/>[wireframe view]({{site.baseurl}}/images/intersection-modeling/bi-dir_dual_carriageway_intersection_wireframe_error.png) |
 
 -   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=20/37.75984/-122.47683) 🗺
 
@@ -40,11 +40,11 @@ Some GIS provides bow-tie or sausage roads approach for mapping complex intersec
 
 | ✅ |
 |:---:|
-| ![](../../images/intersection-modeling/2x_dual_carriageway_intersection.png)<br/>[wireframe view](../../images/intersection-modeling/2x_dual_carriageway_intersection_wireframe.png) |
+| ![]({{site.baseurl}}/images/intersection-modeling/2x_dual_carriageway_intersection.png)<br/>[wireframe view]({{site.baseurl}}/images/intersection-modeling/2x_dual_carriageway_intersection_wireframe.png) |
 
 | ❌ | ❌ |
 |:---:|:---:|
-| ![](../../images/intersection-modeling/2x_dual_carriageway_intersection_error.png)<br/>[wireframe view](../../images/intersection-modeling/2x_dual_carriageway_intersection_wireframe_error.png) | ![](../../images/intersection-modeling/2x_dual_carriageway_intersection_error_1.png)<br/>[wireframe view](../../images/intersection-modeling/2x_dual_carriageway_intersection_wireframe_error_1.png) |
+| ![]({{site.baseurl}}/images/intersection-modeling/2x_dual_carriageway_intersection_error.png)<br/>[wireframe view]({{site.baseurl}}/images/intersection-modeling/2x_dual_carriageway_intersection_wireframe_error.png) | ![]({{site.baseurl}}/images/intersection-modeling/2x_dual_carriageway_intersection_error_1.png)<br/>[wireframe view]({{site.baseurl}}/images/intersection-modeling/2x_dual_carriageway_intersection_wireframe_error_1.png) |
 
 -   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=19/37.73463/-122.47508) 🗺
 
