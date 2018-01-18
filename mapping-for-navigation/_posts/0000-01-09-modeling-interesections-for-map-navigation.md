@@ -6,7 +6,7 @@ Capturing the various cases of Intersection modelling in OSM and the best practi
 
 ### 1. Intersection of two bi-directional ways
 
-| ✅ **That's right**  | ❌ **That's not right** |
+| ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][efa2ef0b]][efa2ef0b] | [![][ba05460f]][ba05460f] |
 | (_[fullsize][efa2ef0b]_ \| _[wireframe][dbad8b6b] view_) | (_[fullsize][ba05460f]_ \| _[wireframe][a8c293d9] view_)  |
@@ -22,7 +22,7 @@ Each way is a bidirectional road, the movement along which is possible in two di
 
 ### 1a. Intersection and safety islands
 
-| ✅ **That's right**  | ❌ **That's not right** |
+| ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][76c562c6]][76c562c6] | [![][787f1fd3]][787f1fd3] |
 | (_[fullsize][76c562c6]_ \| _[wireframe][b739583e] view_) | (_[fullsize][787f1fd3]_ \| _[wireframe][e0cba39d] view_) |
@@ -38,7 +38,7 @@ In the presence of safety islands, located just before the crossroads, there is 
 
 ### 2. Intersection of a bidirectional and dual carriageway roads.
 
-| ✅ **That's right**  | ❌ **That's not right** |
+| ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][ac1e486c]][ac1e486c] | [![][14300d5a]][14300d5a] |
 | (_[fullsize][ac1e486c]_ \| _[wireframe][7064e664] view_) | (_[fullsize][14300d5a]_ \| _[wireframe][947d67cf] view_) |
@@ -56,7 +56,7 @@ Some GIS provides bow-tie or sausage roads approach for mapping complex intersec
 
 ### 3. Intersection of dual carriageway roads.
 
-| ✅ **That's right**  | ❌ **That's not right** |
+| ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][7b8dcb18]][7b8dcb18] | [![][0c2aea64]][0c2aea64] [![][07cf7615]][07cf7615] |
 | (_[fullsize][7b8dcb18]_ \| _[wireframe][e14b208e] view_) | (_1st example [fullsize][0c2aea64]_ \| _[wireframe][992e769f] view_)<br/>(_2nd example [fullsize][07cf7615]_ \| _[wireframe][9c7914ff] view_)  |
@@ -74,7 +74,7 @@ Make sure to change any sausage style collapses to a simple intersection type
 
 ### 4. 3-way T-shape intersection (dual carriageway roads)
 
-| ✅ **That's right**  | ❌ **That's not right** |
+| ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][59eb0e4e]][59eb0e4e] | [![][a2e66349]][a2e66349] |
 | (_[fullsize][59eb0e4e]_ \| _[wireframe][343cf126] view_) | (_[fullsize][a2e66349]_ \| _[wireframe][7b6d1a81] view_) |
@@ -86,7 +86,7 @@ Make sure to change any sausage style collapses to a simple intersection type
 
 -   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=19/33.95362/-118.16388) 🗺
 
-| ✅ **That's right**  | ❌ **That's not right** |
+| ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][509c01d0]][509c01d0] | [![][51fbf7c8]][51fbf7c8] |
 | (_[fullsize][509c01d0]_ \| _[wireframe][93eeba9d] view_) | (_[fullsize][51fbf7c8]_ \| _[wireframe][1fc051e1] view_) |
@@ -102,7 +102,7 @@ This should be mapped as two parallel dual carriageway roads making a square jun
 
 ### 5. 3-way T-shape intersection (dual carriageway and bi-directional roads)
 
-| ✅ **That's right**  | ❌ **That's not right** |
+| ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][371b1405]][371b1405] | [![][fd18165a]][fd18165a] |
 | (_[fullsize][371b1405]_ \| _[wireframe][1f05b9a7] view_) | (_[fullsize][fd18165a]_ \| _[wireframe][595e07f7] view_) |
@@ -116,7 +116,7 @@ This should be mapped as two parallel dual carriageway roads making a square jun
 
 The same as for intersection of a dual carriageway and bi-directional roads, no need to squeeze everything into one node bow-tie intersection to have sausage roads. Keep ways that represnt dual carriageway road straight. Draw internal edge of the bi-directional road between ways of dual carriageway lines on the intersection area parallel to one of the pedestrian crossing paths to form right intersection geometry.
 
-| ✅ **That's right**  | ❌ **That's not right** |
+| ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][fae561f7]][fae561f7] | [![][902f4aee]][902f4aee] |
 | (_[fullsize][fae561f7]_ \| _[wireframe][641c8040] view_) | (_[fullsize][902f4aee]_ \| _[wireframe][e606f9b6] view_) |
@@ -130,7 +130,7 @@ The same as for intersection of a dual carriageway and bi-directional roads, no 
 
 ### 6. 3-way T-shape intersection (dual carriageway and bi-directional roads single point ⤫)
 
-| ✅ **That's right**  | ❌ **That's not right** |
+| ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][3178c41e]][3178c41e] | [![][e20d4278]][e20d4278] |
 | (_[fullsize][3178c41e]_ \| _[wireframe][b37286cb] view_) | (_[fullsize][e20d4278]_ \| _[wireframe][050b1dfe] view_)  |
@@ -146,7 +146,7 @@ Place the node of the intersection on the average center. Connect all incoming w
 
 ### 7. 3-way T-shape intersection (dual carriageway and bi-directional roads double point ⤫)
 
-| ✅ **That's right**  | ❌ **That's not right** |
+| ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][56845a9e]][56845a9e] | [![][b739d579]][b739d579] |
 | (_[fullsize][56845a9e]_ \| _[wireframe][d74d5782] view_) | (_[fullsize][b739d579]_ \| _[wireframe][53488b50] view_)  |
@@ -158,7 +158,7 @@ Place the node of the intersection on the average center. Connect all incoming w
 
 -   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=19/37.74440/-122.45915) 🗺
 
-| ✅ **That's right**  | ❌ **That's not right** |
+| ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][eb9d8681]][eb9d8681] | [![][3a4e88da]][3a4e88da] |
 | (_[fullsize][eb9d8681]_ \| _[wireframe][b5713acf] view_) | (_[fullsize][3a4e88da]_ \| _[wireframe][bc59adb4] view_)  |
@@ -174,7 +174,7 @@ Try to avoide creating sausage roads.
 
 ### 8. Intersection of 3 dual carriageways and 1 bi-drectional road
 
-| ✅ **That's right**  | ❌ **That's not right** |
+| ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][dcb8bcea]][dcb8bcea] | [![][e5c6b7e5]][e5c6b7e5] |
 | (_[fullsize][dcb8bcea]_ \| _[wireframe][fd01f060] view_) | (_[fullsize][e5c6b7e5]_ \| _[wireframe][1ac0124a] view_)  |
