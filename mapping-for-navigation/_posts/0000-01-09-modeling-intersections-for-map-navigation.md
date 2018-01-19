@@ -190,7 +190,7 @@ A small segment of northbound South Main Street in this example is tagged as a t
 
 -   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=19/33.70308/-117.86370) 🗺
 
-In this case, it is need to keep a balance between cartography and navigation approach of mapping. This case as a gold point between them that helps to keep visual and algoritmical simplicity of the data. (_Based on the [discussion][6a7f9f11] in the US-Talk mailing list_)
+In this case, it is important to keep a balance between cartography and navigation approach to mapping. This method works as a golden mean between both and helps to maintaine visual and algoritmical simplicity of the data. (_Based on the [discussion][6a7f9f11] in the US-Talk mailing list_)
 
   [6a7f9f11]: https://lists.openstreetmap.org/pipermail/talk-us/2013-October/011899.html "OSM US-Talk discussion"
 
