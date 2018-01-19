@@ -2,7 +2,7 @@
 title: Modeling Intersections for Map Navigation
 ---
 
-Capturing the various cases of Intersection modelling in OSM and the best practices to follow. The aim of this document is not go into the technicalities of traffic flow in a junction but rather to give a mapper clear cut instructions on how to model different intersections in OSM. Aiming to keep this document simple and easy to follow.
+Capturing the various cases of Intersection modeling in OSM and the best practices to follow. The aim of this document is not go into the technicalities of traffic flow in a junction but rather to give a mapper clear cut instructions on how to model different intersections in OSM. Aiming to keep this document simple and easy to follow.
 
 ### 1. Intersection of two bi-directional ways
 
@@ -20,21 +20,23 @@ Capturing the various cases of Intersection modelling in OSM and the best practi
 
 Each way is a bidirectional road, the movement along which is possible in two directions simultaneously. The point at which the ways intersect denotes the intersection. Crossing ways without a common point make it impossible to build a route between the points that are at the ends of these ways.
 
-### 1a. Intersection and safety islands
+### 1a. Intersection and traffic islands
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][76c562c6]][76c562c6] | [![][787f1fd3]][787f1fd3] |
 | (_[fullsize][76c562c6]_ \| _[wireframe][b739583e] view_) | (_[fullsize][787f1fd3]_ \| _[wireframe][e0cba39d] view_) |
 
-  [76c562c6]: ../../images/intersection-modeling/simple_intersection_with_the_safety_islands.png "Simple intersection with the safety islands (fullsize view)"
-  [787f1fd3]: ../../images/intersection-modeling/simple_intersection_with_the_safety_islands_error.png "Incorrect drawing of the simple intersection with the safety islands (fullsize view)"
-  [b739583e]: ../../images/intersection-modeling/simple_intersection_with_the_safety_islands_wireframe.png "Simple intersection with the safety islands (wireframe view)"
-  [e0cba39d]: ../../images/intersection-modeling/simple_intersection_with_the_safety_islands_wireframe_error.png "Incorrect drawing of the simple intersection with the safety islands (wireframe view)"
+  [76c562c6]: ../../images/intersection-modeling/simple_intersection_with_the_safety_islands.png "Simple intersection with the traffic islands (fullsize view)"
+  [787f1fd3]: ../../images/intersection-modeling/simple_intersection_with_the_safety_islands_error.png "Incorrect drawing of the simple intersection with the traffic islands (fullsize view)"
+  [b739583e]: ../../images/intersection-modeling/simple_intersection_with_the_safety_islands_wireframe.png "Simple intersection with the traffic islands (wireframe view)"
+  [e0cba39d]: ../../images/intersection-modeling/simple_intersection_with_the_safety_islands_wireframe_error.png "Incorrect drawing of the simple intersection with the traffic islands (wireframe view)"
 
 -   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=20.00/37.75405/-122.48078) 🗺
 
-In the presence of safety islands, located just before the crossroads, there is no need to divide the road onto dual carriageway. Set the nodes for safety islands and tag them as **`traffic_calming=island`**.
+In the presence of traffic islands, located just before the crossroads, there is no need to divide the road onto dual carriageway. Set the nodes for [traffic islands][22ab2330] and tag them as **`traffic_calming=island`**.
+
+  [22ab2330]: https://wiki.openstreetmap.org/wiki/Tag:traffic_calming%3Disland "A structure separating at least two lanes of a highway from each other for a short distance. The width of the calming island is usually under a few meters and should be less than 5m."
 
 ### 2. Intersection of a bidirectional and dual carriageway roads.
 
@@ -52,7 +54,7 @@ In the presence of safety islands, located just before the crossroads, there is 
 
 No need to squeeze everything into one node bow-tie intersection to have sausage roads.
 
-Some GIS provides bow-tie or sausage roads approach for mapping complex intersections due to system limitations or historical reasons. We don't encourage you to follow this approach. OSRM routing enging supports turn restrictions which have a way as `via`-member of turn restrictions.
+Some GIS provides bow-tie or sausage roads approach for mapping complex intersections due to system limitations or historical reasons. We don't encourage you to follow this approach. OSRM routing engine supports turn restrictions which have a way as `via`-member of turn restrictions.
 
 ### 3. Intersection of dual carriageway roads.
 
@@ -98,7 +100,7 @@ Make sure to change any sausage style collapses to a simple intersection type
 
 -   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=19/33.70198/-117.86561) 🗺
 
-This should be mapped as two parallel dual carriageway roads making a square junction.
+This should be mapped as two dual carriageway roads making a square junction.
 
 ### 5. 3-way T-shape intersection (dual carriageway and bi-directional roads)
 
@@ -142,7 +144,7 @@ The same as for intersection of a dual carriageway and bi-directional roads, no 
 
 -   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=19/33.95841/-118.18493) 🗺
 
-Place the node of the intersection on the average center. Connect all incoming ways to this node. N°o need to create a triangle that would require adding a bunch of implicit turn restriction relation to specify mandatory and prohibited directions of movement.
+Place the node of the intersection on the average center. Connect all incoming ways to this node. No need to create a triangle that would require adding a bunch of implicit turn restriction relation to specify mandatory and prohibited directions of movement.
 
 ### 7. 3-way T-shape intersection (dual carriageway and bi-directional roads double point ⤫)
 
@@ -158,6 +160,8 @@ Place the node of the intersection on the average center. Connect all incoming w
 
 -   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=19/37.74440/-122.45915) 🗺
 
+Try to avoid creating sausage roads.
+
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][eb9d8681]][eb9d8681] | [![][3a4e88da]][3a4e88da] |
@@ -170,7 +174,7 @@ Place the node of the intersection on the average center. Connect all incoming w
 
 -   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=19/33.70318/-117.86810) 🗺
 
-Try to avoide creating sausage roads.
+A small segment of northbound South Main Street in this example is tagged as a two-way road in order for southbound South Main Street to turn left onto East Columbine Avenue.
 
 ### 8. Intersection of 3 dual carriageways and 1 bi-drectional road
 
@@ -179,13 +183,15 @@ Try to avoide creating sausage roads.
 | [![][dcb8bcea]][dcb8bcea] | [![][e5c6b7e5]][e5c6b7e5] |
 | (_[fullsize][dcb8bcea]_ \| _[wireframe][fd01f060] view_) | (_[fullsize][e5c6b7e5]_ \| _[wireframe][1ac0124a] view_)  |
 
-  [dcb8bcea]: ../../images/intersection-modeling/4way_3dual_carriageways_and_bidir.png "(fullsize view)"
-  [e5c6b7e5]: ../../images/intersection-modeling/4way_3dual_carriageways_and_bidir_err.png "(fullsize view)"
-  [fd01f060]: ../../images/intersection-modeling/4way_3dual_carriageways_and_bidir_wireframe.png "(wireframe view)"
-  [1ac0124a]: ../../images/intersection-modeling/4way_3dual_carriageways_and_bidir_wireframe_err.png "(wireframe view)"
+  [dcb8bcea]: ../../images/intersection-modeling/4way_3dual_carriageways_and_bidir.png "Intersection of 3 dual carriageways and 1 bi-drectional road (fullsize view)"
+  [e5c6b7e5]: ../../images/intersection-modeling/4way_3dual_carriageways_and_bidir_err.png "Incorrect drawing of the intersection of 3 dual carriageways and 1 bi-drectional road (fullsize view)"
+  [fd01f060]: ../../images/intersection-modeling/4way_3dual_carriageways_and_bidir_wireframe.png "Intersection of 3 dual carriageways and 1 bi-drectional road (wireframe view)"
+  [1ac0124a]: ../../images/intersection-modeling/4way_3dual_carriageways_and_bidir_wireframe_err.png "Incorrect drawing of the intersection of 3 dual carriageways and 1 bi-drectional road (wireframe view)"
 
 -   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=19/33.70308/-117.86370) 🗺
 
 In this case, it is need to keep a balance between cartography and navigation approach of mapping. This case as a gold point between them that helps to keep visual and algoritmical simplicity of the data. (_Based on the [discussion][6a7f9f11] in the US-Talk mailing list_)
 
   [6a7f9f11]: https://lists.openstreetmap.org/pipermail/talk-us/2013-October/011899.html "OSM US-Talk discussion"
+
+> Don't pinch dual carriageway before a junction if a divider of directions end very close to the intersection (less than 10-20 meters to it)
