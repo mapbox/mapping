@@ -1,67 +1,63 @@
 ---
-title: Modeling Intersections for Map Navigation
+title: Intersection Modelling
 ---
 
-Capturing the various cases of Intersection modeling in OSM and the best practices to follow. The aim of this document is not go into the technicalities of traffic flow in a junction but rather to give a mapper clear cut instructions on how to model different intersections in OSM. Aiming to keep this document simple and easy to follow.
+An Intersection is point where multiple roads meet or cross each other. The traced roads should represent the traffic flow of that intersection for a navigation software to provide turn-by-turn instruction, especially in turn announcements.
 
-### 1. Intersection of two bi-directional ways
+![](https://upload.wikimedia.org/wikipedia/commons/7/75/Makati_intersection.jpg)
+_Source Wikipedia By Mike Gonzalez [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) via Wikimedia Commons_
+
+Over the history of OpenStreetMap, mappers have used different approaches to modelling various types of intersections. The more the number of roads join, more complex the intersection becomes. In this guide we are capturing differnt cases of intersections with some best practices and recommendation to follow during mapping. 
+
+## Intersection types
+
+### Intersection of two bi-directional ways
+
+A bidirectional road divides the traffic into two streams without any physical seperation. All the ways which passes through the junction should intersect at a common point to form a junction. 
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][efa2ef0b]][efa2ef0b] | [![][ba05460f]][ba05460f] |
-| (_[fullsize][efa2ef0b]_ \| _[wireframe][dbad8b6b] view_) | (_[fullsize][ba05460f]_ \| _[wireframe][a8c293d9] view_)  |
 
   [efa2ef0b]: ../../images/intersection-modeling/simple_intersection.png "Simple intersection (fullsize view)"
   [ba05460f]: ../../images/intersection-modeling/simple_intersection_error.png "Incorrect drawing of the simple intersection (fullsize view)"
   [dbad8b6b]: ../../images/intersection-modeling/simple_intersection_wireframe.png "Simple intersection (wireframe view)"
   [a8c293d9]: ../../images/intersection-modeling/simple_intersection_wireframe_error.png "Incorrect drawing of the simple intersection (wireframe view)"
 
--   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=20.00/37.75213/-122.48172) 🗺
+### Intersection and traffic islands
 
-Each way is a bidirectional road, the movement along which is possible in two directions simultaneously. The point at which the ways intersect denotes the intersection. Crossing ways without a common point make it impossible to build a route between the points that are at the ends of these ways.
-
-### 1a. Intersection and traffic islands
+Bidirectional highway intersection with small traffic island is not required to be mapped separate junction. In such cases adding [`traffic_calming=island`](https://wiki.openstreetmap.org/wiki/Tag:traffic_calming%3Disland) node at the place of the divider will be better way to model it.
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][76c562c6]][76c562c6] | [![][787f1fd3]][787f1fd3] |
-| (_[fullsize][76c562c6]_ \| _[wireframe][b739583e] view_) | (_[fullsize][787f1fd3]_ \| _[wireframe][e0cba39d] view_) |
 
   [76c562c6]: ../../images/intersection-modeling/simple_intersection_with_the_safety_islands.png "Simple intersection with the traffic islands (fullsize view)"
   [787f1fd3]: ../../images/intersection-modeling/simple_intersection_with_the_safety_islands_error.png "Incorrect drawing of the simple intersection with the traffic islands (fullsize view)"
   [b739583e]: ../../images/intersection-modeling/simple_intersection_with_the_safety_islands_wireframe.png "Simple intersection with the traffic islands (wireframe view)"
   [e0cba39d]: ../../images/intersection-modeling/simple_intersection_with_the_safety_islands_wireframe_error.png "Incorrect drawing of the simple intersection with the traffic islands (wireframe view)"
 
--   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=20.00/37.75405/-122.48078) 🗺
+### Intersection between a bidirectional road and dual carriageway
 
-In the presence of traffic islands, located just before the crossroads, there is no need to divide the road onto dual carriageway. Set the nodes for [traffic islands][22ab2330] and tag them as **`traffic_calming=island`**.
-
-  [22ab2330]: https://wiki.openstreetmap.org/wiki/Tag:traffic_calming%3Disland "A structure separating at least two lanes of a highway from each other for a short distance. The width of the calming island is usually under a few meters and should be less than 5m."
-
-### 2. Intersection of a bidirectional and dual carriageway roads.
+A dual carriageway is a divided highway which carries traffic in opposite direction and is divided by a phisical separation. When a dual carriageway and a bidirectional highway meet at a junction, they should be modelled to follow the traffic flow rule by intersecting parallely and perpendicularly to each other. Merging the highway nodes (in a sausage shape)in the middle of the junction is not a best practice as they lead to confusing turn announcement.
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][ac1e486c]][ac1e486c] | [![][14300d5a]][14300d5a] |
-| (_[fullsize][ac1e486c]_ \| _[wireframe][7064e664] view_) | (_[fullsize][14300d5a]_ \| _[wireframe][947d67cf] view_) |
 
   [ac1e486c]: ../../images/intersection-modeling/bi-dir_dual_carriageway_intersection.png "Intersection of a bidirectional and dual carriageway roads (fullsize view)"
   [7064e664]: ../../images/intersection-modeling/bi-dir_dual_carriageway_intersection_wireframe.png "Intersection of a bidirectional and dual carriageway roads (wireframe view)"
   [14300d5a]: ../../images/intersection-modeling/bi-dir_dual_carriageway_intersection_error.png "Incorrect drawing of the intersection of a bidirectional and dual carriageway roads (fullsize view)"
   [947d67cf]: ../../images/intersection-modeling/bi-dir_dual_carriageway_intersection_wireframe_error.png "Incorrect drawing of the intersection of a bidirectional and dual carriageway roads (wireframe view)"
 
--   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=20/37.75984/-122.47683) 🗺
 
-No need to squeeze everything into one node bow-tie intersection to have sausage roads.
+### Intersection between dual carriageways
 
-Some GIS provides bow-tie or sausage roads approach for mapping complex intersections due to system limitations or historical reasons. We don't encourage you to follow this approach. OSRM routing engine supports turn restrictions which have a way as `via`-member of turn restrictions.
-
-### 3. Intersection of dual carriageway roads.
+An intersection where two dual carriageway meets should be modelled perpendicular to each other without merging the dual ways in the middle of the junction. 
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][7b8dcb18]][7b8dcb18] | [![][0c2aea64]][0c2aea64] [![][07cf7615]][07cf7615] |
-| (_[fullsize][7b8dcb18]_ \| _[wireframe][e14b208e] view_) | (_1st example [fullsize][0c2aea64]_ \| _[wireframe][992e769f] view_)<br/>(_2nd example [fullsize][07cf7615]_ \| _[wireframe][9c7914ff] view_)  |
 
   [7b8dcb18]: ../../images/intersection-modeling/2x_dual_carriageway_intersection.png "Intersection of dual carriageway roads (fullsize view)"
   [0c2aea64]: ../../images/intersection-modeling/2x_dual_carriageway_intersection_error.png "1st case of incorrect drawing of the intersection of dual carriageway roads (fullsize view)"
@@ -70,128 +66,94 @@ Some GIS provides bow-tie or sausage roads approach for mapping complex intersec
   [992e769f]: ../../images/intersection-modeling/2x_dual_carriageway_intersection_wireframe_error.png "1st case of incorrect drawing of the intersection of dual carriageway roads (wireframe view)"
   [9c7914ff]: ../../images/intersection-modeling/2x_dual_carriageway_intersection_wireframe_error_1.png "2nd case of incorrect drawing of the intersection of dual carriageway roads (wireframe view)"
 
--   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=19/37.73463/-122.47508) 🗺
+### Three-way intersection
 
-Make sure to change any sausage style collapses to a simple intersection type
+A three-way intersection has three arms meeting at a single point and can be either in **T-shape** (forming a perpendicular connection) or **Y-shape**(forming a non-perpendicular connection). It is not necessary that the highways meeting this junction should be perpendicular to each other but they should not be merged in the middle of the junction.
 
-### 4. 3-way T-shape intersection (dual carriageway roads)
+### Y-shaped intersection
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][59eb0e4e]][59eb0e4e] | [![][a2e66349]][a2e66349] |
-| (_[fullsize][59eb0e4e]_ \| _[wireframe][343cf126] view_) | (_[fullsize][a2e66349]_ \| _[wireframe][7b6d1a81] view_) |
 
   [59eb0e4e]: ../../images/intersection-modeling/3way_dual_carriageway_intersection.png "Three way T-shape dual carriageway intersection (fullsize view)"
   [a2e66349]: ../../images/intersection-modeling/3way_dual_carriageway_intersection_error.png "Incorrect drawing of the three way T-shape dual carriageway intersection (fullsize view)"
   [343cf126]: ../../images/intersection-modeling/3way_dual_carriageway_intersection_wireframe.png "Three way T-shape dual carriageway intersection (wireframe view)"
   [7b6d1a81]: ../../images/intersection-modeling/3way_dual_carriageway_intersection_wireframe_error.png "Incorrect drawing of the three way T-shape dual carriageway intersection (wireframe view)"
 
--   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=19/33.95362/-118.16388) 🗺
-
-| ✅ **Recommended**  | ❌ **Not recommended** |
-|---|---|
-| [![][509c01d0]][509c01d0] | [![][51fbf7c8]][51fbf7c8] |
-| (_[fullsize][509c01d0]_ \| _[wireframe][93eeba9d] view_) | (_[fullsize][51fbf7c8]_ \| _[wireframe][1fc051e1] view_) |
-
-  [509c01d0]: ../../images/intersection-modeling/3way_dual_carriageway_intersection_1.png "Three way T-shape dual carriageway intersection (fullsize view)"
-  [51fbf7c8]: ../../images/intersection-modeling/3way_dual_carriageway_intersection_error_1.png "Incorrect drawing of the three way T-shape dual carriageway intersection (fullsize view)"
-  [93eeba9d]: ../../images/intersection-modeling/3way_dual_carriageway_intersection_wireframe_1.png "Three way T-shape dual carriageway intersection (wireframe view)"
-  [1fc051e1]: ../../images/intersection-modeling/3way_dual_carriageway_intersection_wireframe_error_1.png "Incorrect drawing of the three way T-shape dual carriageway intersection (wireframe view)"
-
--   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=19/33.70198/-117.86561) 🗺
-
-This should be mapped as two dual carriageway roads making a square junction.
-
-### 5. 3-way T-shape intersection (dual carriageway and bi-directional roads)
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][371b1405]][371b1405] | [![][fd18165a]][fd18165a] |
-| (_[fullsize][371b1405]_ \| _[wireframe][1f05b9a7] view_) | (_[fullsize][fd18165a]_ \| _[wireframe][595e07f7] view_) |
 
   [371b1405]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection.png "Three way T-shape dual carriageway and bi-directional roads intersection (fullsize view)"
   [fd18165a]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_error.png "Incorrect drawing of the three way T-shape dual carriageway and bi-directional roads intersection (fullsize view)"
   [1f05b9a7]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_wireframe.png "Three way T-shape dual carriageway and bi-directional roads intersection (wireframe view)"
   [595e07f7]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_wireframe_error.png "Incorrect drawing of the three way T-shape dual carriageway and bi-directional roads intersection (wireframe view)"
 
--   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=19/33.95899/-118.18513) 🗺
-
-The same as for intersection of a dual carriageway and bi-directional roads, no need to squeeze everything into one node bow-tie intersection to have sausage roads. Keep ways that represnt dual carriageway road straight. Draw internal edge of the bi-directional road between ways of dual carriageway lines on the intersection area parallel to one of the pedestrian crossing paths to form right intersection geometry.
-
-| ✅ **Recommended**  | ❌ **Not recommended** |
-|---|---|
-| [![][fae561f7]][fae561f7] | [![][902f4aee]][902f4aee] |
-| (_[fullsize][fae561f7]_ \| _[wireframe][641c8040] view_) | (_[fullsize][902f4aee]_ \| _[wireframe][e606f9b6] view_) |
-
-  [fae561f7]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_double_point_1.png "Three way T-shape dual carriageway and bi-directional roads intersection (fullsize view)"
-  [902f4aee]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_double_point_err_1.png "Incorrect drawing of the three way T-shape dual carriageway and bi-directional roads intersection (fullsize view)"
-  [641c8040]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_double_point_wireframe_1.png "Three way T-shape dual carriageway and bi-directional roads intersection (wireframe view)"
-  [e606f9b6]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_double_point_wireframe_err_1.png "Incorrect drawing of the three way T-shape dual carriageway and bi-directional roads intersection (wireframe view)"
-
--   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=19/33.70194/-117.86151) 🗺
-
-### 6. 3-way T-shape intersection (dual carriageway and bi-directional roads single point ⤫)
-
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][3178c41e]][3178c41e] | [![][e20d4278]][e20d4278] |
-| (_[fullsize][3178c41e]_ \| _[wireframe][b37286cb] view_) | (_[fullsize][e20d4278]_ \| _[wireframe][050b1dfe] view_)  |
 
   [3178c41e]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_single_point.png "Three way T-shape dual carriageway and bi-directional roads single point intersection (fullsize view)"
   [e20d4278]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_single_point_err.png "Incorrect drawing of the three way T-shape dual carriageway and bi-directional roads single point intersection (fullsize view)"
   [b37286cb]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_single_point_wireframe.png "Three way T-shape dual carriageway and bi-directional roads single point intersection (wireframe view)"
   [050b1dfe]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_single_point_wireframe_err.png "Incorrect drawing of the three way T-shape dual carriageway and bi-directional roads single point intersection (wireframe view)"
 
--   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=19/33.95841/-118.18493) 🗺
-
-Place the node of the intersection on the average center. Connect all incoming ways to this node. No need to create a triangle that would require adding a bunch of implicit turn restriction relation to specify mandatory and prohibited directions of movement.
-
-### 7. 3-way T-shape intersection (dual carriageway and bi-directional roads double point ⤫)
-
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][56845a9e]][56845a9e] | [![][b739d579]][b739d579] |
-| (_[fullsize][56845a9e]_ \| _[wireframe][d74d5782] view_) | (_[fullsize][b739d579]_ \| _[wireframe][53488b50] view_)  |
 
   [56845a9e]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_double_point.png "Three way T-shape dual carriageway and bi-directional roads double point intersection (fullsize view)"
   [b739d579]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_double_point_err.png "Incorrect drawing of the three way T-shape dual carriageway and bi-directional roads double point intersection (fullsize view)"
   [d74d5782]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_double_point_wireframe.png "Three way T-shape dual carriageway and bi-directional roads double point intersection (wireframe view)"
   [53488b50]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_double_point_wireframe_err.png "Incorrect drawing of the three way T-shape dual carriageway and bi-directional roads double point intersection (wireframe view)"
 
--   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=19/37.74440/-122.45915) 🗺
+### T-shaped intersection
 
-Try to avoid creating sausage roads.
+| ✅ **Recommended**  | ❌ **Not recommended** |
+|---|---|
+| [![][509c01d0]][509c01d0] | [![][51fbf7c8]][51fbf7c8] |
+
+  [509c01d0]: ../../images/intersection-modeling/3way_dual_carriageway_intersection_1.png "Three way T-shape dual carriageway intersection (fullsize view)"
+  [51fbf7c8]: ../../images/intersection-modeling/3way_dual_carriageway_intersection_error_1.png "Incorrect drawing of the three way T-shape dual carriageway intersection (fullsize view)"
+  [93eeba9d]: ../../images/intersection-modeling/3way_dual_carriageway_intersection_wireframe_1.png "Three way T-shape dual carriageway intersection (wireframe view)"
+  [1fc051e1]: ../../images/intersection-modeling/3way_dual_carriageway_intersection_wireframe_error_1.png "Incorrect drawing of the three way T-shape dual carriageway intersection (wireframe view)"
+
+| ✅ **Recommended**  | ❌ **Not recommended** |
+|---|---|
+| [![][fae561f7]][fae561f7] | [![][902f4aee]][902f4aee] |
+
+  [fae561f7]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_double_point_1.png "Three way T-shape dual carriageway and bi-directional roads intersection (fullsize view)"
+  [902f4aee]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_double_point_err_1.png "Incorrect drawing of the three way T-shape dual carriageway and bi-directional roads intersection (fullsize view)"
+  [641c8040]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_double_point_wireframe_1.png "Three way T-shape dual carriageway and bi-directional roads intersection (wireframe view)"
+  [e606f9b6]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_double_point_wireframe_err_1.png "Incorrect drawing of the three way T-shape dual carriageway and bi-directional roads intersection (wireframe view)"
+
+### Merging after intersection
+
+In real world there are dual carriageway which becomes a bidirectional highway after crossing the junction. These intersection are tricky to map as they are many ways of modelling such intersection which will replicate the real world vehicle flow. After testing different models, merging the junction after crossing the intersection worked well in cases of turn announcement and guidance.
+
+The merging of dual to bidirectional highway should not may sharp angle close to junction buit better to keep it at a distance of 20-20 meters from the intersection. Through this type of modelling it keeps balance between cartography and navigation approach to mapping. This method works best between both and helps to keep visual and algoritmical simplicity of the data. (_Based on the [discussion in the US-Talk mailing list](https://lists.openstreetmap.org/pipermail/talk-us/2013-October/011899.html])_)
+
+### Intersection between dual carriageways and bi-directional roads
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][eb9d8681]][eb9d8681] | [![][3a4e88da]][3a4e88da] |
-| (_[fullsize][eb9d8681]_ \| _[wireframe][b5713acf] view_) | (_[fullsize][3a4e88da]_ \| _[wireframe][bc59adb4] view_)  |
 
   [eb9d8681]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_double_point_2.png "Three way T-shape dual carriageway and bi-directional roads double point intersection (fullsize view)"
   [3a4e88da]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_double_point_err_2.png "Incorrect drawing of the three way T-shape dual carriageway and bi-directional roads double point intersection (fullsize view)"
   [b5713acf]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_double_point_wireframe_2.png "Three way T-shape dual carriageway and bi-directional roads double point intersection (wireframe view)"
   [bc59adb4]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_double_point_wireframe_err_2.png "Incorrect drawing of the three way T-shape dual carriageway and bi-directional roads double point intersection (wireframe view)"
 
--   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=19/33.70318/-117.86810) 🗺
-
-A small segment of northbound South Main Street in this example is tagged as a two-way road in order for southbound South Main Street to turn left onto East Columbine Avenue.
-
-### 8. Intersection of 3 dual carriageways and 1 bi-drectional road
+### Intersection between three dual carriageways and one bidrectional road
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][dcb8bcea]][dcb8bcea] | [![][e5c6b7e5]][e5c6b7e5] |
-| (_[fullsize][dcb8bcea]_ \| _[wireframe][fd01f060] view_) | (_[fullsize][e5c6b7e5]_ \| _[wireframe][1ac0124a] view_)  |
 
   [dcb8bcea]: ../../images/intersection-modeling/4way_3dual_carriageways_and_bidir.png "Intersection of 3 dual carriageways and 1 bi-drectional road (fullsize view)"
   [e5c6b7e5]: ../../images/intersection-modeling/4way_3dual_carriageways_and_bidir_err.png "Incorrect drawing of the intersection of 3 dual carriageways and 1 bi-drectional road (fullsize view)"
   [fd01f060]: ../../images/intersection-modeling/4way_3dual_carriageways_and_bidir_wireframe.png "Intersection of 3 dual carriageways and 1 bi-drectional road (wireframe view)"
   [1ac0124a]: ../../images/intersection-modeling/4way_3dual_carriageways_and_bidir_wireframe_err.png "Incorrect drawing of the intersection of 3 dual carriageways and 1 bi-drectional road (wireframe view)"
 
--   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=19/33.70308/-117.86370) 🗺
-
-In this case, it is important to keep a balance between cartography and navigation approach to mapping. This method works as a golden mean between both and helps to maintaine visual and algoritmical simplicity of the data. (_Based on the [discussion][6a7f9f11] in the US-Talk mailing list_)
-
-  [6a7f9f11]: https://lists.openstreetmap.org/pipermail/talk-us/2013-October/011899.html "OSM US-Talk discussion"
-
-> Don't pinch dual carriageway before a junction if a divider of directions end very close to the intersection (less than 10-20 meters to it)
