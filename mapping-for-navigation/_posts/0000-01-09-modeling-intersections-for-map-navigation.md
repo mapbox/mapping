@@ -39,7 +39,7 @@ Bidirectional highway intersection with small traffic island is not required to 
 
 ### Intersection between a bidirectional road and dual carriageway
 
-A dual carriageway is a divided highway which carries traffic in opposite direction and is divided by a phisical separation. When a dual carriageway and a bidirectional highway meet at a junction, they should be modelled to follow the traffic flow rule by intersecting parallely and perpendicularly to each other. Merging the highway nodes (in a sausage shape)in the middle of the junction is not a best practice as they lead to confusing turn announcement.
+A dual carriageway is a divided highway which carries traffic in opposite direction and is divided by a phisical separation. When a dual carriageway and a bidirectional highway meet at a junction, they should be modelled to follow the traffic flow rule by intersecting parallely and perpendicularly to each other. Merging the highway nodes (in a sausage shape) in the middle of the junction is not a best practice as they lead to confusing turn announcement.
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
@@ -68,7 +68,7 @@ An intersection where two dual carriageway meets should be modelled perpendicula
 
 ### Three-way intersection
 
-A three-way intersection has three arms meeting at a single point and can be either in **T-shape** (forming a perpendicular connection) or **Y-shape**(forming a non-perpendicular connection). It is not necessary that the highways meeting this junction should be perpendicular to each other but they should not be merged in the middle of the junction.
+A three-way intersection has three arms meeting at a single point and can be either in **T-shape** (forming a perpendicular connection) or **Y-shape** (forming a non-perpendicular connection). It is not necessary that the highways meeting this junction should be perpendicular to each other but they should not be merged in the middle of the junction.
 
 ### Y-shaped intersection
 
@@ -133,7 +133,7 @@ A three-way intersection has three arms meeting at a single point and can be eit
 
 In real world there are dual carriageway which becomes a bidirectional highway after crossing the junction. These intersection are tricky to map as they are many ways of modelling such intersection which will replicate the real world vehicle flow. After testing different models, merging the junction after crossing the intersection worked well in cases of turn announcement and guidance.
 
-The merging of dual to bidirectional highway should not may sharp angle close to junction buit better to keep it at a distance of 20-20 meters from the intersection. Through this type of modelling it keeps balance between cartography and navigation approach to mapping. This method works best between both and helps to keep visual and algorithmical simplicity of the data. (_Based on the [discussion in the US-Talk mailing list](https://lists.openstreetmap.org/pipermail/talk-us/2013-October/011899.html])_)
+The merging of dual to bidirectional highway should not may sharp angle close to junction but better to keep it at a distance of 10-20 meters from the intersection. Through this type of modelling it keeps balance between cartography and navigation approach to mapping. This method works best between both and helps to keep visual and algorithmical simplicity of the data. (_Based on the [discussion in the US-Talk mailing list](https://lists.openstreetmap.org/pipermail/talk-us/2013-October/011899.html])_)
 
 ### Intersection between dual carriageways and bi-directional roads
 
