@@ -148,6 +148,8 @@ Place the node of the intersection on the average center. Connect all incoming w
 
 ### 7. 3-way T-shape intersection (dual carriageway and bi-directional roads double point ⤫)
 
+**a)**
+
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][56845a9e]][56845a9e] | [![][b739d579]][b739d579] |
@@ -162,11 +164,19 @@ Place the node of the intersection on the average center. Connect all incoming w
 
 Try to avoid creating sausage roads.
 
+**b)**
+
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
-| [![][eb9d8681]][eb9d8681] | [![][3a4e88da]][3a4e88da] |
-| (_[fullsize][eb9d8681]_ \| _[wireframe][b5713acf] view_) | (_[fullsize][3a4e88da]_ \| _[wireframe][bc59adb4] view_)  |
+| [![][884d750c]][884d750c] | [![][3a4e88da]][3a4e88da] |
+| (_[fullsize][884d750c]_ \| _[wireframe][41cb0f55] view_)  | (_[fullsize][3a4e88da]_ \| _[wireframe][bc59adb4] view_) |
+| [![][eb9d8681]][eb9d8681] | 👈 This is oversimplified intersection with minimum of ways. It takes some imagination to re-create all possible traffic flows crossing it in your mind. This is worse for understanding than a square intersection but valid. |
+| (_[fullsize][eb9d8681]_ \| _[wireframe][b5713acf] view_) |  |
 
+A small segment of northbound South Main Street in the 2nd example is tagged as a two-way road in order for southbound South Main Street to turn left onto East Columbine Avenue.
+
+  [884d750c]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_squared.png "Three way T-shape dual carriageway and bi-directional roads squared intersection (fullsize view)"
+  [41cb0f55]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_squared_wireframe.png "Three way T-shape dual carriageway and bi-directional roads squared intersection (wireframe view)"
   [eb9d8681]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_double_point_2.png "Three way T-shape dual carriageway and bi-directional roads double point intersection (fullsize view)"
   [3a4e88da]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_double_point_err_2.png "Incorrect drawing of the three way T-shape dual carriageway and bi-directional roads double point intersection (fullsize view)"
   [b5713acf]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_double_point_wireframe_2.png "Three way T-shape dual carriageway and bi-directional roads double point intersection (wireframe view)"
@@ -174,24 +184,25 @@ Try to avoid creating sausage roads.
 
 -   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=19/33.70318/-117.86810) 🗺
 
-A small segment of northbound South Main Street in this example is tagged as a two-way road in order for southbound South Main Street to turn left onto East Columbine Avenue.
 
 ### 8. Intersection of 3 dual carriageways and 1 bi-drectional road
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][dcb8bcea]][dcb8bcea] | [![][e5c6b7e5]][e5c6b7e5] |
-| (_[fullsize][dcb8bcea]_ \| _[wireframe][fd01f060] view_) | (_[fullsize][e5c6b7e5]_ \| _[wireframe][1ac0124a] view_)  |
+| (_[fullsize][dcb8bcea]_ \| _[wireframe][fd01f060] view_) | (_[fullsize][e5c6b7e5]_ \| _[wireframe][1ac0124a] view_) |
 
-  [dcb8bcea]: ../../images/intersection-modeling/4way_3dual_carriageways_and_bidir.png "Intersection of 3 dual carriageways and 1 bi-drectional road (fullsize view)"
+  [dcb8bcea]: ../../images/intersection-modeling/4way_3dual_carriageways_and_bidir_square.png "Intersection of 3 dual carriageways and 1 bi-drectional road (fullsize view)"
   [e5c6b7e5]: ../../images/intersection-modeling/4way_3dual_carriageways_and_bidir_err.png "Incorrect drawing of the intersection of 3 dual carriageways and 1 bi-drectional road (fullsize view)"
-  [fd01f060]: ../../images/intersection-modeling/4way_3dual_carriageways_and_bidir_wireframe.png "Intersection of 3 dual carriageways and 1 bi-drectional road (wireframe view)"
+  [fd01f060]: ../../images/intersection-modeling/4way_3dual_carriageways_and_bidir_square_wireframe.png "Intersection of 3 dual carriageways and 1 bi-drectional road (wireframe view)"
   [1ac0124a]: ../../images/intersection-modeling/4way_3dual_carriageways_and_bidir_wireframe_err.png "Incorrect drawing of the intersection of 3 dual carriageways and 1 bi-drectional road (wireframe view)"
 
 -   This place ☝️ [on the map](https://www.openstreetmap.org/edit#map=19/33.70308/-117.86370) 🗺
 
-In this case, it is important to keep a balance between cartography and navigation approach to mapping. This method works as a golden mean between both and helps to maintaine visual and algoritmical simplicity of the data. (_Based on the [discussion][6a7f9f11] in the US-Talk mailing list_)
+As it was mentioned on [paragraph 4](#4-3-way-t-shape-intersection-dual-carriageway-roads) there is need to unfold intersection to the squre. To preserve right description of traffic flow you have to pinch Maple Street on the node of pedestrian crossing that is laying on the north side of the intersection outline. Angle of the pinch should be less or equal 60º. It will help to provide right guidance instruction.
+
+<!-- > In this case, it is important to keep a balance between cartography and navigation approach to mapping. This method strikes a good balance between both and helps to maintain visual and algorithmic simplicity of the data. (_Based on the [discussion][6a7f9f11] in the US-Talk mailing list_)
 
   [6a7f9f11]: https://lists.openstreetmap.org/pipermail/talk-us/2013-October/011899.html "OSM US-Talk discussion"
 
-> Don't pinch dual carriageway before a junction if a divider of directions end very close to the intersection (less than 10-20 meters to it)
+> Don't pinch dual carriageway before a junction if a divider of directions end very close to the intersection (less than 10-20 meters to it) -->
