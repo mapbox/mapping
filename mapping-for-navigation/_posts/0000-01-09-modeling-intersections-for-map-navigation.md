@@ -2,18 +2,18 @@
 title: Intersection Modeling
 ---
 
-An Intersection is where two or more highway meet or cross. The traced highway should represent the traffic flow for a navigation software to provide turn-by-turn instruction.
+An Intersection is where two or more highways meet or cross each other. The traced highway should represent the traffic flow for a navigation software to provide turn-by-turn instruction.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/7/75/Makati_intersection.jpg)
 _Source Wikipedia By Mike Gonzalez [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) via Wikimedia Commons_
 
-Over the history of OpenStreetMap, mappers have used different approaches to model various types of intersections. The more the number of roads join, the more complex the intersection becomes. In this guide we are capturing different cases of intersections with some best practices and recommendation to follow during mapping.
+Over the history of OpenStreetMap, mappers have used different approaches to model various types of intersections. The more the number of roads intersect, the more complex the intersection becomes. In this guide we are capturing different cases of intersections with some best practices and recommendations to follow during mapping.
 
 ## Intersection types
 
 ### Intersection of two bi-directional ways
 
-A bi-directional highway allows traffic flow in both direction without any physical separation. All the ways passing through the junction should intersect at a common point to form a junction.
+A bi-directional highway allows traffic flow in both directions without any physical separation. All the ways passing through the intersection should intersect at a common point to form a junction.
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
@@ -26,7 +26,7 @@ A bi-directional highway allows traffic flow in both direction without any physi
 
 ### Bi-directional intersection with traffic island
 
-Bi-directional highway intersection with small traffic island do not require separating the road geometry. Instead, add the [`traffic_calming=island`](https://wiki.openstreetmap.org/wiki/Tag:traffic_calming%3Disland) tag on the node where the divider begins.
+Bi-directional highway intersection with small traffic island do not require separation in the road geometry. Instead, add the [`traffic_calming=island`](https://wiki.openstreetmap.org/wiki/Tag:traffic_calming%3Disland) tag on the node where the divider begins.
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
@@ -39,8 +39,8 @@ Bi-directional highway intersection with small traffic island do not require sep
 
 ### Intersection between a bi-directional highway and dual-carriageway
 
-A dual-carriageway is a physically divided highway where traffic flows in opposite directions. When a dual-carriageway and a bi-directional highway 
-cross at a junction, they should be modeled to follow the traffic flow rule by intersecting in parallel and perpendicular to each other. Merging the highway nodes (in a sausage shape) in the middle of the junction leads to confusing turn announcement and route line.
+A dual-carriageway is a physically divided highway where the traffic flows in opposite directions. When a dual-carriageway and a bi-directional highway 
+intersect at a junction, they should be modeled to follow the traffic flow rule by intersecting in parallel and perpendicular to each other. Merging the highway nodes (in a sausage shape) in the middle of the junction leads to confusing turn announcement and route line.
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
@@ -54,7 +54,7 @@ cross at a junction, they should be modeled to follow the traffic flow rule by i
 
 ### Intersection between dual-carriageways
 
-An intersection where two dual-carriageway cross should be perpendicular to each other (in the form of **`#`**). Avoid merging the two ways in the middle of the junction.
+An intersection where two dual-carriageways intersect should be perpendicular to each other (in the form of **`#`**). Avoid merging the two ways in the middle of the junction.
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
@@ -134,7 +134,7 @@ A three-way intersection has three arms meeting at a single point forming a **T-
 
 In the real world, there are dual-carriageway which becomes a bi-directional highway after crossing the junction. These intersectiona are tricky to map as there are many ways of modeling such intersection which will replicate the actual traffic  flow. After testing different models, merging the junction after crossing the intersection worked well in cases of turn announcement and guidance.
 
-The merging of dual to bi-directional highway shouldn't make a sharp angle too close distance to junction - keep  a distance of 10-20 meters from the intersection. This type of modeling keeps the balance between cartography and navigation approach to mapping. (_Based on the [discussion in the US-Talk mailing list](https://lists.openstreetmap.org/pipermail/talk-us/2013-October/011899.html)_)
+The merging of dual to bi-directional highway shouldn't make a sharp angle too close to junction - keep  a distance of 10-20 meters from the intersection. This type of modeling keeps the balance between cartography and navigation approach to mapping. (_Based on the [discussion in the US-Talk mailing list](https://lists.openstreetmap.org/pipermail/talk-us/2013-October/011899.html)_)
 
 <!---
 ### Intersection between multiple dual-carriageways and multiple bi-directional highways
@@ -173,7 +173,7 @@ Here are several examples of highways changing from dual-carriageway to bi-direc
 
 ### Intersection between two dual-carriageways and two bi-directional roads
 
-On a four-way intersection where there are two dual-carriageway changing to a bi-directional highway, form a  **`#`** at the intersection then merge both dual-carriageway after the crossing.
+On a four-way intersection where there are two dual-carriageways changing to a bi-directional highway, form a  **`#`** at the intersection then merge both the dual-carriageways after the crossing.
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
