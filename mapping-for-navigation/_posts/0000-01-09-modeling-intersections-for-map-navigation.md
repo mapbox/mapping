@@ -42,8 +42,8 @@ intersect at a junction, they should be modeled to follow the traffic flow rule 
 |---|---|
 | [![][ac1e486c]][ac1e486c] | [![][14300d5a]][14300d5a] |
 
-  [ac1e486c]: ../../images/intersection-modeling/bi-dir_dual_carriageway_intersection.png "Intersection of a bidirectional and dual carriageway roads (fullsize view)"
-  [14300d5a]: ../../images/intersection-modeling/bi-dir_dual_carriageway_intersection_error.png "Not recommended drawing of the intersection of a bidirectional and dual carriageway roads (fullsize view)"
+  [ac1e486c]: ../../images/intersection-modeling/bi-dir_dual_carriageway_intersection.png "Intersection of a bi-directional and dual carriageway roads (fullsize view)"
+  [14300d5a]: ../../images/intersection-modeling/bi-dir_dual_carriageway_intersection_error.png "Not recommended drawing of the intersection of a bi-directional and dual carriageway roads (fullsize view)"
 
 ### Intersection between dual-carriageways
 
