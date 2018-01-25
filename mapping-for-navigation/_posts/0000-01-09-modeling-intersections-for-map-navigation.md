@@ -1,5 +1,5 @@
 ---
-title: Intersection Modelling
+title: Intersection Modeling
 ---
 
 An Intersection is point where multiple roads meet or cross each other. The traced roads should represent the traffic flow of that intersection for a navigation software to provide turn-by-turn instruction, especially in turn announcements.
@@ -7,13 +7,13 @@ An Intersection is point where multiple roads meet or cross each other. The trac
 ![](https://upload.wikimedia.org/wikipedia/commons/7/75/Makati_intersection.jpg)
 _Source Wikipedia By Mike Gonzalez [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) via Wikimedia Commons_
 
-Over the history of OpenStreetMap, mappers have used different approaches to modelling various types of intersections. The more the number of roads join, more complex the intersection becomes. In this guide we are capturing differnt cases of intersections with some best practices and recommendation to follow during mapping.
+Over the history of OpenStreetMap, mappers have used different approaches to model various types of intersections. The more the number of roads join, more complex the intersection becomes. In this guide we are capturing different cases of intersections with some best practices and recommendation to follow during mapping.
 
 ## Intersection types
 
 ### Intersection of two bi-directional ways
 
-A bidirectional road divides the traffic into two streams without any physical seperation. All the ways which passes through the junction should intersect at a common point to form a junction.
+A bidirectional road divides the traffic into two streams without any physical separation. All the ways which passes through the junction should intersect at a common point to form a junction.
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
@@ -24,9 +24,9 @@ A bidirectional road divides the traffic into two streams without any physical s
   [dbad8b6b]: ../../images/intersection-modeling/simple_intersection_wireframe.png "Simple intersection (wireframe view)"
   [a8c293d9]: ../../images/intersection-modeling/simple_intersection_wireframe_error.png "Not recommended drawing of the simple intersection (wireframe view)"
 
-### Intersection and traffic islands
+### Bidirectional intersection with traffic island
 
-Bidirectional highway intersection with small traffic island is not required to be mapped separate junction. In such cases adding [`traffic_calming=island`](https://wiki.openstreetmap.org/wiki/Tag:traffic_calming%3Disland) node at the place of the divider will be better way to model it.
+Bidirectional highway intersection with small traffic island is not required to be mapped with separate road geometry. In such cases adding [`traffic_calming=island`](https://wiki.openstreetmap.org/wiki/Tag:traffic_calming%3Disland) node at the place of the divider will be better way to show it.
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
@@ -39,7 +39,7 @@ Bidirectional highway intersection with small traffic island is not required to 
 
 ### Intersection between a bidirectional road and dual carriageway
 
-A dual carriageway is a divided highway which carries traffic in opposite direction and is divided by a phisical separation. When a dual carriageway and a bidirectional highway meet at a junction, they should be modelled to follow the traffic flow rule by intersecting parallely and perpendicularly to each other. Merging the highway nodes (in a sausage shape) in the middle of the junction is not a best practice as they lead to confusing turn announcement.
+A dual carriageway is a divided highway which carries traffic in opposite direction with a physical separation. When a dual carriageway and a bidirectional highway meet at a junction, they should be modeled to follow the traffic flow rule by intersecting in parallel and perpendicularly to each other. Merging the highway nodes (in a sausage shape) in the middle of the junction is not a best practice as they lead to confusing turn announcement and routeline.
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
@@ -53,7 +53,7 @@ A dual carriageway is a divided highway which carries traffic in opposite direct
 
 ### Intersection between dual carriageways
 
-An intersection where two dual carriageway meets should be modelled perpendicular to each other without merging the dual ways in the middle of the junction.
+An intersection where two dual carriageway meets should be modelled perpendicular to each other without merging the dual ways in the middle of the junction (in the form of **`#`**).
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
@@ -131,11 +131,17 @@ A three-way intersection has three arms meeting at a single point and can be eit
 
 ### Merging after intersection
 
-In real world there are dual carriageway which becomes a bidirectional highway after crossing the junction. These intersection are tricky to map as they are many ways of modelling such intersection which will replicate the real world vehicle flow. After testing different models, merging the junction after crossing the intersection worked well in cases of turn announcement and guidance.
+In real world there are dual carriageway which becomes a bidirectional highway after crossing the junction. These intersection are tricky to map as there are many ways of modelling such intersection which will replicate the real world vehicle flow. After testing different models, merging the junction after crossing the intersection worked well in cases of turn announcement and guidance.
 
-The merging of dual to bidirectional highway should not may sharp angle close to junction but better to keep it at a distance of 10-20 meters from the intersection. Through this type of modelling it keeps balance between cartography and navigation approach to mapping. This method works best between both and helps to keep visual and algorithmical simplicity of the data. (_Based on the [discussion in the US-Talk mailing list](https://lists.openstreetmap.org/pipermail/talk-us/2013-October/011899.html])_)
+The merging of dual to bidirectional highway shouldn't make a sharp angle too close distance to junction - better to keep it at a distance of 10-20 meters from the intersection. This type of modeling keeps balance between cartography and navigation approach to mapping and algorithmic simplicity of the data. (_Based on the [discussion in the US-Talk mailing list](https://lists.openstreetmap.org/pipermail/talk-us/2013-October/011899.html])_)
+
+### Intersection between multiple dual carriageways and multiple bi-directional roads
+
+Intersection where multiple carriageways with different traffic flow meets gets complicated to decide on when and how to merge them after the junction. Best way to model these intersections is by keeping the **`#`** shaped junction in the middle of the intersection and based on the incoming carriageway types we need to decide on which roads need merging after crossing the junction.
 
 ### Intersection between dual carriageways and bi-directional roads
+
+Below examples has vertical highway changing from dual carriage to bidirectional road. Like recommended here - having the **`#`** in the middle and merging the dual to bidirectional after the junction works right.
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
@@ -150,6 +156,7 @@ The merging of dual to bidirectional highway should not may sharp angle close to
 
 ### Intersection between three dual carriageways and one bidrectional road
 
+
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
 | [![][dcb8bcea]][dcb8bcea] | [![][e5c6b7e5]][e5c6b7e5] |
@@ -160,6 +167,8 @@ The merging of dual to bidirectional highway should not may sharp angle close to
   [1ac0124a]: ../../images/intersection-modeling/4way_3dual_carriageways_and_bidir_wireframe_err.png "Not recommended drawing of the intersection of 3 dual carriageways and 1 bi-drectional road (wireframe view)"
 
 ### Intersection between two dual carriageways and two bidirectional roads
+
+Below example has both the dual carriageway changing to a bidirectional way. Here the merging of both dual carriage way should happen after crossing the junction while making a **`#`** shaped connection at the intersection.
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
