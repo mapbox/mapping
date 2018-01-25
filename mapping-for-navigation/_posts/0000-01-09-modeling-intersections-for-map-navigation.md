@@ -71,7 +71,7 @@ An intersection where two dual-carriageway cross should be perpendicular to each
 
 A three-way intersection has three arms meeting at a single point forming a **T-shape** (perpendicular connection) or **Y-shape** (non-perpendicular connection). It is not necessary that the highways meeting this junction should be perpendicular to each other but they should not be merged in the middle of the junction.
 
-### Y-shaped intersection
+#### Y-shaped intersection
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
@@ -110,7 +110,7 @@ A three-way intersection has three arms meeting at a single point forming a **T-
   [d74d5782]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_double_point_wireframe.png "Three way T-shape dual carriageway and bi-directional roads double point intersection (wireframe view)"
   [53488b50]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_double_point_wireframe_err.png "Not recommended drawing of the three way T-shape dual carriageway and bi-directional roads double point intersection (wireframe view)"
 
-### T-shaped intersection
+#### T-shaped intersection
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
@@ -130,7 +130,7 @@ A three-way intersection has three arms meeting at a single point forming a **T-
   [641c8040]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_double_point_wireframe_1.png "Three way T-shape dual carriageway and bi-directional roads intersection (wireframe view)"
   [e606f9b6]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_double_point_wireframe_err_1.png "Not recommended drawing of the three way T-shape dual carriageway and bi-directional roads intersection (wireframe view)"
 
-### Merging after intersection
+## Merging after intersection
 
 In real world, there are dual-carriageway which becomes a bi-directional highway after crossing the junction. These intersection are tricky to map as there are many ways of modelling such intersection which will replicate the real world vehicle flow. After testing different models, merging the junction after crossing the intersection worked well in cases of turn announcement and guidance.
 
