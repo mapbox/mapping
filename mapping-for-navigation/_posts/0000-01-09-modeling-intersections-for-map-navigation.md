@@ -134,15 +134,18 @@ A three-way intersection has three arms meeting at a single point forming a **T-
 
 In real world, there are dual-carriageway which becomes a bi-directional highway after crossing the junction. These intersection are tricky to map as there are many ways of modelling such intersection which will replicate the real world vehicle flow. After testing different models, merging the junction after crossing the intersection worked well in cases of turn announcement and guidance.
 
-The merging of dual to bidirectional highway shouldn't make a sharp angle too close distance to junction - better to keep it at a distance of 10-20 meters from the intersection. This type of modeling keeps balance between cartography and navigation approach to mapping and algorithmic simplicity of the data. (_Based on the [discussion in the US-Talk mailing list](https://lists.openstreetmap.org/pipermail/talk-us/2013-October/011899.html)_)
+The merging of dual to bidirectional highway shouldn't make a sharp angle too close distance to junction - keep  a distance of 10-20 meters from the intersection. This type of modeling keeps the balance between cartography and navigation approach to mapping. (_Based on the [discussion in the US-Talk mailing list](https://lists.openstreetmap.org/pipermail/talk-us/2013-October/011899.html)_)
 
-### Intersection between multiple dual carriageways and multiple bi-directional roads
+
+### Intersection between multiple dual carriageways and multiple bi-directional highways
 
 Intersection where multiple carriageways with different traffic flow meets gets complicated to decide on when and how to merge them after the junction. Best way to model these intersections is by keeping the **`#`** shaped junction in the middle of the intersection and based on the incoming carriageway types we need to decide on which roads need merging after crossing the junction.
 
-### Intersection between dual carriageways and bi-directional roads
+<!--- need a sample screenshot here. -->
 
-Below examples has vertical highway changing from dual carriage to bidirectional road. Like recommended here - having the **`#`** in the middle and merging the dual to bidirectional after the junction works right.
+### Intersection between dual carriageways and bi-directional highways
+
+Here are several examples of highways changing from dual-carriageway to bi-directional highway. Best practice is to form a  **`#`** in the middle of the junction then merge the dual-carriageway afterwards.
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
@@ -169,7 +172,7 @@ Below examples has vertical highway changing from dual carriage to bidirectional
 
 ### Intersection between two dual carriageways and two bidirectional roads
 
-Below example has both the dual carriageway changing to a bidirectional way. Here the merging of both dual carriage way should happen after crossing the junction while making a **`#`** shaped connection at the intersection.
+On a four-way intersection where there are two dual-carriageway changing to a bi-directional highway, form a  **`#`** at the intersection then merge both dual-carriageway after the crossing.
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
