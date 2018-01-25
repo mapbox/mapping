@@ -2,7 +2,7 @@
 title: Intersection Modeling
 ---
 
-An Intersection is point where two or more highway meet or cross. The traced hoghway should represent the traffic flow for a navigation software to provide turn-by-turn instruction.
+An Intersection is point where two or more highway meet or cross. The traced highway should represent the traffic flow for a navigation software to provide turn-by-turn instruction.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/7/75/Makati_intersection.jpg)
 _Source Wikipedia By Mike Gonzalez [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) via Wikimedia Commons_
@@ -24,7 +24,7 @@ A bi-directional highway allows traffic flow in both direction without any physi
   [dbad8b6b]: ../../images/intersection-modeling/simple_intersection_wireframe.png "Simple intersection (wireframe view)"
   [a8c293d9]: ../../images/intersection-modeling/simple_intersection_wireframe_error.png "Not recommended drawing of the simple intersection (wireframe view)"
 
-### Bidirectional intersection with traffic island
+### Bi-directional intersection with traffic island
 
 Bi-directional highway intersection with small traffic island do not require mapping with separate road geometry. Instead, add the [`traffic_calming=island`](https://wiki.openstreetmap.org/wiki/Tag:traffic_calming%3Disland) tag on the node where the divider begins.
 
@@ -40,7 +40,7 @@ Bi-directional highway intersection with small traffic island do not require map
 ### Intersection between a bi-directional highway and dual-carriageway
 
 A dual-carriageway is a physically divided highway where traffic flows in opposite directions. When a dual-carriageway and a bi-directional highway 
-cross at a junction, they should be modeled to follow the traffic flow rule by intersecting in parallel and perpendicularly to each other. Merging the highway nodes (in a sausage shape) in the middle of the junction leads to confusing turn announcement and routeline.
+cross at a junction, they should be modeled to follow the traffic flow rule by intersecting in parallel and perpendicularly to each other. Merging the highway nodes (in a sausage shape) in the middle of the junction leads to confusing turn announcement and route line.
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
 |---|---|
@@ -132,18 +132,18 @@ A three-way intersection has three arms meeting at a single point forming a **T-
 
 ## Merging after intersection
 
-In real world, there are dual-carriageway which becomes a bi-directional highway after crossing the junction. These intersection are tricky to map as there are many ways of modelling such intersection which will replicate the real world vehicle flow. After testing different models, merging the junction after crossing the intersection worked well in cases of turn announcement and guidance.
+In real world, there are dual-carriageway which becomes a bi-directional highway after crossing the junction. These intersection are tricky to map as there are many ways of modeling such intersection which will replicate the real world vehicle flow. After testing different models, merging the junction after crossing the intersection worked well in cases of turn announcement and guidance.
 
 The merging of dual to bidirectional highway shouldn't make a sharp angle too close distance to junction - keep  a distance of 10-20 meters from the intersection. This type of modeling keeps the balance between cartography and navigation approach to mapping. (_Based on the [discussion in the US-Talk mailing list](https://lists.openstreetmap.org/pipermail/talk-us/2013-October/011899.html)_)
 
 
-### Intersection between multiple dual carriageways and multiple bi-directional highways
+### Intersection between multiple dual-carriageways and multiple bi-directional highways
 
 Intersection where multiple carriageways with different traffic flow meets gets complicated to decide on when and how to merge them after the junction. Best way to model these intersections is by keeping the **`#`** shaped junction in the middle of the intersection and based on the incoming carriageway types we need to decide on which roads need merging after crossing the junction.
 
 <!--- need a sample screenshot here. -->
 
-### Intersection between dual carriageways and bi-directional highways
+### Intersection between dual-carriageways and bi-directional highways
 
 Here are several examples of highways changing from dual-carriageway to bi-directional highway. Best practice is to form a  **`#`** in the middle of the junction then merge the dual-carriageway afterwards.
 
@@ -158,7 +158,7 @@ Here are several examples of highways changing from dual-carriageway to bi-direc
   [b5713acf]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_double_point_wireframe_2.png "Three way T-shape dual carriageway and bi-directional roads double point intersection (wireframe view)"
   [bc59adb4]: ../../images/intersection-modeling/3way_bidir_and_dual_carriageway_intersection_double_point_wireframe_err_2.png "Not recommended drawing of the three way T-shape dual carriageway and bi-directional roads double point intersection (wireframe view)"
 
-### Intersection between three dual carriageways and one bidrectional road
+### Intersection between three dual-carriageways and one bi-directional road
 
 
 | ✅ **Recommended**  | ❌ **Not recommended** |
@@ -170,7 +170,7 @@ Here are several examples of highways changing from dual-carriageway to bi-direc
   [fd01f060]: ../../images/intersection-modeling/4way_3dual_carriageways_and_bidir_square_wireframe.png "Intersection of 3 dual carriageways and 1 bi-drectional road (wireframe view)"
   [1ac0124a]: ../../images/intersection-modeling/4way_3dual_carriageways_and_bidir_wireframe_err.png "Not recommended drawing of the intersection of 3 dual carriageways and 1 bi-drectional road (wireframe view)"
 
-### Intersection between two dual carriageways and two bidirectional roads
+### Intersection between two dual-carriageways and two bi-directional roads
 
 On a four-way intersection where there are two dual-carriageway changing to a bi-directional highway, form a  **`#`** at the intersection then merge both dual-carriageway after the crossing.
 
