@@ -7,21 +7,99 @@ A turn restriction at a junction is represented by a [relation](http://wiki.open
 
 ![image](https://cloud.githubusercontent.com/assets/3423533/15504805/5d678d70-21de-11e6-8290-d20db2380d4d.png)
 
-## Traffic signs to be added
+### Types of Turn Restrictions:
 
-Refer to the table given below to spot/match the traffic sign in the Mapillary image against the list of traffic signs and it also consists of the OSM tags: 
+**The best practice to interpret a TR is always to assume you as a rider.** 
+This helps in analysing the TR board quickly . The below table explains how to understand the turn restriction and what are components we need to tag in relation.
+
+**from** : It indicates the road where you are driving.
+
+**via** : The  junction or road where you need to cross for making turn.
+
+**to**: The street you want to go. 
 
 
-Symbol | Description | OSM Tag | Node/Way/Relation | 
------- | ----------- | ------- | ----------------- |
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/MUTCD_R3-27.svg/80px-MUTCD_R3-27.svg.png)| No straight through | restriction=no_straight_on | [Relation](http://wiki.openstreetmap.org/wiki/Relation:restriction) | 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/MUTCD_R3-1.svg/80px-MUTCD_R3-1.svg.png)| No Right Turn | restriction=no_right_turn | [Relation](http://wiki.openstreetmap.org/wiki/Relation:restriction) |
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/MUTCD_R3-2.svg/80px-MUTCD_R3-2.svg.png)| No Left Turn | restriction=no_left_turn | [Relation](http://wiki.openstreetmap.org/wiki/Relation:restriction) |
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/MUTCD_R3-3.svg/80px-MUTCD_R3-3.svg.png)| No Turns	| restriction=only_straight_on | [Relation](http://wiki.openstreetmap.org/wiki/Relation:restriction) |
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/MUTCD_R3-4.svg/80px-MUTCD_R3-4.svg.png)| No U-turn | restriction=no_u_turn | [Relation](http://wiki.openstreetmap.org/wiki/Relation:restriction) |
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/MUTCD_R3-18.svg/80px-MUTCD_R3-18.svg.png)| No Left or U-turn | restriction=no_left_turn; restriction=no_u_turn | [Relation](http://wiki.openstreetmap.org/wiki/Relation:restriction) |
 
- _The last two columns of the table enlists the correct tagging convention for adding the traffic data to OpenStreetMap._
+🔴  - Red indicates the route where you should not proceed.
+
+🔵  - Blue indicates the route where you can proceed.
+
+
+| Turn restriction | Sign |  Restriction modelling | Tagging schema   | Node/Way/Relation | 
+|------------------|------|---|---|-----------|
+| **no_left_turn**     | ![image](https://user-images.githubusercontent.com/20293098/34515970-c23d843e-f09a-11e7-8c39-ae1aee945b45.png) | ![image](https://user-images.githubusercontent.com/20293098/34552143-c9d89188-f145-11e7-8f20-8c8d3cef0f47.png) |<ul><li>**from**:`X-Road`</li><li>**via**:`Y-node`</li><li>**to**:`Z-Road`</li> <li>**restriction**=`no_left_turn`</li><li>**type**=`restriction`</li></ul> |[Relation](https://wiki.openstreetmap.org/wiki/Relation)|
+| **no_right_turn**    | ![image](https://user-images.githubusercontent.com/20293098/34516051-298ada7e-f09b-11e7-99ca-ff011e6fca20.png) | ![image](https://user-images.githubusercontent.com/20293098/34519854-198b5840-f0ac-11e7-85b5-882c558cee70.png) | <ul><li>**from**:`X-Road`</li><li>**via**:`Y-node`</li><li>**to**:`Z-Road` </li> <li>**restriction**=`no_right_turn`</li><li>**type**=`restriction`</li></ul>|[Relation](https://wiki.openstreetmap.org/wiki/Relation)|
+| **no_u_turn**        | ![image](https://user-images.githubusercontent.com/20293098/34516091-60d7ec6a-f09b-11e7-8c8e-580b9ddeac83.png) |  ![image](https://user-images.githubusercontent.com/20293098/34519894-50bcaaf8-f0ac-11e7-986e-da81b5e993f3.png) ![image](https://user-images.githubusercontent.com/20293098/34519907-6681e7b8-f0ac-11e7-995d-5e347a30c578.png) | <ul><li>**from**:`X-Road`</li><li>**via**:`Y-node`</li><li>**to**: `X-Road`</li> <li>**restriction**=`no_u_turn`</li><li>**type**=`restriction`</li></br><li>**from**: `X-Road`</li><li> **via**: `Y-Road` </li><li>**to**: `Z-Road`</li><li>**restriction**=`no_u_turn`</li><li>**type**=`restriction`</li></ul> |[Relation](https://wiki.openstreetmap.org/wiki/Relation)|
+| **no_straight_on**   | ![image](https://user-images.githubusercontent.com/20293098/34516148-c35afb8e-f09b-11e7-8a49-b89764c9f4e5.png) | ![image](https://user-images.githubusercontent.com/20293098/34519965-ac4fe632-f0ac-11e7-8956-df3cfc2933f8.png) | <ul><li>**from**:`X-Road`</li><li>**via**:`Y-node`</li><li>**to**:`Z-Road`</li><li>**restriction**=`no_straight_on`</li><li>**type**=`restriction`</li></ul>|[Relation](https://wiki.openstreetmap.org/wiki/Relation)|
+| **no_turns**         | ![image](https://user-images.githubusercontent.com/20293098/34516200-0f55d9dc-f09c-11e7-81b7-153e0bacc22a.png) | ![image](https://user-images.githubusercontent.com/20293098/34550551-e83205f0-f137-11e7-8ce4-866e292b2dbb.png)  | <ul><li>**from**: `X-Road` </li><li> **via**: `Y-node` </li><li> **to**: `Z-Road` </li> <li>**restriction**=`only_straight_on`</li><li>**type**=`restriction`</li></ul> | [Relation](https://wiki.openstreetmap.org/wiki/Relation)|
+| **no_left_or_u_turn**| ![image](https://user-images.githubusercontent.com/20293098/34516234-2edbddd8-f09c-11e7-8f07-2ac9214f3a0c.png) |  ![image](https://user-images.githubusercontent.com/20293098/34550597-490fc3e4-f138-11e7-9e6b-9c1f206ee187.png) |  <ul><li> **from**: `X-Road` </li><li> **via**: `Y-node` </li><li> **to**: `Y-Road` </li><li>**restriction**=`no_left_turn`</li><li>**type**=`restriction`</li></br><li>**from**: `X-Road`</li><li> **via**: `Y-Road`</li><li> **to**: `Z-Road`</li><li>**restriction**=`no_u_turn`</li><li>**type**=`restriction`</li></ul>| [Relation](https://wiki.openstreetmap.org/wiki/Relation)|
+
+
+## How to Interpret TR by seeing imagery:
+
+The most significant part of the TR mapping is interpreting TR. The time you take add a Turn restriction relation depends on how fast you interpret a TR by seeing imagery. Here are some steps which explains how to interpret a TR by seeing imagery.
+
+![image](https://user-images.githubusercontent.com/20293098/35391094-a432dbcc-0203-11e8-9f80-3d4488cb8d1a.png)
+
+
+1. The  image which is selected the mapillary sequence shows the turn restriction board, which you can see in the left side box.
+
+2. The red arrow indicates the direction the image captured. You can also verify by checking the traffic signals in map and image.
+
+3. Understanding the direction of image is important because, it prevents in adding wrong data.
+
+![image](https://user-images.githubusercontent.com/20293098/35391140-c9ec6c66-0203-11e8-8b6a-446e704495e6.png)
+
+4.Zoom into the image to verify the turn restriction board. In above imagery you can clearly see the board with no-u-turn sign.
+
+
+![image](https://user-images.githubusercontent.com/20293098/35391233-14d5fa6c-0204-11e8-9623-714b10768274.png)
+
+
+5. After seeing image you can clearly state that road in red arrow direction indicates the `from` road , the road in blue arrow direction indicates the `via`road and the road in white arrow direction indicates the `to` road.
+
+
+6. Now lets do same analysis in the map to find out the road names where you need to add relation.
+
+
+![image](https://user-images.githubusercontent.com/20293098/35391323-4fa530a4-0204-11e8-9dbf-36672293eda8.png)
+
+
+7. The members of the relation will be:
+  `From` : **Federal highway**
+  `via` : **via da Fortuna**
+  `to` : **Federal highway**
+
+## Only_*turns:
+
+- The turns which appear in blue board with white sign are only_*turns sign boards. These are mostly found in European countries. 
+- This sign board explicitly indicates the possible turn you can take at the junction.
+
+## Types of only_*turns:
+
+This table explains the different types of only_*turns 
+
+| **Sign board** | **Meaning** |
+|------------|-----------------|
+| ![145px-ukraine_road_sign_4 2](https://user-images.githubusercontent.com/20293098/35368205-26d6c540-01a8-11e8-953f-471e012972e3.gif) |Driver allowed to take only right turn|
+|![145px-ukraine_road_sign_4 3](https://user-images.githubusercontent.com/20293098/35368276-91533156-01a8-11e8-8cb6-fee3e013a763.gif)|Driver allowed to take only left turn|
+|![145px-ukraine_road_sign_4 1](https://user-images.githubusercontent.com/20293098/35368335-e5de779e-01a8-11e8-85e2-0dbcc9813e27.gif)|Driver allowed to go straight|
+|![145px-ukraine_road_sign_4 4](https://user-images.githubusercontent.com/20293098/35368381-20562eee-01a9-11e8-9509-2945448b2be4.gif)|Driver allowed to go straight and right turn|
+|![145px-ukraine_road_sign_4 5](https://user-images.githubusercontent.com/20293098/35368423-4ab48a96-01a9-11e8-9f57-7539281284ec.gif)|Driver allowed to go straight and left turn|
+|![145px-ukraine_road_sign_4 6](https://user-images.githubusercontent.com/20293098/35368468-82c55a6e-01a9-11e8-8a6a-f9e18dcfbea2.gif)|Driver allowed to take only right and left turns|
+
+## Few no_*turns are equivalent to the only_*turns :
+
+
+- Few only_*turns sign boards gives the same meaning as the no_*turns. 
+- Below are the cases where both boards have same meaning.
+
+|**only_*turns**|**no_*turns**|**description**|
+|---------------|-------------|---------------|
+|![145px-ukraine_road_sign_4 5](https://user-images.githubusercontent.com/20293098/35368423-4ab48a96-01a9-11e8-9f57-7539281284ec.gif)|![145px-ukraine_road_sign_3 22](https://user-images.githubusercontent.com/20293098/35368969-e1d60236-01ab-11e8-8289-33e5930fed9f.gif)| These both signs say same instruction that not to turn right|
+|![145px-ukraine_road_sign_4 4](https://user-images.githubusercontent.com/20293098/35368381-20562eee-01a9-11e8-9509-2945448b2be4.gif)|![145px-ukraine_road_sign_3 23](https://user-images.githubusercontent.com/20293098/35369034-14718e86-01ac-11e8-9b22-31120f378367.gif)| These both signs say same instruction that not to turn left|
+|![145px-ukraine_road_sign_4 6](https://user-images.githubusercontent.com/20293098/35368468-82c55a6e-01a9-11e8-8a6a-f9e18dcfbea2.gif)|![image](https://user-images.githubusercontent.com/20293098/35369093-71d7d436-01ac-11e8-960d-8fc5c47b4336.png)| These both signs same instruction that not to go straight on|
+
 
 
 ## Using OSM Navigation Map
