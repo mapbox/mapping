@@ -3,18 +3,18 @@ title: Adding turn restrictions
 ---
 ## What are turn restrictions?
 
-A turn restriction at a junction is represented by a [relation](http://wiki.openstreetmap.org/wiki/Relation) that has a set of tags describing the type of turn restriction. Turn restrictions, like `No-left-turn` and `No-U-turn`, regulate traffic flow at intersections and accurately mapping them is critical for calculating valid routes on a map. 
+A turn restriction at a junction is represented by a [relation](http://wiki.openstreetmap.org/wiki/Relation) that has a set of tags describing the type of turn restriction. Turn restrictions, like `No-left-turn` and `No-U-turn`, regulate traffic flow at intersections and accurately mapping them is critical for calculating valid routes on a map.
 
 ![image](https://cloud.githubusercontent.com/assets/3423533/15504805/5d678d70-21de-11e6-8290-d20db2380d4d.png)
 
 ## Traffic signs to be added
 
-Refer to the table given below to spot/match the traffic sign in the Mapillary image against the list of traffic signs and it also consists of the OSM tags: 
+Refer to the table given below to spot/match the traffic sign in the Mapillary image against the list of traffic signs and it also consists of the OSM tags:
 
 
-Symbol | Description | OSM Tag | Node/Way/Relation | 
+Symbol | Description | OSM Tag | Node/Way/Relation |
 ------ | ----------- | ------- | ----------------- |
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/MUTCD_R3-27.svg/80px-MUTCD_R3-27.svg.png)| No straight through | restriction=no_straight_on | [Relation](http://wiki.openstreetmap.org/wiki/Relation:restriction) | 
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/MUTCD_R3-27.svg/80px-MUTCD_R3-27.svg.png)| No straight through | restriction=no_straight_on | [Relation](http://wiki.openstreetmap.org/wiki/Relation:restriction) |
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/MUTCD_R3-1.svg/80px-MUTCD_R3-1.svg.png)| No Right Turn | restriction=no_right_turn | [Relation](http://wiki.openstreetmap.org/wiki/Relation:restriction) |
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/MUTCD_R3-2.svg/80px-MUTCD_R3-2.svg.png)| No Left Turn | restriction=no_left_turn | [Relation](http://wiki.openstreetmap.org/wiki/Relation:restriction) |
 ![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/MUTCD_R3-3.svg/80px-MUTCD_R3-3.svg.png)| No Turns	| restriction=only_straight_on | [Relation](http://wiki.openstreetmap.org/wiki/Relation:restriction) |
@@ -42,23 +42,29 @@ When we click on the green circle, the area is automatically opened in JOSM and 
 
 The new version of iD, the web editor for OpenStreetMap, makes it even simpler to add turn restrictions to OpenStreetMap.
 
+### Turn restriction visual editor in iD:
+
+* iD has visual turn-restriction editor which reduces the effort of adding a turn-restriction with few clicks.
+
+| | |
+| ------- | ------- |
+| ![screen shot 2018-02-12 at 1 51 21 pm](https://user-images.githubusercontent.com/17470597/36113755-e0d99682-0ffb-11e8-8e7e-ec95fea3731c.png) | **Red outlined way** - way which gets turn-restriction a from way    **Arrows on top of surrounding way** - where all the restrictions are possible.|
+| ![tr](https://user-images.githubusercontent.com/17470597/36114289-9b125cb8-0ffd-11e8-8fde-7c3dc6b8567f.gif) |- From the highlighted way - Every selection and color change to red arrow implies a turn-restriction. |
+
 ### Adding Absolute Turn Restriction:
 ![epl4xsg](https://cloud.githubusercontent.com/assets/17887418/17285386/fe7453f6-57df-11e6-9d1d-e65ba060bc0b.gif)
 
 ### Adding Conditional Turn Restriction:
  ![conditional tr](https://cloud.githubusercontent.com/assets/17887418/17285391/055b6240-57e0-11e6-9c9f-16880b5c6cd2.gif)
 
+### Adding via way turn restriction:
+
+[Link to be updated]
+
 #### Mapillary overlay and Traffic Sign Overlay:
  Mapillary has an efficient tool in iD that helps in seeing detected restrictions. Here's how you enable it:
- 
- ![traffic overlay mapillary](https://cloud.githubusercontent.com/assets/17887418/17285393/069163a8-57e0-11e6-9564-293d91b276bc.gif)
 
-#### Pain Points in adding Turn Restrictions in iD editor:
-* iD editor provides no way of adding a `no_u_turn` restrictions via way. If there is a via way `no_u_turn`, you have to add it using JOSM editor.
- 
- ![image](https://cloud.githubusercontent.com/assets/17887418/17285567/1a145830-57e1-11e6-8e2f-0581bc16695e.png)
-
-* In certain cases, adding [no_u_turn turn via node](https://github.com/mapbox/mapping/issues/213#issuecomment-234221535) is also not possible. For such cases, it is better to add it using JOSM.
+ ![show](https://user-images.githubusercontent.com/17470597/36115579-7dbd3260-1001-11e8-9ccf-72243f341e5a.gif)
 
 
 # Mapping turn restrictions with JOSM
@@ -70,20 +76,20 @@ In order to be able to map traffic data easily, there are some plugins that JOSM
       - [Turn restrictions plugin for JOSM](http://wiki.openstreetmap.org/wiki/JOSM/Plugins/Turnrestrictions): This plugin allows to add turn restrictions to the selected roads with ease.
 
   ![mapi_plugins](https://cloud.githubusercontent.com/assets/1933377/11438854/cf4768fa-951d-11e5-819a-737d2e03342c.gif)
-  
+
   - **Map-paint styles to be added**:
       - traffic_signs: It displays all the existing traffic signs that have been already mapped on OSM.
 
   ![mapi_paint](https://cloud.githubusercontent.com/assets/1933377/11442184/3493f780-9539-11e5-985a-ac6a9095dcee.gif)
 
 ## Guide to use the mapillary and turn restriction plugins
-  
-  **Using the Mapillary plugin** 
-  
-  - The Mapillary imagery can be added by clicking on `imagery -> Mapillary` in JOSM. This will add the mapillary layer 
+
+  **Using the Mapillary plugin**
+
+  - The Mapillary imagery can be added by clicking on `imagery -> Mapillary` in JOSM. This will add the mapillary layer
       over the dataset layer.
   - The explanation for how the plugin works can be found [here](http://blog.mapillary.com/update/2015/06/25/josm-mapillary.html).
- 
+
     **Note**: Every time a new data layer is added, you need to delete the existing **Mapillary layer** and add a new one
 
 **Using the turn restriction plugin**
@@ -125,7 +131,7 @@ In order to be able to map traffic data easily, there are some plugins that JOSM
   - To get a better idea about the area/road and to see the clear image, always inspect multiple consecutive images.
   - With the help of the plugins, look for **traffic restrictions icons** at junctions which are already present on the road/area.
   - We should avoid adding `turn restriction` to roads that are leading to one-ways going in the opposite direction, like the example below. It will only result in redundant data:
-  
+
    ![screen_shot_2015-11-30_at_11_36_26_pm](https://cloud.githubusercontent.com/assets/4470913/11480317/deeac0c6-97bc-11e5-8d0a-852e3ae2f69f.png)
   _Here we should avoid adding `turn-restriction` as it will result in redundant data_
    ![screen shot 2016-05-24 at 6 37 06 pm](https://cloud.githubusercontent.com/assets/4470913/15538956/1a068350-229d-11e6-9931-56770c643131.png)
@@ -159,7 +165,7 @@ During turn restrictions mapping in various cities, we have come across certain 
 
 **1. Restrictions on Red**
 
-Be careful with interpreting signage and always verify Mapillary signage overlay with the image and the kind of restriction. The image below shows a sign for no free right that Mapillary interpreted as `no-right-turn`. This is NOT a turn restriction. If you are not sure, consult the community before mapping. 
+Be careful with interpreting signage and always verify Mapillary signage overlay with the image and the kind of restriction. The image below shows a sign for no free right that Mapillary interpreted as `no-right-turn`. This is NOT a turn restriction. If you are not sure, consult the community before mapping.
 <br><img width="232" alt="screenshot 2016-04-26 21 39 06" src="https://cloud.githubusercontent.com/assets/126868/14825399/67567b40-0bf7-11e6-9b61-dc875160ccc1.png">
 
 A similar restriction found in Canada depicts that **left turn** cannot be taken when the signal is red, otherwise it is permitted to turn left. We are **not** adding such turn restrictions.
@@ -239,7 +245,7 @@ _An example of a `restriction=no_right_turn` traffic sign in Germany_
 ![screen shot 2016-08-17 at 4 27 33 pm](https://cloud.githubusercontent.com/assets/11845908/17734070/a6125f5e-6497-11e6-8d70-d55248e938ec.png)
 
 *Courtesy: [German wiki](http://wiki.openstreetmap.org/wiki/DE:Relation:restriction)*
- 
+
 
 **Reference**
 
