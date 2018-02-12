@@ -49,7 +49,7 @@ The new version of iD, the web editor for OpenStreetMap, makes it even simpler t
 | | |
 | ------- | ------- |
 | ![screen shot 2018-02-12 at 1 51 21 pm](https://user-images.githubusercontent.com/17470597/36113755-e0d99682-0ffb-11e8-8e7e-ec95fea3731c.png) | **Red outlined way** - way which gets turn-restriction a from way    **Arrows on top of surrounding way** - where all the restrictions are possible.|
-| ![tr](https://user-images.githubusercontent.com/17470597/36114289-9b125cb8-0ffd-11e8-8fde-7c3dc6b8567f.gif) |- From the highlighted way - Every selection and color change to red arrow implies a turn-restriction. |
+|![show](https://user-images.githubusercontent.com/17470597/36118441-0ddc5fac-100b-11e8-904f-d4a0098b7d5f.gif)|       - From the highlighted way - Every selection and color change to red arrow implies a turn-restriction. |
 
 ### Adding Absolute Turn Restriction:
 ![epl4xsg](https://cloud.githubusercontent.com/assets/17887418/17285386/fe7453f6-57df-11e6-9d1d-e65ba060bc0b.gif)
