@@ -88,7 +88,7 @@ A [roundabout](https://en.wikipedia.org/wiki/Roundabout) is a generally circular
 
 **<a id="how-to-map-roundabout"></a>How to map**
 
-To indicate a roundabout — draw a closed line in the direction the traffic flows, the same as you do it during the road tracing and tag it with the **[junction][f14df547]**=**[roundabout](https://wiki.openstreetmap.org/wiki/Tag:junction%3Droundabout)** tag and appropriate **`highway=*`** tag value.
+To indicate a roundabout — draw a closed line in the direction the traffic flows, the same as you do it during the road tracing and tag it with the **[junction][f14df547]**=**[roundabout](https://wiki.openstreetmap.org/wiki/Tag:junction%3Droundabout)** tag and appropriate **highway**=**\*** tag value.
 
 Roundabouts are implied one-way roads, but you may specify this explicitly by adding **[oneway](https://wiki.openstreetmap.org/wiki/Key:oneway)**=**[yes](https://wiki.openstreetmap.org/wiki/Tag:oneway%3Dyes)** tag. Additionally the number of **[lanes](https://wiki.openstreetmap.org/wiki/Key:lanes)**=**`*`** in the circle (typically 2, where long vehicles will need to use both) can also be tagged.
 
