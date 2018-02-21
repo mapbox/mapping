@@ -19,7 +19,7 @@ A **roundabout** is a type of circular junction where multiple roads meet and ar
 
 ![Mini-roundabout](../../images/intersection-modeling/roundabouts/roundabout_mini_roundabout.jpg)
 
-<sup>_A view of a mini roundabout from Church Lane with School Lane to the right and Church Street (A 623) to the left with a partial view of Saint Annes Church (Church of England) and War Memorial in the village of Baslow in Derbyshire. Photo Taken: 10/07/13_</sup>
+<sup>_A view of a mini-roundabout from Church Lane with School Lane to the right and Church Street (A 623) to the left with a partial view of Saint Annes Church (Church of England) and War Memorial in the village of Baslow in Derbyshire. Photo Taken: 10/07/13_</sup>
 
 <sup>_by [Eamon Curry](https://www.flickr.com/photos/eamoncurry/) - <https://flic.kr/p/fpUthJ>_</sup>
 
@@ -33,13 +33,13 @@ A **roundabout** is a type of circular junction where multiple roads meet and ar
 
 <sup>_© Copyright [Kenneth Allen](http://www.geograph.ie/profile/2282) and licensed for [reuse](http://www.geograph.ie/reuse.php?id=3062935) under this [Creative Commons Licence](http://creativecommons.org/licenses/by-sa/2.0/)._</sup>
 
-> In the UK – and also in other highway jurisdictions – the maximum size for a mini roundabout is 28 metre ICD (inscribed circle diameter).
+> In the UK – and also in other highway jurisdictions – the maximum size for a mini-roundabout is 28 metre ICD (inscribed circle diameter).
 
 **How to map**
 
 [![][72941a36]][72941a36]
 
-<sup>_Mini roundabout in OSM_</sup>
+<sup>_Mini-roundabout in OSM_</sup>
 
   [72941a36]: ../../images/intersection-modeling/roundabouts/roundabout_mapping_mini_roundabout.png "how to map mini-roundabout"
 
@@ -197,7 +197,7 @@ Turning loop is similar to the turning circle but with a non-traversable center 
 -   [UK Highways Agency Design Manual for Roads and Bridges](http://www.standardsforhighways.co.uk/dmrb/vol6/section2/td1607.pdf) - Volume 6, Section 2, Part 3: Geometric Design of Roundabouts
 -   [US Federal Highway Administration Safety Program - Technical Summary](http://safety.fhwa.dot.gov/intersection/roundabouts/fhwasa10006/) - Roundabouts
 -   Wiki OpenStreetMap
-    -   Mini roundabouts (**[highway][1108080d]**=**[mini_roundabout][11be223c]**)
+    -   Mini-roundabouts (**[highway][1108080d]**=**[mini_roundabout][11be223c]**)
     -   Roundabouts (**[junction][f14df547]**=**[roundabout][bca8053e]**)
     -   Rotaries and traffic-circles (**[junction][f14df547]**=**[circular][d11d94d4]**)
     -   Turning circles (**[highway][1108080d]**=**[turning_circle][496a5a09]**)
