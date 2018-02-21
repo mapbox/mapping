@@ -50,10 +50,8 @@ Since the wiki suggests, we mark mini-roundabout as the place with traversable c
 ![][7c512a18]
 
 <sup>_Small roundabout with traffic island by **[Elaine Nelson](https://www.flickr.com/photos/epersonae/)** - <https://flic.kr/p/8n4kXv>_</sup>
-<!-- |<sup>_Small roundabout with traffic island by **[Matt Steele](https://www.flickr.com/photos/mattaudio/)** - <https://flic.kr/p/su9dcz>_</sup>| -->
 
   [7c512a18]: ../../images/intersection-modeling/roundabouts/roundabout_small.jpg "small roundabout"
-  <!-- [fbdc0d39]: https://c2.staticflickr.com/8/7774/17383739791_0a1b0dfb76_b.jpg "roundabout with a traffic island" -->
 
 Mini-roundabout always need to be represented by **node**. Another way is to draw the roundabout as circular line in the direction the traffic flows and tag it as  **highway=residential\|unclassified** + **oneway**=**yes** and **junction**=**roundabout**.
 
