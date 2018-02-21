@@ -61,7 +61,7 @@ What is not a mini-roundabout?
 
 -   Traffic calming island in the center of a junction - **[traffic_calming](https://wiki.openstreetmap.org/wiki/Key:traffic_calming)**=**[island](https://wiki.openstreetmap.org/wiki/Tag:traffic_calming%3Disland)**
 -   Turning circle - this is a circular feature with a traversable center point, which allows vehicles to turn around -  **[highway][1108080d]**=**[turning_circle][496a5a09]**
--   Turning loop has the same function as the turning circle but with non-traversable center point -  **[highway][1108080d]**=**[turning_loop][e1236adf]**
+-   Turning loop has the same function as a turning circle but with non-traversable center point -  **[highway][1108080d]**=**[turning_loop][e1236adf]**
 -   Smaller roundabout, but not a mini-roundabout. Treat it the same as a large roundabout, and for consistency put  **[junction][f14df547]**=**[roundabout][bca8053e]** tag on the node of the junction.
 
 [1108080d]: https://wiki.openstreetmap.org/wiki/Key:highway
@@ -158,7 +158,7 @@ Turning circle - this is a circular feature with a traversable center point, whi
 
 ### Turning loop
 
-Turning loop is similar to the turning circle but with a non-traversable center point.
+A turning loop is similar to a turning circle but with a non-traversable center point.
 
 ![](../../images/intersection-modeling/roundabouts/roundabout_turning_loop.jpg)
 
