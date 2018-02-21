@@ -15,7 +15,7 @@ A **roundabout** is a type of circular junction where multiple roads meet and ar
 
 ### Mini-roundabout
 
-**Mini-roundabout**,  in addition to being smaller than typical roundabouts, have a _right of way_ and a _[traversable](https://wiki.openstreetmap.org/wiki/Traversable)_ center island. They are also often replaced by stop signs at four-way intersections to slow traffic speeds and reduce accidents in residential neighborhoods that are not designed to accommodate larger vehicles. Vehicles are required to treat the centre island as if it were a solid island and drive around it.
+**Mini-roundabout**,  in addition to being smaller than typical roundabouts, have a _right of way_ and a _[traversable](https://wiki.openstreetmap.org/wiki/Traversable)_ center island. They are also often replaced by stop signs at four-way intersections to slow traffic speeds and reduce accidents in residential neighborhoods that are not designed to accommodate larger vehicles. Vehicles are required to treat the center island as if it were a solid island and drive around it.
 
 ![Mini-roundabout](../../images/intersection-modeling/roundabouts/roundabout_mini_roundabout.jpg)
 
@@ -23,7 +23,7 @@ A **roundabout** is a type of circular junction where multiple roads meet and ar
 
 <sup>_by [Eamon Curry](https://www.flickr.com/photos/eamoncurry/) - <https://flic.kr/p/fpUthJ>_</sup>
 
-**Mini-roundabouts** centre islands can be a painted circle or a low dome but **must be fully traversable** by vehicles. Mini-roundabouts are sometimes grouped in pairs (a double mini-roundabout) or in "chains", simplifying navigation of otherwise awkward junctions.
+**Mini-roundabouts** center islands can be a painted circle or a low dome but **must be fully traversable** by vehicles. Mini-roundabouts are sometimes grouped in pairs (a double mini-roundabout) or in "chains", simplifying navigation of otherwise awkward junctions.
 
 ![Mini-roundabout chain](../../images/intersection-modeling/roundabouts/roundabout_mini_roundabout_chain.jpg)
 
@@ -45,7 +45,7 @@ A **roundabout** is a type of circular junction where multiple roads meet and ar
 
 Select the node on way crossing and add tags **[highway][1108080d]**=**[mini_roundabout][11be223c]**. Please note, that the key **[direction](https://wiki.openstreetmap.org/wiki/Key:direction)**=**\*** only needs to be specified if the traffic flow on the mini-roundabout is clockwise 🔁 as the default value for this key in conjunction with mini-roundabouts is counter-clockwise 🔄.
 
-As the wiki suggests, we mark mini-roundabouts at the place of the traversable centre point. In the case of roundabouts with a traffic island in the centre of the roundabout, if there is a sign _roundabout_, tag it with **junction**=**roundabout** + **traffic_calming**=**island** tags on the node of the intersection, otherwise put only **traffic_calming**=**island** tag.
+As the wiki suggests, we mark mini-roundabouts at the place of the traversable center point. In the case of roundabouts with a traffic island in the center of the roundabout, if there is a sign _roundabout_, tag it with **junction**=**roundabout** + **traffic_calming**=**island** tags on the node of the intersection, otherwise put only **traffic_calming**=**island** tag.
 
 ![][7c512a18]
 
