@@ -4,7 +4,7 @@ title: Modeling Circular Junctions - Roundabouts
 
 A **roundabout** is a type of circular junction where multiple roads meet at a junction and the one-way traffic flow is directed around the island at the center.
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Notviken.jpg/1200px-Notviken.jpg)
+![](../../images/intersection-modeling/roundabouts/roundabout_notviken.jpg)
 <sup>Aerial view of [Notviken in Luleå](https://sv.wikipedia.org/wiki/Notviken). Wikipedia</sup>
 
 > Studies by the Federal Highway Administration have found that roundabouts can increase traffic capacity by 30 percent to 50 percent compared to traditional intersections.
@@ -17,7 +17,7 @@ A **roundabout** is a type of circular junction where multiple roads meet at a j
 
 **Mini-Roundabout** are smaller than roundabouts with _right-of-way_ and a _[traversable](https://wiki.openstreetmap.org/wiki/Traversable)_ centre island. These are also often replaced by stop signs at four-way intersections typically used in residential neighborhoods to slow traffic speeds and reduce accidents and not designed to accommodate larger vehicles. Vehicles are required to treat the painted circle as if it were a solid island and drive around it.
 
-![Mini-roundabout](https://c2.staticflickr.com/6/5543/9459511782_dbfacf91f3_b.jpg)
+![Mini-roundabout](../../images/intersection-modeling/roundabouts/roundabout_mini_roundabout.jpg)
 
 <sup>_A view of a mini roundabout from Church Lane with School Lane to the right and Church Street (A 623) to the left with a partial view of Saint Annes Church (Church of England) and War Memorial in the village of Baslow in Derbyshire. Photo Taken: 10/07/13_</sup>
 
@@ -25,7 +25,7 @@ A **roundabout** is a type of circular junction where multiple roads meet at a j
 
 **Mini-roundabouts** can be a painted circle or a low dome but **must be fully traversable** by vehicles. Mini-roundabouts are sometimes grouped in pairs (a double mini-roundabout) or in "chains", simplifying navigation of otherwise awkward junctions. Vehicles are required to treat the painted circle as if it were a solid island and drive around it.
 
-![Mini-roundabout chaine](http://s0.geograph.org.uk/geophotos/03/06/29/3062935_47b91623.jpg)
+![Mini-roundabout chain](../../images/intersection-modeling/roundabouts/roundabout_mini_roundabout_chain.jpg)
 
 <sup>_**Double mini-roundabout, Lammy, Omagh**_</sup>
 
@@ -52,7 +52,7 @@ Since the wiki suggests, we mark mini-roundabout as the place with traversable c
 <sup>_Small roundabout with traffic island by **[Elaine Nelson](https://www.flickr.com/photos/epersonae/)** - <https://flic.kr/p/8n4kXv>_</sup>
 <!-- |<sup>_Small roundabout with traffic island by **[Matt Steele](https://www.flickr.com/photos/mattaudio/)** - <https://flic.kr/p/su9dcz>_</sup>| -->
 
-  [7c512a18]: https://c1.staticflickr.com/5/4153/4832796263_1277072e82_b.jpg "small roundabout"
+  [7c512a18]: ../../images/intersection-modeling/roundabouts/roundabout_small.jpg "small roundabout"
   <!-- [fbdc0d39]: https://c2.staticflickr.com/8/7774/17383739791_0a1b0dfb76_b.jpg "roundabout with a traffic island" -->
 
 Mini-roundabout always need to be represented by **node**. Another way is to draw the roundabout as circular line in the direction the traffic flows and tag it as  **highway=residential\|unclassified** + **oneway**=**yes** and **junction**=**roundabout**.
@@ -86,7 +86,7 @@ A [roundabout](https://en.wikipedia.org/wiki/Roundabout) is a generally circular
 <sup>_Take a look at a [wireframe view][c134f465] of this roundabout to get some details from the imagery_</sup>
 
   [108eb915]: ../../images/intersection-modeling/roundabouts/roundabout.png "roundabout"
-  [c134f465]: ../../images/intersection-modeling/roundabouts/roundabout.png "wireframe view"
+  [c134f465]: ../../images/intersection-modeling/roundabouts/roundabout_wireframe.png "wireframe view"
 
 **How to map**
 
@@ -162,7 +162,7 @@ Turning circle - this is a circular feature with a traversable center point, whi
 
 Turning loop has the same mission as Turning circle but with none-traversable center point.
 
-![](https://c1.staticflickr.com/3/2032/2082163553_5221555c4f_b.jpg)
+![](../../images/intersection-modeling/roundabouts/roundabout_turning_loop.jpg)
 
 <sup>_Turning loop by [Tony Webster](https://www.flickr.com/photos/diversey/), <https://flic.kr/p/4aZCFB>_</sup>
 
