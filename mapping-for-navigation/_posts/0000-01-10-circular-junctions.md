@@ -53,7 +53,7 @@ As the wiki suggests, we mark mini-roundabouts at the place of the traversable c
 
   [7c512a18]: ../../images/intersection-modeling/roundabouts/roundabout_small.jpg "small roundabout"
 
-Mini-roundabout always need to be represented by **node**. Another way is to draw the roundabout as circular line in the direction the traffic flows and tag it as  **highway=residential\|unclassified** + **oneway**=**yes** and **junction**=**roundabout**.
+Mini-roundabout always need to be represented by **node**. Alternatively, one can draw the roundabout as a circular line in the direction the traffic flows and tag it as  **highway=residential\|unclassified** + **oneway**=**yes** and **junction**=**roundabout**.
 
 **Common Misconceptions**
 
@@ -78,7 +78,7 @@ See examples of mini-roundabouts in the [OpenStreetMap Wiki](https://wiki.openst
 
 ### Roundabout
 
-A [roundabout](https://en.wikipedia.org/wiki/Roundabout) is a generally circular road [junction](https://wiki.openstreetmap.org/wiki/Junctions) where the traffic on the roundabout has right of way.   They are tagged with **[junction][f14df547]**=**[roundabout](https://wiki.openstreetmap.org/wiki/Tag:junction%3Droundabout)** tag. This tag is used only on road intersections where traffic on the roundabout has right of way in the absence of a traffic signal.
+A [roundabout](https://en.wikipedia.org/wiki/Roundabout) is a generally circular road [junction](https://wiki.openstreetmap.org/wiki/Junctions) where the traffic on the roundabout has right of way. They are tagged with **[junction][f14df547]**=**[roundabout](https://wiki.openstreetmap.org/wiki/Tag:junction%3Droundabout)** tag. This tag is used only on road intersections where traffic on the roundabout has right of way in the absence of a traffic signal.
 
 [![roundabout][108eb915]][108eb915]
 <sup>_Take a look at a [wireframe view][c134f465] of this roundabout to get some details from the imagery_</sup>
@@ -88,7 +88,7 @@ A [roundabout](https://en.wikipedia.org/wiki/Roundabout) is a generally circular
 
 **<a id="how-to-map-roundabout"></a>How to map**
 
-To indicate a roundabout — draw a closed line in the direction the traffic flows, the same as you do it during the road tracing and tag it with the **[junction][f14df547]**=**[roundabout](https://wiki.openstreetmap.org/wiki/Tag:junction%3Droundabout)** tag and appropriate **highway**=**\*** tag value.
+To indicate a roundabout — draw a closed line in the direction of the traffic flow, just as one would while tracing a road and tag it with the **[junction][f14df547]**=**[roundabout](https://wiki.openstreetmap.org/wiki/Tag:junction%3Droundabout)** tag and appropriate **highway**=**\*** tag value.
 
 Roundabouts are implied one-way roads, but you may specify this explicitly by adding **[oneway](https://wiki.openstreetmap.org/wiki/Key:oneway)**=**[yes](https://wiki.openstreetmap.org/wiki/Tag:oneway%3Dyes)** tag. Additionally the number of **[lanes](https://wiki.openstreetmap.org/wiki/Key:lanes)**=**\*** in the circle (typically 2, where long vehicles will need to use both) can also be tagged.
 
