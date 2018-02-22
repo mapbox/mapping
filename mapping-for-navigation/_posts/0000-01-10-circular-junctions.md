@@ -150,7 +150,7 @@ In spite of their name, [Hamburger roundabouts](https://wiki.openstreetmap.org/w
 
 ### Turning circle
 
-Turning circle - this is a circular feature with a traversable center point, which allows vehicles to turn around - **[highway][1108080d]**=**[turning_circle][496a5a09]**
+Turning circle – this is a circular feature with a traversable center point, which allows vehicles to turn around – **[highway][1108080d]**=**[turning_circle][496a5a09]**
 
 [![][86003e49]][86003e49]
 
