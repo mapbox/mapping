@@ -7,7 +7,7 @@ A **roundabout** is a type of circular junction where multiple roads meet and ve
 ![](../../images/intersection-modeling/roundabouts/roundabout_notviken.jpg)
 <sup>Aerial view of [Notviken in Luleå](https://sv.wikipedia.org/wiki/Notviken). Wikipedia</sup>
 
-> Studies by the Federal Highway Administration have found that roundabouts can increase traffic capacity by 30 to 50 percent compared to traditional intersections.
+> 💡 Studies by the Federal Highway Administration have found that roundabouts can increase traffic capacity by 30 to 50 percent compared to traditional intersections.
 
 <sup> \*&nbsp;<https://www.wsdot.wa.gov/Safety/roundabouts/BasicFacts.htm></sup>
 
@@ -15,7 +15,7 @@ A **roundabout** is a type of circular junction where multiple roads meet and ve
 
 ### Mini-roundabout
 
-**Mini-roundabouts**, is smaller than typical roundabouts, have a _right of way_ and a _[traversable](https://wiki.openstreetmap.org/wiki/Traversable)_ center island. The center island can be a painted circle or a low dome but **must be fully traversable** by vehicles. They are also often replaced by stop signs at four-way intersections to slow traffic speeds and reduce accidents in residential neighborhoods that are not designed to accommodate larger vehicles. Vehicles are required to treat the center island as if it were a solid island and drive around it.
+**Mini-roundabouts**, are smaller than typical roundabouts, have a _right of way_ and a _[traversable](https://wiki.openstreetmap.org/wiki/Traversable)_ center island. The center island can be a painted circle or a low dome but **must be fully traversable** by vehicles. They are also often replaced by stop signs at four-way intersections to slow traffic speeds and reduce accidents in residential neighborhoods that are not designed to accommodate larger vehicles. Vehicles are required to treat the center island as if it were a solid island and drive around it.
 
 ![Mini-roundabout](../../images/intersection-modeling/roundabouts/roundabout_mini_roundabout.jpg)
 
@@ -27,9 +27,9 @@ Mini-roundabouts are sometimes grouped in pairs (a double mini-roundabout) or in
 
 <sup>_**Double mini-roundabout, Lammy, Omagh**_</sup>
 
-<sup>_Pictured along Brookmount Road. It is intersected by Tamlaght Road Copyright [Kenneth Allen](http://www.geograph.ie/profile/2282) and licensed for [reuse](http://www.geograph.ie/reuse.php?id=3062935) under [Creative Commons Licence](http://creativecommons.org/licenses/by-sa/2.0/)._</sup>
+<sup>_Pictured along Brookmount Road. It is intersected by Tamlaght Road. © Copyright [Kenneth Allen](http://www.geograph.ie/profile/2282) and licensed for [reuse](http://www.geograph.ie/reuse.php?id=3062935) under [Creative Commons Licence](http://creativecommons.org/licenses/by-sa/2.0/)._</sup>
 
-> In the UK – as well as other highway jurisdictions – the maximum size for a mini-roundabout is 28 meters ICD (inscribed circle diameter).
+> 💡 In the UK – as well as other highway jurisdictions – the maximum size for a mini-roundabout is 28 meters ICD (inscribed circle diameter).
 
 **How to map a mini-roundabout**
 
@@ -39,9 +39,9 @@ Mini-roundabouts are sometimes grouped in pairs (a double mini-roundabout) or in
 
   [72941a36]: ../../images/intersection-modeling/roundabouts/roundabout_mapping_mini_roundabout.png "how to map a mini-roundabout"
 
-Select the intersection node and add tags **[highway][1108080d]**=**[mini_roundabout][11be223c]**. The default direction of a mini-roundabout is `anti-clockwise` 🔄. Please specify the **[direction](https://wiki.openstreetmap.org/wiki/Key:direction)**=**\*** only if the flow of the traffic is in `clockwise` 🔁 direction. 
+Select the intersection node and add  **[highway][1108080d]**=**[mini_roundabout][11be223c]** tag. The default direction of a mini-roundabout is counterclockwise 🔄. Please specify the **[direction](https://wiki.openstreetmap.org/wiki/Key:direction)**=**\*** only if the flow of the traffic is in clockwise 🔁 direction.
 
-As the wiki suggests, we mark mini-roundabouts at the place of the traversable center point. In the case of roundabouts with a traffic island in the center and a _roundabout_ sign near the island, tag it with a **junction**=**roundabout** and a **traffic_calming**=**island** tags on the node of the intersection or put only a **traffic_calming**=**island** tag.
+As the wiki suggests, we mark mini-roundabouts at the place of the traversable center point. In the case of roundabouts with a traffic island in the center, if there is a _roundabout_ sign, tag it with **junction**=**roundabout** and **traffic_calming**=**island** tags on the node of the intersection, otherwise put only **traffic_calming**=**island** tag.
 
 ![][7c512a18]
 
@@ -49,7 +49,7 @@ As the wiki suggests, we mark mini-roundabouts at the place of the traversable c
 
   [7c512a18]: ../../images/intersection-modeling/roundabouts/roundabout_small.jpg "small roundabout"
 
-Mini-roundabouts are always need represented by **node**. Alternatively, one can draw the roundabout as a circular line in the direction of traffic flow and tag it with  **highway=residential\|unclassified**, **oneway**=**yes** and **junction**=**roundabout**.
+Mini-roundabouts are always have to be represented by a **node**. Alternatively, one can draw the roundabout as a circular line in the direction of traffic flow and tag it with  **highway=residential\|unclassified**, **oneway**=**yes** and **junction**=**roundabout** tags.
 
 **Common Misconceptions**
 
@@ -74,7 +74,7 @@ See examples of mini-roundabouts in the [OpenStreetMap Wiki](https://wiki.openst
 
 ### Roundabout
 
-A [roundabout](https://en.wikipedia.org/wiki/Roundabout) is generally circular road [junction](https://wiki.openstreetmap.org/wiki/Junctions) where the traffic inside circle has right of way. These are tagged with **[junction][f14df547]**=**[roundabout](https://wiki.openstreetmap.org/wiki/Tag:junction%3Droundabout)** tag. This tag is only used for road intersections where there is absence of a traffic signal at the entry and exit of roundabout.
+A [roundabout](https://en.wikipedia.org/wiki/Roundabout) is a generally circular road [junction](https://wiki.openstreetmap.org/wiki/Junctions) where the traffic inside circle has right of way. These are tagged with **[junction][f14df547]**=**[roundabout](https://wiki.openstreetmap.org/wiki/Tag:junction%3Droundabout)** tag. This tag is only used for road intersections where traffic in the roundabout has right of way in the absence of a traffic signal.
 
 [![roundabout][108eb915]][108eb915]
 <sup>_Take a look at the [wireframe view][c134f465] of this roundabout_</sup>
@@ -84,9 +84,9 @@ A [roundabout](https://en.wikipedia.org/wiki/Roundabout) is generally circular r
 
 **<a id="how-to-map-roundabout"></a>How to map a roundabout**
 
-To indicate a roundabout — draw a closed line in the direction of the traffic flow, which aligns to Satellite imagery just as one would while tracing a road. Tag the line with a **[junction][f14df547]**=**[roundabout](https://wiki.openstreetmap.org/wiki/Tag:junction%3Droundabout)**  tag and the appropriate **highway**=**\*** tag.
+To indicate a roundabout — draw a closed line in the direction of the traffic flow, which aligns to satellite imagery just as one would while tracing a road. Tag the line with **[junction][f14df547]**=**[roundabout](https://wiki.openstreetmap.org/wiki/Tag:junction%3Droundabout)**  tag and the appropriate **highway**=**\*** tag.
 
-Roundabouts are implied to be one-way roads, but you may specify this explicitly by adding **[oneway](https://wiki.openstreetmap.org/wiki/Key:oneway)**=**[yes](https://wiki.openstreetmap.org/wiki/Tag:oneway%3Dyes)** tag.
+Roundabouts are implied to be one-way roads, but you may specify this explicitly by adding **[oneway](https://wiki.openstreetmap.org/wiki/Key:oneway)**=**[yes](https://wiki.openstreetmap.org/wiki/Tag:oneway%3Dyes)** tag. Additionally the number of **[lanes](https://wiki.openstreetmap.org/wiki/Key:lanes)**=**\*** in the circle (_typically 2, where long vehicles will need to use both_) can also be tagged.
 
 Connect all the highways which meets the roundabout based on traffic flows. If a dual carriageway shares traffic with the roundabout, connect each its direction (one arriving, one departing) separately to the respective exit and entrance nodes on the roundabout. Don’t use the same node as entrance to and exit from a roundabout. Each road has to be connected with the roundabout in a separate node.
 
@@ -114,13 +114,13 @@ A **traffic circle** is a type of intersection that directs both turning and thr
 
   [bceeea1b]: ../../images/intersection-modeling/roundabouts/roundabout_traffic_circle.png "Traffic circle"
 
-The size of circular junctions and rotaries can vary from small to very large with several lanes. However, generally **<u> the rotary, or circular junction, should not contain a road network within itself</u>**. This means circular ring roads around a city are not circular junctions. To designate a circular junction use a **[junction][f14df547]**=**[circular][d11d94d4]** tag.
+The size of circular junctions can vary from small to very large with several lanes. However, generally **<u> the circular junction should not contain a road network within itself</u>**. This means circular ring roads around a city are not circular junctions. To designate a circular junction use **[junction][f14df547]**=**[circular][d11d94d4]** tag.
 
   [d11d94d4]: https://wiki.openstreetmap.org/wiki/Tag:junction%3Dcircular
 
 **How to map a circular junction**
 
-To add a circular junction, use the same approach as you would for [drawing a roundabout](#how-to-map-roundabout). Draw a circle of lines and tag it according to the roadclass of connected roads. Mark all nodes that correspond to traffic lights or traffic signs that control traffic flow within the roundabout.
+To add a circular junction, use the same approach as you would for [drawing a roundabout](#how-to-map-roundabout). Draw a circle line and tag it according to the roadclass of connected roads. Mark all nodes that correspond to traffic lights or traffic signs that control traffic flow within the roundabout.
 
 If a traffic circle or roundabout is bisected by further roads that use different parts of the circle, you may split the closed line into segments with similar tagging and add each segment to its respective route relation.
 
@@ -133,7 +133,7 @@ If a traffic circle or roundabout is bisected by further roads that use differen
 
 ### Hamburger roundabout/throughabout/cut-through
 
-In spite of their name, [Hamburger roundabouts](https://wiki.openstreetmap.org/wiki/Hamburger_roundabout), also known as [throughabout or cut-through](http://en.wikipedia.org/wiki/Roundabout#Hamburger_roundabout), are not roundabouts. In this situation the tag **[junction][f14df547]**=**[roundabout](https://wiki.openstreetmap.org/wiki/Tag:junction%3Droundabout)** is not correct.
+In spite of their name, [Hamburger roundabouts](https://wiki.openstreetmap.org/wiki/Hamburger_roundabout), also known as [throughabout or cut-through](http://en.wikipedia.org/wiki/Roundabout#Hamburger_roundabout), are not roundabouts. In this situation the tag **[junction][f14df547]**=**[roundabout](https://wiki.openstreetmap.org/wiki/Tag:junction%3Droundabout)** has to be avoided..
 
 |[![][2ff2d8eb]][2ff2d8eb]|[![][b421c5e4]][b421c5e4]|
 |---|---|
