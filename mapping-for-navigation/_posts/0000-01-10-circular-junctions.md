@@ -35,13 +35,13 @@ A **mini-roundabout's** center island can be a painted circle or a low dome but 
 
 > In the UK – as well as other highway jurisdictions – the maximum size for a mini-roundabout is 28 meters ICD (inscribed circle diameter).
 
-**How to map**
+**How to map a mini-roundabout**
 
 [![][72941a36]][72941a36]
 
 <sup>_Mini-roundabout in OSM_</sup>
 
-  [72941a36]: ../../images/intersection-modeling/roundabouts/roundabout_mapping_mini_roundabout.png "how to map mini-roundabout"
+  [72941a36]: ../../images/intersection-modeling/roundabouts/roundabout_mapping_mini_roundabout.png "how to map a mini-roundabout"
 
 Select the node on way crossing and add tags **[highway][1108080d]**=**[mini_roundabout][11be223c]**. Please note, that the key **[direction](https://wiki.openstreetmap.org/wiki/Key:direction)**=**\*** only needs to be specified if the traffic flow on the mini-roundabout is clockwise 🔁 as the default value for this key in conjunction with mini-roundabouts is counter-clockwise 🔄.
 
@@ -86,7 +86,7 @@ A [roundabout](https://en.wikipedia.org/wiki/Roundabout) is a generally circular
   [108eb915]: ../../images/intersection-modeling/roundabouts/roundabout.png "roundabout"
   [c134f465]: ../../images/intersection-modeling/roundabouts/roundabout_wireframe.png "wireframe view"
 
-**<a id="how-to-map-roundabout"></a>How to map**
+**<a id="how-to-map-roundabout"></a>How to map a roundabout**
 
 To indicate a roundabout — draw a closed line in the direction of the traffic flow, just as one would while tracing a road. Tag the line with a **[junction][f14df547]**=**[roundabout](https://wiki.openstreetmap.org/wiki/Tag:junction%3Droundabout)**  tag and the appropriate **highway**=**\*** tag.
 
