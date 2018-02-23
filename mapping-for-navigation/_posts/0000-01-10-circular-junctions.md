@@ -1,5 +1,5 @@
 ---
-title: Modeling Circular Junctions - Roundabouts
+title: Modeling Circular Junctions – Roundabouts
 ---
 
 A **roundabout** is a type of circular junction where multiple roads meet and drivers are directed around an island at the center of the junction in a one-way traffic flow.
@@ -59,9 +59,9 @@ Mini-roundabouts are always need represented by **node**. Alternatively, one can
 
 What is not a mini-roundabout?
 
--   Traffic calming island in the center of a junction - **[traffic_calming](https://wiki.openstreetmap.org/wiki/Key:traffic_calming)**=**[island](https://wiki.openstreetmap.org/wiki/Tag:traffic_calming%3Disland)**
--   Turning circle - this is a circular feature with a traversable center point, which allows vehicles to turn around -  **[highway][1108080d]**=**[turning_circle][496a5a09]**
--   Turning loop - this has the same function as a turning circle but with non-traversable center point -  **[highway][1108080d]**=**[turning_loop][e1236adf]**
+-   Traffic calming island in the center of a junction – **[traffic_calming](https://wiki.openstreetmap.org/wiki/Key:traffic_calming)**=**[island](https://wiki.openstreetmap.org/wiki/Tag:traffic_calming%3Disland)**
+-   Turning circle – this is a circular feature with a traversable center point, which allows vehicles to turn around –  **[highway][1108080d]**=**[turning_circle][496a5a09]**
+-   Turning loop – this has the same function as a turning circle but with non-traversable center point –  **[highway][1108080d]**=**[turning_loop][e1236adf]**
 -   Smaller roundabout, but not a mini-roundabout. Treat it the same as a large roundabout, and for consistency put  **[junction][f14df547]**=**[roundabout][bca8053e]** tag on the node of the junction.
 
 [1108080d]: https://wiki.openstreetmap.org/wiki/Key:highway
@@ -78,7 +78,7 @@ See examples of mini-roundabouts in the [OpenStreetMap Wiki](https://wiki.openst
 
 ### Roundabout
 
-A [roundabout](https://en.wikipedia.org/wiki/Roundabout) is a generally circular road [junction](https://wiki.openstreetmap.org/wiki/Junctions) where the traffic in the roundabout has right of way. These are tagged with **[junction][f14df547]**=**[roundabout](https://wiki.openstreetmap.org/wiki/Tag:junction%3Droundabout)** tag. This tag is onlu used for road intersections where traffic in the roundabout has right of way in the absence of a traffic signal.
+A [roundabout](https://en.wikipedia.org/wiki/Roundabout) is a generally circular road [junction](https://wiki.openstreetmap.org/wiki/Junctions) where the traffic in the roundabout has right of way. These are tagged with **[junction][f14df547]**=**[roundabout](https://wiki.openstreetmap.org/wiki/Tag:junction%3Droundabout)** tag. This tag is only used for road intersections where traffic in the roundabout has right of way in the absence of a traffic signal.
 
 [![roundabout][108eb915]][108eb915]
 <sup>_Take a look at the [wireframe view][c134f465] of this roundabout_</sup>
@@ -102,7 +102,7 @@ When two roads share the same exit/entrance node connect them before the roundab
 
 **Roundabout shapes**
 
-Roundabouts are not necessarily circular in shape: there are roundabouts that are oval-shaped or D-shaped (with a straight segment - often created on a square whose one side is along an avenue).
+Roundabouts are not necessarily circular in shape: there are roundabouts that are oval-shaped or D-shaped (with a straight segment – often created on a square whose one side is along an avenue).
 
 [![][c4d4f134]][c4d4f134]
 
@@ -194,8 +194,8 @@ The tag **[highway][1108080d]**=**[turning_loop][e1236adf]** is used for a node 
 
 
 -   [Wikipedia article about roundabouts](http://en.wikipedia.org/wiki/Roundabout)
--   [UK Highways Agency Design Manual for Roads and Bridges](http://www.standardsforhighways.co.uk/dmrb/vol6/section2/td1607.pdf) - Volume 6, Section 2, Part 3: Geometric Design of Roundabouts
--   [US Federal Highway Administration Safety Program - Technical Summary](http://safety.fhwa.dot.gov/intersection/roundabouts/fhwasa10006/) - Roundabouts
+-   [UK Highways Agency Design Manual for Roads and Bridges](http://www.standardsforhighways.co.uk/dmrb/vol6/section2/td1607.pdf) – Volume 6, Section 2, Part 3: Geometric Design of Roundabouts
+-   [US Federal Highway Administration Safety Program - Technical Summary](http://safety.fhwa.dot.gov/intersection/roundabouts/fhwasa10006/) – Roundabouts
 -   Wiki OpenStreetMap
     -   Mini-roundabouts (**[highway][1108080d]**=**[mini_roundabout][11be223c]**)
     -   Roundabouts (**[junction][f14df547]**=**[roundabout][bca8053e]**)
