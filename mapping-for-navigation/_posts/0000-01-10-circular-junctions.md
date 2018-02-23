@@ -1,5 +1,5 @@
 ---
-title: Modeling Circular Junctions – Roundabouts
+title: Modeling Circular Junctions
 ---
 
 A **roundabout** is a type of circular junction where multiple roads meet and vehicles are directed around an island at the center of the junction in a one-way traffic flow.
