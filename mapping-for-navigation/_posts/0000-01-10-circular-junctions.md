@@ -61,13 +61,9 @@ What is not a mini-roundabout?
 -   Smaller roundabout, but not a mini-roundabout. Treat it the same as a large roundabout, and for consistency put  **[junction][f14df547]**=**[roundabout][bca8053e]** tag on the node of the junction.
 
 [1108080d]: https://wiki.openstreetmap.org/wiki/Key:highway
-
 [e1236adf]: https://wiki.openstreetmap.org/wiki/Tag:highway%3Dturning_loop
-
 [496a5a09]: https://wiki.openstreetmap.org/wiki/Tag:highway%3Dturning_circle
-
 [bca8053e]: https://wiki.openstreetmap.org/wiki/Tag:junction%3Droundabout
-
 [f14df547]: https://wiki.openstreetmap.org/wiki/Key:junction
 
 See examples of mini-roundabouts in the [OpenStreetMap Wiki](https://wiki.openstreetmap.org/wiki/Tag:highway%3Dmini_roundabout#Mini-roundabouts).
@@ -88,7 +84,16 @@ To indicate a roundabout — draw a closed line in the direction of the traffic 
 
 Roundabouts are implied to be one-way roads, but you may specify this explicitly by adding **[oneway](https://wiki.openstreetmap.org/wiki/Key:oneway)**=**[yes](https://wiki.openstreetmap.org/wiki/Tag:oneway%3Dyes)** tag. Additionally the number of **[lanes](https://wiki.openstreetmap.org/wiki/Key:lanes)**=**\*** in the circle (_typically 2, where long vehicles will need to use both_) can also be tagged.
 
-Connect all the highways which meets the roundabout based on traffic flows. If a dual carriageway shares traffic with the roundabout, connect each its direction (one arriving, one departing) separately to the respective exit and entrance nodes on the roundabout. Don’t use the same node as entrance to and exit from a roundabout. Each road has to be connected with the roundabout in a separate node.
+Connect all the highways which meets the roundabout based on traffic flows. If a dual carriageway shares traffic with the roundabout, connect each its direction (one arriving, one departing) separately to the respective exit and entrance nodes on the roundabout.
+
+Don’t use the same node as entrance to and exit from a roundabout. Each road has to be connected with the roundabout in a separate node.
+
+| ✅ **Recommended**  | ❌ **Not recommended** |
+|---|---|
+| [![][9ed94cdc]][9ed94cdc] | [![][5bfbde68]][5bfbde68] |
+
+  [5bfbde68]: ../../images/intersection-modeling/roundabouts/roundabout_exits_incorrect.png
+  [9ed94cdc]: ../../images/intersection-modeling/roundabouts/roundabout_exits_correct.png
 
 When two roads share the same exit/entrance node connect them before the roundabout and not at the roundabout.
 
@@ -165,7 +170,6 @@ The tag **[highway][1108080d]**=**[turning_loop][e1236adf]** is used for a node 
 |<sup>_node with **highway**=**turning_loop** tag_</sup>|<sup>_circular way with **highway**=**residential**_</sup>|
 
   [41dbfb48]: ../../images/intersection-modeling/roundabouts/roundabout_turning_loop_circle.png
-
   [aaf28646]: ../../images/intersection-modeling/roundabouts/roundabout_turning_loop_node.png
 
 ### "Magic" roundabouts or ring junctions
@@ -181,7 +185,6 @@ The tag **[highway][1108080d]**=**[turning_loop][e1236adf]** is used for a node 
 
   [834623ed]: ../../images/intersection-modeling/roundabouts/roundabout_magic_swindon.png
   [bbc5e25f]: ../../images/intersection-modeling/roundabouts/roundabout_magic__colchester.png
-
   [8c1b9238]: ../../images/intersection-modeling/roundabouts/roundabout_magic_swindon_denham.png
 
 ## See also
