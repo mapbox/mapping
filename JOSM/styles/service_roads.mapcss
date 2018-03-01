@@ -1,0 +1,12 @@
+way[highway=service][!area?][service!=driveway][service!=alley] {
+    width: 2;
+    color: service#ede50f;
+}
+way[highway=service][service=parking_aisle] {
+    width: 2;
+    color: service#ce52ed;
+}
+/* way[highway=service][service=driveway] {
+    width: 2;
+    color: service#db9103;
+} */
