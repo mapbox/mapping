@@ -134,7 +134,7 @@ If a traffic circle or roundabout is bisected by further roads that use differen
 
   [8d6d5862]: ../../images/intersection-modeling/roundabouts/roundabout_traffic_circle_paris.png "Place Charles de Gaulle."
 
-## Junctions that are not rounabouts
+## Junctions that are not roundabouts
 
 ### Hamburger roundabout/throughabout/cut-through
 
