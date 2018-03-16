@@ -1,15 +1,22 @@
 ---
-title: Mapping Dual-carriageways
+title: Remodeling Dual-carriageways
 ---
 
-<!-- Stub for Mapping dual carriageways -->
+![]({{site.baseurl}}/images/dual-carriageway/1200px-German_Autobahn_1936_1939.jpg)
 
-# Context
+*A German dual carriageway in the 1930s ([Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/German_Autobahn_1936_1939.jpg/1200px-German_Autobahn_1936_1939.jpg))*
 
-## Simple bi-direction to dual-carriageway
+"A divided highway (also separated highway) is any highway where traffic flows are physically separated by a barrier (e.g., grass, concrete, steel), which prevents movements between said flows" ([OpenStreetMap wiki]( https://wiki.openstreetmap.org/wiki/Editing_Standards_and_Conventions#Divided_highways)).  We oftentimes encounter cases where a bi-directional highway should be mapped as a dual-carriageway to better represent what's on the ground. OpenStreetMap mappers have adopted different  approaches to mapping dual-carriageways based on the source of data, local community best practices and personal preference.  This guide distills these best practices on how to improve road network data in OpenStreetMap by re-mapping bi-directional highways to dual-carriageways.  In principle our basic rule of thumb are:
 
-_blah blah_
+* Keep things simple and avoid unnecessary complexity.
+* Dual-carriageway should have a physical barrier visible from imagery or in some cases road marking that show its illegal to pass on the other side (MUTCD).
+* There is enough length from the physical divider (~20 meters).
+* During remapping, all other elements associated to the road should be re-tagged (for example, turn lanes, turn restrictions, route relations. etc.
+
+## Changing from a simple bi-direction to a dual-carriageway
+
 <!-- location: https://www.openstreetmap.org/#map=18/37.955426/-121.281075 -->
+*Intro*
 
 |Before | After|
 |---|---|
@@ -19,10 +26,10 @@ _blah blah_
 
 1. Select the bi-directional road and check if there are no special tags (such as turn-lanes, route relations, etc)
 2. Align the original highway to one side of the dual-carriageway.
-3. Trace the other segement of the dual-carriageway.
+3. Trace the other segment of the dual-carriageway.
 4. Copy the tags from the original highway to the newly created way.
 5. Add oneway=yes for both ways.
-6.  Check for alignments and, etc. ![]({{site.baseurl}}/images/dual-carriageway/simple-add-a-way.gif)
+6. Check for alignments and, etc. ![]({{site.baseurl}}/images/dual-carriageway/simple-add-a-way.gif)
 
 **Option 2**
 
@@ -33,50 +40,45 @@ _blah blah_
 5. Add `oneway=yes` to both ways.
 6. Reverse (`R`)way direction of the copied way. ![]({{site.baseurl}}/images/dual-carriageway/parallel-a-way.gif)
 
-## Fix turn lanes
+## Fixing turn lanes
 
-<!--
-https://www.openstreetmap.org/#map=20/34.00868689767381/-118.20529590304008
-https://www.openstreetmap.org/node/1768185976/history
-https://www.openstreetmap.org/#map=20/37.83716908954435/-122.30457356404747
+<!-- https://www.openstreetmap.org/#map=20/37.83716908954435/-122.30457356404747 -->
 
--->
+*Intro*
 
 |Before | After|
 |---|---|
-|![]({{site.baseurl}}/images/dual-carriageway/turnlanes-before.gif) |![]({{site.baseurl}}/images/dual-carriageway/turnlanes-after.gif) |
+|![]({{site.baseurl}}/images/dual-carriageway/turnlanes-before.png) |![]({{site.baseurl}}/images/dual-carriageway/turnlanes-after.png) |
 
-For this we need the [Lanes and road attributes](https://josm.openstreetmap.de/wiki/Styles) map style and the [Turnlanes tagging](https://github.com/JOSM/turnlanes-tagging) plugin in JOSM.  Check this guide on how to [activate the style and plugin](http://127.0.0.1:4000/mapping/mapping-for-navigation/adding-turn-lanes/#pre-requirements-for-mapping-a-turn-lane-in-josm) in JOSM.
+We need to use the [Lanes and road attributes](https://josm.openstreetmap.de/wiki/Styles) map style and the [Turnlanes tagging](https://github.com/JOSM/turnlanes-tagging) plugin in JOSM.  Check this guide on how to [activate the style and plugin](http://127.0.0.1:4000/mapping/mapping-for-navigation/adding-turn-lanes/#pre-requirements-for-mapping-a-turn-lane-in-josm) in JOSM.
 
 <!-- Should we add instructions for activating paint style and plugin? -->
 
-1. Create the dual-carriageway and the primary tags.
-2. Select the highway than needs turn lans update.
-3. Activate the turnlanes-tagging pugin dialog by typeing `Cmd + T`
-4. Use turnlanes plugin to update the lanes tag by:
-   * Selecting the road as uni-directional
-   * Add the turn lanes based on the satellite.
-5. Check the other highways on the intersection to verify if other highways needs turn lanes update or deletion.
+1. Change the bidirectional highway to a dual-carriageway using the **Make parallel copies of ways** (`Shift + P`). ![]({{site.baseurl}}/images/dual-carriageway/turnlanes-make-dual.gif)
+2. Remove previously added `turn:lanes:*`. ![]({{site.baseurl}}/images/dual-carriageway/turnlanes-delete-tags.gif)
+3. Add the `oneway=yes` tag. Reverse (`R`)the way direction to follow the traffic flow. ![]({{site.baseurl}}/images/dual-carriageway/turnlanes-oneway.gif)
+2. Select the highway that needs turn lanes update.  In this example, we will add `turn:lanes=left||`. ![]({{site.baseurl}}/images/dual-carriageway/turnlanes-leftpipepipe.png)
+3. In the menu, click **Data** > **Turn lanes tagging - editor** (`Cmd + T`) to activate the **Turn lanes editor** dialog. ![]({{site.baseurl}}/images/dual-carriageway/turnlanes-editor.gif)
+4. Use **Turn lanes editor** dialog. to `lane` count and `turn:lanes`.  Use the satellite imagery for reference. ![]({{site.baseurl}}/images/dual-carriageway/turnlanes-addturnlanes.gif)
+5. Add the turn-lanes for all the other highways. 
 
 
-
-## With TR
+## Fixing turn restrictions
 
 |Before | After|
 |---|---|
-|![]({{site.baseurl}}/images/dual-carriageway/turnlanes-before.png) |![]({{site.baseurl}}/images/dual-carriageway/turnlanes-after.png) |
+|![]({{site.baseurl}}/images/dual-carriageway/-before.png) |![]({{site.baseurl}}/images/dual-carriageway/-after.png) |
 
 
 1. Create the dual-carriageway
-2. Verify TR from streetlevel photos
+2. Verify TR from street-level photos
 3. Edit the membership of the relations
 
-## Route relations
+## Fixing route relations
 
 |Before | After|
 |---|---|
-|![]({{site.baseurl}}/images/dual-carriageway/turnlanes-before.png) |![]({{site.baseurl}}/images/dual-carriageway/turnlanes-after.png) |
-
+|![]({{site.baseurl}}/images/dual-carriageway/-before.png) |![]({{site.baseurl}}/images/dual-carriageway/-after.png) |
 
 
 ## Etc
