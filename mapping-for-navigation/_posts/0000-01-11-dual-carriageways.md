@@ -67,7 +67,7 @@ In the above example, there is physical at East Weber Avenue from North Stanisla
   [a907d766]: {{site.baseurl}}/images/dual-carriageway/turnlanes-before.png "Click to enlarge"
   [55088a6b]: {{site.baseurl}}/images/dual-carriageway/turnlanes-after.png "Click to enlarge"
 
-Powell street was mapped as a bi-deirectional road.  Turn lanes were added later on as `turn:lanes:forward` and `turn:lanes:backward`. When re-mapping as dual-carriageway, we will modify the `turn:lanes:forward` and `turn:lanes:backward` to `turn:lanes`. In order to visualize and edit turn lanes, we will use the [Lanes and road attributes](https://josm.openstreetmap.de/wiki/Styles) map style and the [Turnlanes tagging](https://github.com/JOSM/turnlanes-tagging) plugin in JOSM. Check our  guide on how to [activate the style and plugin]({{site.baseurl}}/mapping-for-navigation/adding-turn-lanes/#pre-requirements-for-mapping-a-turn-lane-in-josm) in JOSM.
+Powell street was mapped as a bi-directional road.  Turn lanes were added later on as `turn:lanes:forward` and `turn:lanes:backward`. When re-mapping as dual-carriageway, we will modify the `turn:lanes:forward` and `turn:lanes:backward` to `turn:lanes`. In order to visualize and edit turn lanes, we will use the [Lanes and road attributes](https://josm.openstreetmap.de/wiki/Styles) map style and the [Turnlanes tagging](https://github.com/JOSM/turnlanes-tagging) plugin in JOSM. Check our  guide on how to [activate the style and plugin]({{site.baseurl}}/mapping-for-navigation/adding-turn-lanes/#pre-requirements-for-mapping-a-turn-lane-in-josm) in JOSM.
 
 <!-- Should we add instructions for activating paint style and plugin? -->
 
@@ -94,7 +94,7 @@ for the reference. ![]({{site.baseurl}}/images/dual-carriageway/turnlanes-addtur
   [f132e206]: {{site.baseurl}}/images/dual-carriageway/tr-before.png "Click to enlarge"
   [07d20292]: {{site.baseurl}}/images/dual-carriageway/tr-after.png "Click to enlarge"
 
-Taking a U-turn along Griffin Road is illegal. Griffin Road was mapped as bi-directional road with a `no_u_turn` restriction relation.  After re-mapping as dual-carriageway, we need to make sure that the relation have the correct mebers and roles.
+Taking a U-turn along Griffin Road is illegal. Griffin Road was mapped as bi-directional road with a `no_u_turn` restriction relation.  After re-mapping as dual-carriageway, we need to make sure that the relation have the correct members and roles.
 
 1.  Create the dual-carriageway by using the **Make parallel copies of ways** (<kbd>Shift</kbd>+<kbd>P</kbd>).
 Make sure all relevant tags are copied to the other way (i.e. **oneway=yes**). ![]({{site.baseurl}}/images/dual-carriageway/tr-make-dual.gif)
