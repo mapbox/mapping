@@ -13,7 +13,7 @@ title: Remodeling Dual-carriageways
 We oftentimes encounter cases where a bi-directional highway should be mapped as a dual-carriageway to better
 represent what's on the ground. OpenStreetMap mappers have adopted different approaches to mapping dual-carriageways
 based on the source of data, local community best practices and personal preference. This guide distills best
-practices on how to improve road network data in OpenStreetMap by re-mapping bi-directional highways to dual-carriageways.  
+practices on how to improve road network data in OpenStreetMap by re-mapping bi-directional highways to dual-carriageways.
 
 Our basic rule of thumb are:
 
@@ -22,7 +22,7 @@ Our basic rule of thumb are:
 *   There is enough length of the physical divider.
 *   During remapping, all other elements associated to the road should be re-tagged (for example, turn lanes, turn restrictions, route relation, etc.)
 
-*For other approaches to mapping intersection, refer to our [Intersection modelling guide]({{site.baseurl}}/mapping-for-navigation/modeling-intersections-for-map-navigation/)*
+*For other approaches to mapping intersection, refer to our [Intersection modeling guide]({{site.baseurl}}/mapping-for-navigation/modeling-intersections-for-map-navigation/)*
 
 ## Changing from a simple bi-direction to a dual-carriageway
 
