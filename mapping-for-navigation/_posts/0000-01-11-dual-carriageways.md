@@ -18,8 +18,8 @@ practices on how to improve road network data in OpenStreetMap by re-mapping bi-
 Our basic rule of thumb are:
 
 *   Keep things simple, add complexity only when necessary.
-*   Dual-carriageway should have a physical barrier visible from imagery or in some cases road marking that show its illegal to pass on the other side (MUTCD).
-*   There is enough length from the physical divider (~20 meters?).
+*   Dual-carriageway should have a physical barrier visible from imagery or when there is a road marking that show its illegal to pass on the other side.
+*   There is enough length from the physical divider.
 *   During remapping, all other elements associated to the road should be re-tagged (for example, turn lanes, turn restrictions, route relation, etc.)
 
 *For other approaches to mapping intersection, refer to our [Intersection modelling guide]({{site.baseurl}}/mapping-for-navigation/modeling-intersections-for-map-navigation/)*
@@ -35,7 +35,7 @@ Our basic rule of thumb are:
   [4ae13b0b]: {{site.baseurl}}/images/dual-carriageway/add-a-way-before.png "Click to enlarge"
   [082fb704]: {{site.baseurl}}/images/dual-carriageway/add-a-way-after.png "Click to enlarge"
 
-In the above example, there is physical at East Weber Avenue from North Stanislaus to Aurora Street. This section of the highway should be a dual-carriageway.  The highway don't have any special tags like turn lanes or turn restrictions.  Re-mapping to a dual-carriageway is straightforward.
+In the above example, there is physical barrier at East Weber Avenue from North Stanislaus to Aurora Street. This section of the highway should be a dual-carriageway.  The highway don't have any special tags like turn lanes or turn restrictions.  Re-mapping to a dual-carriageway is straightforward.
 
 **Option 1**
 
@@ -56,7 +56,7 @@ In the above example, there is physical at East Weber Avenue from North Stanisla
 5.  Add **oneway=yes** to both ways.
 6.  Reverse (<kbd>R</kbd>) way direction of the copied way. ![]({{site.baseurl}}/images/dual-carriageway/parallel-a-way.gif)
 
-## Fixing turn lanes
+## Changing from a simple bi-direction to a dual-carriageway when turn lanes are present
 
 <!-- https://www.openstreetmap.org/#map=20/37.83716908954435/-122.30457356404747 -->
 
@@ -84,7 +84,7 @@ Powell street was mapped as a bi-directional road.  Turn lanes were added later 
 for the reference. ![]({{site.baseurl}}/images/dual-carriageway/turnlanes-addturnlanes.gif)
 7.  Add the turn-lanes for all the other highways.
 
-## Fixing turn restrictions
+## Changing from a simple bi-direction to a dual-carriageway when turn restrictions are present
 <!-- https://www.openstreetmap.org/edit?editor=remote#map=18/26.06462/-80.25637 -->
 
 |Before|After|
