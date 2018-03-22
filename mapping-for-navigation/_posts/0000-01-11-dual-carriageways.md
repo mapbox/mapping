@@ -19,7 +19,7 @@ Our basic rule of thumb are:
 
 *   Keep things simple, add complexity only when necessary.
 *   Dual-carriageway should have a physical barrier visible from imagery or when there is a road marking that show its illegal to pass on the other side.
-*   There is enough length from the physical divider.
+*   There is enough length of the physical divider.
 *   During remapping, all other elements associated to the road should be re-tagged (for example, turn lanes, turn restrictions, route relation, etc.)
 
 *For other approaches to mapping intersection, refer to our [Intersection modelling guide]({{site.baseurl}}/mapping-for-navigation/modeling-intersections-for-map-navigation/)*
