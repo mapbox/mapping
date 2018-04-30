@@ -103,3 +103,4 @@ S.No| Mapillary Image | JOSM representation | OSM tags
 | JR |Junior| 
 | MLK | Martin Luther King |
 | Co | County |
+| Tr | Trail
