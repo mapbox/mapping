@@ -1,3 +1,47 @@
+.prose aside {
+  padding: 18px 18px 18px;
+  border-radius: 5px;
+  background: #f8f8f8;
+  margin-bottom: 18px;
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.prose h2 {
+  font-size: 24px;
+  padding-top: 80px;
+}
+
+.prose h3 {
+  font-size: 20px;
+  border-top: 2px solid #eee;
+}
+
+.code-headings h3 {
+  font-family: Menlo, Bitstream Vera Sans Mono, Monaco, Consolas, monospace;
+}
+
+.prose h4 {
+  font-size: 16px;
+  opacity: 0.6;
+}
+
+.prose table {
+  margin-bottom: 20px;
+}
+
+body {
+  background-color: #efefef;
+}
+
+.subsection {
+    background-color: #fff;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+
+
 /* Fonts
 ------------------------------------------------------- */
 @font-face {
@@ -40,6 +84,10 @@ h3.human {
     line-height: 25px;
 }
 
+h4.human {
+  font-size: 16px;
+  opacity: 0.8;
+}
 
 .language {
     clear: both;
@@ -540,7 +588,9 @@ ul.category-list li a:hover {
 .affix {
   position: fixed;
   top: 20px;
+  bottom: 50px;
   width: 100%;
+  overflow-y: scroll;
 }
 .toc .active a {
     border-left-color: #7689D2;
@@ -548,8 +598,8 @@ ul.category-list li a:hover {
 .toc a { border-left: 2px solid transparent;}
 
 .toc ul li {
-    padding-top: 3px;
-    padding-bottom: 3px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
 .toc ul li a {
     color: #3E3E4E !important;
