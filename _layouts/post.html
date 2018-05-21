@@ -17,4 +17,8 @@ head: <link rel="stylesheet" href="/mapping/site.css">
 
 <script>
 $('body').scrollspy({ target: '.toc' });
+
+$('h2').each(function(){
+    $(this).nextUntil('h2').andSelf().wrapAll('<div class="subsection clearfix" />');
+});
 </script>

@@ -1,251 +1,474 @@
 ---
-title: Adding turn restrictions
+title: Explicit Turn Restrictions
+permalink: /explicit-turn-restrictions/
+layout: post
 ---
-## What are turn restrictions?
 
-A turn restriction at a junction is represented by a [relation](http://wiki.openstreetmap.org/wiki/Relation) that has a set of tags describing the type of turn restriction. Turn restrictions, like `No-left-turn` and `No-U-turn`, regulate traffic flow at intersections and accurately mapping them is critical for calculating valid routes on a map. 
+## Turn restrictions
+When navigating a street network, it is important to know which maneuver you are permitted to make. Turn restrictions are communicated through road signage and are placed to regulate traffic flow at intersections by restricting certain maneuver. When mapped in OpenStreetMap data, these restrictions have a dramatic impact on an OpenStreetMap based routing experience.
 
-![image](https://cloud.githubusercontent.com/assets/3423533/15504805/5d678d70-21de-11e6-8290-d20db2380d4d.png)
+Example, the routing improvement when a missing Not Left Turn restriction (left), is added to the map (right):
 
-## Traffic signs to be added
+![Impact of mapped turn restriction on routing experience.]({{site.baseurl}}/images/explicit-turn-restrictions/turn_restriction_example.png)
 
-Refer to the table given below to spot/match the traffic sign in the Mapillary image against the list of traffic signs and it also consists of the OSM tags: 
+## Common turn restrictions found in the US
 
+Turn restrictions come in many forms and combinations, and can vary from country to country. To start things off, this guide focuses on mapping turn restrictions in the United States.
 
-Symbol | Description | OSM Tag | Node/Way/Relation | 
------- | ----------- | ------- | ----------------- |
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/MUTCD_R3-27.svg/80px-MUTCD_R3-27.svg.png)| No straight through | restriction=no_straight_on | [Relation](http://wiki.openstreetmap.org/wiki/Relation:restriction) | 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/MUTCD_R3-1.svg/80px-MUTCD_R3-1.svg.png)| No Right Turn | restriction=no_right_turn | [Relation](http://wiki.openstreetmap.org/wiki/Relation:restriction) |
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/MUTCD_R3-2.svg/80px-MUTCD_R3-2.svg.png)| No Left Turn | restriction=no_left_turn | [Relation](http://wiki.openstreetmap.org/wiki/Relation:restriction) |
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/MUTCD_R3-3.svg/80px-MUTCD_R3-3.svg.png)| No Turns	| restriction=only_straight_on | [Relation](http://wiki.openstreetmap.org/wiki/Relation:restriction) |
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/MUTCD_R3-4.svg/80px-MUTCD_R3-4.svg.png)| No U-turn | restriction=no_u_turn | [Relation](http://wiki.openstreetmap.org/wiki/Relation:restriction) |
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/MUTCD_R3-18.svg/80px-MUTCD_R3-18.svg.png)| No Left or U-turn | restriction=no_left_turn; restriction=no_u_turn | [Relation](http://wiki.openstreetmap.org/wiki/Relation:restriction) |
+Contrary to the name, turn restrictions are not limited to turns you are not allowed make. They can also be used to communicate the single maneuver you are allowed to make. We can categorize these two restriction types as mandatory (ex. you can only go straight) and prohibitory (ex. you cannot go straight).
 
- _The last two columns of the table enlists the correct tagging convention for adding the traffic data to OpenStreetMap._
+In the US you will largely find prohibitory turn restriction signage and sometimes mandatory signs. Most often you will see one of these six signs:
 
+| Sign | Meaning |
+|---|---|
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/no-right.png) | No right turn |
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/no-left-turn.png) | No left turn |
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/no-straight-on.png) | No straight on |
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/no-turns.png) | No turns |
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/no-u-turn.png) | No U turn |
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/no-U-nor-left.png) | No U turn nor left turn |
 
-## Using OSM Navigation Map
+In this guide we’ll focus on how to map the six most common US turn restrictions described above, then move into the mapping of conditional turn restrictions and a couple less non-standard turn restrictions you may see.
 
-The [Navigation map](http://mapbox.github.io/osm-navigation-map/) helps us in recognizing the detected signage overlay from Mapillary on the map. These signage are represented using small circles in 3 colours:
+## Mapping an explicit turn restriction in the iD editor
 
-- **Green** - to be validated
-- **Blue** - Reviewed and found valid
-- **Yellow** - Reviewed and found redundant
-- **Red** - Reviewed and found invalid
+#### Restriction as relation
 
-When we click on the green circle, the area is automatically opened in JOSM and popup to select the review is opened in the Navigation map. The same can be opened in iD editor by clicking on **Edit Map** button on top right of the popup. Once done with the review, please add your OSM username.
+**Every turn restriction is a relation made of ways and node**.
 
-![](https://cloud.githubusercontent.com/assets/126868/16987647/ffa78c4a-4eaa-11e6-8bfd-b509b20e482b.gif)
+A turn restriction is a type of relation which should have a minimum of three members: `from`,  `via`  and `to`.
 
+-   The **`from`** member is the **way** which represents driver’s is initial location.
+-   The **`to`** member is the **way** which represents driver’s possible end location.
+-   To drive from the **`from`** way to the **`to`** way a driver would pass through the **`via`** member, which can be either a **way** or **node** based on current road geometry.(Note: It is possible to have more than one via member in a turn restriction, but this doc will not detail these particular cases.)
 
-## Mapping turn restrictions with iD editor
+For a turn restriction such as No Left Turn and No Right Turn the via member is typically a `node`. For No U Turn the via member can be both `way` and `node`.
 
-The new version of iD, the web editor for OpenStreetMap, makes it even simpler to add turn restrictions to OpenStreetMap.
+---- | ----
+<images width="300" alt="image" src="{{site.baseurl}}/images/explicit-turn-restrictions/no-left-members.png"> | <images width="300" alt="image" height="345" src="{{site.baseurl}}/images/explicit-turn-restrictions/no-right-turn-members.png">
+Members of No Left Turn Relation | Members of No Right Turn Relation
+<images width="350" alt="image" src="{{site.baseurl}}/images/explicit-turn-restrictions/no-u-way-members.png"> | <images width="350" height="400" alt="image" src="{{site.baseurl}}/images/explicit-turn-restrictions/no-u-node-members.png">
+Members of No U Turn (via way) Relation | Members of No U Turn (via node) Relation
 
-### Adding Absolute Turn Restriction:
-![epl4xsg](https://cloud.githubusercontent.com/assets/17887418/17285386/fe7453f6-57df-11e6-9d1d-e65ba060bc0b.gif)
+Once you have identified the location of an un-mapped turn restriction you are ready to create a turn restriction relation.
 
-### Adding Conditional Turn Restriction:
- ![conditional tr](https://cloud.githubusercontent.com/assets/17887418/17285391/055b6240-57e0-11e6-9c9f-16880b5c6cd2.gif)
+### Regular turn restrictions
 
-#### Mapillary overlay and Traffic Sign Overlay:
- Mapillary has an efficient tool in iD that helps in seeing detected restrictions. Here's how you enable it:
- 
- ![traffic overlay mapillary](https://cloud.githubusercontent.com/assets/17887418/17285393/069163a8-57e0-11e6-9564-293d91b276bc.gif)
+#### No Left Turn / No Right Turn
 
-#### Pain Points in adding Turn Restrictions in iD editor:
-* iD editor provides no way of adding a `no_u_turn` restrictions via way. If there is a via way `no_u_turn`, you have to add it using JOSM editor.
- 
- ![image](https://cloud.githubusercontent.com/assets/17887418/17285567/1a145830-57e1-11e6-8e2f-0581bc16695e.png)
+![No Left Turn]({{site.baseurl}}/images/explicit-turn-restrictions/no-left-turn.png) 
 
-* In certain cases, adding [no_u_turn turn via node](https://github.com/mapbox/mapping/issues/213#issuecomment-234221535) is also not possible. For such cases, it is better to add it using JOSM.
+![No Right Turn]({{site.baseurl}}/images/explicit-turn-restrictions/no-right.png)
 
+*Note: Follow the same instructions listed below for both right and left turn restrictions, Make sure to match the direction of the mapping to the direction of the signage.*
 
-# Mapping turn restrictions with JOSM
 
-In order to be able to map traffic data easily, there are some plugins that JOSM needs to be configured with:
+1.  Check the **`to`** way to ensure that it is not a oneway.
+    -   If a oneway exists which prohibits travel down the road in the way the turn restriction sign prohibits, mapping turn restriction is **not necessary**.
+2.  Select the **`via`** node in the map view panel to activate the **Turn Restrictions editor** on the side bar.
 
-  - **Plugins to be downloaded**:
-      - [Mapillary plugin for JOSM](http://blog.mapillary.com/update/2015/06/25/josm-mapillary.html): This plugin allows the user to view mapillary images in JOSM.
-      - [Turn restrictions plugin for JOSM](http://wiki.openstreetmap.org/wiki/JOSM/Plugins/Turnrestrictions): This plugin allows to add turn restrictions to the selected roads with ease.
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/Left-2.gif)
 
-  ![mapi_plugins](https://cloud.githubusercontent.com/assets/1933377/11438854/cf4768fa-951d-11e5-819a-737d2e03342c.gif)
-  
-  - **Map-paint styles to be added**:
-      - traffic_signs: It displays all the existing traffic signs that have been already mapped on OSM.
+3.  Select the **`from`** way in the **Turn Restrictions editor**.
 
-  ![mapi_paint](https://cloud.githubusercontent.com/assets/1933377/11442184/3493f780-9539-11e5-985a-ac6a9095dcee.gif)
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/Left-3.gif)
 
-## Guide to use the mapillary and turn restriction plugins
-  
-  **Using the Mapillary plugin** 
-  
-  - The Mapillary imagery can be added by clicking on `imagery -> Mapillary` in JOSM. This will add the mapillary layer 
-      over the dataset layer.
-  - The explanation for how the plugin works can be found [here](http://blog.mapillary.com/update/2015/06/25/josm-mapillary.html).
- 
-    **Note**: Every time a new data layer is added, you need to delete the existing **Mapillary layer** and add a new one
+4.  Select the arrow pointing left for the road where the restriction exists.
 
-**Using the turn restriction plugin**
-  - The explanation for how the turn restriction plugin works
-      can be found [here](http://overpass-turbo.eu/s/gTO).
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/Left-4.gif)
 
+5.  Check that your relation has been added by scrolling down to **All relations** and clicking on  **`No Left Turn`**. There should be three members.
 
-## Start mapping Turn Restrictions
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/Left-5.gif)
 
-- This **[Over-pass query](http://overpass-turbo.eu/s/grv)** can be used to get the current count of turn-restrictions present in a city that one is going to work on. This will help us in determining the current state of restrictions and further help in calculating the number of restrictions added by the team.
+6.  If all looks good click **Save** to upload your turn restriction relation.
 
-**Note:** Change the city name in the above query
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/SAVE.png)
 
-- Use the **[navigation data coverage on OSM](http://mapbox.github.io/osm-navigation-map/#9.56/37.8188/-122.5575) map** to spot the Mapillary signage detections.
-- Turn on the `Turn Restrictions`, `Oneways` and `Mapillary Street Photos` layers in the above map
-- Click on the turn-restriction traffic symbols detected by Mapillary (which are denoted by green dots on the map) for it to open in JOSM.
+    *Note: do not close your iD tab until the data has been fully uploaded to OSM. Wait until the "Uploading changes to OpenStreetMap..." window disappears.*
 
-  ![navigation](https://cloud.githubusercontent.com/assets/4470913/15466843/26bd5588-20f9-11e6-9eaa-0126e5c83c39.gif)
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/upload-changes.png)
 
-- In the Mapillary layer in JOSM, detected traffic signs are represented by a tiny `red triangle` next to the green arrow. Please note that this layer might not be up-to-date.
+#### No Straight On
 
-  ![screen shot 2015-11-27 at 1 41 55 pm](https://cloud.githubusercontent.com/assets/4470913/11436699/1fa70b72-950d-11e5-8e05-9e09013c1f64.png)
+![]({{site.baseurl}}/images/explicit-turn-restrictions/no-straight-on.png)
 
-- Probe the previous and next images as well as the satellite imagery data to get a clear idea of the surroundings and then compare them with the existing Mapillary image to find the exact location of the `traffic-sign`.
+1. Check the **`to`** way to ensure that it is not a oneway.
+    -   If a oneway exists which prohibits travel down the road in the way the turn restriction sign prohibits, mapping turn restriction is **not necessary**.
+2.  Select the **`via`** node in the map view panel to activate the **Turn Restrictions editor** on the side bar.
 
-  ![turn_res](https://cloud.githubusercontent.com/assets/1933377/11443497/a109430c-9543-11e5-8ef9-6907269d6145.gif)
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/No-straight-on-1.gif)
 
-- Be cautious while adding an `U-turn` via a way in OSM, here is how you add it:
-  - Select the participating ways
-  - Go to `Presets -> Relations -> Turn Restrictions`
-  - Select `no_u_turn` in the `Restriction` field from the drop-down and click on `New Relation`
-  - In the `Members` section add the respective roles for all the ways enlisted
+3.  Select the **`from`** way in the **Turn Restrictions editor**.
 
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/No-straight-on-2.gif)
 
-  ![u-turn](https://cloud.githubusercontent.com/assets/4470913/15538899/ae22ff9c-229c-11e6-8d82-08b9e18c5540.gif)
+4.  Select the straight on arrow.
 
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/StraightOn-3.gif)
 
- **Note**
-  - To get a better idea about the area/road and to see the clear image, always inspect multiple consecutive images.
-  - With the help of the plugins, look for **traffic restrictions icons** at junctions which are already present on the road/area.
-  - We should avoid adding `turn restriction` to roads that are leading to one-ways going in the opposite direction, like the example below. It will only result in redundant data:
-  
-   ![screen_shot_2015-11-30_at_11_36_26_pm](https://cloud.githubusercontent.com/assets/4470913/11480317/deeac0c6-97bc-11e5-8d0a-852e3ae2f69f.png)
-  _Here we should avoid adding `turn-restriction` as it will result in redundant data_
-   ![screen shot 2016-05-24 at 6 37 06 pm](https://cloud.githubusercontent.com/assets/4470913/15538956/1a068350-229d-11e6-9931-56770c643131.png)
-  _This situation is a clear indication of a redundant restriction_
-  - Add a conditional restrictions when specific conditions are written on the turn-restriction sign-board.
-     - On certain times of the day. eg. Restriction during peak hours 7AM-10AM
-     - On a certain day of the year. eg. Restriction on baseball game days only
+5.  Check that your relation has been added by scrolling down to **All relations**, clicking on **`No Straight On`** and inspecting the relation members.
 
-## Adding Conditional turn restrictions
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/StraightOn-4.gif)
 
-**Special cases**
-* [Conditional restrictions](http://wiki.openstreetmap.org/wiki/Conditional_restrictions) during peak hours are common in SF. Tag them as `restriction:conditional=no_left_turn @ (Mo-Sa 07:00-09:00,16:00-18:00)`<br>![](https://cloud.githubusercontent.com/assets/4470913/14850426/9d4643f8-0c96-11e6-8c0c-dc94887e1613.png)
-* Conditional restriction during baseball games. Ignore<br>
-<img width="205" alt="screenshot 2016-04-27 16 51 33" src="https://cloud.githubusercontent.com/assets/126868/14850687/6208c57a-0c98-11e6-8535-2d434b9bf8fe.png">
+6.  If all looks good click **Save** to upload your turn restriction relation.
 
-* In the case below, we are leaning towards adding this as a regular `restriction` since it applies for all regular personal vehicles.
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/SAVE.png)
 
-  ![screenshot 2016-05-02 12 01 18](https://cloud.githubusercontent.com/assets/12103383/14948422/b9f1838a-105d-11e6-9604-2781de0d6d96.png)
+    *Note: do not close your iD tab until the data has been fully uploaded to OSM. Wait until the "Uploading changes to OpenStreetMap..." window disappears.*
 
-* If you come across the below instance where the restriction is applicable only on `School Days`. Per discussion we will be adding the restriction for `Monday - Friday`
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/upload-changes.png)
 
-  ![screen shot 2016-05-06 at 2 57 43 pm](https://cloud.githubusercontent.com/assets/1933377/15074787/7c6594d4-13be-11e6-9c01-1d277070960e.png)
+#### No Turns / Only Straight On
 
-## QA for turn restrictions
+![]({{site.baseurl}}/images/explicit-turn-restrictions/no-turns.png)
 
-During turn restrictions mapping in various cities, we have come across certain special cases where we need to pay more attention while mapping. These cases are noted down here for your reference.
 
-----
+1. **No Turns** means **Only Straight On** restriction.
+2. Check the **`to`** way to ensure that it is not a oneway.
+    -   If a oneway exists which prohibits travel down the road in the way the turn restriction sign prohibits, mapping turn restriction is **not necessary**.
+3.  Select the **`via`** node in the map view panel to activate the Turn Restrictions editor on the side bar.
 
-# Be cautious when you come across these turn restrictions
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/Only-straight-on-1.gif)
 
-**1. Restrictions on Red**
+4.  Select the from way in the **Turn Restrictions** editor.
 
-Be careful with interpreting signage and always verify Mapillary signage overlay with the image and the kind of restriction. The image below shows a sign for no free right that Mapillary interpreted as `no-right-turn`. This is NOT a turn restriction. If you are not sure, consult the community before mapping. 
-<br><img width="232" alt="screenshot 2016-04-26 21 39 06" src="https://cloud.githubusercontent.com/assets/126868/14825399/67567b40-0bf7-11e6-9b61-dc875160ccc1.png">
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/Only-straight-on-2.gif)
 
-A similar restriction found in Canada depicts that **left turn** cannot be taken when the signal is red, otherwise it is permitted to turn left. We are **not** adding such turn restrictions.
+5.  Select the straight on arrow.
 
-![no_right_turn_on_red_sign](https://cloud.githubusercontent.com/assets/4470913/17021102/28acf658-4f63-11e6-8266-b380071706c4.jpeg)
-_Picture by Share Bear - Own work - [Public Domain](https://commons.wikimedia.org/w/index.php?curid=8626974)_
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/Only-straight-on-3.gif)
 
-**2. Location and bearing of Mapillary Signage overlay**
+6.  Select the straight on arrow again to change `no_straight_on` to `only_straight_on` relation. 
 
-The location and bearing of the Mapillary photo is not reliable and is prone to usual GPS errors. Cross check the photograph with the map to confirm you are looking at the intersection from the correct bearing. This photograph is facing the reverse of actual heading.
-<br><img width="835" alt="screenshot 2016-04-27 12 28 12" src="https://cloud.githubusercontent.com/assets/126868/14844241/91873ce8-0c73-11e6-9785-a591f8534f89.png">
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/StraightOnOnly-4.gif)
 
-**3. Single restriction per image detection**
+7.  Check that your relation has been added by scrolling down to **All relations**, clicking on `Only Straight On` and inspecting the relation members.
 
-Mapillary will detect only one sign type per image. Lookout for multiple restrictions in the image<br>
-<img width="178" alt="screenshot 2016-04-27 17 49 34" src="https://cloud.githubusercontent.com/assets/126868/14851913/a6235e66-0ca0-11e6-8180-366006e7fc7b.png">
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/StraightOnOnly-5.gif)
 
-**4.  Careful with Turn restrictions plugin in JOSM**
+8.  If all looks good click **Save** to upload your turn restriction relation.
 
-Sometimes the **Turn restrictions plugin** does not detect the correct signs i.e. even though it's a `no-right-turn`, the plugin detects it as `no-left-turn`. So be extra sure before adding the restriction
-![turn_restrictions_plugin_bug](https://cloud.githubusercontent.com/assets/4470913/15529626/4f438044-226c-11e6-919e-02481acb5ad1.gif)
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/SAVE.png)
 
-**5. Advantage of previous/next images**
+    *Note: do not close your iD tab until the data has been fully uploaded to OpenStreetMap. Wait until the "Uploading changes to OpenStreetMap..." window disappears.*
 
-There might be an offset in the Mapillary images, that is the image may appear after/before the actual location. It is ideal to inspect the previous and next images and also look for road names and other clues from the satellite imagery to verify it's exact location and bearing.
-![offset_mapillary](https://cloud.githubusercontent.com/assets/4470913/15539155/712f0296-229e-11e6-8675-fecc95f4be51.png)
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/upload-changes.png)
 
-**6. Temporary turn restrictions**
 
-When the roads are in construction or under repair, you might see temporary turn restrictions placed similar to shown in the below image. We are not adding temporary turn restrictions.
-![pjimage](https://cloud.githubusercontent.com/assets/8921295/17290390/d8808ac2-57fb-11e6-8816-d681033e2a8f.jpg)
+#### No U Turn
 
+---- | ----
+![Classic No U Turn signage]({{site.baseurl}}/images/explicit-turn-restrictions/no-u-turn.png)  ![Alternate No U Turn signage]({{site.baseurl}}/images/explicit-turn-restrictions/Alt-No-U-Turn.png)  ![Alternate No U Turn signage]({{site.baseurl}}/images/explicit-turn-restrictions/alt-u-turn-2.png) | ![new u turn]({{site.baseurl}}/images/explicit-turn-restrictions/no-u-turn-left.png)
 
+Inspect the existing road geometry, if it is a [dual carriageway](https://en.wikipedia.org/wiki/Bidirectional_traffic), Follow below steps to add `no_u_turn` restriction where **`via`** will be **`way`**.
 
-**7. Restriction-ahead warnings**
+1.  Select the node which connects the **`to`** way and **`via`** way to activate **Turn Restrictions editor** on the side bar.
 
-In the below image, there is a no_left_turn sign board as detected from the Mapillary image. This sign board means that there is a ```no_turn_restriction``` ahead. But this signage itself is **not** a turn restriction, so we do not map this.
-[![screenshot 2016-07-26 15 31 15](https://cloud.githubusercontent.com/assets/8921295/17133998/03bf2e10-5346-11e6-949f-dcd4f554560b.png)](https://cloud.githubusercontent.com/assets/8921295/17133964/e83159fc-5345-11e6-935a-5b535390f730.jpg)
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/UTurn-1.gif)
 
+2.  Select the **`from`** way in the **Turn Restrictions editor**.
 
-# Different conventions for turn restrictions in different countries
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/UTurn-2.gif)
 
-### Canada
+3.  Select the **`to`** way in the **Turn Restrictions editor**.
 
-**Case:1**
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/UTurn-3.gif)
 
-The image below shows two signages, the first one is in French and translates to 'Wait for arrow to turn left' and the second one is a `no_u_turn`. In such cases, we ignore the the first signage and go ahead mapping `no_u_turn`.
+4.  Check that your relation has been added by selecting the **`from`** way, scrolling down to **All relations**, and clicking on `No U Turn`.
 
-[![screenshot 2016-07-26 14 34 36](https://cloud.githubusercontent.com/assets/8921295/17132558/efc2a398-533f-11e6-93d7-7dc0e87978ae.png)](https://d1cuyjsrcm0gby.cloudfront.net/4ZA3OT0nHoDQ7F7JILG-pg/thumb-2048.jpg)
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/UTurn-4.gif)
 
+5.  If all looks good click **Save** to upload your turn restriction relation.
 
-**Case:2**
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/SAVE.png)
 
+    *Note: do not close your iD tab until the data has been fully uploaded to OSM. Wait until the "Uploading changes to OpenStreetMap..." window disappears.*
 
-In the below image, the first board for ```no_left_turn``` says Monday to Friday 8am-10am and 3pm-7pm (Lun-Ven 8h-10h,15h-19h in French). The second board is a ```no_u_turn``` **except authorized vehicles**. In this case, first one would be a conditional turn restriction; second, an absolute ```no_u_turn``` turn restriction.
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/upload-changes.png)
 
-[![screenshot 2016-07-26 14 48 15](https://cloud.githubusercontent.com/assets/8921295/17132580/093ab860-5340-11e6-9863-ffe150f7c8c8.png)](https://d1cuyjsrcm0gby.cloudfront.net/IYi6WjwOQDnPW1HTTGyh8A/thumb-2048.jpg)
+Inspect the existing road geometry, if it is a [bidirectional way](https://en.wikipedia.org/wiki/Dual_carriageway), Follow below steps to add `no_u_turn` restriction where **`via`** will be a **node**.
 
-**Case:3**
+1.  Select the node which connects the **`to`** way and **`via`** way to activate Turn Restrictions editor on the side bar.
 
-The below image indicates that all the drivers (no matter the lane they are on) must follow this/these direction(s) at the intersection. This means that the driver needs to only turn right/left on the days mentioned in the sign and during that duration of the day.
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/viaNode-uTurn1.gif)
 
-![image](https://cloud.githubusercontent.com/assets/3423533/17128539/0b5166e0-532b-11e6-96e6-69d21603f183.png)
+2.  Select the from way in the **Turn Restrictions editor**.
 
-**Syntax to be used:** `restriction:conditional=only_right_turn @ (Mo-Fr 07:00-09:00,16:00-18:00)`
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/viaNode-uTurn2.gif)
 
-### Germany
+3.  Click the u-turn icon at the junction to apply the restriction.
 
-In Germany, instead of signages to prohibit turns, the signages describe the legally allowed turns at the junction. Hence a signage for a no right turn will indicate only turns for left and straight.
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/viaNode-uTurn3.gif)
 
-![screen shot 2016-08-17 at 4 12 05 pm](https://cloud.githubusercontent.com/assets/11845908/17733853/568ce2b6-6496-11e6-8665-8983fe1c94db.png)
+4.  Check that your relation has been added by selecting the from way, scrolling down to **All relations**, and clicking on `No U Turn`.
 
-_An example of a `restriction=no_right_turn` traffic sign in Germany_
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/viaNode-uTurn4.gif)
 
-### Turn restriction signs of Germany and what it means:
+5.  If all looks good click **Save** to upload your turn restriction relation.
 
-![screen shot 2016-08-17 at 4 27 33 pm](https://cloud.githubusercontent.com/assets/11845908/17734070/a6125f5e-6497-11e6-8d70-d55248e938ec.png)
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/SAVE.png)
 
-*Courtesy: [German wiki](http://wiki.openstreetmap.org/wiki/DE:Relation:restriction)*
- 
+    *Note: do not close your iD tab until the data has been fully uploaded to OSM. Wait until the "Uploading changes to OpenStreetMap..." window disappears.*
 
-**Reference**
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/upload-changes.png)
 
-- OSM tags for routing http://wiki.openstreetmap.org/wiki/OSM_tags_for_routing
-- Turn restrictions http://wiki.openstreetmap.org/wiki/Relation:restriction
-- Access restrictions http://wiki.openstreetmap.org/wiki/Key:access
-- Conditional restrictions http://wiki.openstreetmap.org/wiki/Conditional_restrictions
+#### No U Turn nor Left Turn
 
-**Spanish version [here](https://github.com/mapbox/mapping/wiki/Gu%C3%ADa-de-mapeo-para-a%C3%B1adir-restricciones-de-giro-utilizando-mapillary)!**
+![No U Turn nor Left Turn]({{site.baseurl}}/images/explicit-turn-restrictions/no-U-nor-left.png)
+
+When you encounter multiple turn restrictions contained within a single sign, it should be mapped as two separate restriction relations. In the case of No U Turn nor Left Turn, first create a no U Turn Relation, then create a No Left Turn relation.
+
+1. Check the **`to`** way to ensure that it is not a oneway.
+    -   If a oneway exists which prohibits travel down the road in the way the turn restriction sign prohibits, mapping turn restriction is **not necessary**.
+    - Only add No U Turn restriction.
+1.  Select the node which connects the **`to`** way and **`via`** way to activate the Turn Restrictions editor on the side bar.
+
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/UTurn-1.gif)
+
+2.  Select the **`from`** way in the **Turn Restrictions** editor.
+
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/UTurn-2.gif)
+
+3.  Select the **`to`** way in the **Turn Restrictions** editor.
+
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/UTurn-3.gif)
+
+4.  Click on the left arrow of the U turn relation.
+
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/UTurn_and_left.gif)
+
+5.  Check that your relations have been added by selecting the from way, scrolling down to **All relations**, and clicking on `No Left Turn` and `No U Turn`.
+
+6.  If all looks good click **Save** to upload your turn restriction relations.
+
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/SAVE.png)
+
+    *Note: do not close your iD tab until the data has been fully uploaded to OSM. Wait until the "Uploading changes to OpenStreetMap..." window disappears.*
+
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/upload-changes.png)
+
+
+### Conditional turn restrictions
+
+Some turn restrictions are only applicable under certain conditions. The most common conditions are:
+
+-   day(s)
+-   time(s)
+-   vehicle type(s)
+-   traffic signal
+-   vehicle weight/height
+
+Day, time, weight, height based conditions should be mapped, while traffic signal based conditions should not be mapped.
+
+For all conditional restrictions you map the restriction as you would for a regular restriction. After regular restriction is mapped add the conditions to the tags. The general structure of a conditional turn restriction tag looks like:
+
+`restriction:conditional`=`<regular restriction name> @ <condition>`
+
+#### Day/Time Conditions
+
+**Day Conditions**
+
+A turn restriction containing a day condition specifies on which day(s) the restriction applies and some signage lists the day(s) does not apply. Day conditions are tagged using a single schema regardless of how the signage is phrased.
+
+Day conditions are tagged using the Monday through Sunday calendar and are noted by two-character abbreviations:
+
+| Day       | Abbreviation |
+| --------- | ------------ |
+| Monday    | Mo           |
+| Tuesday   | Tu           |
+| Wednesday | We           |
+| Thursday  | Th           |
+| Friday    | Fr           |
+| Saturday  | Sa           |
+| Sunday    | Su           |
+
+You may also encounter signage which specifies Holiday. In the US this refers to Public Holidays and is abbreviated using `PH`.
+
+When you come across signage which lists `School Days` or `When children are present` (if near a school) tag using `Mo-Fr` as in the US this is typically when school is in session.
+
+**Time Conditions**
+
+Conditional turn restrictions sign sometimes list time(s) along with day(s). When no particular days are listed you must include `Mo-Su` in the tag to specify that the restriction applies throughout the week.
+
+Time conditions are tagged using the [**24 hour clock format**](https://en.wikipedia.org/wiki/24-hour_clock).
+
+Seperators used in conditional turn-restriction syntax -
+
+- When sign has sequence of day(s) mentioned, separate the day(s) range with `-` (Example - `Mo-Su`). 
+- Use `-` to separate individiual time ranges and `,` to separate multiple time ranges (Example - `07:30-09:00,14:00-16:00`).
+- Use `;` to list exception days after specifying day and time ranges (Example - `07:30-09:00,14:00-16:00; SH off`).
+- **Note** - Give extra space while separating between `<days>` `<time>` and `<exception days>` after separator symbol. 
+
+The basic syntax of a day/time conditional turn restriction is as follows:
+
+`restriction:conditional=<regular restriction type> @ (<day(s)-day(s)> <time-time>,<time-time>; <exceptional days>,<>exceptional days>)`
+
+| Sign<br />*(Source: Mapillary)* | Sign Type | Turn restriction type | Tag |
+|------|---|----|---|
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/no-Left-time.png) | No Left Turn | 7AM-9AM<br />3:30PM-5:30PM | `restriction:conditional=no_left_turn @ (Mo-Su 07:00-09:00,15:30-17:30)` |
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/no-right-nightly.png) | No Right Turn | 11 PM-6 AM<br />Nightly | `restriction:conditional=no_right_turn @ (Mo-Su 23:00-06:00)` |
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/no-left-double.png) | No Left Turn | Monday-Friday<br />7AM-9AM,<br />2PM-4PM<br />Sunday 5AM-5PM | `restriction:conditional=no_left_turn @ (Mo-Fr 07:00-09:00,14:00-16:00; Su 05:00-17:00`) |
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/no-left-school-days.png) | No Left Turn | School days - Monday-Friday <br /> <br /> Wednesday - 7:30AM-8:15AM, 12:05PM-12:30PM and <br /> <br /> Monday,Tuesday, Thursday,Friday - 2:15PM-3PM | `restriction:conditional=no_left_turn @ (Mo-Tu 14:15-15:00; Th-Fr 14:15-15:00; We 07:30-08:15,12:05-12:50)` |
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/no-right-nightly.png) | No Right Turn | 11PM-6AM<br />Nightly | `restriction:conditional=no_right_turn @ (Mo-Su 23:00-06:00)` |
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/no-left-u-SH-edgecase.png) | No Left Turn and No U Turn (August to June is school academic year - school days are off) | Monday-Friday<br />7:30AM-9:30AM,<br />1:30PM-3:30PM | `restriction:conditional=no_u_turn @ (Mo-Fr 07:30-09:30,13:30-15:30; SH off)` and `restriction:conditional=no_left_turn @ (Mo-Fr 07:30-09:30,13:30-15:30; SH off)` |
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/no-left-s-s-ph.png) | No Left Turn | Saturday, Sunday & (Public) Holidays | `restriction:conditional=no_left_turn @ (Sa-Su; PH)` |
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/no-U-school.png) | No U Turn | 7AM-8:30AM,<br />2:30PM-3:30PM<br />on School days | `restriction:conditional=no_u_turn @ (Mo-Fr 07:00-08:30,14:30-15:30; SH off)` |
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/no-left-day-exception.png) | No Left Turn | 7AM-6PM<br />except Sunday and Public Holiday | `restriction:conditional=no_left_turn @ (Mo-Sa 07:00-18:00; PH off)` |
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/no-right-sa-su-ph.png) | No Right Turn | 7AM-9AM<br />except Sunday, Saturday and Holidays | `restriction:conditional=no_right_turn @ (Mo-Fr 07:00-09:00; PH off)` |
+
+#### Vehicle Type Conditions
+
+Occasionally you will find signs that specify that a particular vehicle type is excluded from signed turn restriction. In these cases you must add an additional `except=<vehicle type>` tag.
+
+Vehicle types allowed under `except` tag are
+- `psv` - Public service vehicles
+- `bicycle`
+- `hgv` - Heavy goods vehicles
+- `taxi`
+- `school_bus`
+- `commercial_vehicle`
+
+**Adding vehicle exceptions in restriction**
+
+1. Select the added relation
+    
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/select-TR.gif)
+
+2. Click on ➕ to add the `except` tags listed in the sign.
+
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/add-except-tag.png)
+
+3. Add the vehicle type as exception per shown in the sign. Use `;` to separate multiple vehicle types.
+_Note : `bus`, `metro` vehicle types are classified as `psv`._
+
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/except-tag-mapping.gif)
+
+
+| Sign<br />(Source: Mapillary) | Turn Restriction Type | Condition | Tag |
+|---|---|---|---|
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/no-right-school-buses.png) | No Right Turn | 6-9 AM,<br />4-7 PM<br />except School Buses | `restriction:conditional=no_right_turn @ (Mo-Su 06:00-09:00,16:00-19:00)`<br />`except=school_bus` |
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/no-left-commercial.png) | No Left Turn | except Commercial Vehicles | `restriction:conditional=no_left_turn`<br />`except=commercial_vehicle` |
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/no-right-school-buses.png) | No Right Turn | 6-9 AM, 4-7 PM<br />except School Buses | `restriction:conditional = no_right_turn @ (Mo-Su 06:00-09:00,16:00-17:00)`<br />`except=school_bus` |
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/no-left-commercial.png) | No Left Turn | except Commercial Vehicles | `restriction:conditional=no_left_turn`<br />`except=commercial_vehicle` |
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/exceptbusandtaxi.png) | No Left Turn | except buses and taxis | `restriction=no_left_turn`<br />`except=bus;taxi`
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/exceptmultiple.png) | No Left Turn | except buses, taxis, bicycles and commercial vehicles | `restriction=no_left_turn`<br />`except=bus;bicycle;taxi;commercial_vehicle` |
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/exceptmuni.png) | No Left Turn | except MUNI | `restriction=no_left_turn`<br />`except=psv` |
+
+#### Traffic Signal conditions
+
+In the US there are many situations where a right turn is generally permitted except for when the traffic signal is red. We do not map these turn restrictions.
+
+| Sign<br />(Source: Mapillary) | Turn Restriction Type | Condition | Tag |
+|---|---|---|---|
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/right-on-red.png) | No Right Turn | On Red | DO NOT MAP |
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/right-on-red-alt.png) | No Right Turn | On Red | DO NOT MAP |
+
+#### Vehicle Weight/Height Conditions
+
+Weight and height conditions are used to restrict the access of large vehicles, notably trucks from certain roads. The vehicle weight and height will be limited by specifying the number in units which the country follows. This guide more focused on car based restriction. Do not map turn restrictions which limits for height or weight of any vehicle type.
+
+| Sign<br />(Source: Mapillary) | Turn Restriction Type | Condition | Tag |
+|---|---|---|---|
+|  ![]({{site.baseurl}}/images/explicit-turn-restrictions/over-3-4.png) | No U Turn | Over 3/4 Ton | DO NOT MAP |
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/no-right-vehicles.png) | No Right Turn | For vehicles over 40 feet | DO NOT MAP |
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/no-right-truck.png) | No Right Turn | For vehicles over 12,000 lbs | DO NOT MAP |
+
+
+### Look out for
+
+#### Redundant turn restrictions
+
+Redundant turn restriction can exist in two ways -
+
+**Restriction to oneway street**
+
+![]({{site.baseurl}}/images/explicit-turn-restrictions/no-right-oneway.png){:width="100"}
+
+There are some situation where both restriction and oneway are signed together. In such situation, if **`to`** way is a `oneway` then there is no need to add turn restriction.
+
+**Multiple prohibitory = single mandatory turn restriction**
+
+To avoid redundant relations it is important to note and check what are the existing turn-restrictions at the junction -
+
+Example - For No Left Turn and No Right Turn 
+
+There are cases where Only Straight Turn is added, In such cases there is no need to delete existing restriction as it implies the same.
+
+_Note : Always map what is signed at the intersection and do not imply turn restriction. If implied turn restriction is already present, do not delete it and also do not map._
+
+
+#### Lane-specific restrictions
+
+
+| Sign<br />(Source: Mapillary) | Turn Restriction Type | Condition | Tag |
+|---|---|---|---|
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/lanes-turn.png) | No U Turn | Right lane | DO NOT MAP |
+
+
+#### Gate Conditions
+
+
+| Sign<br />(Source: Mapillary) | Turn Restriction Type | Condition | Tag |
+|---|---|---|---|
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/gate-cond.png) | No Right Turn | When gate is closed. | DO NOT MAP |
+
+
+#### Specified to way
+
+
+| Sign<br />(Source: Mapillary) | Turn Restriction Type | Condition | Tag |
+|---|---|---|---|
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/to-way.png) | No Right Turn | to Virgil Avenue | `restriction=no_left_turn`<br />Virgil Avenue is mapped as the `to` way |
+
+
+#### Temporary Turn Restrictions
+
+
+| Sign<br />(Source: Mapillary) | Turn Restriction Type | Condition | Tag |
+|---|---|---|---|
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/temp-1.png) | No Left Turn | temporary | DO NOT MAP |
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/temp-2.png) | No Right Turn | temporary | DO NOT MAP |
+
+
+#### Restriction-ahead Warnings
+
+
+| Sign<br />(Source: Mapillary) | Turn Restriction Type | Condition | Tag |
+|---|---|---|---|
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/ahead-1.png) | No Left Turn | ahead | DO NOT MAP |
+
+#### Event-Specific Turn Restrictions
+
+| Sign<br />(Source: Mapillary) | Turn Restriction Type | Condition | Tag |
+|---|---|---|---|
+| ![]({{site.baseurl}}/images/explicit-turn-restrictions/event.png) | No Left Turn | After Ball Park Events<br />Except Taxis | DO NOT MAP |
+
+
+#### Removing an explicit turn restriction in the iD editor
+
+Occasionally you'll find an incorrect turn restriction relation. To remove an incorrect relation you must make sure to delete each member of the relation.
+
+1.  Click on the relation node to open the **Turn Restrictions editor** in the sidebar.
+
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/removal-1.gif)
+
+2.  Click on the relation  you want to delete in the **All Relation** list.
+
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/removal-2.gif)
+
+3.  Delete each member of the relation.
+
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/removal-3.gif)
+
+4.  Click on the relation node in the map view and inspect the **Turn Restrictions editor** to ensure that the relation has been fully removed.
+
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/removal-4.gif)
+
+5.  If all looks good, click **Save** to upload your changes.
+
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/SAVE.png)
+
+    *Note: do not close your iD tab until the data has been fully uploaded to OSM. Wait until the "Uploading changes to OpenStreetMap..." window disappears.*
+
+    ![]({{site.baseurl}}/images/explicit-turn-restrictions/upload-changes.png)
