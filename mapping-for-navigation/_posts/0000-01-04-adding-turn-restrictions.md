@@ -1,6 +1,6 @@
 ---
 title: Explicit Turn Restrictions
-permalink: /explicit-turn-restrictions/
+permalink: /adding-turn-restrictions/
 layout: post
 ---
 
