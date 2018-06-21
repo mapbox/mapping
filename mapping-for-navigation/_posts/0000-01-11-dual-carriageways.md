@@ -180,6 +180,8 @@ Before re-mapping any highway as dual-carriageway, check the tags and relations 
 
 - Change the bi-directional highway to a dual-carriageway using the **Make parallel copies of ways** (<kbd>Shift</kbd>+<kbd>P</kbd>).
 
+<!-- https://www.openstreetmap.org/#map=19/36.11413/-115.06414 -->
+
 | Before                                                            | After                                                            |
 | ----------------------------------------------------------------- | ---------------------------------------------------------------- |
 | ![]({{site.baseurl}}/images/dual-carriageway/rel-dual-before.png) | ![]({{site.baseurl}}/images/dual-carriageway/rel-dual-after.png) |
