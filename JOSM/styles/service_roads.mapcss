@@ -1,4 +1,4 @@
-way[highway=service][!area?][service!=driveway][service!=alley] {
+way[highway=service][!area?][!service?] {
     width: 2;
     color: service#ede50f;
 }
@@ -6,7 +6,19 @@ way[highway=service][service=parking_aisle] {
     width: 2;
     color: service#ce52ed;
 }
-/* way[highway=service][service=driveway] {
+way[highway=service][service=driveway] {
     width: 2;
-    color: service#db9103;
-} */
+    color: service#db6f03;
+}
+way[highway=service][service=drive-through] {
+    width: 2;
+    color: service#03c5db;
+}
+way[highway=service][service=alley] {
+    width: 1;
+    color: service#42f49b;
+}
+way[highway=service][tunnel=building_passage] {
+    width: 2;
+    color: service#000000;
+}
