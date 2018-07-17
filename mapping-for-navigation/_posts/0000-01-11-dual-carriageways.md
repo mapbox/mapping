@@ -33,20 +33,26 @@ Satellite imagery is one of the biggest source to identify the physical barriers
 
 This guide distills best practices in identifying these road separators and improving road network in OpenStreetMap by re-mapping bi-directional highways to dual-carriageways under various scenarios of existing data.
 
-## Dual carriageway cross roads
+## Cross roads at dual carriageways
 
 Dual carriageways at places have cross roads often found at non-intersection locations which acts as a channel to take a U-turn or connects to nearby highways.
 
-| Cross road with / without lane indications
-| ------------------------------------------
-| ![]({{site.baseurl}}/images/dual-carriageway/cross-road1.png) ![]({{site.baseurl}}/images/dual-carriageway/cross-road2.png)
-| This type of cross roads are not connected to any other highway but acts as turning channel for drivers to make U-Turn.
-| **Cross road with / without directional lane bays**  
-| ![]({{site.baseurl}}/images/dual-carriageway/cross-road-3.png)
-| This type of cross roads are often connected to service roads and have traffic island to separate the similar traffic flow from opposite direction.
-| **Median turning lanes**
-| ![]({{site.baseurl}}/images/dual-carriageway/median-turning-lanes.png)
-| This type of cross roads are usually connected to service roads and the drivers driving on either side of the main highway can use this median lane to leave the road and turn to service roads
+### Cross road with / without lane indications
+
+![]({{site.baseurl}}/images/dual-carriageway/cross-road1.png)  ![]({{site.baseurl}}/images/dual-carriageway/cross-road2.png)
+
+This type of cross roads are not connected to any other highway but acts as turning channel for drivers to make U-Turn.
+
+
+### Cross road with / without directional lane bays
+![]({{site.baseurl}}/images/dual-carriageway/cross-road-3.png)
+This type of cross roads are often connected to service roads and have traffic island to separate the similar traffic flow from opposite direction.
+
+### Median turning lanes
+
+![]({{site.baseurl}}/images/dual-carriageway/median-turning-lanes.png)
+
+Median turning lanes are a single lane in the center of the road into which traffic from both directions pulls to make a left turn. When this type of road is modeled as dual carriageway, with cross roads where there are possibilities of left turn, routing engine provides right instruction while navigating. This type of cross roads are usually connected to service roads and the drivers driving on either side of the main highway can use this median lane to leave the road and turn to service roads.
 
 ## Reference Guides
 
@@ -263,5 +269,17 @@ Refer [Mapping roads and paths](https://www.mapbox.com/mapping/mapping-common-fe
 | ![]({{site.baseurl}}/images/dual-carriageway/cross-road2-before.png) | ![]({{site.baseurl}}/images/dual-carriageway/cross-road2-after.png) |
 
 #### Median turning lanes
+
+- Considering the arrowed separation as separator (median turning lanes), trace the roads based on satellite imagery.
+- Look around to see if there are any service roads which is connected to the main highway.
+- For places where there is connection to service road, map the cross roads with oneway direction towards the service road.
+- Make sure all the highways issues associated with newly traced road are fixed - alignment based on Satellite imagery, crossing, overlapping or unconnected highways.
+- Tagging of cross road always follow the highway_link classification of the main highway.
+
+  **Example** - If main highway has `highway=secondary` classification. the cross road should be tagged with `highway=secondary_link` classification.
+
+Before | After
+---- | ----
+![]({{site.baseurl}}/images/dual-carriageway/median-turning-lanes-before.png) | ![]({{site.baseurl}}/images/dual-carriageway/media-turning-lanes-after.png)
 
 <!-- https://www.openstreetmap.org/#map=19/35.62071/-97.47869 -->
