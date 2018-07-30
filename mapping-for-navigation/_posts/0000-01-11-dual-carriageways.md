@@ -6,24 +6,24 @@ title: Remodeling Dual-carriageways
 
 _A German dual carriageway in the 1930s ([Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/German_Autobahn_1936_1939.jpg/1200px-German_Autobahn_1936_1939.jpg))_
 
-> A divided highway (also separated highway) is any highway where traffic flows are physically separated by a barrier (e.g., grass, concrete, steel), which prevents movements between said flows.
+> A divided highway (also separated highway) is any highway where traffic flows are physically separated by a barrier (example : grass, concrete, steel), which prevents movements between said flows.
 >
 > [OpenStreetMap wiki](https://wiki.openstreetmap.org/wiki/Editing_Standards_and_Conventions#Divided_highways)
 
-We oftentimes encounter cases where a bi-directional highway should be mapped as a dual-carriageway to better represent what's on the ground. OpenStreetMap mappers have adopted different approaches to mapping dual-carriageways based on the source of data, local community best practices and personal preference.
+We oftentimes come across cases where a bi-directional highway should be mapped as a dual-carriageway to better represent what's on the ground. OpenStreetMap mappers have adopted different approaches to mapping dual-carriageways based on the source of data, local community best practices and personal preference.
 
 Our basic rule of thumb are:
 
 - Keep things simple, add complexity only when necessary.
-- Dual-carriageway should have a physical barrier visible from imagery or when there is a road marking that show its illegal to pass on the other side.
-- There is enough length of the physical divider.
+- Dual-carriageway should have a physical barrier visible from imagery or a road marking that shows its illegal to pass on the other side.
+- Enough length of the physical divider is present.
 - During remapping, all other elements (for example, turn lanes, turn restrictions, route relation, etc.) associated to the road should be re-tagged based on remodelled road.
 
 ## Highway separators from Satellite imagery
 
 Satellite imagery is one of the biggest source to identify the physical barriers present between highways. Depending on type of barrier, largely we can only identify 2 types of road dividers through Satellite imagery.
 
-- **Concrete pavement as barriers** - Is a reservation area which separates the traffic between two carriageways. These separators can be simply paved or are commonly used to place traffic sign boards or for decorative purposes like trees.
+- **Concrete pavement as barriers** - Is a reservation area which separates the traffic between two carriageways. These separators can be paved or are commonly used to place traffic sign boards or for decorative purposes like trees.
 - **Cement blocks as barriers** - Is a modular concrete or plastic blocks employed to separate between two carriageways.
 
 | Barrier type      | Satellite View                                               | Streetlevel View                                               |
@@ -65,7 +65,7 @@ This type of cross roads are often connected to service roads and have traffic i
 [4ae13b0b]: {{site.baseurl}}/images/dual-carriageway/add-a-way-before.png "Click to enlarge"
 [082fb704]: {{site.baseurl}}/images/dual-carriageway/add-a-way-after.png "Click to enlarge"
 
-In the above example, there is physical barrier at East Weber Avenue from North Stanislaus to Aurora Street. This highway section should be modelled as dual-carriageway. As the highway don't have any special tags like turn lanes or turn restriction, re-mapping to a dual-carriageway is straightforward. There are two different ways to remap a bi-directional highway to a dual carriageway.
+In the above example, physical barrier is present at East Weber Avenue from North Stanislaus to Aurora Street. This highway section should be modelled as dual-carriageway. As the highway don't have any special tags like turn lanes or turn restriction, re-mapping to a dual-carriageway is straightforward. There are two different ways to remap a bi-directional highway to a dual carriageway.
 
 ### Option 1
 
@@ -106,13 +106,13 @@ In the above example, there is physical barrier at East Weber Avenue from North 
 [a907d766]: {{site.baseurl}}/images/dual-carriageway/turnlanes-before.png "Click to enlarge"
 [55088a6b]: {{site.baseurl}}/images/dual-carriageway/turnlanes-after.png "Click to enlarge"
 
-Powell street was mapped as a bi-directional road. Turn lanes were added later on as `turn:lanes:forward` and `turn:lanes:backward`. When re-mapping as dual-carriageway, we will modify the `turn:lanes:forward` and `turn:lanes:backward` to `turn:lanes`. In order to visualize and edit turn lanes, we will use the [Lanes and road attributes](https://josm.openstreetmap.de/wiki/Styles) map style and the [Turnlanes tagging](https://github.com/JOSM/turnlanes-tagging) plugin in JOSM. Check our guide on how to [activate the style and plugin]({{site.baseurl}}/mapping-for-navigation/adding-turn-lanes/#pre-requirements-for-mapping-a-turn-lane-in-josm) in JOSM.
+Powell street was mapped as a bi-directional road. Turn lanes were added later on as `turn:lanes:forward` and `turn:lanes:backward`. When re-mapping as dual-carriageway, we will change the `turn:lanes:forward` and `turn:lanes:backward` to `turn:lanes`. To visualize and edit turn lanes, we will use the [Lanes and road attributes](https://josm.openstreetmap.de/wiki/Styles) map style and the [Turnlanes tagging](https://github.com/JOSM/turnlanes-tagging) plugin in JOSM. Check our guide on how to [activate the style and plugin]({{site.baseurl}}/mapping-for-navigation/adding-turn-lanes/#pre-requirements-for-mapping-a-turn-lane-in-josm) in JOSM.
 
 <!-- Should we add instructions for activating paint style and plugin? -->
 
 1.  Change the bi-directional highway to a dual-carriageway using the **Make parallel copies of ways**
     (<kbd>Shift</kbd>+<kbd>P</kbd>). ![]({{site.baseurl}}/images/dual-carriageway/turnlanes-make-dual.gif)
-2.  Remove previously added `turn:lanes:\**`. ![]({{site.baseurl}}/images/dual-carriageway/turnlanes-delete-tags.gif)
+2.  Remove `turn:lanes:\**` added before. ![]({{site.baseurl}}/images/dual-carriageway/turnlanes-delete-tags.gif)
 3.  Add the `oneway=yes` tag. Reverse (<kbd>R</kbd>) the way direction to follow the traffic flow.
     ![]({{site.baseurl}}/images/dual-carriageway/turnlanes-oneway.gif)
 4.  Select the highway that needs turn lanes update. In this example, we will add `turn:lanes=left||**`.
@@ -143,7 +143,7 @@ Taking a U-turn along Griffin Road is illegal. Griffin Road was mapped as bi-dir
     `highway=tertiary` as the new **`via`** and the `highway=primary` highway going east as the new **`to`** member.
 4.  Select the relation in the list. In the **Relations** dialog, click the **Call relation editor for selected relation**
     to open the **Relation editor**. ![]({{site.baseurl}}/images/dual-carriageway/tr-rel-editor.gif)
-5.  Delete the previous **`to`** and **`via`** members by selecting them in the **Members**. Click the
+5.  Delete the existing **`to`** and **`via`** members by selecting them in the **Members**. Click the
     **Remove the currently selected members from this relation** (<kbd>⌥</kbd>+<kbd>⌦</kbd>) to delete. ![]({{site.baseurl}}/images/dual-carriageway/tr-rel-delete-members.gif)
 6.  Add the new members by selecting in the main map view to show in **Selection**.
     Click **Add all object selected ...** to include them in the relation. ![]({{site.baseurl}}/images/dual-carriageway/tr-rel-add-members.gif)
@@ -153,7 +153,7 @@ Taking a U-turn along Griffin Road is illegal. Griffin Road was mapped as bi-dir
 
 **What is route relation ?**
 
-A route relation is used to describe long routes which are regular line of travel for various kinds of transport like state routes, bus routes and many more. (More information in [OSM Wiki](https://wiki.openstreetmap.org/wiki/Relation:route))
+A route relation is used to describe long routes which are regular line of travel for various kinds of transport like state routes, bus routes and many more. (More information in [OpenStreetMap Wiki](https://wiki.openstreetmap.org/wiki/Relation:route))
 
 #### Check data for Tags/Relations
 
@@ -205,7 +205,7 @@ The re-mapping added many new ways which should be part of the existing relation
 **JOSM setup to fix relation**
 
 - After identifying the missing members in the relation, download the area around the around the missing members to help in better relation fixing.
-- Download [Relation Toolbox](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/Relation_Toolbox) plugin which helps in interfacing with relation members easily.
+- Download [Relation Toolbox](https://wiki.openstreetmap.org/wiki/JOSM/Plugins/Relation_Toolbox) plugin which helps in interfacing with relation members.
 
 ![]({{site.baseurl}}/images/dual-carriageway/relation-toolbox.png)
 
