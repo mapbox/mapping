@@ -19,36 +19,22 @@ Our basic rule of thumb are:
 - Enough length of the physical divider is present.
 - During remapping, all other elements (for example, turn lanes, turn restrictions, route relation, etc.) associated to the road should be re-tagged based on remodelled road.
 
-## Highway separators from Satellite imagery
+### Identifying highway separators from imagery
 
-Satellite imagery is one of the biggest source to identify the physical barriers present between highways. Depending on type of barrier, largely we can only identify 2 types of road dividers through Satellite imagery.
+Satellite imagery is the common reference to identify the physical barriers present between highways. There are two types of separators identifiable in satellite imagery.
 
-- **Concrete pavement as barriers** - Is a reservation area which separates the traffic between two carriageways. These separators can be paved or are commonly used to place traffic sign boards or for decorative purposes like trees.
-- **Cement blocks as barriers** - Is a modular concrete or plastic blocks employed to separate between two carriageways.
-
-| Barrier type      | Satellite View                                               | Streetlevel View                                               |
+| Barrier type      | Satellite view                                               | Streetlevel view                                               |
 | ----------------- | ------------------------------------------------------------ | -------------------------------------------------------------- |
-| Concrete pavement | ![]({{site.baseurl}}/images/dual-carriageway/satellite1.png) | ![]({{site.baseurl}}/images/dual-carriageway/streetlevel2.png) |
-| Cement blocks     | ![]({{site.baseurl}}/images/dual-carriageway/satellite3.png) | ![]({{site.baseurl}}/images/dual-carriageway/streetlevel1.png) |
+| **Concrete pavement** - Is a reservation area which separates the traffic between two carriageways. These separators can be paved or are commonly used to place traffic sign boards or for decorative purposes like trees. | ![]({{site.baseurl}}/images/dual-carriageway/satellite1.png) | ![]({{site.baseurl}}/images/dual-carriageway/streetlevel2.png) |
+| **Cement blocks** - Is a modular concrete or plastic blocks employed to separate between two carriageways.| ![]({{site.baseurl}}/images/dual-carriageway/satellite3.png) | ![]({{site.baseurl}}/images/dual-carriageway/streetlevel1.png) |
 
 This guide distills best practices in identifying these road separators and improving road network in OpenStreetMap by re-mapping bi-directional highways to dual-carriageways under various scenarios of existing data.
 
-## Cross roads at dual carriageways
-
-Dual carriageways at places have cross roads often found at non-intersection locations which acts as a channel to take a U-turn or connects to nearby highways.
-
-### Cross road with / without lane indications
-
-![]({{site.baseurl}}/images/dual-carriageway/cross-road1.png)  ![]({{site.baseurl}}/images/dual-carriageway/cross-road2.png)
-
-This type of cross roads are not connected to any other highway but acts as turning channel for drivers to make U-Turn.
-
-
-### Cross road with / without directional lane bays
-![]({{site.baseurl}}/images/dual-carriageway/cross-road-3.png)
-This type of cross roads are often connected to service roads and have traffic island to separate the similar traffic flow from opposite direction.
 
 ## Mapping bi-directional highway to a dual-carriageway
+
+
+### General approach
 
 <!-- https://www.openstreetmap.org/#map=18/37.955426/-121.281075 -->
 
@@ -61,7 +47,7 @@ This type of cross roads are often connected to service roads and have traffic i
 
 In the above example, physical barrier is present at East Weber Avenue from North Stanislaus to Aurora Street. This highway section should be modelled as dual-carriageway. As the highway don't have any special tags like turn lanes or turn restriction, re-mapping to a dual-carriageway is straightforward. There are two different ways to remap a bi-directional highway to a dual carriageway.
 
-### Option 1
+**Option 1**
 
 1.  Select the bi-directional highway.
 2.  Align the existing highway to one side of the dual-carriageway.
@@ -72,7 +58,7 @@ In the above example, physical barrier is present at East Weber Avenue from Nort
 
 ![]({{site.baseurl}}/images/dual-carriageway/simple-add-a-way.gif)
 
-### Option 2
+**Option 2**
 
 <!-- ![]({{site.baseurl}}/images/dual-carriageway/parallel-way-icon.png) -->
 
@@ -86,8 +72,6 @@ In the above example, physical barrier is present at East Weber Avenue from Nort
 8.  Reverse (<kbd>R</kbd>) way direction of the copied way.
 
 ![]({{site.baseurl}}/images/dual-carriageway/parallel-a-way.gif)
-
-## Data Scenarios
 
 ### When turn lanes are present
 
@@ -145,32 +129,26 @@ Taking a U-turn along Griffin Road is illegal. Griffin Road was mapped as bi-dir
 
 ### When route relations are present
 
-**What is route relation ?**
-
-A route relation is used to describe long routes which are regular line of travel for various kinds of transport like state routes, bus routes and many more. (More information in [OpenStreetMap Wiki](https://wiki.openstreetmap.org/wiki/Relation:route))
-
-#### Check data for Tags/Relations
+Route relation describes a predetermined route for different type of transport like state routes, bus routes, bicycle routes and many more ([OpenStreetMap Wiki](https://wiki.openstreetmap.org/wiki/Relation:route)).  These are oftentimes long and affects many feature along the route.
 
 Before re-mapping any highway as dual-carriageway, check the tags and relations the highway is part of.
 
-**Highway with route relation**
+#### Check data for tags/relations
 
 - Select the highway segment which needs remodeling as dual-carriageway and check the tags/relations highway contains.
 
 ![]({{site.baseurl}}/images/dual-carriageway/tags-relations.png)
+<br>*Highway with a route relation*
 
 - If the selected highway contains route/bus relations, download all the members of the relation.
   - **Right Click** on the relation.
   - Select **Download Members** from the options to download all the members which are part of selected relation.
-
 ![]({{site.baseurl}}/images/dual-carriageway/rel-download-members.png)
 
-#### Re-mapping to dual-carriageway
-
-- Once all the members of relation are downloaded, make sure you have downloaded enough area around intersections through which re-mapping is required.
-- After downloading all the required area, your downloaded Data Layer is ready for remodeling/re-mapping.
-
+- Once all the members of relation are downloaded, extend the downloaded area around the intersections where re-mapping is required.
 ![]({{site.baseurl}}/images/dual-carriageway/remapping-section.png)
+
+#### Re-mapping to dual-carriageway
 
 - Change the bi-directional highway to a dual-carriageway using the **Make parallel copies of ways** (<kbd>Shift</kbd>+<kbd>P</kbd>).
 
@@ -182,11 +160,11 @@ Before re-mapping any highway as dual-carriageway, check the tags and relations 
 
 #### Fixing members of route relation after re-mapping
 
-The re-mapping added many new ways which should be part of the existing relation. We need to make sure all the members of the relation should be connected and not broken in the middle.
+The re-mapping added new segments which should be part of the existing relation. All members of the relation should be connected and not broken in the middle.
 
 **Examine the relation**
 
-- Select the relation and see the start/end and the missing members in the middle.
+- Select the relation and inspect the start/end and the missing members in the middle.
   - **Right Click** on the highway segment with relation and select **Select Relation** from the options. This will select the relation and will be able to visualize the missing members in the relation which are breaking the continuity.
 
 ![]({{site.baseurl}}/images/dual-carriageway/rel-select-relation.png)
@@ -205,7 +183,7 @@ The re-mapping added many new ways which should be part of the existing relation
 
 **Add members to relation**
 
-- In case of multiple relation, keep note of relation ref and name to make sure members are added to right relation.
+- In case of multiple relation, keep note of the relation `ref` and `name` to make sure members are added to right relation.
 - Adding members
   - Select relation in Relation Toolbox to which new members to be added.
     ![]({{site.baseurl}}/images/dual-carriageway/rel-toolbox1.gif)
@@ -219,21 +197,23 @@ The re-mapping added many new ways which should be part of the existing relation
 
 <!-- Need to add how to add member roles steps. Looking for example. -->
 
-## Mapping cross roads
+## Mapping crossroads
 
-Mapping dual carriageway crossroads are important to provide turns where there are available turns in longer stretches of highways. If these roads are left unmapped the routing engine often recommends longer routes instead of using the cross roads to reach destination faster.
+Dual-carriageway crossroads are important to provide turns where there are available turns in longer stretches of highways. If these roads are left unmapped the routing engine often recommends longer routes instead of using the crossroads to reach destination faster.
 
-### Tracing/Tagging cross roads
+Crossroads found in areas that is not a intersection serves as a channel to take a U-turn or to connect to a nearby highway.
 
-Refer [Mapping roads and paths](https://www.mapbox.com/mapping/mapping-common-features/#tracing-roads) documentation to follow how to trace a road using Satellite imagery as source.
+**Common type of crossroad**
 
-#### Cross roads with/without lane indications
+|**With/without lane indications** - This type of crossroads are not connected to any other highway but acts as turning channel for drivers to make U-Turn. | ![]({{site.baseurl}}/images/dual-carriageway/cross-road1.png) ![]({{site.baseurl}}/images/dual-carriageway/cross-road2.png)|
+**With/without directional lane bays** - This type of crossroads are often connected to service roads and have traffic island to separate the similar traffic flow from opposite direction. | ![]({{site.baseurl}}/images/dual-carriageway/cross-road-3.png) |
 
-- Trace the road based on satellite imagery.
-- Make sure all the highways issues associated with newly traced road are fixed - alignment based on Satellite imagery, crossing, overlapping or unconnected highways.
-- Tagging of cross road always follow the highway_link classification of the main highway.
+#### Mapping crossroads with/without lane indications
 
-  **Example** - If main highway has `highway=secondary` classification. the cross road should be tagged with `highway=secondary_link` classification.
+- Trace the road based on satellite imagery (refer to [Mapping roads and paths](https://www.mapbox.com/mapping/mapping-common-features/#tracing-roads) guide).
+- Tagging of crossroad must follow the `*_link` of the highway it is connects.
+
+  **Example** - If main highway is `highway=secondary`, the crossroad should be tagged with `highway=secondary_link`.
 
 <!-- https://www.openstreetmap.org/#map=19/36.07452/-115.04567 -->
 
@@ -241,14 +221,13 @@ Refer [Mapping roads and paths](https://www.mapbox.com/mapping/mapping-common-fe
 | -------------------------------------------------------------------- | ------------------------------------------------------------------- |
 | ![]({{site.baseurl}}/images/dual-carriageway/cross-road1-before.png) | ![]({{site.baseurl}}/images/dual-carriageway/cross-road1-after.png) |
 
-#### Cross roads with directional lane bays
+#### Mapping crossroads with directional lane bays
 
 - Trace the road based on satellite imagery.
-- In cases of directional lane bays, the cross roads will always be oneway.
-- Make sure all the highways issues associated with newly traced road are fixed - alignment based on Satellite imagery, crossing, overlapping or unconnected highways.
-- Tagging of cross road always follow the highway_link classification of the main highway.
+- Directional lane bay crossroads must be oneway.
+- Tagging of crossroad must follow the `*_link` of the highway it is connects.
 
-  **Example** - If main highway has `highway=secondary` classification. the cross road should be tagged with `highway=secondary_link` classification.
+  **Example** - If main highway is `highway=secondary`, the crossroad should be tagged with `highway=secondary_link`.
 
 <!-- https://www.openstreetmap.org/#map=19/36.14601/-115.24267 -->
 
