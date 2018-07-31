@@ -48,12 +48,6 @@ This type of cross roads are not connected to any other highway but acts as turn
 ![]({{site.baseurl}}/images/dual-carriageway/cross-road-3.png)
 This type of cross roads are often connected to service roads and have traffic island to separate the similar traffic flow from opposite direction.
 
-## Reference Guides
-
-- [Mapping Roads and paths](https://www.mapbox.com/mapping/mapping-common-features/#roads-and-paths)
-- [Intersection Modelling]({{site.baseurl}}/mapping-for-navigation/modeling-intersections-for-map-navigation/)
-- [Modeling Circular Junctions]({{site.baseurl}}/mapping-for-navigation/circular-junctions/)
-
 ## Mapping bi-directional highway to a dual-carriageway
 
 <!-- https://www.openstreetmap.org/#map=18/37.955426/-121.281075 -->
@@ -261,3 +255,9 @@ Refer [Mapping roads and paths](https://www.mapbox.com/mapping/mapping-common-fe
 | Before                                                               | After                                                               |
 | -------------------------------------------------------------------- | ------------------------------------------------------------------- |
 | ![]({{site.baseurl}}/images/dual-carriageway/cross-road2-before.png) | ![]({{site.baseurl}}/images/dual-carriageway/cross-road2-after.png) |
+
+## See also
+
+- [Mapping Roads and paths](https://www.mapbox.com/mapping/mapping-common-features/#roads-and-paths)
+- [Intersection Modelling]({{site.baseurl}}/mapping-for-navigation/modeling-intersections-for-map-navigation/)
+- [Modeling Circular Junctions]({{site.baseurl}}/mapping-for-navigation/circular-junctions/)
