@@ -28,8 +28,6 @@ turn:lanes = merge_to_left | ![merge to left](https://cloud.githubusercontent.co
 turn:lanes = merge_to_right | ![fahrbahn_2](https://cloud.githubusercontent.com/assets/8401827/13218183/bc5d0790-d98d-11e5-9781-307f80cc0732.png)
 turn:lanes:both_ways = * | ![turn lanes both ways](https://cloud.githubusercontent.com/assets/8401827/13217721/a2594d48-d98a-11e5-87f1-11e11ebf57ec.png)
 
-  ![](http://pdd.ua/r/r/EEB7A996-D8DC-40FC-87EA-01F3E115BC7C/m_1.18_4.jpg)
-  _road markings on the ground_ - © [pdd.ua](http://pdd.ua/ua/34/1.18/)
 
 ### Pre-requirements for mapping a turn lane in JOSM
 
@@ -128,7 +126,7 @@ In case of bi-directional ways, the key [turn:lanes:backward=*](http://wiki.open
   ![turn:lanes:backward](https://cloud.githubusercontent.com/assets/13744156/13172709/859957c4-d71f-11e5-8cd9-ea154ad5d2e8.gif)
 
   *Adding a `turn:lanes:backward` tag*
-  
+
 ### 7. Adding dual carriageways:
 
 When finding roads mapped as single carriageway while the imagery shows clear separation between roads, split the road where the physical separation starts and add dual carriageways.
@@ -137,7 +135,7 @@ When finding roads mapped as single carriageway while the imagery shows clear se
 
 
 **When to add dual carriageway?**
-- Add Dual-carriage when 
+- Add Dual-carriage when
  - you see physical separation betweens roads
  - **no relation is attached to the way.**
 - Add `turn:lanes` tag to both the ways.
@@ -209,15 +207,15 @@ These are the lanes specifically categorized to take U-turn or reverse-turn.
 
 ### 14. The order of the directions and valid combinations of values
 
-  - `none` itself is valid value but **not** in conjunction with other  
-  
+  - `none` itself is valid value but **not** in conjunction with other
+
   - ✅ `turn:lanes=none|right` is equal to `turn:lanes=|right` - we use `none` for "_better readability_"
 
-  - 👎  `turn:lanes=left||none|merge_to_right` - this combination of values is valid but there is mixing `none` and `||` (empty) - this is not good choice.  
+  - 👎  `turn:lanes=left||none|merge_to_right` - this combination of values is valid but there is mixing `none` and `||` (empty) - this is not good choice.
 
-  - 👍  `turn:lanes=left|none|none|merge_to_right` or `turn:lanes=left|||merge_to_right`  
-  
-  - ❎ `turn:lanes=none|none|none` or `turn:lanes=||` - in this case `turn:lanes=*` tag is redundant, just specify `lanes=3` or real number of lanes  
+  - 👍  `turn:lanes=left|none|none|merge_to_right` or `turn:lanes=left|||merge_to_right`
+
+  - ❎ `turn:lanes=none|none|none` or `turn:lanes=||` - in this case `turn:lanes=*` tag is redundant, just specify `lanes=3` or real number of lanes
 
   - ❎ `turn:lanes=none|none;slight_right` - isn't valid combination - "_there are no turn indications_"  on the rightmost lane. Instead, must be used (based on https://github.com/mapbox/mapping/issues/180#issuecomment-225574666)
 
@@ -225,23 +223,23 @@ These are the lanes specifically categorized to take U-turn or reverse-turn.
 lanes=2
 turn:lanes=none|through;slight_right
 transit:lanes=continue|new_on_right
-```  
+```
 
-- using `*right` | `*left` values  
+- using `*right` | `*left` values
 
-  - ✅ `turn:lanes=left|none|none` or `turn:lanes=||right` or `turn:lanes=merge_to_right||` or `turn:lanes=left|left;through|none|slight_right|right|right`- 👍  
+  - ✅ `turn:lanes=left|none|none` or `turn:lanes=||right` or `turn:lanes=merge_to_right||` or `turn:lanes=left|left;through|none|slight_right|right|right`- 👍
 
   - ❎  `turn:lanes=|right|left|` or `turn:lanes=none|right|left|through` or `turn:lanes=none|left|none`- 👎  lanes that go in one direction should not cross with each other
 
 - using `reverse` value
- 
+
  - `reverse` (u-turn) have to be on the leftmost lane for right-hand traffic or on the rightmost lane for right-hand
 
 ### 15.
 
 _to be continued …_
 
-### Further reading: 
+### Further reading:
 * [Mapping turn lanes: OSM wiki](http://wiki.openstreetmap.org/wiki/Key:turn)
 * [Mapping turn lanes in OpenStreetMap by Andrey Golovin](https://www.mapbox.com/blog/turn-lanes-mapping/)
 * Diary post by @Andygol : [Mapping turn lanes in OpenStreetMap](http://www.openstreetmap.org/user/andygol/diary/35489#)
