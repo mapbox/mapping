@@ -28,6 +28,8 @@ turn:lanes = merge_to_left | ![merge to left](https://cloud.githubusercontent.co
 turn:lanes = merge_to_right | ![fahrbahn_2](https://cloud.githubusercontent.com/assets/8401827/13218183/bc5d0790-d98d-11e5-9781-307f80cc0732.png)
 turn:lanes:both_ways = * | ![turn lanes both ways](https://cloud.githubusercontent.com/assets/8401827/13217721/a2594d48-d98a-11e5-87f1-11e11ebf57ec.png)
 
+![]({{site.baseurl}}/images/m_1.18_4.jpg)
+ _road markings on the ground_ - © [pdd.ua](http://pdd.ua/ua/34/1.18/)
 
 ### Pre-requirements for mapping a turn lane in JOSM
 
