@@ -1,6 +1,7 @@
 ---
 layout: default
 head: <link rel="stylesheet" href="/mapping/site.css">
+head: <link rel="stylesheet" href="/mapping/magnific-popup.css">
 ---
 
 
@@ -14,6 +15,7 @@ head: <link rel="stylesheet" href="/mapping/site.css">
 
 <script type="text/javascript" src="{{site.baseurl}}/js/affix.js"></script>
 <script type="text/javascript" src="{{site.baseurl}}/js/scrollspy.js"></script>
+<script type="text/javascript" src="{{site.baseurl}}/js/magnific.js"></script>
 
 <script>
 $('body').scrollspy({ target: '.toc' });
@@ -21,4 +23,15 @@ $('body').scrollspy({ target: '.toc' });
 $('h2').each(function(){
     $(this).nextUntil('h2').andSelf().wrapAll('<div class="subsection clearfix" />');
 });
+
+$('.prose').each(function() { // the containers for all your galleries
+  $(this).find('a[href$=".png"]', 'a[href$=".jpg"]', 'a[href$=".gif"]', 'a[href$=".PNG"]', 'a[href$=".JPG"]', 'a[href$=".GIF"]').magnificPopup({
+    // delegate: 'a', // the selector for gallery item
+    type: 'image',
+    gallery: {
+      enabled:true
+    }
+  });
+});
+
 </script>
