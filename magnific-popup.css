@@ -266,8 +266,7 @@ img.mfp-img {
     width: auto;
     height: auto;
     z-index: -1;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-    background: #444; }
+  }
   .mfp-figure small {
     color: #BDBDBD;
     display: block;
