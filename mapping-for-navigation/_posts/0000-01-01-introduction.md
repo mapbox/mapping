@@ -74,7 +74,7 @@ Street view images from dashcams, mounted cameras in vehicles using apps gives h
 ### Live Aerial & Drone Imagery
 
 <img width="676" alt="screenshot 2016-09-15 21 34 33" src="https://cloud.githubusercontent.com/assets/126868/18557357/364ae05e-7b8c-11e6-81b4-dc9ff629c7a5.png"><br>
-_High resolution imagery captured from [UAVs in Srilanka](https://www.mapbox.com/blog/sri-lanka-drone-imagery/)_
+_High resolution imagery captured from [UAVs in Srilanka](https://blog.mapbox.com/sri-lanka-uav-survey-for-disaster-preparedness-c6ce3056fcb3)_
 
 [Aerial imagery](https://en.wikipedia.org/wiki/Aerial_photography) using drones can capture the changing surface of the earth at a much higher resolution and lower cost compared to traditional satellite imagery that is expensive to acquire and are updated less frequently.
 

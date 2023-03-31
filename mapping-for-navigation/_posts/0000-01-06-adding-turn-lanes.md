@@ -243,5 +243,5 @@ _to be continued …_
 
 ### Further reading:
 * [Mapping turn lanes: OSM wiki](http://wiki.openstreetmap.org/wiki/Key:turn)
-* [Mapping turn lanes in OpenStreetMap by Andrey Golovin](https://www.mapbox.com/blog/turn-lanes-mapping/)
+* [Mapping turn lanes in OpenStreetMap by Andrey Golovin](https://blog.mapbox.com/mapping-turn-lanes-in-openstreetmap-5da9bf764f0d)
 * Diary post by @Andygol : [Mapping turn lanes in OpenStreetMap](http://www.openstreetmap.org/user/andygol/diary/35489#)

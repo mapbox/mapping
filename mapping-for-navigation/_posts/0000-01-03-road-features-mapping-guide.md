@@ -65,7 +65,7 @@ The best source of mapping oneways are again street level photos.
 
 *Turn restriction denoting `no left turn` along with conditions: opening and closing times*
 
-The main resource for turn restriction data is [street view level images](https://www.mapbox.com/blog/safer-market-street/), local mapping drives, [DOT websites](http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=83f6e69ae554e410VgnVCM10000071d60f89RCRD)
+The main resource for turn restriction data is [street view level images](https://medium.com/mapbox/how-the-car-free-policy-impacted-market-street-traffic-781571412c0), local mapping drives, [DOT websites](http://www1.toronto.ca/wps/portal/contentonly?vgnextoid=83f6e69ae554e410VgnVCM10000071d60f89RCRD)
 
 ![turn_restriction](https://cloud.githubusercontent.com/assets/13744156/18047415/7d9254c8-6dfa-11e6-94e6-9d85b58627c1.jpg)
 *turn restriction which denotes `no right turn` at the junction*

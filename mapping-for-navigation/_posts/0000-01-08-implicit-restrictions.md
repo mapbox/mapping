@@ -79,7 +79,7 @@ When working with an intersection like this, keep a close eye on all possible ma
 
 ## Mapping implicit turn-restrictions
 
-Mapping implicit turn restrictions is the same as [adding a regular turn-restriction](https://www.mapbox.com/mapping/mapping-for-navigation/adding-turn-restrictions/) with one addition: we add an extra `implicit=yes` tag to implicit turn restrictions to differentiate them from explicitly signed restrictions.
+Mapping implicit turn restrictions is the same as adding a regular turn-restriction with one addition: we add an extra `implicit=yes` tag to implicit turn restrictions to differentiate them from explicitly signed restrictions.
 
 ![]({{site.baseurl}}/images/implicit-trs/image13.png)
 

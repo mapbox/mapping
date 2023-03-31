@@ -71,7 +71,7 @@ Before mapping turn lanes activate the following preferences in JOSM to visualiz
 
   ![lane_attributes](https://cloud.githubusercontent.com/assets/8401827/13251884/ddcbdd54-da58-11e5-86ae-c4a2918c9577.gif)
 
-* The simplest way to add turn lanes is by using **[turnlanes-tagging plugin](https://www.mapbox.com/blog/turnlanes-tagging/)**
+* The simplest way to add turn lanes is by using **[turnlanes-tagging plugin](https://blog.mapbox.com/turnlanes-tagging-plugin-for-josm-a93220e9aa0)**
 
 ![turnlenes](https://cloud.githubusercontent.com/assets/8401827/17246767/d086ef48-55ab-11e6-8bce-46c434cb9005.gif)
 
@@ -243,5 +243,5 @@ _to be continued …_
 
 ### Further reading: 
 * [Mapping turn lanes: OSM wiki](http://wiki.openstreetmap.org/wiki/Key:turn)
-* [Mapping turn lanes in OpenStreetMap by Andrey Golovin](https://www.mapbox.com/blog/turn-lanes-mapping/)
+* [Mapping turn lanes in OpenStreetMap by Andrey Golovin](https://blog.mapbox.com/mapping-turn-lanes-in-openstreetmap-5da9bf764f0d)
 * Diary post by @Andygol : [Mapping turn lanes in OpenStreetMap](http://www.openstreetmap.org/user/andygol/diary/35489#)
