@@ -1,12 +1,13 @@
 # Mapping @ Mapbox
-Public issue tracker for OpenStreetMap contribution work by the [Data Team at Mapbox](https://wiki.openstreetmap.org/wiki/Mapbox#Mapbox_Data_Team). You're invited to join us :)
+Public issue tracker for OpenStreetMap contribution work by the [Data Team at Mapbox](https://github.com/mapbox/mapping/wiki/OSM-Data-Team-Members).
 
-- [Mapping party is in the issue queue](https://github.com/mapbox/mapping/issues)
+- [List of Projects we are working on](https://github.com/mapbox/mapping/issues)
 - [More information on the Wiki](https://github.com/mapbox/mapping/wiki)
+- [OSM Data Team Members](https://github.com/mapbox/mapping/wiki/OSM-Data-Team-Members)
 
-<img width="674" alt="screenshot 2016-10-24 21 39 14" src="https://cloud.githubusercontent.com/assets/126868/19653477/5444333e-9a32-11e6-9e84-1665d4075c18.png"><br>
+
+<img width="120" alt="6b486b99-bec5-488b-a293-5b989fb76b5c" src="https://github.com/mapbox/mapping/assets/52424418/a22f5539-9dc5-420b-8309-068a753e74d3">
 
 
-## Resources
-- [Mapping with OpenStreetMap](https://wiki.openstreetmap.org/wiki/Beginners%27_guide) - An easy to follow visual guide for beginners who want to become power mappers with JOSM
-- JOSM freshness paint style - Highlights objects edited this year in green to be aware of local mapping  `https://raw.githubusercontent.com/mapbox/mapping/master/JOSM/data-qa.mapcss` 
+For more information, suggestions or questions contact email us at osm-edit-escalation@mapbox.com or open a ticket with your question in this repository. 
+You can also refer to our OpenStreetMap wiki page for [more information](https://wiki.openstreetmap.org/wiki/Mapbox).
